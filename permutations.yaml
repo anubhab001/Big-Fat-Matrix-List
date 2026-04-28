@@ -1,0 +1,70 @@
+# Big-Fat-Matrix-List: bit-permutation catalogue.
+# Each entry maps source bit index i to destination bit index P[i].
+# Convention: bit indexing is 0-based; output[P[i]] = input[i].
+
+PRESENT.PERM64:
+  canonical_name: "PRESENT pLayer (64-bit)"
+  size: 64
+  year: [2007]
+  origin: "https://link.springer.com/chapter/10.1007/978-3-540-74735-2_31"
+  note: "Bogdanov, Knudsen, Leander, Paar, Poschmann, Robshaw, Seurin, Vikkelsoe (CHES 2007). For i in 0..62, P[i] = (16 * i) mod 63; P[63] = 63."
+  perm: [0, 16, 32, 48, 1, 17, 33, 49, 2, 18, 34, 50, 3, 19, 35, 51,
+         4, 20, 36, 52, 5, 21, 37, 53, 6, 22, 38, 54, 7, 23, 39, 55,
+         8, 24, 40, 56, 9, 25, 41, 57, 10, 26, 42, 58, 11, 27, 43, 59,
+         12, 28, 44, 60, 13, 29, 45, 61, 14, 30, 46, 62, 15, 31, 47, 63]
+
+GIFT.PERM64:
+  canonical_name: "GIFT-64 bit permutation"
+  size: 64
+  year: [2017]
+  origin: "https://eprint.iacr.org/2017/622"
+  note: "Banik, Pandey, Peyrin, Sasaki, Sim, Todo (CHES 2017)."
+  perm: [0, 17, 34, 51, 48, 1, 18, 35, 32, 49, 2, 19, 16, 33, 50, 3,
+         4, 21, 38, 55, 52, 5, 22, 39, 36, 53, 6, 23, 20, 37, 54, 7,
+         8, 25, 42, 59, 56, 9, 26, 43, 40, 57, 10, 27, 24, 41, 58, 11,
+         12, 29, 46, 63, 60, 13, 30, 47, 44, 61, 14, 31, 28, 45, 62, 15]
+
+GIFT.PERM128:
+  canonical_name: "GIFT-128 bit permutation"
+  size: 128
+  year: [2017]
+  origin: "https://eprint.iacr.org/2017/622"
+  note: "Banik, Pandey, Peyrin, Sasaki, Sim, Todo (CHES 2017)."
+  perm: [0, 33, 66, 99, 96, 1, 34, 67, 64, 97, 2, 35, 32, 65, 98, 3,
+         4, 37, 70, 103, 100, 5, 38, 71, 68, 101, 6, 39, 36, 69, 102, 7,
+         8, 41, 74, 107, 104, 9, 42, 75, 72, 105, 10, 43, 40, 73, 106, 11,
+         12, 45, 78, 111, 108, 13, 46, 79, 76, 109, 14, 47, 44, 77, 110, 15,
+         16, 49, 82, 115, 112, 17, 50, 83, 80, 113, 18, 51, 48, 81, 114, 19,
+         20, 53, 86, 119, 116, 21, 54, 87, 84, 117, 22, 55, 52, 85, 118, 23,
+         24, 57, 90, 123, 120, 25, 58, 91, 88, 121, 26, 59, 56, 89, 122, 27,
+         28, 61, 94, 127, 124, 29, 62, 95, 92, 125, 30, 63, 60, 93, 126, 31]
+
+TRIFLE.PERM128:
+  canonical_name: "TRIFLE-BC bit permutation"
+  size: 128
+  year: [2019]
+  origin: "https://csrc.nist.gov/CSRC/media/Projects/lightweight-cryptography/documents/round-1/spec-doc/trifle-spec.pdf"
+  note: "Datta, Ghoshal, Mukhopadhyay, Patranabis, Picek, Sadhukhan (NIST LWC, round-1 candidate, 2019). For i in 0..127, P[i] = 32 * (i mod 4) + (i div 4)."
+  perm: [0, 32, 64, 96, 1, 33, 65, 97, 2, 34, 66, 98, 3, 35, 67, 99,
+         4, 36, 68, 100, 5, 37, 69, 101, 6, 38, 70, 102, 7, 39, 71, 103,
+         8, 40, 72, 104, 9, 41, 73, 105, 10, 42, 74, 106, 11, 43, 75, 107,
+         12, 44, 76, 108, 13, 45, 77, 109, 14, 46, 78, 110, 15, 47, 79, 111,
+         16, 48, 80, 112, 17, 49, 81, 113, 18, 50, 82, 114, 19, 51, 83, 115,
+         20, 52, 84, 116, 21, 53, 85, 117, 22, 54, 86, 118, 23, 55, 87, 119,
+         24, 56, 88, 120, 25, 57, 89, 121, 26, 58, 90, 122, 27, 59, 91, 123,
+         28, 60, 92, 124, 29, 61, 93, 125, 30, 62, 94, 126, 31, 63, 95, 127]
+
+BAKSHEESH.PERM128:
+  canonical_name: "BAKSHEESH bit permutation (canonical, Zorro-style)"
+  size: 128
+  year: [2026]
+  origin: "https://cic.iacr.org/p/2/4/31"
+  note: "Baksi, Breier, Chattopadhyay, Gerlich, Guilley, Gupta, Isobe, Jati, Jedlicka, Kim, Liu, Martinasek, Sakamoto, Seo, Shiba (IACR Communications in Cryptology, vol. 2, no. 4, 2026; eprint 2024/789). Canonical (non-GIFT-matching) variant transcribed from https://github.com/anubhab001/baksheesh; the alternate GIFT-matching variant is intentionally not catalogued."
+  perm: [96, 65, 34, 3, 64, 33, 2, 99, 32, 1, 98, 67, 0, 97, 66, 35,
+         100, 69, 38, 7, 68, 37, 6, 103, 36, 5, 102, 71, 4, 101, 70, 39,
+         104, 73, 42, 11, 72, 41, 10, 107, 40, 9, 106, 75, 8, 105, 74, 43,
+         108, 77, 46, 15, 76, 45, 14, 111, 44, 13, 110, 79, 12, 109, 78, 47,
+         112, 81, 50, 19, 80, 49, 18, 115, 48, 17, 114, 83, 16, 113, 82, 51,
+         116, 85, 54, 23, 84, 53, 22, 119, 52, 21, 118, 87, 20, 117, 86, 55,
+         120, 89, 58, 27, 88, 57, 26, 123, 56, 25, 122, 91, 24, 121, 90, 59,
+         124, 93, 62, 31, 92, 61, 30, 127, 60, 29, 126, 95, 28, 125, 94, 63]
