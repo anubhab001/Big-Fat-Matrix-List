@@ -1635,7 +1635,6 @@ SHA2.SMALLSIGMA0:
   symmetric: false
   rank: 32
   is_invertible: true
-  order: 49146
   hamming_weight: 93
   orbit: 32
   hamming_weight_per_row: [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 2, 2, 2]
@@ -1686,7 +1685,6 @@ SHA2.SMALLSIGMA1:
   symmetric: false
   rank: 32
   is_invertible: true
-  order: 65534
   hamming_weight: 86
   orbit: 32
   hamming_weight_per_row: [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2]

@@ -26,16 +26,16 @@ Last update: 31 July 2026 <!-- TODO: To be updated in UTC with each (major) comm
 
 ## Data Files
 
-Each YAML file holds entries binned by `max(rows, cols)`. For sizes up to $256$ the bin is the next power of two ($\le 16$, $17$ to $32$, $33$ to $64$, $65$ to $128$, $129$ to $256$); above $256$, each distinct size gets its own file. Every band ships with a sibling `<band>.md` index carrying a preview table.
+Each YAML file holds entries binned by `max(rows, cols)`. For sizes up to $256$ the bin is the next power of two ($1$ to $16$, $17$ to $32$, $33$ to $64$, $65$ to $128$, $129$ to $256$); above $256$, each distinct size gets its own file. Every band ships with a sibling `<band>.md` index carrying a preview table.
 
 ### Square Matrices
 
 | File | # Entry | Size band (columns) | Index |
 |:------|:-------:|:-------------|:------|
-| [`16bit.yaml`](16bit.yaml) | 38 | $\le 16$ | [`16bit.md`](16bit.md) |
+| [`16bit.yaml`](16bit.yaml) | 38 | $1$ to $16$ | [`16bit.md`](16bit.md) |
 | [`32bit.yaml`](32bit.yaml) | 46 | $17$ to $32$ | [`32bit.md`](32bit.md) |
 | [`64bit.yaml`](64bit.yaml) | 20 | $33$ to $64$ | [`64bit.md`](64bit.md) |
-| [`128bit.yaml`](128bit.yaml) | 12 | $65$ to $128$ | [`128bit.md`](128bit.md) |
+| [`128bit.yaml`](128bit.yaml) | 13 | $65$ to $128$ | [`128bit.md`](128bit.md) |
 | [`256bit.yaml`](256bit.yaml) | 8 | $129$ to $256$ | [`256bit.md`](256bit.md) |
 | [`283bit.yaml`](283bit.yaml) | 2 | $283$ | [`283bit.md`](283bit.md) |
 | [`320bit.yaml`](320bit.yaml) | 1 | $320$ | [`320bit.md`](320bit.md) |
@@ -48,7 +48,7 @@ Each YAML file holds entries binned by `max(rows, cols)`. For sizes up to $256$ 
 
 | File | # Entry | Size band (columns) | Index |
 |:------|:-------:|:-------------|:------|
-| [`rectangular16bit.yaml`](rectangular16bit.yaml) | 2 | $\le 16$ | [`rectangular16bit.md`](rectangular16bit.md) |
+| [`rectangular16bit.yaml`](rectangular16bit.yaml) | 2 | $1$ to $16$ | [`rectangular16bit.md`](rectangular16bit.md) |
 | [`rectangular32bit.yaml`](rectangular32bit.yaml) | 1 | $17$ to $32$ | [`rectangular32bit.md`](rectangular32bit.md) |
 | [`rectangular64bit.yaml`](rectangular64bit.yaml) | 1 | $33$ to $64$ | [`rectangular64bit.md`](rectangular64bit.md) |
 | [`rectangular128bit.yaml`](rectangular128bit.yaml) | 1 | $65$ to $128$ | [`rectangular128bit.md`](rectangular128bit.md) |
@@ -211,7 +211,7 @@ for m in gf128:
     print(m.name, m.rows, 'x', m.cols)
 
 pyjamask = bigfatmatrix.pyjamask        # MatrixGroup for PYJAMASK.M0..M3, MK
-print(len(pyjamask))                    # Prints 5
+print(len(pyjamask))                    # Prints 167
 ```
 
 ### Permutations
@@ -220,7 +220,7 @@ A bit-permutation reads either as the tuple or as the binary permutation matrix:
 
 ```python
 p = bigfatmatrix['GIFT.128']            # MatrixEntry('GIFT.128', perm size=128)
-print(p.size)                           # Prints 128
+print(p.size)                           # Prints 167
 print(p.perm[:8])                       # Prints (0, 33, 66, 99, 96, 1, 34, 67)
 
 P = p.as_permutation_matrix()           # Tuple of tuples with M[P[i]][i] = 1
@@ -267,7 +267,7 @@ m = bigfatmatrix['AES.MIXCOLUMN']
 
 ```python
 all_keys = bigfatmatrix.yaml.all_names()    # Sorted list of every UPPERCASE key
-print(len(all_keys))                        # Prints 166
+print(len(all_keys))                        # Prints 167
 data = bigfatmatrix.yaml.all_entries()      # Full dict: key -> raw YAML dict
 ```
 
@@ -277,7 +277,7 @@ Raw dictionary access is available via the `yaml` proxy:
 
 ```python
 data = bigfatmatrix.yaml.aes_mixcolumn      # Plain Python dict with all YAML fields
-print(data['rows'])                         # Prints 32
+print(data['rows'])                         # Prints 167
 print(data['year'])                         # Prints [1998, 2001] (raw list)
 data = bigfatmatrix.yaml['BAKSHEESH.T']     # Same, case-insensitive bracket access
 ```

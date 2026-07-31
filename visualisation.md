@@ -48,9 +48,10 @@ One render per entry, in the colour scheme of the [`linear-layers`](https://gith
 
 | &nbsp; | &nbsp; | &nbsp; | &nbsp; |
 |:---:|:---:|:---:|:---:|
-| <img src="__renders__/AES.SHIFTROW.png" width="192" alt="AES.SHIFTROW" /><br/>**AES.SHIFTROW**<br/><sub>128 &times; 128</sub> | <img src="__renders__/AES.SHIFTROWMIXCOLUMN.png" width="192" alt="AES.SHIFTROWMIXCOLUMN" /><br/>**AES.SHIFTROWMIXCOLUMN**<br/><sub>128 &times; 128</sub> | <img src="__renders__/ARIA.128.png" width="192" alt="ARIA.128" /><br/>**ARIA.128**<br/><sub>128 &times; 128</sub> | <img src="__renders__/BAKSHEESH.T.png" width="192" alt="BAKSHEESH.T" /><br/>**BAKSHEESH.T**<br/><sub>128 &times; 128</sub> |
-| <img src="__renders__/GF127.SQR.png" width="191" alt="GF127.SQR" /><br/>**GF127.SQR**<br/><sub>127 &times; 127</sub> | <img src="__renders__/GF128.SQR.png" width="192" alt="GF128.SQR" /><br/>**GF128.SQR**<br/><sub>128 &times; 128</sub> | <img src="__renders__/GLEEOK.THETA128B1.png" width="192" alt="GLEEOK.THETA128B1" /><br/>**GLEEOK.THETA128B1**<br/><sub>128 &times; 128</sub> | <img src="__renders__/GLEEOK.THETA128B2.png" width="192" alt="GLEEOK.THETA128B2" /><br/>**GLEEOK.THETA128B2**<br/><sub>128 &times; 128</sub> |
-| <img src="__renders__/GLEEOK.THETA128B3.png" width="192" alt="GLEEOK.THETA128B3" /><br/>**GLEEOK.THETA128B3**<br/><sub>128 &times; 128</sub> | <img src="__renders__/SPOOK.DBOX.png" width="192" alt="SPOOK.DBOX" /><br/>**SPOOK.DBOX**<br/><sub>128 &times; 128</sub> | &nbsp; | &nbsp; |
+| <img src="__renders__/AES.SHIFTROW.png" width="192" alt="AES.SHIFTROW" /><br/>**AES.SHIFTROW**<br/><sub>128 &times; 128</sub> | <img src="__renders__/AES.SHIFTROWMIXCOLUMN.png" width="192" alt="AES.SHIFTROWMIXCOLUMN" /><br/>**AES.SHIFTROWMIXCOLUMN**<br/><sub>128 &times; 128</sub> | <img src="__renders__/AETHER.png" width="96" alt="AETHER" /><br/>**AETHER**<br/><sub>? &times; ?</sub> | <img src="__renders__/ARIA.128.png" width="192" alt="ARIA.128" /><br/>**ARIA.128**<br/><sub>128 &times; 128</sub> |
+| <img src="__renders__/BAKSHEESH.T.png" width="192" alt="BAKSHEESH.T" /><br/>**BAKSHEESH.T**<br/><sub>128 &times; 128</sub> | <img src="__renders__/GF127.ECCSQR.png" width="191" alt="GF127.ECCSQR" /><br/>**GF127.ECCSQR**<br/><sub>127 &times; 127</sub> | <img src="__renders__/GF127.SQR.png" width="191" alt="GF127.SQR" /><br/>**GF127.SQR**<br/><sub>127 &times; 127</sub> | <img src="__renders__/GF128.SQR.png" width="192" alt="GF128.SQR" /><br/>**GF128.SQR**<br/><sub>128 &times; 128</sub> |
+| <img src="__renders__/GLEEOK.THETA128B1.png" width="192" alt="GLEEOK.THETA128B1" /><br/>**GLEEOK.THETA128B1**<br/><sub>128 &times; 128</sub> | <img src="__renders__/GLEEOK.THETA128B2.png" width="192" alt="GLEEOK.THETA128B2" /><br/>**GLEEOK.THETA128B2**<br/><sub>128 &times; 128</sub> | <img src="__renders__/GLEEOK.THETA128B3.png" width="192" alt="GLEEOK.THETA128B3" /><br/>**GLEEOK.THETA128B3**<br/><sub>128 &times; 128</sub> | <img src="__renders__/SPOOK.CLYDE.png" width="96" alt="SPOOK.CLYDE" /><br/>**SPOOK.CLYDE**<br/><sub>? &times; ?</sub> |
+| <img src="__renders__/SPOOK.DBOX.png" width="192" alt="SPOOK.DBOX" /><br/>**SPOOK.DBOX**<br/><sub>128 &times; 128</sub> | &nbsp; | &nbsp; | &nbsp; |
 
 ## [Matrices, 256bit](256bit.md)
 
@@ -82,6 +83,12 @@ One render per entry, in the colour scheme of the [`linear-layers`](https://gith
 | &nbsp; | &nbsp; | &nbsp; | &nbsp; |
 |:---:|:---:|:---:|:---:|
 | <img src="__renders__/GF1024.SQR.png" width="256" alt="GF1024.SQR" /><br/>**GF1024.SQR**<br/><sub>1024 &times; 1024</sub> | &nbsp; | &nbsp; | &nbsp; |
+
+## [Matrices, 1280bit](1280bit.md)
+
+| &nbsp; | &nbsp; | &nbsp; | &nbsp; |
+|:---:|:---:|:---:|:---:|
+| <img src="__renders__/ICEPOLE.png" width="256" alt="ICEPOLE" /><br/>**ICEPOLE**<br/><sub>1280 &times; 1280</sub> | &nbsp; | &nbsp; | &nbsp; |
 
 ## [Matrices, 1600bit](1600bit.md)
 
