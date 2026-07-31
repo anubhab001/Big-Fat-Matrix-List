@@ -1,18 +1,18 @@
 #!/usr/bin/env python3
 """
-bigfatmatrix.py — Big Fat Matrix List loader (generated using artificial intelligence)
+bigfatmatrix.py: Big-Fat-Matrix-List loader
 
-Two access modes:
+Three access modes:
 
   Python mode
   -----------
   import bigfatmatrix
   m = bigfatmatrix.aes_mixcolumn        # MatrixEntry (case-insensitive)
   m = bigfatmatrix['AES.MIXCOLUMN']     # bracket access (case-insensitive)
-  m.matrix                              # list of binary strings, one per row
+  m.matrix                              # tuple of binary strings, one per row
   m.rows, m.cols                        # dimensions
-  m.as_int_matrix()                     # list[list[int]] (0/1)
-  m.as_numpy()                          # numpy.ndarray (uint8) — needs numpy
+  m.as_int_matrix()                     # tuple of tuples of 0/1
+  m.as_numpy()                          # numpy.ndarray (uint8), needs numpy
   m.canonical_name                      # 'AES MixColumn'
   m.year, m.origin, m.note              # metadata as attributes
   m.to_dict()                           # raw YAML dict
@@ -21,10 +21,20 @@ Two access modes:
   aes.mixcolumn                         # AES.MIXCOLUMN entry
   for x in bigfatmatrix.gift: ...       # iterate over GIFT.* entries
 
-  Permutation entries expose a `.perm` property (list[int]) and `.size`.
+  Permutation entries expose a `.perm` property (tuple[int]) and `.size`, and
+  can also be read as a binary permutation matrix:
+  bigfatmatrix.as_matrix('GIFT.64')     # tuple of tuples (Matrix(GF(2)) in Sage)
+  bigfatmatrix['GIFT.64'].as_int_matrix()
+  bigfatmatrix['GIFT.64'].as_matrix_rows()
 
-  YAML/raw-dict mode
-  ------------------
+  Sage mode (auto-detected when running inside SageMath)
+  ------------------------------------------------------
+  from bigfatmatrix import aes_mixcolumn  # returns Matrix(GF(2), ...)
+  bigfatmatrix.present                    # returns sage.combinat.permutation.Permutation
+  m.to_sage()                             # explicit conversion in Python mode
+
+  YAML/raw-dict mode (works in both Python and Sage)
+  --------------------------------------------------
   bigfatmatrix.yaml['AES.MIXCOLUMN']    # raw YAML dict (case-insensitive)
   bigfatmatrix.yaml.all_names()         # list of every entry key
 
@@ -35,7 +45,10 @@ Two access modes:
 
 For `import bigfatmatrix` to work, this script and all `*.yaml` data files
 must live in the same directory, which must be either the current working
-directory or on `sys.path`.
+directory or on `sys.path`. Loading is lazy: no YAML file is read until the
+first access. A large size band is published as several `<band>.partNN.yaml`
+files; the loader merges it back into one entry, so the access API is the
+same either way.
 """
 
 from __future__ import annotations
@@ -93,6 +106,8 @@ def _do_load() -> None:
             "Install it with:  pip install pyyaml"
         ) from exc
 
+    parts: dict[str, dict[int, list]] = {}
+
     for fpath in sorted(_PUBLIC.glob('*.yaml')):
         with open(fpath, encoding='utf-8') as f:
             data = _safe_load(f)
@@ -102,9 +117,25 @@ def _do_load() -> None:
             if not isinstance(val, dict):
                 continue
             ukey = key.upper()
+            if 'matrix_part' in val:
+                # Matrix body split across `<band>.partNN.yaml` files, so that
+                # every published file stays small enough for GitHub to render.
+                parts.setdefault(ukey, {})[int(val['matrix_part'])] = \
+                    val.get('matrix') or []
+                if 'canonical_name' not in val:
+                    continue
+                val = {k: v for k, v in val.items()
+                       if k not in ('matrix', 'matrix_part', 'matrix_parts')}
             _raw[ukey] = val
             for alias in (val.get('aliases') or []):
                 _aliases[str(alias).upper()] = ukey
+
+    for ukey, chunks in parts.items():
+        rows: list = []
+        for idx in sorted(chunks):
+            rows.extend(chunks[idx])
+        if ukey in _raw:
+            _raw[ukey]['matrix'] = rows
     for key, val in list(_raw.items()):
         if isinstance(val, dict) and 'alias' in val:
             _aliases[key] = str(val['alias']).upper()
@@ -113,36 +144,50 @@ def _do_load() -> None:
 def _resolve(name: str) -> str | None:
     _ensure_loaded()
     uname = name.upper()
+    candidates = [uname]
+    if '_' in uname and '.' not in uname:
+        candidates.append(uname.replace('_', '.'))
     visited: set[str] = set()
-    while uname in _aliases and uname not in visited:
-        visited.add(uname)
-        uname = _aliases[uname]
-    return uname if uname in _raw else None
+    for cand in candidates:
+        cur = cand
+        while cur in _aliases and cur not in visited:
+            visited.add(cur)
+            cur = _aliases[cur]
+        if cur in _raw:
+            return cur
+    return None
 
 
 # ---------------------------------------------------------------------------
-# MatrixEntry — wrapper for a single matrix or permutation entry
+# MatrixEntry: wrapper for a single matrix or permutation entry
 # ---------------------------------------------------------------------------
+
+def _freeze(v):
+    """Sequence-valued fields are handed out as tuples, never as lists."""
+    if isinstance(v, (list, tuple)):
+        return tuple(_freeze(x) for x in v)
+    return v
+
 
 class MatrixEntry:
     """Attribute-access wrapper around a single YAML entry.
 
     Common fields:
         canonical_name : str
-        year           : list[int] | None
+        year           : tuple[int, ...] | None
         origin         : str | None
         note           : str | None
         involutory     : bool | None
 
     Matrix entries:
         rows, cols     : int
-        matrix         : list[str]  (each row is a '0'/'1' bit string)
-        as_int_matrix(): list[list[int]]
+        matrix         : tuple[str]  (each row is a '0'/'1' bit string)
+        as_int_matrix(): tuple[tuple[int, ...], ...]
         as_numpy()     : numpy.ndarray (uint8)
 
     Permutation entries:
         size           : int
-        perm           : list[int]
+        perm           : tuple[int, ...]
     """
 
     __slots__ = ('_name', '_data')
@@ -156,10 +201,10 @@ class MatrixEntry:
     def __getattr__(self, attr: str) -> Any:
         data = object.__getattribute__(self, '_data')
         if attr in data:
-            return data[attr]
+            return _freeze(data[attr])
         alt = attr.replace('_', '-')
         if alt in data:
-            return data[alt]
+            return _freeze(data[alt])
         raise AttributeError(
             f"MatrixEntry '{object.__getattribute__(self, '_name')}' "
             f"has no field '{attr}'"
@@ -181,20 +226,27 @@ class MatrixEntry:
 
     # -- matrix helpers ------------------------------------------------------
 
-    def as_int_matrix(self) -> list[list[int]]:
+    def as_int_matrix(self) -> tuple[tuple[int, ...], ...]:
+        """0/1 rows. A bit-permutation is returned as its permutation matrix."""
         data = object.__getattribute__(self, '_data')
         rows = data.get('matrix')
         if rows is None:
+            if 'perm' in data:
+                return self.as_permutation_matrix()
             raise ValueError(
                 f"MatrixEntry '{self.name}' has no `matrix` field"
             )
-        out: list[list[int]] = []
+        out: list[tuple[int, ...]] = []
         for r in rows:
             if isinstance(r, str):
-                out.append([1 if c == '1' else 0 for c in r])
+                out.append(tuple(1 if c == '1' else 0 for c in r))
             else:
-                out.append([int(b) for b in r])
-        return out
+                out.append(tuple(int(b) for b in r))
+        return tuple(out)
+
+    def as_matrix_rows(self) -> tuple[str, ...]:
+        """Bit-strings, one per row, for a matrix or a bit-permutation alike."""
+        return tuple(''.join(str(b) for b in row) for row in self.as_int_matrix())
 
     def as_numpy(self):
         try:
@@ -207,9 +259,9 @@ class MatrixEntry:
 
     # -- permutation helpers -------------------------------------------------
 
-    def as_permutation_matrix(self) -> list[list[int]]:
-        """Return the n×n permutation matrix M such that y = M·x acts as
-        y[P[i]] = x[i]  (i.e. M[P[i]][i] = 1).
+    def as_permutation_matrix(self) -> tuple[tuple[int, ...], ...]:
+        """Return the n x n permutation matrix M such that y = M x acts as
+        y[P[i]] = x[i], that is, M[P[i]][i] = 1.
         """
         data = object.__getattribute__(self, '_data')
         perm = data.get('perm')
@@ -221,7 +273,28 @@ class MatrixEntry:
         M = [[0] * n for _ in range(n)]
         for i, p in enumerate(perm):
             M[p][i] = 1
-        return M
+        return tuple(tuple(r) for r in M)
+
+    # -- Sage conversion ------------------------------------------------------
+
+    def to_sage(self, as_matrix: bool = False):
+        """Return the Sage-native object for this entry.
+
+        Matrix entries  → ``Matrix(GF(2), rows, cols, [[…]])``.
+        Permutation entries → ``sage.combinat.permutation.Permutation`` (1-based),
+        or, with ``as_matrix=True``, the ``Matrix(GF(2), …)`` of that permutation.
+        Requires SageMath to be importable.
+        """
+        data = object.__getattribute__(self, '_data')
+        if 'matrix' in data:
+            return _sage_matrix(self.as_int_matrix())
+        if 'perm' in data:
+            if as_matrix:
+                return _sage_matrix(self.as_permutation_matrix())
+            return _sage_permutation(data['perm'])
+        raise ValueError(
+            f"MatrixEntry '{self.name}' has neither `matrix` nor `perm`"
+        )
 
     # -- generic --------------------------------------------------------------
 
@@ -254,7 +327,7 @@ class MatrixEntry:
 
 
 # ---------------------------------------------------------------------------
-# MatrixGroup — entries sharing a dotted prefix (e.g. AES.*)
+# MatrixGroup: entries sharing a dotted prefix (e.g. AES.*)
 # ---------------------------------------------------------------------------
 
 class MatrixGroup:
@@ -299,7 +372,45 @@ class MatrixGroup:
 # Lookup helpers
 # ---------------------------------------------------------------------------
 
-def _get_entry(name: str) -> MatrixEntry | None:
+# ---------------------------------------------------------------------------
+# Sage detection / native conversion
+# ---------------------------------------------------------------------------
+
+def _in_sage() -> bool:
+    """Return True when running inside a SageMath session."""
+    return 'sage.all' in sys.modules or 'sage' in sys.modules
+
+
+def _sage_matrix(rows: list[list[int]]):
+    """Return a Sage Matrix over GF(2) for the given 0/1 rows."""
+    from sage.all import Matrix, GF   # type: ignore
+    nrows = len(rows)
+    ncols = len(rows[0]) if rows else 0
+    return Matrix(GF(2), nrows, ncols, rows)
+
+
+def _sage_permutation(perm: list[int]):
+    """Return a Sage Permutation (1-based) for the given 0-based mapping."""
+    from sage.all import Permutation   # type: ignore
+    return Permutation([int(p) + 1 for p in perm])
+
+
+def _wrap(name: str, data: dict):
+    """Inside Sage return native object directly; otherwise return MatrixEntry."""
+    if _in_sage():
+        try:
+            if 'matrix' in data:
+                rows = [[1 if (c == '1' if isinstance(r, str) else int(c))
+                         else 0 for c in r] for r in data['matrix']]
+                return _sage_matrix(rows)
+            if 'perm' in data:
+                return _sage_permutation(data['perm'])
+        except ImportError:
+            pass
+    return MatrixEntry(name, data)
+
+
+def _get_entry(name: str):
     _ensure_loaded()
     canonical = _resolve(name)
     if canonical is None:
@@ -307,7 +418,7 @@ def _get_entry(name: str) -> MatrixEntry | None:
     data = _raw[canonical]
     if 'alias' in data:
         return _get_entry(str(data['alias']))
-    return MatrixEntry(canonical, data)
+    return _wrap(canonical, data)
 
 
 def _get_raw(name: str) -> dict | None:
@@ -384,6 +495,26 @@ yaml = _YAMLProxy()
 # Wildcard search
 # ---------------------------------------------------------------------------
 
+def as_matrix(name: str):
+    """Matrix form of any entry, bit-permutation included.
+
+    Inside SageMath this is ``Matrix(GF(2), ...)``; in plain Python it is a
+    tuple of tuples of 0/1. A bit-permutation P becomes the matrix M with
+    ``M[P[i]][i] = 1``, so ``bigfatmatrix['GIFT.64'].perm`` gives the tuple
+    form and ``bigfatmatrix.as_matrix('GIFT.64')`` the matrix form.
+    """
+    data = _get_raw(name)
+    if data is None:
+        raise KeyError(f"bigfatmatrix: no entry '{name}'")
+    rows = MatrixEntry(name.upper(), data).as_int_matrix()
+    if _in_sage():
+        try:
+            return _sage_matrix(rows)
+        except ImportError:
+            pass
+    return rows
+
+
 def find(pattern: str) -> dict[str, MatrixEntry]:
     """Return entries whose UPPERCASE key matches *pattern* (fnmatch syntax)."""
     _ensure_loaded()
@@ -405,7 +536,7 @@ _RESERVED = {
     '__file__', '__spec__', '__loader__', '__path__',
     '__package__', '__builtins__', '__name__', '__doc__',
     '__class__', '__dict__',
-    'yaml', 'last_update', 'find',
+    'yaml', 'last_update', 'find', 'as_matrix',
     'MatrixEntry', 'MatrixGroup',
 }
 
@@ -430,7 +561,8 @@ def __dir__() -> list[str]:
     _ensure_loaded()
     return sorted(
         set(_raw.keys()) | set(_aliases.keys()) |
-        {'yaml', 'last_update', 'find', 'MatrixEntry', 'MatrixGroup'}
+        {'yaml', 'last_update', 'find', 'as_matrix', 'MatrixEntry',
+         'MatrixGroup'}
     )
 
 

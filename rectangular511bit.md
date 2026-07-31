@@ -1,0 +1,10 @@
+# Rectangular matrices in size 511
+
+Source data: [`rectangular511bit.yaml`](rectangular511bit.yaml).
+
+Entry count: 1.
+
+| Key | Preview | Shape | Year | Properties | Origin |
+|:----|:-------:|:-----:|:----:|:-----------|:-------|
+| **GF256.MUL**<br/>GF(2²⁵⁶), multiplication by x | <img src="__renders__/GF256.MUL.png" width="256" alt="GF256.MUL" /> | 256 x 511 | 1998 | - | [link](https://www.hpl.hp.com/techreports/98/HPL-98-135.pdf) |
+

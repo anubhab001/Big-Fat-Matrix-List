@@ -1,0 +1,1260 @@
+# Big-Fat-Matrix-List: matrices in size band 16bit.
+# Binned by column count (input width).
+
+AETHER.MB:
+  canonical_name: ["AETHER", "M_b"]
+  rows: 16
+  cols: 16
+  year: [2025]
+  cipher: true
+  origin: "https://tches.iacr.org/index.php/TCHES/article/view/12228"
+  paper_title: "Banik, Isobe, Rahman, Sakamoto et al. AETHER (IACR Transactions on Cryptographic Hardware and Embedded Systems)."
+  note: "MatrixMul of the AETHER inner function. Involutory 16x16 binary matrix over nibbles taken from Akleylek, Rijmen, Sakalli, Ozturk (2017); block form [[I,I,I,J],[I,I,J,I],[I,J,I,I],[J,I,I,I]] over 4x4 blocks, J the all-ones block. Applied to each of the two halves of the 128-bit state; on bits the half-state map is kron(AETHER.MB, I_4). See AETHER for the full 128-bit layer. Equal to the ARIA diffusion matrix up to a permutation of rows and columns, though not to ARIA itself; the two designs arrive at the same 16 x 16 involution by different routes."
+  formula: "(x0, ..., x15)^T <- M_b (x0, ..., x15)^T over 16 nibbles; entries of M_b are in GF(2), so on bits M_b acts as kron(M_b, I_4)."
+  involution: true
+  symmetric: true
+  rank: 16
+  is_invertible: true
+  order: 2
+  hamming_weight: 112
+  orbit: 8
+  trivium: "The aether was the medium that nineteenth-century physics posited for the propagation of electromagnetic waves."
+  hamming_weight_per_row: [7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7]
+  matrix:
+    - '1000100010001111'
+    - '0100010001001111'
+    - '0010001000101111'
+    - '0001000100011111'
+    - '1000100011111000'
+    - '0100010011110100'
+    - '0010001011110010'
+    - '0001000111110001'
+    - '1000111110001000'
+    - '0100111101000100'
+    - '0010111100100010'
+    - '0001111100010001'
+    - '1111100010001000'
+    - '1111010001000100'
+    - '1111001000100010'
+    - '1111000100010001'
+
+ARIA:
+  canonical_name: ["ARIA"]
+  rows: 16
+  cols: 16
+  year: [2003]
+  cipher: true
+  origin: "https://link.springer.com/chapter/10.1007/978-3-540-24691-6_32"
+  paper_title: "Kwon et al., ICISC 2003"
+  note: "Korean block cipher ARIA (involutory)."
+  involution: true
+  symmetric: true
+  rank: 16
+  is_invertible: true
+  order: 2
+  hamming_weight: 112
+  orbit: 16
+  hamming_weight_per_row: [7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7]
+  matrix:
+    - '0001101011000110'
+    - '0010010111001001'
+    - '0100101000111001'
+    - '1000010100110110'
+    - '1010010010010011'
+    - '0101100001100011'
+    - '1010000101101100'
+    - '0101001010011100'
+    - '1100100100100101'
+    - '1100011000011010'
+    - '0011011010000101'
+    - '0011100101001010'
+    - '0110001101011000'
+    - '1001001110100100'
+    - '1001110001010010'
+    - '0110110010100001'
+
+BKD21.A:
+  canonical_name: ["Baksi-Kumar-Dey", "16 × 16 binary, variant A"]
+  rows: 16
+  cols: 16
+  year: [2021]
+  cipher: false
+  origin: "https://eprint.iacr.org/2021/"
+  source: "(Ours): https://bitbucket.org/anubhab001/linear-layer-smt/"
+  involution: false
+  symmetric: true
+  rank: 16
+  is_invertible: true
+  order: 102
+  hamming_weight: 150
+  orbit: 16
+  hamming_weight_per_row: [9, 11, 8, 13, 10, 10, 8, 8, 11, 8, 7, 7, 11, 8, 11, 10]
+  matrix:
+    - '1011011110001100'
+    - '0111100111011101'
+    - '1101111101000000'
+    - '1111101010111111'
+    - '0111010111011001'
+    - '1010101101111010'
+    - '1011010010001101'
+    - '1110110001000011'
+    - '1101101011001111'
+    - '0110110110000011'
+    - '0001010000111110'
+    - '0101110000110010'
+    - '1101111010101011'
+    - '1101001010100011'
+    - '0001010111111111'
+    - '0101101111001110'
+
+BKD21.B:
+  canonical_name: ["Baksi-Kumar-Dey", "16 × 16 binary, variant B"]
+  rows: 16
+  cols: 16
+  year: [2021]
+  cipher: false
+  origin: "https://eprint.iacr.org/2021/"
+  source: "(Ours): https://bitbucket.org/anubhab001/linear-layer-smt/"
+  involution: false
+  symmetric: true
+  rank: 16
+  is_invertible: true
+  order: 102
+  hamming_weight: 150
+  orbit: 16
+  hamming_weight_per_row: [11, 8, 7, 7, 11, 8, 11, 10, 9, 11, 8, 13, 10, 10, 8, 8]
+  matrix:
+    - '1100111111011010'
+    - '1000001101101101'
+    - '0011111000010100'
+    - '0011001001011100'
+    - '1010101111011110'
+    - '1010001111010010'
+    - '1111111100010101'
+    - '1100111001011011'
+    - '1000110010110111'
+    - '1101110101111001'
+    - '0100000011011111'
+    - '1011111111111010'
+    - '1101100101110101'
+    - '0111101010101011'
+    - '1000110110110100'
+    - '0100001111101100'
+
+BKL16.S16:
+  canonical_name: ["Beierle-Kranz-Leander", "4 × 4 over GF(2⁴)"]
+  aliases: ["C_BeiKraLea16_4x4"]
+  rows: 16
+  cols: 16
+  year: [2016]
+  cipher: false
+  origin: "https://eprint.iacr.org/2016/119"
+  source: "URL: XZLBZ: https://github.com/xiangzejun/Optimizing_Implementations_of_Linear_Layers/blob/master/Implementations/C_BeiKraLea16_4x4_4.txt; NIST Circuit Complexity: https://csrc.nist.gov/Projects/circuit-complexity/list-of-circuits"
+  paper_title: "Bei-Kraan-Leander, ePrint 2016/119"
+  note: "Beierle-Kranz-Leander, CRYPTO 2016."
+  involution: false
+  symmetric: false
+  rank: 16
+  is_invertible: true
+  order: 20
+  hamming_weight: 80
+  orbit: 4
+  hamming_weight_per_row: [6, 5, 4, 5, 6, 5, 4, 5, 6, 5, 4, 5, 6, 5, 4, 5]
+  matrix:
+    - '1000100000011110'
+    - '0100010010010001'
+    - '0010001001001000'
+    - '0001000100101100'
+    - '1110100010000001'
+    - '0001010001001001'
+    - '1000001000100100'
+    - '1100000100010010'
+    - '0001111010001000'
+    - '1001000101000100'
+    - '0100100000100010'
+    - '0010110000010001'
+    - '1000000111101000'
+    - '0100100100010100'
+    - '0010010010000010'
+    - '0001001011000001'
+
+CHAM.RF1:
+  canonical_name: ["CHAM", "round function, variant 1"]
+  rows: 16
+  cols: 16
+  year: [2017]
+  cipher: true
+  origin: "https://link.springer.com/chapter/10.1007/978-3-319-78556-1_1"
+  source: "YJBS: https://www.mdpi.com/2076-3417/13/8/5156/pdf"
+  paper_title: "CHAM round function 1"
+  involution: false
+  symmetric: false
+  rank: 16
+  is_invertible: true
+  order: 16
+  hamming_weight: 48
+  orbit: 1
+  hamming_weight_per_row: [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3]
+  matrix:
+    - '1000000010000001'
+    - '1100000001000000'
+    - '0110000000100000'
+    - '0011000000010000'
+    - '0001100000001000'
+    - '0000110000000100'
+    - '0000011000000010'
+    - '0000001100000001'
+    - '1000000110000000'
+    - '0100000011000000'
+    - '0010000001100000'
+    - '0001000000110000'
+    - '0000100000011000'
+    - '0000010000001100'
+    - '0000001000000110'
+    - '0000000100000011'
+
+CHAM.RF2:
+  canonical_name: ["CHAM", "round function, variant 2"]
+  rows: 16
+  cols: 16
+  year: [2017]
+  cipher: true
+  origin: "https://link.springer.com/chapter/10.1007/978-3-319-78556-1_1"
+  source: "KRKJLK: https://link.springer.com/chapter/10.1007/978-3-319-78556-1_1"
+  paper_title: "CHAM round function 2"
+  involution: false
+  symmetric: false
+  rank: 16
+  is_invertible: true
+  order: 8
+  hamming_weight: 48
+  orbit: 1
+  hamming_weight_per_row: [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3]
+  matrix:
+    - '1000010000000001'
+    - '1100001000000000'
+    - '0110000100000000'
+    - '0011000010000000'
+    - '0001100001000000'
+    - '0000110000100000'
+    - '0000011000010000'
+    - '0000001100001000'
+    - '0000000110000100'
+    - '0000000011000010'
+    - '0000000001100001'
+    - '1000000000110000'
+    - '0100000000011000'
+    - '0010000000001100'
+    - '0001000000000110'
+    - '0000100000000011'
+
+DL18C:
+  canonical_name: ["Duval-Leurent", "4 × 4 over GF(2⁴)"]
+  rows: 16
+  cols: 16
+  year: [2018]
+  cipher: false
+  origin: "https://eprint.iacr.org/2018/260"
+  source: "Figure 7: https://eprint.iacr.org/2018/260.pdf"
+  note: "Duval-Leurent, ToSC 2018(2). 16x16 binary = 4x4 MDS over GF(2^4). TIGHT WITNESS for sw-XOR 8n+3 = 35 at n=4. NOT Saturnin's full-state expansion (Saturnin MixSlice is 16x16 over GF(2^4), binary expansion 256x256)."
+  formula: "4x4 MDS matrix over GF(2^4) in the ring F2[alpha], alpha a companion matrix; binary expansion 16x16."
+  involution: false
+  symmetric: false
+  rank: 16
+  is_invertible: true
+  order: 60
+  branch_number: 5
+  mds: true
+  hamming_weight: 93
+  orbit: 16
+  hamming_weight_per_row: [8, 7, 5, 5, 6, 6, 6, 6, 6, 5, 5, 5, 5, 6, 6, 6]
+  matrix:
+    - '0001100010111011'
+    - '1100010010011001'
+    - '0110001010001000'
+    - '0011000101000100'
+    - '1000000100101011'
+    - '0100110000011001'
+    - '0010011011001000'
+    - '0001001101100100'
+    - '1001100100011000'
+    - '1000100011000100'
+    - '0100010001100010'
+    - '0010001000110001'
+    - '0001100110000001'
+    - '1100100001001100'
+    - '0110010000100110'
+    - '0011001000010011'
+
+GF16.ECCSQR:
+  canonical_name: ["GF(2¹⁶)", "squaring, elliptic-curve representation"]
+  aliases: ["GF16ECCSQR"]
+  rows: 16
+  cols: 16
+  year: [1998]
+  cipher: false
+  origin: "https://www.hpl.hp.com/techreports/98/HPL-98-135.pdf"
+  note: "Frobenius map x -> x^2 over the field named next. Lowest-weight irreducible polynomial of this degree, as tabulated by Seroussi, Table of Low-Weight Binary Irreducible Polynomials, HP Laboratories technical report HPL-98-135."
+  formula: "Frobenius squaring x -> x^2 over GF(2^16); row i = output bit i, column j = input bit j."
+  involution: false
+  symmetric: false
+  rank: 16
+  is_invertible: true
+  order: 8
+  hamming_weight: 80
+  orbit: 16
+  hamming_weight_per_row: [5, 6, 7, 5, 6, 6, 6, 2, 6, 5, 6, 2, 5, 5, 6, 2]
+  matrix:
+    - '1000100010001001'
+    - '0000100100001111'
+    - '0000000110111101'
+    - '0000100000110110'
+    - '0100010101000110'
+    - '0000110000110101'
+    - '0000000111011100'
+    - '0000010000100000'
+    - '0010001000100111'
+    - '0000011000011010'
+    - '0000000011101110'
+    - '0000001000010000'
+    - '0001000100010011'
+    - '0000001100001101'
+    - '0000000001110111'
+    - '0000000100001000'
+
+GF16.SQR:
+  canonical_name: ["GF(2¹⁶)", "squaring"]
+  rows: 16
+  cols: 16
+  year: [1998]
+  cipher: false
+  origin: "https://www.hpl.hp.com/techreports/98/HPL-98-135.pdf"
+  note: "Frobenius map x -> x^2 over the field named next. Lowest-weight irreducible polynomial of this degree, as tabulated by Seroussi, Table of Low-Weight Binary Irreducible Polynomials, HP Laboratories technical report HPL-98-135."
+  formula: "Frobenius squaring map x -> x^2 over GF(2^16) expressed as a 16x16 matrix over GF(2). Column j (j=0..15) is the bit-vector of x^(2j) mod p(x), where p(x) is the irreducible degree-16 polynomial fixing the field representation."
+  involution: false
+  symmetric: false
+  rank: 16
+  is_invertible: true
+  order: 16
+  hamming_weight: 45
+  orbit: 16
+  hamming_weight_per_row: [2, 3, 4, 3, 3, 3, 3, 3, 3, 3, 2, 3, 2, 3, 2, 3]
+  matrix:
+    - '1000000010000000'
+    - '0000000010000011'
+    - '0100000001000011'
+    - '0000000011000001'
+    - '0010000000100010'
+    - '0000000011100000'
+    - '0001000000010010'
+    - '0000000001110000'
+    - '0000100000001001'
+    - '0000000000111000'
+    - '0000010000000100'
+    - '0000000000011100'
+    - '0000001000000010'
+    - '0000000000001110'
+    - '0000000100000001'
+    - '0000000000000111'
+
+GF4.SQR:
+  canonical_name: ["GF(2⁴)", "squaring"]
+  rows: 4
+  cols: 4
+  year: [1998]
+  cipher: false
+  origin: "https://www.hpl.hp.com/techreports/98/HPL-98-135.pdf"
+  note: "Frobenius map x -> x^2 over the field named next. Lowest-weight irreducible polynomial of this degree, as tabulated by Seroussi, Table of Low-Weight Binary Irreducible Polynomials, HP Laboratories technical report HPL-98-135."
+  formula: "Frobenius squaring map x -> x^2 over GF(2^4) expressed as a 4x4 matrix over GF(2). Column j (j=0..3) is the bit-vector of x^(2j) mod p(x), where p(x) is the irreducible degree-4 polynomial fixing the field representation."
+  involution: false
+  symmetric: false
+  rank: 4
+  is_invertible: true
+  order: 4
+  hamming_weight: 6
+  orbit: 4
+  hamming_weight_per_row: [2, 1, 2, 1]
+  matrix:
+    - '1010'
+    - '0010'
+    - '0101'
+    - '0001'
+
+GF8.ECCSQR:
+  canonical_name: ["GF(2⁸)", "squaring, elliptic-curve representation"]
+  aliases: ["GF8ECCSQR"]
+  rows: 8
+  cols: 8
+  year: [2001]
+  cipher: false
+  origin: "https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.197-upd1.pdf"
+  note: "Frobenius map x -> x^2 over the field named next. x^8 + x^4 + x^3 + x + 1, the Rijndael polynomial of FIPS 197; it is also the lowest-weight irreducible polynomial of degree 8."
+  formula: "Frobenius squaring x -> x^2 over GF(2^8) / (x^8 + x^4 + x^3 + 1); row i = output bit i, column j = input bit j. Row multiset [28, 72, 118, 124, 144, 176, 232, 237] reading row r as sum_c M[r][c] << c."
+  involution: false
+  symmetric: false
+  rank: 8
+  is_invertible: true
+  order: 4
+  hamming_weight: 30
+  orbit: 8
+  hamming_weight_per_row: [6, 5, 3, 3, 5, 2, 2, 4]
+  matrix:
+    - '10110111'
+    - '00111110'
+    - '00001101'
+    - '00111000'
+    - '01101110'
+    - '00010010'
+    - '00001001'
+    - '00010111'
+
+GF8.SQR:
+  canonical_name: ["GF(2⁸)", "squaring"]
+  rows: 8
+  cols: 8
+  year: [2001]
+  cipher: false
+  origin: "https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.197-upd1.pdf"
+  note: "Frobenius map x -> x^2 over the field named next. x^8 + x^4 + x^3 + x + 1, the Rijndael polynomial of FIPS 197; it is also the lowest-weight irreducible polynomial of degree 8."
+  formula: "Frobenius squaring map x -> x^2 over GF(2^8) expressed as a 8x8 matrix over GF(2). Column j (j=0..7) is the bit-vector of x^(2j) mod p(x), where p(x) is the irreducible degree-8 polynomial fixing the field representation."
+  involution: false
+  symmetric: false
+  rank: 8
+  is_invertible: true
+  order: 8
+  hamming_weight: 21
+  orbit: 8
+  hamming_weight_per_row: [3, 3, 2, 4, 3, 2, 2, 2]
+  matrix:
+    - '10001010'
+    - '00001011'
+    - '01000100'
+    - '00001111'
+    - '00101001'
+    - '00000110'
+    - '00010100'
+    - '00000011'
+
+JOLTIK:
+  canonical_name: ["Joltik"]
+  rows: 16
+  cols: 16
+  year: [2014]
+  cipher: true
+  origin: "https://competitions.cr.yp.to/round1/joltikv11.pdf"
+  source: "NIST Circuit Complexity: https://csrc.nist.gov/Projects/circuit-complexity/list-of-circuits"
+  note: "MixColumns of Joltik. The same matrix is the involutory 4 x 4 over GF(2^4) of Sim, Khoo, Oggier and Peyrin (FSE 2015), which the catalogue held separately as SKOP15.IS16 until that key was retired in favour of the earlier publication."
+  involution: true
+  symmetric: false
+  rank: 16
+  is_invertible: true
+  order: 2
+  hamming_weight: 88
+  orbit: 8
+  hamming_weight_per_row: [7, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5]
+  matrix:
+    - '1000001011001110'
+    - '0100001100100001'
+    - '0010100100011000'
+    - '0001010010001100'
+    - '0010100011101100'
+    - '0011010000010010'
+    - '1001001010000001'
+    - '0100000111001000'
+    - '1100111010000010'
+    - '0010000101000011'
+    - '0001100000101001'
+    - '1000110000010100'
+    - '1110110000101000'
+    - '0001001000110100'
+    - '1000000110010010'
+    - '1100100001000001'
+
+JPST17.IS16:
+  canonical_name: ["Jean-Peyrin-Sim-Tourteaux", "M₄,ᵢ,₄"]
+  aliases: ["BEANIE.MIXCOLUMNS", "M_{4,i,4}", "ePrint_JeaPeySim_i_4x4_4", "ePrint_JeaPeySim_i_4x4_8"]
+  rows: 16
+  cols: 16
+  year: [2017]
+  cipher: false
+  origin: "https://eprint.iacr.org/2017/101"
+  source: "URL: XZLBZ: https://github.com/xiangzejun/Optimizing_Implementations_of_Linear_Layers/blob/master/Implementations/ePrint_JeaPeySim_i_4x4_4.txt; NIST Circuit Complexity: https://csrc.nist.gov/Projects/circuit-complexity/list-of-circuits"
+  paper_title: "Jean, Peyrin, Sim, Tourteaux, ePrint 2017/101"
+  note: "Involutory MDS 4x4 matrix over GF(2^4)/0x13 (branch number 5). Adopted unchanged as the MixColumns of BEANIE (Gerhalter et al., IACR Transactions on Symmetric Cryptology 2025), where it is cited as M_{4,i,4} of ePrint 2017/101, Subsection 5.4; BEANIE's ShiftRows is catalogued as BEANIE.SR in permutations.yaml."
+  involution: true
+  symmetric: false
+  rank: 16
+  is_invertible: true
+  order: 2
+  hamming_weight: 84
+  orbit: 16
+  hamming_weight_per_row: [5, 5, 4, 4, 7, 5, 6, 6, 7, 5, 5, 5, 6, 5, 4, 5]
+  matrix:
+    - '0001100010001100'
+    - '1001010001000010'
+    - '0100001000100001'
+    - '0010000100011000'
+    - '1000001011111000'
+    - '0100001110000100'
+    - '0010100111000010'
+    - '0001010011100001'
+    - '1110110000101000'
+    - '0001001000110100'
+    - '1000000110010010'
+    - '1100100001000001'
+    - '1000111010000001'
+    - '0100000101001001'
+    - '0010100000100100'
+    - '0001110000010010'
+
+JPST17.S16:
+  canonical_name: ["Jean-Peyrin-Sim-Tourteaux", "4 × 4 over GF(2⁴)"]
+  aliases: ["ePrint_JeaPeySim_4x4_4", "ePrint_JeaPeySim_4x4_8"]
+  rows: 16
+  cols: 16
+  year: [2017]
+  cipher: false
+  origin: "https://eprint.iacr.org/2017/101"
+  source: "URL: XZLBZ: https://github.com/xiangzejun/Optimizing_Implementations_of_Linear_Layers/blob/master/Implementations/ePrint_JeaPeySim_4x4_4.txt; NIST Circuit Complexity: https://csrc.nist.gov/Projects/circuit-complexity/list-of-circuits"
+  paper_title: "Jean, Peyrin, Sim, Tourteaux, ePrint 2017/101"
+  involution: false
+  symmetric: false
+  rank: 16
+  is_invertible: true
+  order: 4095
+  hamming_weight: 77
+  orbit: 16
+  hamming_weight_per_row: [4, 5, 4, 4, 6, 5, 4, 5, 6, 5, 4, 5, 6, 5, 4, 5]
+  matrix:
+    - '1000100010000001'
+    - '0100010001001001'
+    - '0010001000100100'
+    - '0001000100010010'
+    - '1000000111101000'
+    - '0100100100010100'
+    - '0010010010000010'
+    - '0001001011000001'
+    - '0001111010001000'
+    - '1001000101000100'
+    - '0100100000100010'
+    - '0010110000010001'
+    - '1110100000011000'
+    - '0001010010010100'
+    - '1000001001000010'
+    - '1100000100100001'
+
+KLSW17.S16:
+  canonical_name: ["Kranz-Leander-Stoffelen-Wiemer", "M, 4 × 4 over GF(2⁴)"]
+  rows: 16
+  cols: 16
+  year: [2017]
+  cipher: false
+  origin: "https://tosc.iacr.org/index.php/ToSC/article/view/805"
+  source: "NIST Circuit Complexity: https://csrc.nist.gov/Projects/circuit-complexity/list-of-circuits"
+  paper_title: "Kranz, Leander, Stoffelen, Wiemer. Shorter Linear Straight-Line Programs for MDS Matrices (IACR Transactions on Symmetric Cryptology 2017(4))."
+  note: "MDS matrix M of KLSW17. Body taken from the NIST Circuit Complexity project, which also publishes the best circuit it holds for it."
+  involution: false
+  symmetric: false
+  rank: 16
+  is_invertible: true
+  order: 12
+  branch_number: 5
+  mds: true
+  hamming_weight: 108
+  orbit: 8
+  hamming_weight_per_row: [8, 7, 8, 4, 8, 7, 8, 4, 8, 7, 8, 4, 8, 7, 8, 4]
+  matrix:
+    - '0001001111011100'
+    - '0010100111000101'
+    - '0100110001011011'
+    - '1000010000100001'
+    - '0011000111001101'
+    - '1001001001011100'
+    - '1100010010110101'
+    - '0100100000010010'
+    - '1101110000010011'
+    - '1100010100101001'
+    - '0101101101001100'
+    - '0010000110000100'
+    - '1100110100110001'
+    - '0101110010010010'
+    - '1011010111000100'
+    - '0001001001001000'
+
+LED.MIXCOLUMNS:
+  canonical_name: ["LED", "MixColumns"]
+  rows: 16
+  cols: 16
+  year: [2011]
+  cipher: true
+  origin: "https://eprint.iacr.org/2012/600"
+  note: "LED block cipher 16x16 MixColumns."
+  involution: false
+  symmetric: false
+  rank: 16
+  is_invertible: true
+  order: 255
+  hamming_weight: 124
+  orbit: 16
+  hamming_weight_per_row: [4, 5, 7, 4, 8, 11, 9, 7, 10, 9, 10, 10, 7, 6, 8, 9]
+  matrix:
+    - '0010100001000100'
+    - '1001010000100010'
+    - '1100001010011001'
+    - '0100000110001000'
+    - '1001011010100110'
+    - '1100101111011011'
+    - '0110010111100101'
+    - '0010110001011100'
+    - '0101111111010001'
+    - '1010011111101000'
+    - '1101001111110100'
+    - '1011111010100011'
+    - '0100010001110101'
+    - '0010001000111010'
+    - '1001100100011101'
+    - '1000100011111011'
+
+LED.MIXCOLUMNSSERIAL:
+  canonical_name: ["LED", "MixColumnsSerial"]
+  rows: 16
+  cols: 16
+  year: [2011]
+  cipher: true
+  origin: "https://eprint.iacr.org/2012/600"
+  note: "Serial / recursive variant."
+  involution: false
+  symmetric: false
+  rank: 16
+  is_invertible: true
+  order: 255
+  hamming_weight: 32
+  orbit: 16
+  hamming_weight_per_row: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 4, 5, 7, 4]
+  matrix:
+    - '0000100000000000'
+    - '0000010000000000'
+    - '0000001000000000'
+    - '0000000100000000'
+    - '0000000010000000'
+    - '0000000001000000'
+    - '0000000000100000'
+    - '0000000000010000'
+    - '0000000000001000'
+    - '0000000000000100'
+    - '0000000000000010'
+    - '0000000000000001'
+    - '0010100001000100'
+    - '1001010000100010'
+    - '1100001010011001'
+    - '0100000110001000'
+
+LS16.S16:
+  canonical_name: ["Liu-Sim", "4 × 4 over GF(2⁴)"]
+  aliases: ["FSE_LimSim16", "FSE_LiuSim16", "FSE_LimSim16_4x4_4", "FSE_LiuSim16_8x8_8"]
+  rows: 16
+  cols: 16
+  year: [2016]
+  cipher: false
+  origin: "https://tosc.iacr.org/index.php/ToSC"
+  source: "URL: XZLBZ: https://github.com/xiangzejun/Optimizing_Implementations_of_Linear_Layers/blob/master/Implementations/FSE_LimSim16_4x4_4.txt; NIST Circuit Complexity: https://csrc.nist.gov/Projects/circuit-complexity/list-of-circuits"
+  involution: false
+  symmetric: false
+  rank: 16
+  is_invertible: true
+  order: 60
+  hamming_weight: 76
+  orbit: 4
+  hamming_weight_per_row: [5, 5, 5, 4, 5, 5, 5, 4, 5, 5, 5, 4, 5, 5, 5, 4]
+  matrix:
+    - '1000100011000010'
+    - '0100010000100011'
+    - '0010001000011001'
+    - '0001000110000100'
+    - '0010100010001100'
+    - '0011010001000010'
+    - '1001001000100001'
+    - '0100000100011000'
+    - '1100001010001000'
+    - '0010001101000100'
+    - '0001100100100010'
+    - '1000010000010001'
+    - '1000110000101000'
+    - '0100001000110100'
+    - '0010000110010010'
+    - '0001100001000001'
+
+LW16.A16:
+  canonical_name: ["Li-Wang", "4 × 4 over GF(2⁴), variant A"]
+  aliases: ["FSE_LiWang16_4x4_4"]
+  rows: 16
+  cols: 16
+  year: [2016]
+  cipher: false
+  origin: "https://tosc.iacr.org/index.php/ToSC"
+  source: "URL: XZLBZ: https://github.com/xiangzejun/Optimizing_Implementations_of_Linear_Layers/blob/master/Implementations/FSE_LiWang16_4x4_4.txt; NIST Circuit Complexity: https://csrc.nist.gov/Projects/circuit-complexity/list-of-circuits"
+  involution: false
+  symmetric: false
+  rank: 16
+  is_invertible: true
+  order: 60
+  hamming_weight: 76
+  orbit: 4
+  hamming_weight_per_row: [5, 5, 4, 5, 5, 5, 4, 5, 5, 5, 4, 5, 5, 5, 4, 5]
+  matrix:
+    - '1000100001000110'
+    - '0100010000100011'
+    - '0010001000011000'
+    - '0001000110010100'
+    - '0110100010000100'
+    - '0011010001000010'
+    - '1000001000100001'
+    - '0100000100011001'
+    - '0100011010001000'
+    - '0010001101000100'
+    - '0001100000100010'
+    - '1001010000010001'
+    - '1000010001101000'
+    - '0100001000110100'
+    - '0010000110000010'
+    - '0001100101000001'
+
+LW16.B16:
+  canonical_name: ["Li-Wang", "4 × 4 over GF(2⁴), variant B"]
+  aliases: ["FSE_LiWang16_4x4_4"]
+  rows: 16
+  cols: 16
+  year: [2016]
+  cipher: false
+  origin: "https://tosc.iacr.org/index.php/ToSC"
+  source: "BDKCI: https://bitbucket.org/vdasu_edu/boyar-peralta-xor3/src/master/matrices/FSE_LiWang16_4x4_4_2.txt"
+  involution: false
+  symmetric: false
+  rank: 16
+  is_invertible: true
+  order: 255
+  hamming_weight: 77
+  orbit: 16
+  hamming_weight_per_row: [5, 4, 4, 4, 5, 5, 6, 4, 5, 5, 6, 4, 5, 5, 6, 4]
+  matrix:
+    - '0110100010001000'
+    - '0001010001000100'
+    - '0100001000100010'
+    - '1000000100010001'
+    - '1000100001000110'
+    - '0100010010100001'
+    - '0010001010110100'
+    - '0001000100101000'
+    - '1000011010000100'
+    - '0100000101001010'
+    - '0010010000101011'
+    - '0001100000010010'
+    - '1000010001101000'
+    - '0100101000010100'
+    - '0010101101000010'
+    - '0001001010000001'
+
+LW16.I16:
+  canonical_name: ["Li-Wang", "involutory 4 × 4 over GF(2⁴)"]
+  aliases: ["FSE_LiWang16_4x4_4"]
+  rows: 16
+  cols: 16
+  year: [2016]
+  cipher: false
+  origin: "https://tosc.iacr.org/index.php/ToSC"
+  source: "URL: XZLBZ: https://github.com/xiangzejun/Optimizing_Implementations_of_Linear_Layers/blob/master/Implementations/FSE_LiWang16_i_4x4_4.txt; NIST Circuit Complexity: https://csrc.nist.gov/Projects/circuit-complexity/list-of-circuits"
+  involution: true
+  symmetric: false
+  rank: 16
+  is_invertible: true
+  order: 2
+  hamming_weight: 88
+  orbit: 8
+  hamming_weight_per_row: [7, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5]
+  matrix:
+    - '1000010011011001'
+    - '0100101010000010'
+    - '0010000110011000'
+    - '0001011000100100'
+    - '0100100010011101'
+    - '1010010000101000'
+    - '0001001010001001'
+    - '0110000101000010'
+    - '1101100110000100'
+    - '1000001001001010'
+    - '1001100000100001'
+    - '0010010000010110'
+    - '1001110101001000'
+    - '0010100010100100'
+    - '1000100100010010'
+    - '0100001001100001'
+
+MIDORI:
+  canonical_name: ["Midori"]
+  cipher: true
+  alias: "PRIDE.L0"
+
+PRIDE.L0:
+  canonical_name: ["PRIDE", "L₀"]
+  reuse: ["MANTIS.MIXCOLUMNS", "MIDORI.MIXCOLUMN"]
+  rows: 16
+  cols: 16
+  year: [2014]
+  cipher: true
+  origin: "https://eprint.iacr.org/2014/453"
+  source: "URL: Section G: https://eprint.iacr.org/2014/453.pdf; NIST Circuit Complexity: https://csrc.nist.gov/Projects/circuit-complexity/list-of-circuits"
+  note: "L0 of PRIDE, a circulant almost-MDS binary matrix of branch number 4, and the entry that holds the body for this matrix. The MixColumn of Midori is the same matrix, byte for byte, though the Midori specification attaches no citation to it and remarks only that circulant-type almost-MDS matrices are adopted in PRINCE, PRIDE, FIDES and CLOC; MANTIS in turn says of its MixColumns that each column is multiplied by the binary matrix used in Midori. Both are therefore recorded as a reuse rather than as a renaming. Fides (2013) is earlier still and uses the same 4 x 4 almost-MDS pattern, but over 5-bit and 6-bit cells, which makes its binary matrix 20 x 20 and 24 x 24 rather than this one; it is not a reuse of this entry."
+  involution: true
+  symmetric: true
+  rank: 16
+  is_invertible: true
+  order: 2
+  hamming_weight: 48
+  orbit: 1
+  hamming_weight_per_row: [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3]
+  matrix:
+    - '0000100010001000'
+    - '0000010001000100'
+    - '0000001000100010'
+    - '0000000100010001'
+    - '1000000010001000'
+    - '0100000001000100'
+    - '0010000000100010'
+    - '0001000000010001'
+    - '1000100000001000'
+    - '0100010000000100'
+    - '0010001000000010'
+    - '0001000100000001'
+    - '1000100010000000'
+    - '0100010001000000'
+    - '0010001000100000'
+    - '0001000100010000'
+
+PRIDE.L1:
+  canonical_name: ["PRIDE", "L₁"]
+  aliases: ["L1"]
+  rows: 16
+  cols: 16
+  year: [2014]
+  cipher: true
+  origin: "https://eprint.iacr.org/2014/453"
+  source: "Section G: https://eprint.iacr.org/2014/453.pdf"
+  involution: false
+  symmetric: false
+  rank: 16
+  is_invertible: true
+  order: 16
+  hamming_weight: 48
+  orbit: 16
+  hamming_weight_per_row: [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3]
+  matrix:
+    - '1100000000010000'
+    - '0110000000001000'
+    - '0011000000000100'
+    - '0001100000000010'
+    - '0000110000000001'
+    - '0000011010000000'
+    - '0000001101000000'
+    - '1000000100100000'
+    - '1000000000011000'
+    - '0100000000001100'
+    - '0010000000000110'
+    - '0001000000000011'
+    - '0000100010000001'
+    - '0000010011000000'
+    - '0000001001100000'
+    - '0000000100110000'
+
+PRIDE.L2:
+  canonical_name: ["PRIDE", "L₂"]
+  aliases: ["L2"]
+  rows: 16
+  cols: 16
+  year: [2014]
+  cipher: true
+  origin: "https://eprint.iacr.org/2014/453"
+  source: "Section G: https://eprint.iacr.org/2014/453.pdf"
+  involution: false
+  symmetric: false
+  rank: 16
+  is_invertible: true
+  order: 16
+  hamming_weight: 48
+  orbit: 16
+  hamming_weight_per_row: [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3]
+  matrix:
+    - '0000110000000001'
+    - '0000011010000000'
+    - '0000001101000000'
+    - '1000000100100000'
+    - '1100000000010000'
+    - '0110000000001000'
+    - '0011000000000100'
+    - '0001100000000010'
+    - '0000100010000001'
+    - '0000010011000000'
+    - '0000001001100000'
+    - '0000000100110000'
+    - '1000000000011000'
+    - '0100000000001100'
+    - '0010000000000110'
+    - '0001000000000011'
+
+PRIDE.L3:
+  canonical_name: ["PRIDE", "L₃"]
+  aliases: ["L3"]
+  rows: 16
+  cols: 16
+  year: [2014]
+  cipher: true
+  origin: "https://eprint.iacr.org/2014/453"
+  source: "Section G: https://eprint.iacr.org/2014/453.pdf"
+  involution: true
+  symmetric: true
+  rank: 16
+  is_invertible: true
+  order: 2
+  hamming_weight: 48
+  orbit: 1
+  hamming_weight_per_row: [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3]
+  matrix:
+    - '1000100000001000'
+    - '0100010000000100'
+    - '0010001000000010'
+    - '0001000100000001'
+    - '1000100010000000'
+    - '0100010001000000'
+    - '0010001000100000'
+    - '0001000100010000'
+    - '0000100010001000'
+    - '0000010001000100'
+    - '0000001000100010'
+    - '0000000100010001'
+    - '1000000010001000'
+    - '0100000001000100'
+    - '0010000000100010'
+    - '0001000000010001'
+
+PRINCE.M0:
+  canonical_name: ["PRINCE", "M₀"]
+  aliases: ["M0"]
+  rows: 16
+  cols: 16
+  year: [2012]
+  cipher: true
+  origin: "https://eprint.iacr.org/2012/529"
+  source: "URL: Section 3.3: https://eprint.iacr.org/2012/529.pdf; NIST Circuit Complexity: https://csrc.nist.gov/Projects/circuit-complexity/list-of-circuits"
+  involution: true
+  symmetric: true
+  rank: 16
+  is_invertible: true
+  order: 2
+  hamming_weight: 48
+  orbit: 8
+  hamming_weight_per_row: [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3]
+  matrix:
+    - '0000100010001000'
+    - '0100000001000100'
+    - '0010001000000010'
+    - '0001000100010000'
+    - '1000100010000000'
+    - '0000010001000100'
+    - '0010000000100010'
+    - '0001000100000001'
+    - '1000100000001000'
+    - '0100010001000000'
+    - '0000001000100010'
+    - '0001000000010001'
+    - '1000000010001000'
+    - '0100010000000100'
+    - '0010001000100000'
+    - '0000000100010001'
+
+PRINCE.M1:
+  canonical_name: ["PRINCE", "M₁"]
+  aliases: ["M1"]
+  rows: 16
+  cols: 16
+  year: [2012]
+  cipher: true
+  origin: "https://eprint.iacr.org/2012/529"
+  source: "Section 3.3: https://eprint.iacr.org/2012/529.pdf"
+  involution: true
+  symmetric: true
+  rank: 16
+  is_invertible: true
+  order: 2
+  hamming_weight: 48
+  orbit: 8
+  hamming_weight_per_row: [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3]
+  matrix:
+    - '1000100010000000'
+    - '0000010001000100'
+    - '0010000000100010'
+    - '0001000100000001'
+    - '1000100000001000'
+    - '0100010001000000'
+    - '0000001000100010'
+    - '0001000000010001'
+    - '1000000010001000'
+    - '0100010000000100'
+    - '0010001000100000'
+    - '0000000100010001'
+    - '0000100010001000'
+    - '0100000001000100'
+    - '0010001000000010'
+    - '0001000100010000'
+
+QARMA.S64:
+  canonical_name: ["QARMA", "QARMA-64 M"]
+  rows: 16
+  cols: 16
+  year: [2017]
+  cipher: true
+  origin: "https://eprint.iacr.org/2016/444"
+  source: "URL: Section 2.3: https://eprint.iacr.org/2016/444.pdf; NIST Circuit Complexity: https://csrc.nist.gov/Projects/circuit-complexity/list-of-circuits"
+  involution: true
+  symmetric: false
+  rank: 16
+  is_invertible: true
+  order: 2
+  hamming_weight: 48
+  orbit: 4
+  hamming_weight_per_row: [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3]
+  matrix:
+    - '0000000100100001'
+    - '0000100000011000'
+    - '0000010010000100'
+    - '0000001001000010'
+    - '0001000000010010'
+    - '1000000010000001'
+    - '0100000001001000'
+    - '0010000000100100'
+    - '0010000100000001'
+    - '0001100000001000'
+    - '1000010000000100'
+    - '0100001000000010'
+    - '0001001000010000'
+    - '1000000110000000'
+    - '0100100001000000'
+    - '0010010000100000'
+
+SKINNY:
+  canonical_name: ["SKINNY"]
+  rows: 16
+  cols: 16
+  year: [2016]
+  cipher: true
+  origin: "https://eprint.iacr.org/2016/660"
+  source: "NIST Circuit Complexity: https://csrc.nist.gov/Projects/circuit-complexity/list-of-circuits"
+  note: "16x16 binary almost-MDS."
+  involution: false
+  symmetric: false
+  rank: 16
+  is_invertible: true
+  order: 4
+  hamming_weight: 32
+  orbit: 16
+  hamming_weight_per_row: [3, 3, 3, 3, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2]
+  matrix:
+    - '1000000010001000'
+    - '0100000001000100'
+    - '0010000000100010'
+    - '0001000000010001'
+    - '1000000000000000'
+    - '0100000000000000'
+    - '0010000000000000'
+    - '0001000000000000'
+    - '0000100010000000'
+    - '0000010001000000'
+    - '0000001000100000'
+    - '0000000100010000'
+    - '1000000010000000'
+    - '0100000001000000'
+    - '0010000000100000'
+    - '0001000000010000'
+
+SKOP15.S16:
+  canonical_name: ["Sim-Khoo-Oggier-Peyrin", "4 × 4 over GF(2⁴)"]
+  aliases: ["FSE_SKOP15_4x4_4", "FSE_SKOP15_4x4_8"]
+  rows: 16
+  cols: 16
+  year: [2015]
+  cipher: false
+  origin: "https://tosc.iacr.org/"
+  source: "URL: XZLBZ: https://github.com/xiangzejun/Optimizing_Implementations_of_Linear_Layers/blob/master/Implementations/FSE_SKOP15_4x4_4.txt; NIST Circuit Complexity: https://csrc.nist.gov/Projects/circuit-complexity/list-of-circuits"
+  involution: false
+  symmetric: false
+  rank: 16
+  is_invertible: true
+  order: 30
+  hamming_weight: 84
+  orbit: 8
+  hamming_weight_per_row: [5, 6, 5, 5, 5, 6, 5, 5, 5, 6, 5, 5, 5, 6, 5, 5]
+  matrix:
+    - '1000000101001100'
+    - '0100100101100010'
+    - '0010010000110001'
+    - '0001001010011000'
+    - '0001100011000100'
+    - '1001010000100110'
+    - '0100001000010011'
+    - '0010000110001001'
+    - '0100110010000001'
+    - '0110001001001001'
+    - '0011000100100100'
+    - '1001100000010010'
+    - '1100010000011000'
+    - '0010011010010100'
+    - '0001001101000010'
+    - '1000100100100001'
+
+SMALLSCALEAES:
+  canonical_name: ["Small Scale AES"]
+  rows: 16
+  cols: 16
+  year: [2005]
+  cipher: true
+  origin: "https://link.springer.com/chapter/10.1007/11502760_10"
+  source: "NIST Circuit Complexity: https://csrc.nist.gov/Projects/circuit-complexity/list-of-circuits"
+  involution: false
+  symmetric: false
+  rank: 16
+  is_invertible: true
+  order: 4
+  hamming_weight: 88
+  orbit: 4
+  hamming_weight_per_row: [5, 7, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5]
+  matrix:
+    - '0001100110001000'
+    - '1001110101000100'
+    - '0100011000100010'
+    - '0010001100010001'
+    - '1000000110011000'
+    - '0100100111010100'
+    - '0010010001100010'
+    - '0001001000110001'
+    - '1000100000011001'
+    - '0100010010011101'
+    - '0010001001000110'
+    - '0001000100100011'
+    - '1001100010000001'
+    - '1101010001001001'
+    - '0110001000100100'
+    - '0011000100010010'
+
+SS16.IS16:
+  canonical_name: ["Sarkar-Syed", "involutory 4 × 4 over GF(2⁴)"]
+  aliases: ["ToSC_SarSye16_4x4", "ToSC_SarSye16_i_4x4", "ToSC_SarSye16_448"]
+  rows: 16
+  cols: 16
+  year: [2016]
+  cipher: false
+  origin: "https://tosc.iacr.org/index.php/ToSC/article/view/537"
+  source: "URL: XZLBZ: https://github.com/xiangzejun/Optimizing_Implementations_of_Linear_Layers/blob/master/Implementations/ToSC_SarSye16_i_4x4_4.txt; NIST Circuit Complexity: https://csrc.nist.gov/Projects/circuit-complexity/list-of-circuits"
+  paper_title: "Sarkar, Syed, ToSC 2016"
+  involution: true
+  symmetric: false
+  rank: 16
+  is_invertible: true
+  order: 2
+  hamming_weight: 80
+  orbit: 16
+  hamming_weight_per_row: [4, 6, 5, 4, 4, 6, 5, 4, 4, 7, 5, 5, 4, 7, 5, 5]
+  matrix:
+    - '1000000100101000'
+    - '0100100100110100'
+    - '0010010010010010'
+    - '0001001001000001'
+    - '0001100010000010'
+    - '1001010001000011'
+    - '0100001000101001'
+    - '0010000100010100'
+    - '0100000110000001'
+    - '0110100101001001'
+    - '0011010000100100'
+    - '1001001000010010'
+    - '0001010000011000'
+    - '1001011010010100'
+    - '0100001101000010'
+    - '0010100100100001'
+
+SS16.S16:
+  canonical_name: ["Sarkar-Syed", "4 × 4 over GF(2⁴)"]
+  aliases: ["ToSC_SarSye16_4x4", "ToSC_SarSye16_448"]
+  rows: 16
+  cols: 16
+  year: [2016]
+  cipher: false
+  origin: "https://tosc.iacr.org/index.php/ToSC/article/view/537"
+  source: "URL: XZLBZ: https://github.com/xiangzejun/Optimizing_Implementations_of_Linear_Layers/blob/master/Implementations/ToSC_SarSye16_4x4_4.txt; NIST Circuit Complexity: https://csrc.nist.gov/Projects/circuit-complexity/list-of-circuits"
+  paper_title: "Sarkar, Syed, ToSC 2016"
+  involution: false
+  symmetric: false
+  rank: 16
+  is_invertible: true
+  order: 60
+  hamming_weight: 74
+  orbit: 16
+  hamming_weight_per_row: [4, 4, 5, 5, 4, 5, 5, 5, 4, 5, 5, 4, 4, 5, 6, 4]
+  matrix:
+    - '1000100000010100'
+    - '0100010010000010'
+    - '0010001001001001'
+    - '0001000100111000'
+    - '0010100010000001'
+    - '1001010001001000'
+    - '1100001000100100'
+    - '0100000100010011'
+    - '1000001010001000'
+    - '0100100101000100'
+    - '0010110000100010'
+    - '0001010000010001'
+    - '0100100000101000'
+    - '0010010010010100'
+    - '1001001011000010'
+    - '1000000101000001'
+
+TWINKLE.MIXSLICE:
+  canonical_name: ["Twinkle", "MixSlice"]
+  rows: 16
+  cols: 16
+  year: [2024]
+  cipher: true
+  origin: "https://cic.iacr.org/"
+  paper_title: "Wang, Huang, Wu, Liu. Twinkle: a family of low-latency schemes (IACR Communications in Cryptology)."
+  note: "Slice-wise diffusion of Twinkle, applied in parallel to each of the l = 80 slices of the 4 x 4 x 80 = 1280-bit state. Circulant, row weight 3, branch number 4; chosen so that the inverse maps a weight-1 input to weight 9, the maximum over all such circulants. The full round linear layer is LaneRotation1 o MixSlice o LaneRotation0, with the lane rotations catalogued as TWINKLE.LANEROTATION0/1."
+  formula: "S[.][.][z] <- S[.][.][z] ^ (S[.][.][z] <<< 5) ^ (S[.][.][z] <<< 12) on the 16-bit slice indexed by x + 4y."
+  involution: false
+  symmetric: false
+  rank: 16
+  is_invertible: true
+  order: 16
+  branch_number: 4
+  mds: false
+  hamming_weight: 48
+  orbit: 1
+  hamming_weight_per_row: [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3]
+  matrix:
+    - '1000010000001000'
+    - '0100001000000100'
+    - '0010000100000010'
+    - '0001000010000001'
+    - '1000100001000000'
+    - '0100010000100000'
+    - '0010001000010000'
+    - '0001000100001000'
+    - '0000100010000100'
+    - '0000010001000010'
+    - '0000001000100001'
+    - '1000000100010000'
+    - '0100000010001000'
+    - '0010000001000100'
+    - '0001000000100010'
+    - '0000100000010001'
+
+ZUC.L1:
+  canonical_name: ["ZUC", "L₁"]
+  cipher: true
+  source: "Section 2.1.3: https://eprint.iacr.org/2012/299.pdf"
+  alias: "SM4"

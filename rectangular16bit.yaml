@@ -1,0 +1,42 @@
+# Big-Fat-Matrix-List: rectangular matrices in size band rectangular16bit.
+# Binned by column count (input width).
+
+GF4.MUL:
+  canonical_name: ["GF(2⁴)", "multiplication by x"]
+  rows: 4
+  cols: 7
+  year: [1998]
+  cipher: false
+  origin: "https://www.hpl.hp.com/techreports/98/HPL-98-135.pdf"
+  note: "Multiplication by x over the field named next, as the reduction of a product of two field elements. Lowest-weight irreducible polynomial of this degree, as tabulated by Seroussi, Table of Low-Weight Binary Irreducible Polynomials, HP Laboratories technical report HPL-98-135."
+  formula: "Companion matrix of multiplication-by-x in GF(2^4) = GF(2)[x] / (p(x)) where p(x) is the irreducible degree-4 polynomial. The matrix M is rectangular (4 x 7): the j-th column (j=0..2n-2) is the bit-vector of x^j mod p(x). Equivalently, multiplication of two GF(2^n) elements a, b can be written as a column from M selected by the bits of b XOR-ed together."
+  rank: 4
+  hamming_weight: 10
+  hamming_weight_per_row: [2, 3, 3, 2]
+  matrix:
+    - '1000100'
+    - '0100110'
+    - '0010011'
+    - '0001001'
+
+GF8.MUL:
+  canonical_name: ["GF(2⁸)", "multiplication by x"]
+  rows: 8
+  cols: 15
+  year: [2001]
+  cipher: false
+  origin: "https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.197-upd1.pdf"
+  note: "Multiplication by x over the field named next, as the reduction of a product of two field elements. x^8 + x^4 + x^3 + x + 1, the Rijndael polynomial of FIPS 197; it is also the lowest-weight irreducible polynomial of degree 8."
+  formula: "Companion matrix of multiplication-by-x in GF(2^8) = GF(2)[x] / (p(x)) where p(x) is the irreducible degree-8 polynomial. The matrix M is rectangular (8 x 15): the j-th column (j=0..2n-2) is the bit-vector of x^j mod p(x). Equivalently, multiplication of two GF(2^n) elements a, b can be written as a column from M selected by the bits of b XOR-ed together."
+  rank: 8
+  hamming_weight: 37
+  hamming_weight_per_row: [4, 5, 4, 7, 5, 4, 4, 4]
+  matrix:
+    - '100000001000110'
+    - '010000001100101'
+    - '001000000110010'
+    - '000100001011111'
+    - '000010001101001'
+    - '000001000110100'
+    - '000000100011010'
+    - '000000010001101'
