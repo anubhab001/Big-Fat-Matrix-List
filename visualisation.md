@@ -6,196 +6,196 @@ One render per entry, in the colour scheme of the [`linear-layers`](https://gith
 
 | &nbsp; | &nbsp; | &nbsp; | &nbsp; |
 |:---:|:---:|:---:|:---:|
-| <img src="__renders__/AETHER.MB.png" width="96" alt="AETHER.MB" /><br/>**AETHER.MB**<br/><sub>16 &times; 16</sub> | <img src="__renders__/ARIA.png" width="96" alt="ARIA" /><br/>**ARIA**<br/><sub>16 &times; 16</sub> | <img src="__renders__/BKL16.S16.png" width="96" alt="BKL16.S16" /><br/>**BKL16.S16**<br/><sub>16 &times; 16</sub> | <img src="__renders__/CHAM.RF1.png" width="96" alt="CHAM.RF1" /><br/>**CHAM.RF1**<br/><sub>16 &times; 16</sub> |
-| <img src="__renders__/CHAM.RF2.png" width="96" alt="CHAM.RF2" /><br/>**CHAM.RF2**<br/><sub>16 &times; 16</sub> | <img src="__renders__/DL18C.png" width="96" alt="DL18C" /><br/>**DL18C**<br/><sub>16 &times; 16</sub> | <img src="__renders__/GF16.ECCSQR.png" width="96" alt="GF16.ECCSQR" /><br/>**GF16.ECCSQR**<br/><sub>16 &times; 16</sub> | <img src="__renders__/GF16.SQR.png" width="96" alt="GF16.SQR" /><br/>**GF16.SQR**<br/><sub>16 &times; 16</sub> |
-| <img src="__renders__/GF4.SQR.png" width="96" alt="GF4.SQR" /><br/>**GF4.SQR**<br/><sub>4 &times; 4</sub> | <img src="__renders__/GF8.ECCSQR.png" width="96" alt="GF8.ECCSQR" /><br/>**GF8.ECCSQR**<br/><sub>8 &times; 8</sub> | <img src="__renders__/GF8.SQR.png" width="96" alt="GF8.SQR" /><br/>**GF8.SQR**<br/><sub>8 &times; 8</sub> | <img src="__renders__/JOLTIK.png" width="96" alt="JOLTIK" /><br/>**JOLTIK**<br/><sub>16 &times; 16</sub> |
-| <img src="__renders__/JPST17.IS16.png" width="96" alt="JPST17.IS16" /><br/>**JPST17.IS16**<br/><sub>16 &times; 16</sub> | <img src="__renders__/JPST17.S16.png" width="96" alt="JPST17.S16" /><br/>**JPST17.S16**<br/><sub>16 &times; 16</sub> | <img src="__renders__/KLSW17.S16.png" width="96" alt="KLSW17.S16" /><br/>**KLSW17.S16**<br/><sub>16 &times; 16</sub> | <img src="__renders__/LED.MIXCOLUMNS.png" width="96" alt="LED.MIXCOLUMNS" /><br/>**LED.MIXCOLUMNS**<br/><sub>16 &times; 16</sub> |
-| <img src="__renders__/LED.MIXCOLUMNSSERIAL.png" width="96" alt="LED.MIXCOLUMNSSERIAL" /><br/>**LED.MIXCOLUMNSSERIAL**<br/><sub>16 &times; 16</sub> | <img src="__renders__/LS16.S16.png" width="96" alt="LS16.S16" /><br/>**LS16.S16**<br/><sub>16 &times; 16</sub> | <img src="__renders__/LW16.A16.png" width="96" alt="LW16.A16" /><br/>**LW16.A16**<br/><sub>16 &times; 16</sub> | <img src="__renders__/LW16.B16.png" width="96" alt="LW16.B16" /><br/>**LW16.B16**<br/><sub>16 &times; 16</sub> |
-| <img src="__renders__/LW16.I16.png" width="96" alt="LW16.I16" /><br/>**LW16.I16**<br/><sub>16 &times; 16</sub> | <img src="__renders__/MIDORI.png" width="96" alt="MIDORI" /><br/>**MIDORI**<br/><sub>16 &times; 16</sub> | <img src="__renders__/PRIDE.L0.png" width="96" alt="PRIDE.L0" /><br/>**PRIDE.L0**<br/><sub>16 &times; 16</sub> | <img src="__renders__/PRIDE.L1.png" width="96" alt="PRIDE.L1" /><br/>**PRIDE.L1**<br/><sub>16 &times; 16</sub> |
-| <img src="__renders__/PRIDE.L2.png" width="96" alt="PRIDE.L2" /><br/>**PRIDE.L2**<br/><sub>16 &times; 16</sub> | <img src="__renders__/PRIDE.L3.png" width="96" alt="PRIDE.L3" /><br/>**PRIDE.L3**<br/><sub>16 &times; 16</sub> | <img src="__renders__/PRINCE.M0.png" width="96" alt="PRINCE.M0" /><br/>**PRINCE.M0**<br/><sub>16 &times; 16</sub> | <img src="__renders__/PRINCE.M1.png" width="96" alt="PRINCE.M1" /><br/>**PRINCE.M1**<br/><sub>16 &times; 16</sub> |
-| <img src="__renders__/QARMA.S64.png" width="96" alt="QARMA.S64" /><br/>**QARMA.S64**<br/><sub>16 &times; 16</sub> | <img src="__renders__/SEFA.MDS16.png" width="96" alt="SEFA.MDS16" /><br/>**SEFA.MDS16**<br/><sub>16 &times; 16</sub> | <img src="__renders__/SKINNY.png" width="96" alt="SKINNY" /><br/>**SKINNY**<br/><sub>16 &times; 16</sub> | <img src="__renders__/SKOP15.S16.png" width="96" alt="SKOP15.S16" /><br/>**SKOP15.S16**<br/><sub>16 &times; 16</sub> |
-| <img src="__renders__/SMALLSCALEAES.png" width="96" alt="SMALLSCALEAES" /><br/>**SMALLSCALEAES**<br/><sub>16 &times; 16</sub> | <img src="__renders__/SS16.IS16.png" width="96" alt="SS16.IS16" /><br/>**SS16.IS16**<br/><sub>16 &times; 16</sub> | <img src="__renders__/SS16.S16.png" width="96" alt="SS16.S16" /><br/>**SS16.S16**<br/><sub>16 &times; 16</sub> | <img src="__renders__/TWINKLE.MIXSLICE.png" width="96" alt="TWINKLE.MIXSLICE" /><br/>**TWINKLE.MIXSLICE**<br/><sub>16 &times; 16</sub> |
+| <img src="__renders__/AETHER.MB.png" width="96" alt="" /><br/>**AETHER.MB**<br/><sub>16 &times; 16</sub> | <img src="__renders__/ARIA.png" width="96" alt="" /><br/>**ARIA**<br/><sub>16 &times; 16</sub> | <img src="__renders__/BKL16.S16.png" width="96" alt="" /><br/>**BKL16.S16**<br/><sub>16 &times; 16</sub> | <img src="__renders__/CHAM.RF1.png" width="96" alt="" /><br/>**CHAM.RF1**<br/><sub>16 &times; 16</sub> |
+| <img src="__renders__/CHAM.RF2.png" width="96" alt="" /><br/>**CHAM.RF2**<br/><sub>16 &times; 16</sub> | <img src="__renders__/DL18C.png" width="96" alt="" /><br/>**DL18C**<br/><sub>16 &times; 16</sub> | <img src="__renders__/GF16.ECCSQR.png" width="96" alt="" /><br/>**GF16.ECCSQR**<br/><sub>16 &times; 16</sub> | <img src="__renders__/GF16.SQR.png" width="96" alt="" /><br/>**GF16.SQR**<br/><sub>16 &times; 16</sub> |
+| <img src="__renders__/GF4.SQR.png" width="96" alt="" /><br/>**GF4.SQR**<br/><sub>4 &times; 4</sub> | <img src="__renders__/GF8.ECCSQR.png" width="96" alt="" /><br/>**GF8.ECCSQR**<br/><sub>8 &times; 8</sub> | <img src="__renders__/GF8.SQR.png" width="96" alt="" /><br/>**GF8.SQR**<br/><sub>8 &times; 8</sub> | <img src="__renders__/JOLTIK.png" width="96" alt="" /><br/>**JOLTIK**<br/><sub>16 &times; 16</sub> |
+| <img src="__renders__/JPST17.IS16.png" width="96" alt="" /><br/>**JPST17.IS16**<br/><sub>16 &times; 16</sub> | <img src="__renders__/JPST17.S16.png" width="96" alt="" /><br/>**JPST17.S16**<br/><sub>16 &times; 16</sub> | <img src="__renders__/KLSW17.S16.png" width="96" alt="" /><br/>**KLSW17.S16**<br/><sub>16 &times; 16</sub> | <img src="__renders__/LED.MIXCOLUMNS.png" width="96" alt="" /><br/>**LED.MIXCOLUMNS**<br/><sub>16 &times; 16</sub> |
+| <img src="__renders__/LED.MIXCOLUMNSSERIAL.png" width="96" alt="" /><br/>**LED.MIXCOLUMNSSERIAL**<br/><sub>16 &times; 16</sub> | <img src="__renders__/LS16.S16.png" width="96" alt="" /><br/>**LS16.S16**<br/><sub>16 &times; 16</sub> | <img src="__renders__/LW16.A16.png" width="96" alt="" /><br/>**LW16.A16**<br/><sub>16 &times; 16</sub> | <img src="__renders__/LW16.B16.png" width="96" alt="" /><br/>**LW16.B16**<br/><sub>16 &times; 16</sub> |
+| <img src="__renders__/LW16.I16.png" width="96" alt="" /><br/>**LW16.I16**<br/><sub>16 &times; 16</sub> | <img src="__renders__/MIDORI.png" width="96" alt="" /><br/>**MIDORI**<br/><sub>16 &times; 16</sub> | <img src="__renders__/PRIDE.L0.png" width="96" alt="" /><br/>**PRIDE.L0**<br/><sub>16 &times; 16</sub> | <img src="__renders__/PRIDE.L1.png" width="96" alt="" /><br/>**PRIDE.L1**<br/><sub>16 &times; 16</sub> |
+| <img src="__renders__/PRIDE.L2.png" width="96" alt="" /><br/>**PRIDE.L2**<br/><sub>16 &times; 16</sub> | <img src="__renders__/PRIDE.L3.png" width="96" alt="" /><br/>**PRIDE.L3**<br/><sub>16 &times; 16</sub> | <img src="__renders__/PRINCE.M0.png" width="96" alt="" /><br/>**PRINCE.M0**<br/><sub>16 &times; 16</sub> | <img src="__renders__/PRINCE.M1.png" width="96" alt="" /><br/>**PRINCE.M1**<br/><sub>16 &times; 16</sub> |
+| <img src="__renders__/QARMA.S64.png" width="96" alt="" /><br/>**QARMA.S64**<br/><sub>16 &times; 16</sub> | <img src="__renders__/SEFA.MDS16.png" width="96" alt="" /><br/>**SEFA.MDS16**<br/><sub>16 &times; 16</sub> | <img src="__renders__/SKINNY.png" width="96" alt="" /><br/>**SKINNY**<br/><sub>16 &times; 16</sub> | <img src="__renders__/SKOP15.S16.png" width="96" alt="" /><br/>**SKOP15.S16**<br/><sub>16 &times; 16</sub> |
+| <img src="__renders__/SMALLSCALEAES.png" width="96" alt="" /><br/>**SMALLSCALEAES**<br/><sub>16 &times; 16</sub> | <img src="__renders__/SS16.IS16.png" width="96" alt="" /><br/>**SS16.IS16**<br/><sub>16 &times; 16</sub> | <img src="__renders__/SS16.S16.png" width="96" alt="" /><br/>**SS16.S16**<br/><sub>16 &times; 16</sub> | <img src="__renders__/TWINKLE.MIXSLICE.png" width="96" alt="" /><br/>**TWINKLE.MIXSLICE**<br/><sub>16 &times; 16</sub> |
 
 ## [Matrices, 32bit](32bit.md)
 
 | &nbsp; | &nbsp; | &nbsp; | &nbsp; |
 |:---:|:---:|:---:|:---:|
-| <img src="__renders__/AES.MIXCOLUMNS.png" width="128" alt="AES.MIXCOLUMNS" /><br/>**AES.MIXCOLUMNS**<br/><sub>32 &times; 32</sub> | <img src="__renders__/ANUBIS.png" width="128" alt="ANUBIS" /><br/>**ANUBIS**<br/><sub>32 &times; 32</sub> | <img src="__renders__/ARADI.L0.png" width="128" alt="ARADI.L0" /><br/>**ARADI.L0**<br/><sub>32 &times; 32</sub> | <img src="__renders__/ARADI.L1.png" width="128" alt="ARADI.L1" /><br/>**ARADI.L1**<br/><sub>32 &times; 32</sub> |
-| <img src="__renders__/ARADI.L2.png" width="128" alt="ARADI.L2" /><br/>**ARADI.L2**<br/><sub>32 &times; 32</sub> | <img src="__renders__/ARADI.L3.png" width="128" alt="ARADI.L3" /><br/>**ARADI.L3**<br/><sub>32 &times; 32</sub> | <img src="__renders__/BKL16.S32.png" width="128" alt="BKL16.S32" /><br/>**BKL16.S32**<br/><sub>32 &times; 32</sub> | <img src="__renders__/CHAM.KS1.png" width="128" alt="CHAM.KS1" /><br/>**CHAM.KS1**<br/><sub>32 &times; 32</sub> |
-| <img src="__renders__/CHAM.KS2.png" width="128" alt="CHAM.KS2" /><br/>**CHAM.KS2**<br/><sub>32 &times; 32</sub> | <img src="__renders__/CHILOW.L32.png" width="128" alt="CHILOW.L32" /><br/>**CHILOW.L32**<br/><sub>32 &times; 32</sub> | <img src="__renders__/CLEFIA.M0.png" width="128" alt="CLEFIA.M0" /><br/>**CLEFIA.M0**<br/><sub>32 &times; 32</sub> | <img src="__renders__/CLEFIA.M1.png" width="128" alt="CLEFIA.M1" /><br/>**CLEFIA.M1**<br/><sub>32 &times; 32</sub> |
-| <img src="__renders__/DIALGA.png" width="128" alt="DIALGA" /><br/>**DIALGA**<br/><sub>32 &times; 32</sub> | <img src="__renders__/DL18A.png" width="128" alt="DL18A" /><br/>**DL18A**<br/><sub>32 &times; 32</sub> | <img src="__renders__/DL18B.png" width="128" alt="DL18B" /><br/>**DL18B**<br/><sub>32 &times; 32</sub> | <img src="__renders__/FOX.MU4.png" width="128" alt="FOX.MU4" /><br/>**FOX.MU4**<br/><sub>32 &times; 32</sub> |
-| <img src="__renders__/GF32.SQR.png" width="128" alt="GF32.SQR" /><br/>**GF32.SQR**<br/><sub>32 &times; 32</sub> | <img src="__renders__/ICEPOLE.SLICE.png" width="106" alt="ICEPOLE.SLICE" /><br/>**ICEPOLE.SLICE**<br/><sub>20 &times; 20</sub> | <img src="__renders__/JPST17.IS32.png" width="128" alt="JPST17.IS32" /><br/>**JPST17.IS32**<br/><sub>32 &times; 32</sub> | <img src="__renders__/JPST17.S32.png" width="128" alt="JPST17.S32" /><br/>**JPST17.S32**<br/><sub>32 &times; 32</sub> |
-| <img src="__renders__/KECCAK.25.png" width="116" alt="KECCAK.25" /><br/>**KECCAK.25**<br/><sub>25 &times; 25</sub> | <img src="__renders__/KLSW17.IS32.png" width="128" alt="KLSW17.IS32" /><br/>**KLSW17.IS32**<br/><sub>32 &times; 32</sub> | <img src="__renders__/KLSW17.IS8GF4.png" width="128" alt="KLSW17.IS8GF4" /><br/>**KLSW17.IS8GF4**<br/><sub>32 &times; 32</sub> | <img src="__renders__/KLSW17.S32.png" width="128" alt="KLSW17.S32" /><br/>**KLSW17.S32**<br/><sub>32 &times; 32</sub> |
-| <img src="__renders__/KLSW17.S8GF4.png" width="128" alt="KLSW17.S8GF4" /><br/>**KLSW17.S8GF4**<br/><sub>32 &times; 32</sub> | <img src="__renders__/LS16.S32.png" width="128" alt="LS16.S32" /><br/>**LS16.S32**<br/><sub>32 &times; 32</sub> | <img src="__renders__/LW16.A32.png" width="128" alt="LW16.A32" /><br/>**LW16.A32**<br/><sub>32 &times; 32</sub> | <img src="__renders__/LW16.B32.png" width="128" alt="LW16.B32" /><br/>**LW16.B32**<br/><sub>32 &times; 32</sub> |
-| <img src="__renders__/LW16.IA32.png" width="128" alt="LW16.IA32" /><br/>**LW16.IA32**<br/><sub>32 &times; 32</sub> | <img src="__renders__/LW16.IB32.png" width="128" alt="LW16.IB32" /><br/>**LW16.IB32**<br/><sub>32 &times; 32</sub> | <img src="__renders__/PYJAMASK.M0.png" width="128" alt="PYJAMASK.M0" /><br/>**PYJAMASK.M0**<br/><sub>32 &times; 32</sub> | <img src="__renders__/PYJAMASK.M1.png" width="128" alt="PYJAMASK.M1" /><br/>**PYJAMASK.M1**<br/><sub>32 &times; 32</sub> |
-| <img src="__renders__/PYJAMASK.M2.png" width="128" alt="PYJAMASK.M2" /><br/>**PYJAMASK.M2**<br/><sub>32 &times; 32</sub> | <img src="__renders__/PYJAMASK.M3.png" width="128" alt="PYJAMASK.M3" /><br/>**PYJAMASK.M3**<br/><sub>32 &times; 32</sub> | <img src="__renders__/PYJAMASK.MK.png" width="128" alt="PYJAMASK.MK" /><br/>**PYJAMASK.MK**<br/><sub>32 &times; 32</sub> | <img src="__renders__/QARMA.S128.png" width="128" alt="QARMA.S128" /><br/>**QARMA.S128**<br/><sub>32 &times; 32</sub> |
-| <img src="__renders__/SHA256.BIGSIGMA0.png" width="128" alt="SHA256.BIGSIGMA0" /><br/>**SHA256.BIGSIGMA0**<br/><sub>32 &times; 32</sub> | <img src="__renders__/SHA256.BIGSIGMA1.png" width="128" alt="SHA256.BIGSIGMA1" /><br/>**SHA256.BIGSIGMA1**<br/><sub>32 &times; 32</sub> | <img src="__renders__/SHA256.SMALLSIGMA0.png" width="128" alt="SHA256.SMALLSIGMA0" /><br/>**SHA256.SMALLSIGMA0**<br/><sub>32 &times; 32</sub> | <img src="__renders__/SHA256.SMALLSIGMA1.png" width="128" alt="SHA256.SMALLSIGMA1" /><br/>**SHA256.SMALLSIGMA1**<br/><sub>32 &times; 32</sub> |
-| <img src="__renders__/SKOP15.IS4GF8.png" width="128" alt="SKOP15.IS4GF8" /><br/>**SKOP15.IS4GF8**<br/><sub>32 &times; 32</sub> | <img src="__renders__/SKOP15.IS8GF4.png" width="128" alt="SKOP15.IS8GF4" /><br/>**SKOP15.IS8GF4**<br/><sub>32 &times; 32</sub> | <img src="__renders__/SKOP15.S4GF8.png" width="128" alt="SKOP15.S4GF8" /><br/>**SKOP15.S4GF8**<br/><sub>32 &times; 32</sub> | <img src="__renders__/SKOP15.S8GF4.png" width="128" alt="SKOP15.S8GF4" /><br/>**SKOP15.S8GF4**<br/><sub>32 &times; 32</sub> |
-| <img src="__renders__/SM4.png" width="128" alt="SM4" /><br/>**SM4**<br/><sub>32 &times; 32</sub> | <img src="__renders__/SPEEDY.MC.png" width="128" alt="SPEEDY.MC" /><br/>**SPEEDY.MC**<br/><sub>32 &times; 32</sub> | <img src="__renders__/SS16.IS32.png" width="128" alt="SS16.IS32" /><br/>**SS16.IS32**<br/><sub>32 &times; 32</sub> | <img src="__renders__/SS16.S32.png" width="128" alt="SS16.S32" /><br/>**SS16.S32**<br/><sub>32 &times; 32</sub> |
-| <img src="__renders__/SS17.S32.png" width="128" alt="SS17.S32" /><br/>**SS17.S32**<br/><sub>32 &times; 32</sub> | <img src="__renders__/TWOFISH.png" width="128" alt="TWOFISH" /><br/>**TWOFISH**<br/><sub>32 &times; 32</sub> | <img src="__renders__/WHIRLWIND.M0.png" width="128" alt="WHIRLWIND.M0" /><br/>**WHIRLWIND.M0**<br/><sub>32 &times; 32</sub> | <img src="__renders__/WHIRLWIND.M1.png" width="128" alt="WHIRLWIND.M1" /><br/>**WHIRLWIND.M1**<br/><sub>32 &times; 32</sub> |
-| <img src="__renders__/ZUC.L1.png" width="128" alt="ZUC.L1" /><br/>**ZUC.L1**<br/><sub>32 &times; 32</sub> | <img src="__renders__/ZUC.L2.png" width="128" alt="ZUC.L2" /><br/>**ZUC.L2**<br/><sub>32 &times; 32</sub> | &nbsp; | &nbsp; |
+| <img src="__renders__/AES.MIXCOLUMNS.png" width="128" alt="" /><br/>**AES.MIXCOLUMNS**<br/><sub>32 &times; 32</sub> | <img src="__renders__/ANUBIS.png" width="128" alt="" /><br/>**ANUBIS**<br/><sub>32 &times; 32</sub> | <img src="__renders__/ARADI.L0.png" width="128" alt="" /><br/>**ARADI.L0**<br/><sub>32 &times; 32</sub> | <img src="__renders__/ARADI.L1.png" width="128" alt="" /><br/>**ARADI.L1**<br/><sub>32 &times; 32</sub> |
+| <img src="__renders__/ARADI.L2.png" width="128" alt="" /><br/>**ARADI.L2**<br/><sub>32 &times; 32</sub> | <img src="__renders__/ARADI.L3.png" width="128" alt="" /><br/>**ARADI.L3**<br/><sub>32 &times; 32</sub> | <img src="__renders__/BKL16.S32.png" width="128" alt="" /><br/>**BKL16.S32**<br/><sub>32 &times; 32</sub> | <img src="__renders__/CHAM.KS1.png" width="128" alt="" /><br/>**CHAM.KS1**<br/><sub>32 &times; 32</sub> |
+| <img src="__renders__/CHAM.KS2.png" width="128" alt="" /><br/>**CHAM.KS2**<br/><sub>32 &times; 32</sub> | <img src="__renders__/CHILOW.L32.png" width="128" alt="" /><br/>**CHILOW.L32**<br/><sub>32 &times; 32</sub> | <img src="__renders__/CLEFIA.M0.png" width="128" alt="" /><br/>**CLEFIA.M0**<br/><sub>32 &times; 32</sub> | <img src="__renders__/CLEFIA.M1.png" width="128" alt="" /><br/>**CLEFIA.M1**<br/><sub>32 &times; 32</sub> |
+| <img src="__renders__/DIALGA.png" width="128" alt="" /><br/>**DIALGA**<br/><sub>32 &times; 32</sub> | <img src="__renders__/DL18A.png" width="128" alt="" /><br/>**DL18A**<br/><sub>32 &times; 32</sub> | <img src="__renders__/DL18B.png" width="128" alt="" /><br/>**DL18B**<br/><sub>32 &times; 32</sub> | <img src="__renders__/FOX.MU4.png" width="128" alt="" /><br/>**FOX.MU4**<br/><sub>32 &times; 32</sub> |
+| <img src="__renders__/GF32.SQR.png" width="128" alt="" /><br/>**GF32.SQR**<br/><sub>32 &times; 32</sub> | <img src="__renders__/ICEPOLE.SLICE.png" width="106" alt="" /><br/>**ICEPOLE.SLICE**<br/><sub>20 &times; 20</sub> | <img src="__renders__/JPST17.IS32.png" width="128" alt="" /><br/>**JPST17.IS32**<br/><sub>32 &times; 32</sub> | <img src="__renders__/JPST17.S32.png" width="128" alt="" /><br/>**JPST17.S32**<br/><sub>32 &times; 32</sub> |
+| <img src="__renders__/KECCAK.25.png" width="116" alt="" /><br/>**KECCAK.25**<br/><sub>25 &times; 25</sub> | <img src="__renders__/KLSW17.IS32.png" width="128" alt="" /><br/>**KLSW17.IS32**<br/><sub>32 &times; 32</sub> | <img src="__renders__/KLSW17.IS8GF4.png" width="128" alt="" /><br/>**KLSW17.IS8GF4**<br/><sub>32 &times; 32</sub> | <img src="__renders__/KLSW17.S32.png" width="128" alt="" /><br/>**KLSW17.S32**<br/><sub>32 &times; 32</sub> |
+| <img src="__renders__/KLSW17.S8GF4.png" width="128" alt="" /><br/>**KLSW17.S8GF4**<br/><sub>32 &times; 32</sub> | <img src="__renders__/LS16.S32.png" width="128" alt="" /><br/>**LS16.S32**<br/><sub>32 &times; 32</sub> | <img src="__renders__/LW16.A32.png" width="128" alt="" /><br/>**LW16.A32**<br/><sub>32 &times; 32</sub> | <img src="__renders__/LW16.B32.png" width="128" alt="" /><br/>**LW16.B32**<br/><sub>32 &times; 32</sub> |
+| <img src="__renders__/LW16.IA32.png" width="128" alt="" /><br/>**LW16.IA32**<br/><sub>32 &times; 32</sub> | <img src="__renders__/LW16.IB32.png" width="128" alt="" /><br/>**LW16.IB32**<br/><sub>32 &times; 32</sub> | <img src="__renders__/PYJAMASK.M0.png" width="128" alt="" /><br/>**PYJAMASK.M0**<br/><sub>32 &times; 32</sub> | <img src="__renders__/PYJAMASK.M1.png" width="128" alt="" /><br/>**PYJAMASK.M1**<br/><sub>32 &times; 32</sub> |
+| <img src="__renders__/PYJAMASK.M2.png" width="128" alt="" /><br/>**PYJAMASK.M2**<br/><sub>32 &times; 32</sub> | <img src="__renders__/PYJAMASK.M3.png" width="128" alt="" /><br/>**PYJAMASK.M3**<br/><sub>32 &times; 32</sub> | <img src="__renders__/PYJAMASK.MK.png" width="128" alt="" /><br/>**PYJAMASK.MK**<br/><sub>32 &times; 32</sub> | <img src="__renders__/QARMA.S128.png" width="128" alt="" /><br/>**QARMA.S128**<br/><sub>32 &times; 32</sub> |
+| <img src="__renders__/SHA256.BIGSIGMA0.png" width="128" alt="" /><br/>**SHA256.BIGSIGMA0**<br/><sub>32 &times; 32</sub> | <img src="__renders__/SHA256.BIGSIGMA1.png" width="128" alt="" /><br/>**SHA256.BIGSIGMA1**<br/><sub>32 &times; 32</sub> | <img src="__renders__/SHA256.SMALLSIGMA0.png" width="128" alt="" /><br/>**SHA256.SMALLSIGMA0**<br/><sub>32 &times; 32</sub> | <img src="__renders__/SHA256.SMALLSIGMA1.png" width="128" alt="" /><br/>**SHA256.SMALLSIGMA1**<br/><sub>32 &times; 32</sub> |
+| <img src="__renders__/SKOP15.IS4GF8.png" width="128" alt="" /><br/>**SKOP15.IS4GF8**<br/><sub>32 &times; 32</sub> | <img src="__renders__/SKOP15.IS8GF4.png" width="128" alt="" /><br/>**SKOP15.IS8GF4**<br/><sub>32 &times; 32</sub> | <img src="__renders__/SKOP15.S4GF8.png" width="128" alt="" /><br/>**SKOP15.S4GF8**<br/><sub>32 &times; 32</sub> | <img src="__renders__/SKOP15.S8GF4.png" width="128" alt="" /><br/>**SKOP15.S8GF4**<br/><sub>32 &times; 32</sub> |
+| <img src="__renders__/SM4.png" width="128" alt="" /><br/>**SM4**<br/><sub>32 &times; 32</sub> | <img src="__renders__/SPEEDY.MC.png" width="128" alt="" /><br/>**SPEEDY.MC**<br/><sub>32 &times; 32</sub> | <img src="__renders__/SS16.IS32.png" width="128" alt="" /><br/>**SS16.IS32**<br/><sub>32 &times; 32</sub> | <img src="__renders__/SS16.S32.png" width="128" alt="" /><br/>**SS16.S32**<br/><sub>32 &times; 32</sub> |
+| <img src="__renders__/SS17.S32.png" width="128" alt="" /><br/>**SS17.S32**<br/><sub>32 &times; 32</sub> | <img src="__renders__/TWOFISH.png" width="128" alt="" /><br/>**TWOFISH**<br/><sub>32 &times; 32</sub> | <img src="__renders__/WHIRLWIND.M0.png" width="128" alt="" /><br/>**WHIRLWIND.M0**<br/><sub>32 &times; 32</sub> | <img src="__renders__/WHIRLWIND.M1.png" width="128" alt="" /><br/>**WHIRLWIND.M1**<br/><sub>32 &times; 32</sub> |
+| <img src="__renders__/ZUC.L1.png" width="128" alt="" /><br/>**ZUC.L1**<br/><sub>32 &times; 32</sub> | <img src="__renders__/ZUC.L2.png" width="128" alt="" /><br/>**ZUC.L2**<br/><sub>32 &times; 32</sub> | &nbsp; | &nbsp; |
 
 ## [Matrices, 64bit](64bit.md)
 
 | &nbsp; | &nbsp; | &nbsp; | &nbsp; |
 |:---:|:---:|:---:|:---:|
-| <img src="__renders__/ARADI.M0.png" width="160" alt="ARADI.M0" /><br/>**ARADI.M0**<br/><sub>64 &times; 64</sub> | <img src="__renders__/ARADI.M1.png" width="160" alt="ARADI.M1" /><br/>**ARADI.M1**<br/><sub>64 &times; 64</sub> | <img src="__renders__/ASCON.SIGMA0.png" width="160" alt="ASCON.SIGMA0" /><br/>**ASCON.SIGMA0**<br/><sub>64 &times; 64</sub> | <img src="__renders__/ASCON.SIGMA1.png" width="160" alt="ASCON.SIGMA1" /><br/>**ASCON.SIGMA1**<br/><sub>64 &times; 64</sub> |
-| <img src="__renders__/ASCON.SIGMA2.png" width="160" alt="ASCON.SIGMA2" /><br/>**ASCON.SIGMA2**<br/><sub>64 &times; 64</sub> | <img src="__renders__/ASCON.SIGMA3.png" width="160" alt="ASCON.SIGMA3" /><br/>**ASCON.SIGMA3**<br/><sub>64 &times; 64</sub> | <img src="__renders__/ASCON.SIGMA4.png" width="160" alt="ASCON.SIGMA4" /><br/>**ASCON.SIGMA4**<br/><sub>64 &times; 64</sub> | <img src="__renders__/BKL16.S64.png" width="160" alt="BKL16.S64" /><br/>**BKL16.S64**<br/><sub>64 &times; 64</sub> |
-| <img src="__renders__/CHILOW.L64.png" width="160" alt="CHILOW.L64" /><br/>**CHILOW.L64**<br/><sub>64 &times; 64</sub> | <img src="__renders__/FOX.MU8.png" width="160" alt="FOX.MU8" /><br/>**FOX.MU8**<br/><sub>64 &times; 64</sub> | <img src="__renders__/GF64.SQR.png" width="160" alt="GF64.SQR" /><br/>**GF64.SQR**<br/><sub>64 &times; 64</sub> | <img src="__renders__/GROESTL.png" width="160" alt="GROESTL" /><br/>**GROESTL**<br/><sub>64 &times; 64</sub> |
-| <img src="__renders__/JPST17.IS64.png" width="160" alt="JPST17.IS64" /><br/>**JPST17.IS64**<br/><sub>64 &times; 64</sub> | <img src="__renders__/KECCAK.50.png" width="148" alt="KECCAK.50" /><br/>**KECCAK.50**<br/><sub>50 &times; 50</sub> | <img src="__renders__/KHAZAD.png" width="160" alt="KHAZAD" /><br/>**KHAZAD**<br/><sub>64 &times; 64</sub> | <img src="__renders__/KLEIN.MIXNIBBLES.png" width="160" alt="KLEIN.MIXNIBBLES" /><br/>**KLEIN.MIXNIBBLES**<br/><sub>64 &times; 64</sub> |
-| <img src="__renders__/KLSW17.IS64.png" width="160" alt="KLSW17.IS64" /><br/>**KLSW17.IS64**<br/><sub>64 &times; 64</sub> | <img src="__renders__/KLSW17.S64.png" width="160" alt="KLSW17.S64" /><br/>**KLSW17.S64**<br/><sub>64 &times; 64</sub> | <img src="__renders__/LS16.S64.png" width="160" alt="LS16.S64" /><br/>**LS16.S64**<br/><sub>64 &times; 64</sub> | <img src="__renders__/PRINCE.MPRIME.png" width="160" alt="PRINCE.MPRIME" /><br/>**PRINCE.MPRIME**<br/><sub>64 &times; 64</sub> |
-| <img src="__renders__/SCARF.SIGMA.png" width="157" alt="SCARF.SIGMA" /><br/>**SCARF.SIGMA**<br/><sub>60 &times; 60</sub> | <img src="__renders__/SHA512.BIGSIGMA0.png" width="160" alt="SHA512.BIGSIGMA0" /><br/>**SHA512.BIGSIGMA0**<br/><sub>64 &times; 64</sub> | <img src="__renders__/SHA512.BIGSIGMA1.png" width="160" alt="SHA512.BIGSIGMA1" /><br/>**SHA512.BIGSIGMA1**<br/><sub>64 &times; 64</sub> | <img src="__renders__/SHA512.SMALLSIGMA0.png" width="160" alt="SHA512.SMALLSIGMA0" /><br/>**SHA512.SMALLSIGMA0**<br/><sub>64 &times; 64</sub> |
-| <img src="__renders__/SHA512.SMALLSIGMA1.png" width="160" alt="SHA512.SMALLSIGMA1" /><br/>**SHA512.SMALLSIGMA1**<br/><sub>64 &times; 64</sub> | <img src="__renders__/SKOP15.IS64.png" width="160" alt="SKOP15.IS64" /><br/>**SKOP15.IS64**<br/><sub>64 &times; 64</sub> | <img src="__renders__/SKOP15.S64.png" width="160" alt="SKOP15.S64" /><br/>**SKOP15.S64**<br/><sub>64 &times; 64</sub> | <img src="__renders__/SPARX.L2.png" width="160" alt="SPARX.L2" /><br/>**SPARX.L2**<br/><sub>64 &times; 64</sub> |
-| <img src="__renders__/SPOOK.LBOX.png" width="160" alt="SPOOK.LBOX" /><br/>**SPOOK.LBOX**<br/><sub>64 &times; 64</sub> | <img src="__renders__/SS17.S64.png" width="160" alt="SS17.S64" /><br/>**SS17.S64**<br/><sub>64 &times; 64</sub> | <img src="__renders__/UKNIT.L0.png" width="160" alt="UKNIT.L0" /><br/>**UKNIT.L0**<br/><sub>64 &times; 64</sub> | <img src="__renders__/UKNIT.L1.png" width="160" alt="UKNIT.L1" /><br/>**UKNIT.L1**<br/><sub>64 &times; 64</sub> |
-| <img src="__renders__/UKNIT.L10.png" width="160" alt="UKNIT.L10" /><br/>**UKNIT.L10**<br/><sub>64 &times; 64</sub> | <img src="__renders__/UKNIT.L2.png" width="160" alt="UKNIT.L2" /><br/>**UKNIT.L2**<br/><sub>64 &times; 64</sub> | <img src="__renders__/UKNIT.L3.png" width="160" alt="UKNIT.L3" /><br/>**UKNIT.L3**<br/><sub>64 &times; 64</sub> | <img src="__renders__/UKNIT.L4.png" width="160" alt="UKNIT.L4" /><br/>**UKNIT.L4**<br/><sub>64 &times; 64</sub> |
-| <img src="__renders__/UKNIT.L5.png" width="160" alt="UKNIT.L5" /><br/>**UKNIT.L5**<br/><sub>64 &times; 64</sub> | <img src="__renders__/UKNIT.L6.png" width="160" alt="UKNIT.L6" /><br/>**UKNIT.L6**<br/><sub>64 &times; 64</sub> | <img src="__renders__/UKNIT.L7.png" width="160" alt="UKNIT.L7" /><br/>**UKNIT.L7**<br/><sub>64 &times; 64</sub> | <img src="__renders__/UKNIT.L8.png" width="160" alt="UKNIT.L8" /><br/>**UKNIT.L8**<br/><sub>64 &times; 64</sub> |
-| <img src="__renders__/UKNIT.L9.png" width="160" alt="UKNIT.L9" /><br/>**UKNIT.L9**<br/><sub>64 &times; 64</sub> | <img src="__renders__/WHIRLPOOL.png" width="160" alt="WHIRLPOOL" /><br/>**WHIRLPOOL**<br/><sub>64 &times; 64</sub> | &nbsp; | &nbsp; |
+| <img src="__renders__/ARADI.M0.png" width="160" alt="" /><br/>**ARADI.M0**<br/><sub>64 &times; 64</sub> | <img src="__renders__/ARADI.M1.png" width="160" alt="" /><br/>**ARADI.M1**<br/><sub>64 &times; 64</sub> | <img src="__renders__/ASCON.SIGMA0.png" width="160" alt="" /><br/>**ASCON.SIGMA0**<br/><sub>64 &times; 64</sub> | <img src="__renders__/ASCON.SIGMA1.png" width="160" alt="" /><br/>**ASCON.SIGMA1**<br/><sub>64 &times; 64</sub> |
+| <img src="__renders__/ASCON.SIGMA2.png" width="160" alt="" /><br/>**ASCON.SIGMA2**<br/><sub>64 &times; 64</sub> | <img src="__renders__/ASCON.SIGMA3.png" width="160" alt="" /><br/>**ASCON.SIGMA3**<br/><sub>64 &times; 64</sub> | <img src="__renders__/ASCON.SIGMA4.png" width="160" alt="" /><br/>**ASCON.SIGMA4**<br/><sub>64 &times; 64</sub> | <img src="__renders__/BKL16.S64.png" width="160" alt="" /><br/>**BKL16.S64**<br/><sub>64 &times; 64</sub> |
+| <img src="__renders__/CHILOW.L64.png" width="160" alt="" /><br/>**CHILOW.L64**<br/><sub>64 &times; 64</sub> | <img src="__renders__/FOX.MU8.png" width="160" alt="" /><br/>**FOX.MU8**<br/><sub>64 &times; 64</sub> | <img src="__renders__/GF64.SQR.png" width="160" alt="" /><br/>**GF64.SQR**<br/><sub>64 &times; 64</sub> | <img src="__renders__/GROESTL.png" width="160" alt="" /><br/>**GROESTL**<br/><sub>64 &times; 64</sub> |
+| <img src="__renders__/JPST17.IS64.png" width="160" alt="" /><br/>**JPST17.IS64**<br/><sub>64 &times; 64</sub> | <img src="__renders__/KECCAK.50.png" width="148" alt="" /><br/>**KECCAK.50**<br/><sub>50 &times; 50</sub> | <img src="__renders__/KHAZAD.png" width="160" alt="" /><br/>**KHAZAD**<br/><sub>64 &times; 64</sub> | <img src="__renders__/KLEIN.MIXNIBBLES.png" width="160" alt="" /><br/>**KLEIN.MIXNIBBLES**<br/><sub>64 &times; 64</sub> |
+| <img src="__renders__/KLSW17.IS64.png" width="160" alt="" /><br/>**KLSW17.IS64**<br/><sub>64 &times; 64</sub> | <img src="__renders__/KLSW17.S64.png" width="160" alt="" /><br/>**KLSW17.S64**<br/><sub>64 &times; 64</sub> | <img src="__renders__/LS16.S64.png" width="160" alt="" /><br/>**LS16.S64**<br/><sub>64 &times; 64</sub> | <img src="__renders__/PRINCE.MPRIME.png" width="160" alt="" /><br/>**PRINCE.MPRIME**<br/><sub>64 &times; 64</sub> |
+| <img src="__renders__/SCARF.SIGMA.png" width="157" alt="" /><br/>**SCARF.SIGMA**<br/><sub>60 &times; 60</sub> | <img src="__renders__/SHA512.BIGSIGMA0.png" width="160" alt="" /><br/>**SHA512.BIGSIGMA0**<br/><sub>64 &times; 64</sub> | <img src="__renders__/SHA512.BIGSIGMA1.png" width="160" alt="" /><br/>**SHA512.BIGSIGMA1**<br/><sub>64 &times; 64</sub> | <img src="__renders__/SHA512.SMALLSIGMA0.png" width="160" alt="" /><br/>**SHA512.SMALLSIGMA0**<br/><sub>64 &times; 64</sub> |
+| <img src="__renders__/SHA512.SMALLSIGMA1.png" width="160" alt="" /><br/>**SHA512.SMALLSIGMA1**<br/><sub>64 &times; 64</sub> | <img src="__renders__/SKOP15.IS64.png" width="160" alt="" /><br/>**SKOP15.IS64**<br/><sub>64 &times; 64</sub> | <img src="__renders__/SKOP15.S64.png" width="160" alt="" /><br/>**SKOP15.S64**<br/><sub>64 &times; 64</sub> | <img src="__renders__/SPARX.L2.png" width="160" alt="" /><br/>**SPARX.L2**<br/><sub>64 &times; 64</sub> |
+| <img src="__renders__/SPOOK.LBOX.png" width="160" alt="" /><br/>**SPOOK.LBOX**<br/><sub>64 &times; 64</sub> | <img src="__renders__/SS17.S64.png" width="160" alt="" /><br/>**SS17.S64**<br/><sub>64 &times; 64</sub> | <img src="__renders__/UKNIT.L0.png" width="160" alt="" /><br/>**UKNIT.L0**<br/><sub>64 &times; 64</sub> | <img src="__renders__/UKNIT.L1.png" width="160" alt="" /><br/>**UKNIT.L1**<br/><sub>64 &times; 64</sub> |
+| <img src="__renders__/UKNIT.L10.png" width="160" alt="" /><br/>**UKNIT.L10**<br/><sub>64 &times; 64</sub> | <img src="__renders__/UKNIT.L2.png" width="160" alt="" /><br/>**UKNIT.L2**<br/><sub>64 &times; 64</sub> | <img src="__renders__/UKNIT.L3.png" width="160" alt="" /><br/>**UKNIT.L3**<br/><sub>64 &times; 64</sub> | <img src="__renders__/UKNIT.L4.png" width="160" alt="" /><br/>**UKNIT.L4**<br/><sub>64 &times; 64</sub> |
+| <img src="__renders__/UKNIT.L5.png" width="160" alt="" /><br/>**UKNIT.L5**<br/><sub>64 &times; 64</sub> | <img src="__renders__/UKNIT.L6.png" width="160" alt="" /><br/>**UKNIT.L6**<br/><sub>64 &times; 64</sub> | <img src="__renders__/UKNIT.L7.png" width="160" alt="" /><br/>**UKNIT.L7**<br/><sub>64 &times; 64</sub> | <img src="__renders__/UKNIT.L8.png" width="160" alt="" /><br/>**UKNIT.L8**<br/><sub>64 &times; 64</sub> |
+| <img src="__renders__/UKNIT.L9.png" width="160" alt="" /><br/>**UKNIT.L9**<br/><sub>64 &times; 64</sub> | <img src="__renders__/WHIRLPOOL.png" width="160" alt="" /><br/>**WHIRLPOOL**<br/><sub>64 &times; 64</sub> | &nbsp; | &nbsp; |
 
 ## [Matrices, 128bit](128bit.md)
 
 | &nbsp; | &nbsp; | &nbsp; | &nbsp; |
 |:---:|:---:|:---:|:---:|
-| <img src="__renders__/AES.SHIFTROWSMIXCOLUMNS.png" width="192" alt="AES.SHIFTROWSMIXCOLUMNS" /><br/>**AES.SHIFTROWSMIXCOLUMNS**<br/><sub>128 &times; 128</sub> | <img src="__renders__/AETHER.png" width="192" alt="AETHER" /><br/>**AETHER**<br/><sub>128 &times; 128</sub> | <img src="__renders__/ARIA.128.png" width="192" alt="ARIA.128" /><br/>**ARIA.128**<br/><sub>128 &times; 128</sub> | <img src="__renders__/BAKSHEESH.T.png" width="192" alt="BAKSHEESH.T" /><br/>**BAKSHEESH.T**<br/><sub>128 &times; 128</sub> |
-| <img src="__renders__/BEANIE.MIXCOLUMNST.png" width="192" alt="BEANIE.MIXCOLUMNST" /><br/>**BEANIE.MIXCOLUMNST**<br/><sub>128 &times; 128</sub> | <img src="__renders__/CHILOW.L128.png" width="192" alt="CHILOW.L128" /><br/>**CHILOW.L128**<br/><sub>128 &times; 128</sub> | <img src="__renders__/GF127.ECCSQR.png" width="191" alt="GF127.ECCSQR" /><br/>**GF127.ECCSQR**<br/><sub>127 &times; 127</sub> | <img src="__renders__/GF127.SQR.png" width="191" alt="GF127.SQR" /><br/>**GF127.SQR**<br/><sub>127 &times; 127</sub> |
-| <img src="__renders__/GF128.SQR.png" width="192" alt="GF128.SQR" /><br/>**GF128.SQR**<br/><sub>128 &times; 128</sub> | <img src="__renders__/GLEEOK.THETA128B1.png" width="192" alt="GLEEOK.THETA128B1" /><br/>**GLEEOK.THETA128B1**<br/><sub>128 &times; 128</sub> | <img src="__renders__/GLEEOK.THETA128B2.png" width="192" alt="GLEEOK.THETA128B2" /><br/>**GLEEOK.THETA128B2**<br/><sub>128 &times; 128</sub> | <img src="__renders__/GLEEOK.THETA128B3.png" width="192" alt="GLEEOK.THETA128B3" /><br/>**GLEEOK.THETA128B3**<br/><sub>128 &times; 128</sub> |
-| <img src="__renders__/KECCAK.100.png" width="180" alt="KECCAK.100" /><br/>**KECCAK.100**<br/><sub>100 &times; 100</sub> | <img src="__renders__/MERIDIAN.MIX.png" width="192" alt="MERIDIAN.MIX" /><br/>**MERIDIAN.MIX**<br/><sub>128 &times; 128</sub> | <img src="__renders__/SPARX.L4.png" width="192" alt="SPARX.L4" /><br/>**SPARX.L4**<br/><sub>128 &times; 128</sub> | <img src="__renders__/SPOOK.CLYDE.png" width="192" alt="SPOOK.CLYDE" /><br/>**SPOOK.CLYDE**<br/><sub>128 &times; 128</sub> |
-| <img src="__renders__/SPOOK.DBOX.png" width="192" alt="SPOOK.DBOX" /><br/>**SPOOK.DBOX**<br/><sub>128 &times; 128</sub> | &nbsp; | &nbsp; | &nbsp; |
+| <img src="__renders__/AES.SHIFTROWSMIXCOLUMNS.png" width="192" alt="" /><br/>**AES.SHIFTROWSMIXCOLUMNS**<br/><sub>128 &times; 128</sub> | <img src="__renders__/AETHER.png" width="192" alt="" /><br/>**AETHER**<br/><sub>128 &times; 128</sub> | <img src="__renders__/ARIA.128.png" width="192" alt="" /><br/>**ARIA.128**<br/><sub>128 &times; 128</sub> | <img src="__renders__/BAKSHEESH.T.png" width="192" alt="" /><br/>**BAKSHEESH.T**<br/><sub>128 &times; 128</sub> |
+| <img src="__renders__/BEANIE.MIXCOLUMNST.png" width="192" alt="" /><br/>**BEANIE.MIXCOLUMNST**<br/><sub>128 &times; 128</sub> | <img src="__renders__/CHILOW.L128.png" width="192" alt="" /><br/>**CHILOW.L128**<br/><sub>128 &times; 128</sub> | <img src="__renders__/GF127.ECCSQR.png" width="191" alt="" /><br/>**GF127.ECCSQR**<br/><sub>127 &times; 127</sub> | <img src="__renders__/GF127.SQR.png" width="191" alt="" /><br/>**GF127.SQR**<br/><sub>127 &times; 127</sub> |
+| <img src="__renders__/GF128.SQR.png" width="192" alt="" /><br/>**GF128.SQR**<br/><sub>128 &times; 128</sub> | <img src="__renders__/GLEEOK.THETA128B1.png" width="192" alt="" /><br/>**GLEEOK.THETA128B1**<br/><sub>128 &times; 128</sub> | <img src="__renders__/GLEEOK.THETA128B2.png" width="192" alt="" /><br/>**GLEEOK.THETA128B2**<br/><sub>128 &times; 128</sub> | <img src="__renders__/GLEEOK.THETA128B3.png" width="192" alt="" /><br/>**GLEEOK.THETA128B3**<br/><sub>128 &times; 128</sub> |
+| <img src="__renders__/KECCAK.100.png" width="180" alt="" /><br/>**KECCAK.100**<br/><sub>100 &times; 100</sub> | <img src="__renders__/MERIDIAN.MIX.png" width="192" alt="" /><br/>**MERIDIAN.MIX**<br/><sub>128 &times; 128</sub> | <img src="__renders__/SPARX.L4.png" width="192" alt="" /><br/>**SPARX.L4**<br/><sub>128 &times; 128</sub> | <img src="__renders__/SPOOK.CLYDE.png" width="192" alt="" /><br/>**SPOOK.CLYDE**<br/><sub>128 &times; 128</sub> |
+| <img src="__renders__/SPOOK.DBOX.png" width="192" alt="" /><br/>**SPOOK.DBOX**<br/><sub>128 &times; 128</sub> | &nbsp; | &nbsp; | &nbsp; |
 
 ## [Matrices, 256bit](256bit.md)
 
 | &nbsp; | &nbsp; | &nbsp; | &nbsp; |
 |:---:|:---:|:---:|:---:|
-| <img src="__renders__/GF163.ECCSQR.png" width="203" alt="GF163.ECCSQR" /><br/>**GF163.ECCSQR**<br/><sub>163 &times; 163</sub> | <img src="__renders__/GF163.SQR.png" width="203" alt="GF163.SQR" /><br/>**GF163.SQR**<br/><sub>163 &times; 163</sub> | <img src="__renders__/GF233.ECCSQR.png" width="219" alt="GF233.ECCSQR" /><br/>**GF233.ECCSQR**<br/><sub>233 &times; 233</sub> | <img src="__renders__/GF233.SQR.png" width="219" alt="GF233.SQR" /><br/>**GF233.SQR**<br/><sub>233 &times; 233</sub> |
-| <img src="__renders__/GF256.SQR.png" width="224" alt="GF256.SQR" /><br/>**GF256.SQR**<br/><sub>256 &times; 256</sub> | <img src="__renders__/GLEEOK.THETA256B1.png" width="224" alt="GLEEOK.THETA256B1" /><br/>**GLEEOK.THETA256B1**<br/><sub>256 &times; 256</sub> | <img src="__renders__/GLEEOK.THETA256B2.png" width="224" alt="GLEEOK.THETA256B2" /><br/>**GLEEOK.THETA256B2**<br/><sub>256 &times; 256</sub> | <img src="__renders__/GLEEOK.THETA256B3.png" width="224" alt="GLEEOK.THETA256B3" /><br/>**GLEEOK.THETA256B3**<br/><sub>256 &times; 256</sub> |
-| <img src="__renders__/KECCAK.200.png" width="212" alt="KECCAK.200" /><br/>**KECCAK.200**<br/><sub>200 &times; 200</sub> | <img src="__renders__/SEFA.MDS192.png" width="210" alt="SEFA.MDS192" /><br/>**SEFA.MDS192**<br/><sub>192 &times; 192</sub> | &nbsp; | &nbsp; |
+| <img src="__renders__/GF163.ECCSQR.png" width="203" alt="" /><br/>**GF163.ECCSQR**<br/><sub>163 &times; 163</sub> | <img src="__renders__/GF163.SQR.png" width="203" alt="" /><br/>**GF163.SQR**<br/><sub>163 &times; 163</sub> | <img src="__renders__/GF233.ECCSQR.png" width="219" alt="" /><br/>**GF233.ECCSQR**<br/><sub>233 &times; 233</sub> | <img src="__renders__/GF233.SQR.png" width="219" alt="" /><br/>**GF233.SQR**<br/><sub>233 &times; 233</sub> |
+| <img src="__renders__/GF256.SQR.png" width="224" alt="" /><br/>**GF256.SQR**<br/><sub>256 &times; 256</sub> | <img src="__renders__/GLEEOK.THETA256B1.png" width="224" alt="" /><br/>**GLEEOK.THETA256B1**<br/><sub>256 &times; 256</sub> | <img src="__renders__/GLEEOK.THETA256B2.png" width="224" alt="" /><br/>**GLEEOK.THETA256B2**<br/><sub>256 &times; 256</sub> | <img src="__renders__/GLEEOK.THETA256B3.png" width="224" alt="" /><br/>**GLEEOK.THETA256B3**<br/><sub>256 &times; 256</sub> |
+| <img src="__renders__/KECCAK.200.png" width="212" alt="" /><br/>**KECCAK.200**<br/><sub>200 &times; 200</sub> | <img src="__renders__/SEFA.MDS192.png" width="210" alt="" /><br/>**SEFA.MDS192**<br/><sub>192 &times; 192</sub> | &nbsp; | &nbsp; |
 
 ## [Matrices, 283bit](283bit.md)
 
-| &nbsp; | &nbsp; | &nbsp; | &nbsp; |
-|:---:|:---:|:---:|:---:|
-| <img src="__renders__/GF283.ECCSQR.png" width="256" alt="GF283.ECCSQR" /><br/>**GF283.ECCSQR**<br/><sub>283 &times; 283</sub> | <img src="__renders__/GF283.SQR.png" width="256" alt="GF283.SQR" /><br/>**GF283.SQR**<br/><sub>283 &times; 283</sub> | &nbsp; | &nbsp; |
+| &nbsp; | &nbsp; |
+|:---:|:---:|
+| <img src="__renders__/GF283.ECCSQR.png" width="256" alt="" /><br/>**GF283.ECCSQR**<br/><sub>283 &times; 283</sub> | <img src="__renders__/GF283.SQR.png" width="256" alt="" /><br/>**GF283.SQR**<br/><sub>283 &times; 283</sub> |
 
 ## [Matrices, 320bit](320bit.md)
 
-| &nbsp; | &nbsp; | &nbsp; | &nbsp; |
-|:---:|:---:|:---:|:---:|
-| <img src="__renders__/ASCON.png" width="256" alt="ASCON" /><br/>**ASCON**<br/><sub>320 &times; 320</sub> | &nbsp; | &nbsp; | &nbsp; |
+| &nbsp; |
+|:---:|
+| <img src="__renders__/ASCON.png" width="256" alt="" /><br/>**ASCON**<br/><sub>320 &times; 320</sub> |
 
 ## [Matrices, 400bit](400bit.md)
 
-| &nbsp; | &nbsp; | &nbsp; | &nbsp; |
-|:---:|:---:|:---:|:---:|
-| <img src="__renders__/KECCAK.400.png" width="256" alt="KECCAK.400" /><br/>**KECCAK.400**<br/><sub>400 &times; 400</sub> | &nbsp; | &nbsp; | &nbsp; |
+| &nbsp; |
+|:---:|
+| <img src="__renders__/KECCAK.400.png" width="256" alt="" /><br/>**KECCAK.400**<br/><sub>400 &times; 400</sub> |
 
 ## [Matrices, 571bit](571bit.md)
 
-| &nbsp; | &nbsp; | &nbsp; | &nbsp; |
-|:---:|:---:|:---:|:---:|
-| <img src="__renders__/GF571.ECCSQR.png" width="256" alt="GF571.ECCSQR" /><br/>**GF571.ECCSQR**<br/><sub>571 &times; 571</sub> | <img src="__renders__/GF571.SQR.png" width="256" alt="GF571.SQR" /><br/>**GF571.SQR**<br/><sub>571 &times; 571</sub> | &nbsp; | &nbsp; |
+| &nbsp; | &nbsp; |
+|:---:|:---:|
+| <img src="__renders__/GF571.ECCSQR.png" width="256" alt="" /><br/>**GF571.ECCSQR**<br/><sub>571 &times; 571</sub> | <img src="__renders__/GF571.SQR.png" width="256" alt="" /><br/>**GF571.SQR**<br/><sub>571 &times; 571</sub> |
 
 ## [Matrices, 800bit](800bit.md)
 
-| &nbsp; | &nbsp; | &nbsp; | &nbsp; |
-|:---:|:---:|:---:|:---:|
-| <img src="__renders__/KECCAK.800.png" width="256" alt="KECCAK.800" /><br/>**KECCAK.800**<br/><sub>800 &times; 800</sub> | &nbsp; | &nbsp; | &nbsp; |
+| &nbsp; |
+|:---:|
+| <img src="__renders__/KECCAK.800.png" width="256" alt="" /><br/>**KECCAK.800**<br/><sub>800 &times; 800</sub> |
 
 ## [Matrices, 1024bit](1024bit.md)
 
-| &nbsp; | &nbsp; | &nbsp; | &nbsp; |
-|:---:|:---:|:---:|:---:|
-| <img src="__renders__/GF1024.SQR.png" width="256" alt="GF1024.SQR" /><br/>**GF1024.SQR**<br/><sub>1024 &times; 1024</sub> | &nbsp; | &nbsp; | &nbsp; |
+| &nbsp; |
+|:---:|
+| <img src="__renders__/GF1024.SQR.png" width="256" alt="" /><br/>**GF1024.SQR**<br/><sub>1024 &times; 1024</sub> |
 
 ## [Matrices, 1280bit](1280bit.md)
 
-| &nbsp; | &nbsp; | &nbsp; | &nbsp; |
-|:---:|:---:|:---:|:---:|
-| <img src="__renders__/ICEPOLE.png" width="256" alt="ICEPOLE" /><br/>**ICEPOLE**<br/><sub>1280 &times; 1280</sub> | &nbsp; | &nbsp; | &nbsp; |
+| &nbsp; |
+|:---:|
+| <img src="__renders__/ICEPOLE.png" width="256" alt="" /><br/>**ICEPOLE**<br/><sub>1280 &times; 1280</sub> |
 
 ## [Matrices, 1600bit](1600bit.md)
 
-| &nbsp; | &nbsp; | &nbsp; | &nbsp; |
-|:---:|:---:|:---:|:---:|
-| <img src="__renders__/KECCAK.1600.png" width="256" alt="KECCAK.1600" /><br/>**KECCAK.1600**<br/><sub>1600 &times; 1600</sub> | <img src="__renders__/SHA3.png" width="256" alt="SHA3" /><br/>**SHA3**<br/><sub>1600 &times; 1600</sub> | &nbsp; | &nbsp; |
+| &nbsp; | &nbsp; |
+|:---:|:---:|
+| <img src="__renders__/KECCAK.1600.png" width="256" alt="" /><br/>**KECCAK.1600**<br/><sub>1600 &times; 1600</sub> | <img src="__renders__/SHA3.png" width="256" alt="" /><br/>**SHA3**<br/><sub>1600 &times; 1600</sub> |
 
 ## [Rectangular matrices, 16bit](rectangular16bit.md)
 
-| &nbsp; | &nbsp; | &nbsp; | &nbsp; |
-|:---:|:---:|:---:|:---:|
-| <img src="__renders__/GF4.MUL.png" width="96" alt="GF4.MUL" /><br/>**GF4.MUL**<br/><sub>4 &times; 7</sub> | <img src="__renders__/GF8.MUL.png" width="96" alt="GF8.MUL" /><br/>**GF8.MUL**<br/><sub>8 &times; 15</sub> | &nbsp; | &nbsp; |
+| &nbsp; | &nbsp; |
+|:---:|:---:|
+| <img src="__renders__/GF4.MUL.png" width="96" alt="" /><br/>**GF4.MUL**<br/><sub>4 &times; 7</sub> | <img src="__renders__/GF8.MUL.png" width="96" alt="" /><br/>**GF8.MUL**<br/><sub>8 &times; 15</sub> |
 
 ## [Rectangular matrices, 32bit](rectangular32bit.md)
 
-| &nbsp; | &nbsp; | &nbsp; | &nbsp; |
-|:---:|:---:|:---:|:---:|
-| <img src="__renders__/GF16.MUL.png" width="126" alt="GF16.MUL" /><br/>**GF16.MUL**<br/><sub>16 &times; 31</sub> | &nbsp; | &nbsp; | &nbsp; |
+| &nbsp; |
+|:---:|
+| <img src="__renders__/GF16.MUL.png" width="126" alt="" /><br/>**GF16.MUL**<br/><sub>16 &times; 31</sub> |
 
 ## [Rectangular matrices, 64bit](rectangular64bit.md)
 
-| &nbsp; | &nbsp; | &nbsp; | &nbsp; |
-|:---:|:---:|:---:|:---:|
-| <img src="__renders__/GF32.MUL.png" width="159" alt="GF32.MUL" /><br/>**GF32.MUL**<br/><sub>32 &times; 63</sub> | &nbsp; | &nbsp; | &nbsp; |
+| &nbsp; |
+|:---:|
+| <img src="__renders__/GF32.MUL.png" width="159" alt="" /><br/>**GF32.MUL**<br/><sub>32 &times; 63</sub> |
 
 ## [Rectangular matrices, 128bit](rectangular128bit.md)
 
-| &nbsp; | &nbsp; | &nbsp; | &nbsp; |
-|:---:|:---:|:---:|:---:|
-| <img src="__renders__/GF64.MUL.png" width="191" alt="GF64.MUL" /><br/>**GF64.MUL**<br/><sub>64 &times; 127</sub> | &nbsp; | &nbsp; | &nbsp; |
+| &nbsp; |
+|:---:|
+| <img src="__renders__/GF64.MUL.png" width="191" alt="" /><br/>**GF64.MUL**<br/><sub>64 &times; 127</sub> |
 
 ## [Rectangular matrices, 256bit](rectangular256bit.md)
 
-| &nbsp; | &nbsp; | &nbsp; | &nbsp; |
-|:---:|:---:|:---:|:---:|
-| <img src="__renders__/GF127.MUL.png" width="223" alt="GF127.MUL" /><br/>**GF127.MUL**<br/><sub>127 &times; 253</sub> | <img src="__renders__/GF128.MUL.png" width="223" alt="GF128.MUL" /><br/>**GF128.MUL**<br/><sub>128 &times; 255</sub> | &nbsp; | &nbsp; |
+| &nbsp; | &nbsp; |
+|:---:|:---:|
+| <img src="__renders__/GF127.MUL.png" width="223" alt="" /><br/>**GF127.MUL**<br/><sub>127 &times; 253</sub> | <img src="__renders__/GF128.MUL.png" width="223" alt="" /><br/>**GF128.MUL**<br/><sub>128 &times; 255</sub> |
 
 ## [Rectangular matrices, 325bit](rectangular325bit.md)
 
-| &nbsp; | &nbsp; | &nbsp; | &nbsp; |
-|:---:|:---:|:---:|:---:|
-| <img src="__renders__/GF163.MUL.png" width="256" alt="GF163.MUL" /><br/>**GF163.MUL**<br/><sub>163 &times; 325</sub> | &nbsp; | &nbsp; | &nbsp; |
+| &nbsp; |
+|:---:|
+| <img src="__renders__/GF163.MUL.png" width="256" alt="" /><br/>**GF163.MUL**<br/><sub>163 &times; 325</sub> |
 
 ## [Rectangular matrices, 465bit](rectangular465bit.md)
 
-| &nbsp; | &nbsp; | &nbsp; | &nbsp; |
-|:---:|:---:|:---:|:---:|
-| <img src="__renders__/GF233.MUL.png" width="256" alt="GF233.MUL" /><br/>**GF233.MUL**<br/><sub>233 &times; 465</sub> | &nbsp; | &nbsp; | &nbsp; |
+| &nbsp; |
+|:---:|
+| <img src="__renders__/GF233.MUL.png" width="256" alt="" /><br/>**GF233.MUL**<br/><sub>233 &times; 465</sub> |
 
 ## [Rectangular matrices, 511bit](rectangular511bit.md)
 
-| &nbsp; | &nbsp; | &nbsp; | &nbsp; |
-|:---:|:---:|:---:|:---:|
-| <img src="__renders__/GF256.MUL.png" width="256" alt="GF256.MUL" /><br/>**GF256.MUL**<br/><sub>256 &times; 511</sub> | &nbsp; | &nbsp; | &nbsp; |
+| &nbsp; |
+|:---:|
+| <img src="__renders__/GF256.MUL.png" width="256" alt="" /><br/>**GF256.MUL**<br/><sub>256 &times; 511</sub> |
 
 ## [Rectangular matrices, 565bit](rectangular565bit.md)
 
-| &nbsp; | &nbsp; | &nbsp; | &nbsp; |
-|:---:|:---:|:---:|:---:|
-| <img src="__renders__/GF283.MUL.png" width="256" alt="GF283.MUL" /><br/>**GF283.MUL**<br/><sub>283 &times; 565</sub> | &nbsp; | &nbsp; | &nbsp; |
+| &nbsp; |
+|:---:|
+| <img src="__renders__/GF283.MUL.png" width="256" alt="" /><br/>**GF283.MUL**<br/><sub>283 &times; 565</sub> |
 
 ## [Rectangular matrices, 1141bit](rectangular1141bit.md)
 
-| &nbsp; | &nbsp; | &nbsp; | &nbsp; |
-|:---:|:---:|:---:|:---:|
-| <img src="__renders__/GF571.MUL.png" width="256" alt="GF571.MUL" /><br/>**GF571.MUL**<br/><sub>571 &times; 1141</sub> | &nbsp; | &nbsp; | &nbsp; |
+| &nbsp; |
+|:---:|
+| <img src="__renders__/GF571.MUL.png" width="256" alt="" /><br/>**GF571.MUL**<br/><sub>571 &times; 1141</sub> |
 
 ## [Rectangular matrices, 2047bit](rectangular2047bit.md)
 
-| &nbsp; | &nbsp; | &nbsp; | &nbsp; |
-|:---:|:---:|:---:|:---:|
-| <img src="__renders__/GF1024.MUL.png" width="256" alt="GF1024.MUL" /><br/>**GF1024.MUL**<br/><sub>1024 &times; 2047</sub> | &nbsp; | &nbsp; | &nbsp; |
+| &nbsp; |
+|:---:|
+| <img src="__renders__/GF1024.MUL.png" width="256" alt="" /><br/>**GF1024.MUL**<br/><sub>1024 &times; 2047</sub> |
 
 ## [Bit-permutations](permutations.md)
 
 | &nbsp; | &nbsp; | &nbsp; | &nbsp; |
 |:---:|:---:|:---:|:---:|
-| <img src="__renders__/AES.SHIFTROWS.png" width="192" alt="AES.SHIFTROWS" /><br/>**AES.SHIFTROWS**<br/><sub>128 &times; 128</sub> | <img src="__renders__/AETHER.PN.png" width="192" alt="AETHER.PN" /><br/>**AETHER.PN**<br/><sub>128 &times; 128</sub> | <img src="__renders__/BAKSHEESH.P.png" width="192" alt="BAKSHEESH.P" /><br/>**BAKSHEESH.P**<br/><sub>128 &times; 128</sub> | <img src="__renders__/BEANIE.SR.png" width="128" alt="BEANIE.SR" /><br/>**BEANIE.SR**<br/><sub>32 &times; 32</sub> |
-| <img src="__renders__/DEOXYS.H.png" width="192" alt="DEOXYS.H" /><br/>**DEOXYS.H**<br/><sub>128 &times; 128</sub> | <img src="__renders__/DIALGA.P0.png" width="192" alt="DIALGA.P0" /><br/>**DIALGA.P0**<br/><sub>128 &times; 128</sub> | <img src="__renders__/DIALGA.P1.png" width="192" alt="DIALGA.P1" /><br/>**DIALGA.P1**<br/><sub>128 &times; 128</sub> | <img src="__renders__/DIALGA.P2.png" width="192" alt="DIALGA.P2" /><br/>**DIALGA.P2**<br/><sub>128 &times; 128</sub> |
-| <img src="__renders__/DIALGA.P3.png" width="192" alt="DIALGA.P3" /><br/>**DIALGA.P3**<br/><sub>128 &times; 128</sub> | <img src="__renders__/DIALGA.PM.png" width="192" alt="DIALGA.PM" /><br/>**DIALGA.PM**<br/><sub>128 &times; 128</sub> | <img src="__renders__/GIFT.128.png" width="192" alt="GIFT.128" /><br/>**GIFT.128**<br/><sub>128 &times; 128</sub> | <img src="__renders__/GIFT.64.png" width="160" alt="GIFT.64" /><br/>**GIFT.64**<br/><sub>64 &times; 64</sub> |
-| <img src="__renders__/GIMLI.BIGSWAP.png" width="256" alt="GIMLI.BIGSWAP" /><br/>**GIMLI.BIGSWAP**<br/><sub>384 &times; 384</sub> | <img src="__renders__/GIMLI.SMALLSWAP.png" width="256" alt="GIMLI.SMALLSWAP" /><br/>**GIMLI.SMALLSWAP**<br/><sub>384 &times; 384</sub> | <img src="__renders__/GLEEOK.PI128B1.png" width="192" alt="GLEEOK.PI128B1" /><br/>**GLEEOK.PI128B1**<br/><sub>128 &times; 128</sub> | <img src="__renders__/GLEEOK.PI128B2.png" width="192" alt="GLEEOK.PI128B2" /><br/>**GLEEOK.PI128B2**<br/><sub>128 &times; 128</sub> |
-| <img src="__renders__/GLEEOK.PI128B3.png" width="192" alt="GLEEOK.PI128B3" /><br/>**GLEEOK.PI128B3**<br/><sub>128 &times; 128</sub> | <img src="__renders__/GLEEOK.PI256B1.png" width="224" alt="GLEEOK.PI256B1" /><br/>**GLEEOK.PI256B1**<br/><sub>256 &times; 256</sub> | <img src="__renders__/GLEEOK.PI256B2.png" width="224" alt="GLEEOK.PI256B2" /><br/>**GLEEOK.PI256B2**<br/><sub>256 &times; 256</sub> | <img src="__renders__/GLEEOK.PI256B3.png" width="224" alt="GLEEOK.PI256B3" /><br/>**GLEEOK.PI256B3**<br/><sub>256 &times; 256</sub> |
-| <img src="__renders__/JOLTIK.H.png" width="160" alt="JOLTIK.H" /><br/>**JOLTIK.H**<br/><sub>64 &times; 64</sub> | <img src="__renders__/KLEIN.ROTATENIBBLES.png" width="160" alt="KLEIN.ROTATENIBBLES" /><br/>**KLEIN.ROTATENIBBLES**<br/><sub>64 &times; 64</sub> | <img src="__renders__/MERIDIAN.MER.png" width="192" alt="MERIDIAN.MER" /><br/>**MERIDIAN.MER**<br/><sub>128 &times; 128</sub> | <img src="__renders__/MERIDIAN.PAR.png" width="192" alt="MERIDIAN.PAR" /><br/>**MERIDIAN.PAR**<br/><sub>128 &times; 128</sub> |
-| <img src="__renders__/PIPO.R.png" width="160" alt="PIPO.R" /><br/>**PIPO.R**<br/><sub>64 &times; 64</sub> | <img src="__renders__/PRESENT.png" width="160" alt="PRESENT" /><br/>**PRESENT**<br/><sub>64 &times; 64</sub> | <img src="__renders__/SALSA20.TRANSPOSE.png" width="256" alt="SALSA20.TRANSPOSE" /><br/>**SALSA20.TRANSPOSE**<br/><sub>512 &times; 512</sub> | <img src="__renders__/SAND.P32.png" width="128" alt="SAND.P32" /><br/>**SAND.P32**<br/><sub>32 &times; 32</sub> |
-| <img src="__renders__/SAND.P64.png" width="160" alt="SAND.P64" /><br/>**SAND.P64**<br/><sub>64 &times; 64</sub> | <img src="__renders__/SCARF.PI.png" width="157" alt="SCARF.PI" /><br/>**SCARF.PI**<br/><sub>60 &times; 60</sub> | <img src="__renders__/SEFA.P16.png" width="96" alt="SEFA.P16" /><br/>**SEFA.P16**<br/><sub>16 &times; 16</sub> | <img src="__renders__/SPEEDY.SC.png" width="210" alt="SPEEDY.SC" /><br/>**SPEEDY.SC**<br/><sub>192 &times; 192</sub> |
-| <img src="__renders__/TRIFLE.png" width="192" alt="TRIFLE" /><br/>**TRIFLE**<br/><sub>128 &times; 128</sub> | <img src="__renders__/TWINKLE.LANEROTATION0.png" width="256" alt="TWINKLE.LANEROTATION0" /><br/>**TWINKLE.LANEROTATION0**<br/><sub>1280 &times; 1280</sub> | <img src="__renders__/TWINKLE.LANEROTATION1.png" width="256" alt="TWINKLE.LANEROTATION1" /><br/>**TWINKLE.LANEROTATION1**<br/><sub>1280 &times; 1280</sub> | <img src="__renders__/ULBC.POSPERM.png" width="192" alt="ULBC.POSPERM" /><br/>**ULBC.POSPERM**<br/><sub>128 &times; 128</sub> |
+| <img src="__renders__/AES.SHIFTROWS.png" width="192" alt="" /><br/>**AES.SHIFTROWS**<br/><sub>128 &times; 128</sub> | <img src="__renders__/AETHER.PN.png" width="192" alt="" /><br/>**AETHER.PN**<br/><sub>128 &times; 128</sub> | <img src="__renders__/BAKSHEESH.P.png" width="192" alt="" /><br/>**BAKSHEESH.P**<br/><sub>128 &times; 128</sub> | <img src="__renders__/BEANIE.SR.png" width="128" alt="" /><br/>**BEANIE.SR**<br/><sub>32 &times; 32</sub> |
+| <img src="__renders__/DEOXYS.H.png" width="192" alt="" /><br/>**DEOXYS.H**<br/><sub>128 &times; 128</sub> | <img src="__renders__/DIALGA.P0.png" width="192" alt="" /><br/>**DIALGA.P0**<br/><sub>128 &times; 128</sub> | <img src="__renders__/DIALGA.P1.png" width="192" alt="" /><br/>**DIALGA.P1**<br/><sub>128 &times; 128</sub> | <img src="__renders__/DIALGA.P2.png" width="192" alt="" /><br/>**DIALGA.P2**<br/><sub>128 &times; 128</sub> |
+| <img src="__renders__/DIALGA.P3.png" width="192" alt="" /><br/>**DIALGA.P3**<br/><sub>128 &times; 128</sub> | <img src="__renders__/DIALGA.PM.png" width="192" alt="" /><br/>**DIALGA.PM**<br/><sub>128 &times; 128</sub> | <img src="__renders__/GIFT.128.png" width="192" alt="" /><br/>**GIFT.128**<br/><sub>128 &times; 128</sub> | <img src="__renders__/GIFT.64.png" width="160" alt="" /><br/>**GIFT.64**<br/><sub>64 &times; 64</sub> |
+| <img src="__renders__/GIMLI.BIGSWAP.png" width="256" alt="" /><br/>**GIMLI.BIGSWAP**<br/><sub>384 &times; 384</sub> | <img src="__renders__/GIMLI.SMALLSWAP.png" width="256" alt="" /><br/>**GIMLI.SMALLSWAP**<br/><sub>384 &times; 384</sub> | <img src="__renders__/GLEEOK.PI128B1.png" width="192" alt="" /><br/>**GLEEOK.PI128B1**<br/><sub>128 &times; 128</sub> | <img src="__renders__/GLEEOK.PI128B2.png" width="192" alt="" /><br/>**GLEEOK.PI128B2**<br/><sub>128 &times; 128</sub> |
+| <img src="__renders__/GLEEOK.PI128B3.png" width="192" alt="" /><br/>**GLEEOK.PI128B3**<br/><sub>128 &times; 128</sub> | <img src="__renders__/GLEEOK.PI256B1.png" width="224" alt="" /><br/>**GLEEOK.PI256B1**<br/><sub>256 &times; 256</sub> | <img src="__renders__/GLEEOK.PI256B2.png" width="224" alt="" /><br/>**GLEEOK.PI256B2**<br/><sub>256 &times; 256</sub> | <img src="__renders__/GLEEOK.PI256B3.png" width="224" alt="" /><br/>**GLEEOK.PI256B3**<br/><sub>256 &times; 256</sub> |
+| <img src="__renders__/JOLTIK.H.png" width="160" alt="" /><br/>**JOLTIK.H**<br/><sub>64 &times; 64</sub> | <img src="__renders__/KLEIN.ROTATENIBBLES.png" width="160" alt="" /><br/>**KLEIN.ROTATENIBBLES**<br/><sub>64 &times; 64</sub> | <img src="__renders__/MERIDIAN.MER.png" width="192" alt="" /><br/>**MERIDIAN.MER**<br/><sub>128 &times; 128</sub> | <img src="__renders__/MERIDIAN.PAR.png" width="192" alt="" /><br/>**MERIDIAN.PAR**<br/><sub>128 &times; 128</sub> |
+| <img src="__renders__/PIPO.R.png" width="160" alt="" /><br/>**PIPO.R**<br/><sub>64 &times; 64</sub> | <img src="__renders__/PRESENT.png" width="160" alt="" /><br/>**PRESENT**<br/><sub>64 &times; 64</sub> | <img src="__renders__/SALSA20.TRANSPOSE.png" width="256" alt="" /><br/>**SALSA20.TRANSPOSE**<br/><sub>512 &times; 512</sub> | <img src="__renders__/SAND.P32.png" width="128" alt="" /><br/>**SAND.P32**<br/><sub>32 &times; 32</sub> |
+| <img src="__renders__/SAND.P64.png" width="160" alt="" /><br/>**SAND.P64**<br/><sub>64 &times; 64</sub> | <img src="__renders__/SCARF.PI.png" width="157" alt="" /><br/>**SCARF.PI**<br/><sub>60 &times; 60</sub> | <img src="__renders__/SEFA.P16.png" width="96" alt="" /><br/>**SEFA.P16**<br/><sub>16 &times; 16</sub> | <img src="__renders__/SPEEDY.SC.png" width="210" alt="" /><br/>**SPEEDY.SC**<br/><sub>192 &times; 192</sub> |
+| <img src="__renders__/TRIFLE.png" width="192" alt="" /><br/>**TRIFLE**<br/><sub>128 &times; 128</sub> | <img src="__renders__/TWINKLE.LANEROTATION0.png" width="256" alt="" /><br/>**TWINKLE.LANEROTATION0**<br/><sub>1280 &times; 1280</sub> | <img src="__renders__/TWINKLE.LANEROTATION1.png" width="256" alt="" /><br/>**TWINKLE.LANEROTATION1**<br/><sub>1280 &times; 1280</sub> | <img src="__renders__/ULBC.POSPERM.png" width="192" alt="" /><br/>**ULBC.POSPERM**<br/><sub>128 &times; 128</sub> |
 
 ## Keys no longer carrying a body
 

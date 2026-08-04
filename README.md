@@ -2,7 +2,7 @@
 
 Public collection of binary linear layers (matrices over $\mathrm{GF}(2)$ and bit-permutations) used in cryptography
 
-Last update: 31 July 2026 <!-- TODO: To be updated in UTC with each (major) commit/push -->
+Last update: 4 August 2026 <!-- TODO: To be updated in UTC with each (major) commit/push -->
 
 ## Organisation
 
