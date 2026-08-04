@@ -8,5 +8,5 @@ Entry count: 1.
 
 | Key | Preview | Shape | Year | Properties | Origin |
 |:----|:-------:|:-----:|:----:|:-----------|:-------|
-| **GF571.MUL**<br/>GF(2⁵⁷¹), multiplication by x | <img src="__renders__/GF571.MUL.png" width="256" alt="GF571.MUL" /> | 571 x 1141 | u, n, k, n, o, w, n | - | unknown |
+| **GF571.MUL**<br/>GF(2⁵⁷¹), multiplication by x | <img src="__renders__/GF571.MUL.png" width="256" alt="GF571.MUL" /> | 571 x 1141 | 2000, 2013 | - | [link](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.186-4.pdf) |
 

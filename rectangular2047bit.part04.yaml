@@ -1,7 +1,5 @@
 # Big-Fat-Matrix-List: rectangular matrices in size band rectangular2047bit (part 4 of 6).
-# Binned by column count (input width). The part of a band is
-# loaded and merged by bigfatmatrix.py; a matrix whose body spans
-# several parts carries matrix_part / matrix_parts markers.
+# Binned by column count (input width).
 
 GF1024.MUL:
   matrix_parts: 6

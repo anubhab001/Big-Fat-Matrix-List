@@ -1,17 +1,15 @@
 # Big-Fat-Matrix-List: matrices in size band 571bit (part 1 of 2).
-# Binned by column count (input width). The part of a band is
-# loaded and merged by bigfatmatrix.py; a matrix whose body spans
-# several parts carries matrix_part / matrix_parts markers.
+# Binned by column count (input width).
 
 GF571.ECCSQR:
   canonical_name: ["GF(2⁵⁷¹)", "squaring, elliptic-curve representation"]
   rows: 571
   cols: 571
-  year: "unknown"
+  year: [2025]
   cipher: false
-  origin: "unknown"
+  origin: "https://github.com/starj1023/Binary_ECC"
   paper_title: "Jang, Srivastava, Baksi, Sarkar, Seo. Quantum Circuits for Binary Elliptic Curves Cryptography (IACR Transactions on Cryptographic Hardware and Embedded Systems 2025)."
-  note: "Frobenius map x -> x^2 over the field named next. Second reduction polynomial catalogued for this degree, beside the NIST-recommended one of the _0 variant. Its first use is not recorded, so the origin and the year are given as unknown."
+  note: "Squaring over GF(2^571) in the basis the binary-curve elliptic-curve work uses. It is a different basis from the cipher-oriented GF571.SQR, and no permutation between it is published there. The two are not merely unequal: for the degrees where both are catalogued, no permutation of rows and columns carries either to the other, to its transpose, to its inverse or to the transpose of its inverse, which was decided here rather than assumed."
   involution: false
   symmetric: false
   rank: 571

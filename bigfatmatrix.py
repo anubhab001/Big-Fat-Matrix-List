@@ -7,8 +7,8 @@ Three access modes:
   Python mode
   -----------
   import bigfatmatrix
-  m = bigfatmatrix.aes_mixcolumn        # MatrixEntry (case-insensitive)
-  m = bigfatmatrix['AES.MIXCOLUMN']     # bracket access (case-insensitive)
+  m = bigfatmatrix.aes_mixcolumns        # MatrixEntry (case-insensitive)
+  m = bigfatmatrix['AES.MIXCOLUMNS']     # bracket access (case-insensitive)
   m.matrix                              # tuple of binary strings, one per row
   m.rows, m.cols                        # dimensions
   m.as_int_matrix()                     # tuple of tuples of 0/1
@@ -18,7 +18,7 @@ Three access modes:
   m.to_dict()                           # raw YAML dict
 
   from bigfatmatrix import aes          # MatrixGroup (entries keyed AES.*)
-  aes.mixcolumn                         # AES.MIXCOLUMN entry
+  aes.mixcolumn                         # AES.MIXCOLUMNS entry
   for x in bigfatmatrix.gift: ...       # iterate over GIFT.* entries
 
   Permutation entries expose a `.perm` property (tuple[int]) and `.size`, and
@@ -29,13 +29,13 @@ Three access modes:
 
   Sage mode (auto-detected when running inside SageMath)
   ------------------------------------------------------
-  from bigfatmatrix import aes_mixcolumn  # returns Matrix(GF(2), ...)
+  from bigfatmatrix import aes_mixcolumns  # returns Matrix(GF(2), ...)
   bigfatmatrix.present                    # returns sage.combinat.permutation.Permutation
   m.to_sage()                             # explicit conversion in Python mode
 
   YAML/raw-dict mode (works in both Python and Sage)
   --------------------------------------------------
-  bigfatmatrix.yaml['AES.MIXCOLUMN']    # raw YAML dict (case-insensitive)
+  bigfatmatrix.yaml['AES.MIXCOLUMNS']    # raw YAML dict (case-insensitive)
   bigfatmatrix.yaml.all_names()         # list of every entry key
 
   Wildcard search
@@ -462,7 +462,7 @@ def _get_group(name: str) -> MatrixGroup | None:
 # ---------------------------------------------------------------------------
 
 class _YAMLProxy:
-    """bigfatmatrix.yaml.aes_mixcolumn or bigfatmatrix.yaml['AES.MIXCOLUMN']
+    """bigfatmatrix.yaml.aes_mixcolumns or bigfatmatrix.yaml['AES.MIXCOLUMNS']
     returns the raw YAML dict, with case-insensitive lookup."""
 
     def __getattr__(self, name: str) -> dict:
@@ -603,7 +603,7 @@ if __name__ == '__main__':
     if not names:
         _ensure_loaded()
         print(f"bigfatmatrix: {len(_raw)} entries available")
-        print(f"  example:  python bigfatmatrix.py AES.MIXCOLUMN")
+        print(f"  example:  python bigfatmatrix.py AES.MIXCOLUMNS")
         sys.exit(0)
 
     _ensure_loaded()

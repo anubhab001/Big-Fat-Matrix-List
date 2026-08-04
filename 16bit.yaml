@@ -9,7 +9,7 @@ AETHER.MB:
   cipher: true
   origin: "https://tches.iacr.org/index.php/TCHES/article/view/12228"
   paper_title: "Banik, Isobe, Rahman, Sakamoto et al. AETHER (IACR Transactions on Cryptographic Hardware and Embedded Systems)."
-  note: "MatrixMul of the AETHER inner function. Involutory 16x16 binary matrix over nibbles taken from Akleylek, Rijmen, Sakalli, Ozturk (2017); block form [[I,I,I,J],[I,I,J,I],[I,J,I,I],[J,I,I,I]] over 4x4 blocks, J the all-ones block. Applied to each of the two halves of the 128-bit state; on bits the half-state map is kron(AETHER.MB, I_4). See AETHER for the full 128-bit layer. Equal to the ARIA diffusion matrix up to a permutation of rows and columns, though not to ARIA itself; the two designs arrive at the same 16 x 16 involution by different routes."
+  note: "MatrixMul of the AETHER inner function. Involutory 16x16 binary matrix over nibbles taken from Akleylek, Rijmen, Sakalli, Ozturk (2017); block form [[I,I,I,J],[I,I,J,I],[I,J,I,I],[J,I,I,I]] over 4x4 blocks, J the all-ones block. Applied to each of the two halves of the 128-bit state; on bits the half-state map is kron(AETHER.MB, I_4). See AETHER for the full 128-bit layer. The same matrix as ARIA up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. Neither specification says so; it is established here."
   formula: "(x0, ..., x15)^T <- M_b (x0, ..., x15)^T over 16 nibbles; entries of M_b are in GF(2), so on bits M_b acts as kron(M_b, I_4)."
   involution: true
   symmetric: true
@@ -18,6 +18,7 @@ AETHER.MB:
   order: 2
   hamming_weight: 112
   orbit: 8
+  similarity: ["ARIA"]
   trivium: "The aether was the medium that nineteenth-century physics posited for the propagation of electromagnetic waves."
   hamming_weight_per_row: [7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7]
   matrix:
@@ -46,7 +47,7 @@ ARIA:
   cipher: true
   origin: "https://link.springer.com/chapter/10.1007/978-3-540-24691-6_32"
   paper_title: "Kwon et al., ICISC 2003"
-  note: "Korean block cipher ARIA (involutory)."
+  note: "Korean block cipher ARIA (involutory). The same matrix as AETHER.MB up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as AETHER.MB up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as AETHER.MB up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as AETHER.MB up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as AETHER.MB up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as AETHER.MB up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as AETHER.MB up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as AETHER.MB up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as AETHER.MB up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as AETHER.MB up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as AETHER.MB up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as AETHER.MB up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as AETHER.MB up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. Neither specification says so; it is established here."
   involution: true
   symmetric: true
   rank: 16
@@ -54,6 +55,7 @@ ARIA:
   order: 2
   hamming_weight: 112
   orbit: 16
+  similarity: ["AETHER.MB"]
   hamming_weight_per_row: [7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7]
   matrix:
     - '0001101011000110'
@@ -72,74 +74,6 @@ ARIA:
     - '1001001110100100'
     - '1001110001010010'
     - '0110110010100001'
-
-BKD21.A:
-  canonical_name: ["Baksi-Kumar-Dey", "16 × 16 binary, variant A"]
-  rows: 16
-  cols: 16
-  year: [2021]
-  cipher: false
-  origin: "https://eprint.iacr.org/2021/"
-  source: "(Ours): https://bitbucket.org/anubhab001/linear-layer-smt/"
-  involution: false
-  symmetric: true
-  rank: 16
-  is_invertible: true
-  order: 102
-  hamming_weight: 150
-  orbit: 16
-  hamming_weight_per_row: [9, 11, 8, 13, 10, 10, 8, 8, 11, 8, 7, 7, 11, 8, 11, 10]
-  matrix:
-    - '1011011110001100'
-    - '0111100111011101'
-    - '1101111101000000'
-    - '1111101010111111'
-    - '0111010111011001'
-    - '1010101101111010'
-    - '1011010010001101'
-    - '1110110001000011'
-    - '1101101011001111'
-    - '0110110110000011'
-    - '0001010000111110'
-    - '0101110000110010'
-    - '1101111010101011'
-    - '1101001010100011'
-    - '0001010111111111'
-    - '0101101111001110'
-
-BKD21.B:
-  canonical_name: ["Baksi-Kumar-Dey", "16 × 16 binary, variant B"]
-  rows: 16
-  cols: 16
-  year: [2021]
-  cipher: false
-  origin: "https://eprint.iacr.org/2021/"
-  source: "(Ours): https://bitbucket.org/anubhab001/linear-layer-smt/"
-  involution: false
-  symmetric: true
-  rank: 16
-  is_invertible: true
-  order: 102
-  hamming_weight: 150
-  orbit: 16
-  hamming_weight_per_row: [11, 8, 7, 7, 11, 8, 11, 10, 9, 11, 8, 13, 10, 10, 8, 8]
-  matrix:
-    - '1100111111011010'
-    - '1000001101101101'
-    - '0011111000010100'
-    - '0011001001011100'
-    - '1010101111011110'
-    - '1010001111010010'
-    - '1111111100010101'
-    - '1100111001011011'
-    - '1000110010110111'
-    - '1101110101111001'
-    - '0100000011011111'
-    - '1011111111111010'
-    - '1101100101110101'
-    - '0111101010101011'
-    - '1000110110110100'
-    - '0100001111101100'
 
 BKL16.S16:
   canonical_name: ["Beierle-Kranz-Leander", "4 × 4 over GF(2⁴)"]
@@ -187,6 +121,7 @@ CHAM.RF1:
   origin: "https://link.springer.com/chapter/10.1007/978-3-319-78556-1_1"
   source: "YJBS: https://www.mdpi.com/2076-3417/13/8/5156/pdf"
   paper_title: "CHAM round function 1"
+  note: "The same matrix as PRIDE.L1, PRIDE.L2 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PRIDE.L1, PRIDE.L2 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PRIDE.L1, PRIDE.L2 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PRIDE.L1, PRIDE.L2 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PRIDE.L1, PRIDE.L2 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PRIDE.L1, PRIDE.L2 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PRIDE.L1, PRIDE.L2 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PRIDE.L1, PRIDE.L2 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PRIDE.L1, PRIDE.L2 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PRIDE.L1, PRIDE.L2 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PRIDE.L1, PRIDE.L2 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PRIDE.L1, PRIDE.L2 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PRIDE.L1, PRIDE.L2 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. Neither specification says so; it is established here."
   involution: false
   symmetric: false
   rank: 16
@@ -194,6 +129,7 @@ CHAM.RF1:
   order: 16
   hamming_weight: 48
   orbit: 1
+  similarity: ["PRIDE.L1", "PRIDE.L2"]
   hamming_weight_per_row: [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3]
   matrix:
     - '1000000010000001'
@@ -291,10 +227,10 @@ GF16.ECCSQR:
   aliases: ["GF16ECCSQR"]
   rows: 16
   cols: 16
-  year: [1998]
+  year: [2023]
   cipher: false
-  origin: "https://www.hpl.hp.com/techreports/98/HPL-98-135.pdf"
-  note: "Frobenius map x -> x^2 over the field named next. Lowest-weight irreducible polynomial of this degree, as tabulated by Seroussi, Table of Low-Weight Binary Irreducible Polynomials, HP Laboratories technical report HPL-98-135."
+  origin: "https://github.com/starj1023/Binary_ECC"
+  note: "Squaring in GF(2^16) for binary-curve ECC, in the upstream basis. Circuits in the wild realise the same map in a permuted basis via the column permutation q = [7,5,12,3,8,13,6,15,11,0,2,10,14,4,1,9]; permuting wires is a graph isomorphism, so every circuit metric is preserved."
   formula: "Frobenius squaring x -> x^2 over GF(2^16); row i = output bit i, column j = input bit j."
   involution: false
   symmetric: false
@@ -385,10 +321,10 @@ GF8.ECCSQR:
   aliases: ["GF8ECCSQR"]
   rows: 8
   cols: 8
-  year: [2001]
+  year: [2023]
   cipher: false
-  origin: "https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.197-upd1.pdf"
-  note: "Frobenius map x -> x^2 over the field named next. x^8 + x^4 + x^3 + x + 1, the Rijndael polynomial of FIPS 197; it is also the lowest-weight irreducible polynomial of degree 8."
+  origin: "https://github.com/starj1023/Binary_ECC"
+  note: "Squaring in GF(2^8) as used for binary-curve ECC, field polynomial x^8 + x^4 + x^3 + 1 (not the AES polynomial of GF8.SQR). Best catalogued for the elliptic-curve setting."
   formula: "Frobenius squaring x -> x^2 over GF(2^8) / (x^8 + x^4 + x^3 + 1); row i = output bit i, column j = input bit j. Row multiset [28, 72, 118, 124, 144, 176, 232, 237] reading row r as sum_c M[r][c] << c."
   involution: false
   symmetric: false
@@ -443,7 +379,7 @@ JOLTIK:
   cipher: true
   origin: "https://competitions.cr.yp.to/round1/joltikv11.pdf"
   source: "NIST Circuit Complexity: https://csrc.nist.gov/Projects/circuit-complexity/list-of-circuits"
-  note: "MixColumns of Joltik. The same matrix is the involutory 4 x 4 over GF(2^4) of Sim, Khoo, Oggier and Peyrin (FSE 2015), which the catalogue held separately as SKOP15.IS16 until that key was retired in favour of the earlier publication."
+  note: "MixColumns of Joltik. The same matrix is the involutory 4 x 4 over GF(2^4) of Sim, Khoo, Oggier and Peyrin (FSE 2015), which the catalogue held separately as SKOP15.IS16 until that key was retired in favour of the earlier publication. The same matrix as LW16.I16 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as LW16.I16 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as LW16.I16 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as LW16.I16 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as LW16.I16 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as LW16.I16 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as LW16.I16 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as LW16.I16 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as LW16.I16 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as LW16.I16 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as LW16.I16 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as LW16.I16 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as LW16.I16 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. Neither specification says so; it is established here."
   involution: true
   symmetric: false
   rank: 16
@@ -451,6 +387,7 @@ JOLTIK:
   order: 2
   hamming_weight: 88
   orbit: 8
+  similarity: ["LW16.I16"]
   hamming_weight_per_row: [7, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5]
   matrix:
     - '1000001011001110'
@@ -517,6 +454,7 @@ JPST17.S16:
   origin: "https://eprint.iacr.org/2017/101"
   source: "URL: XZLBZ: https://github.com/xiangzejun/Optimizing_Implementations_of_Linear_Layers/blob/master/Implementations/ePrint_JeaPeySim_4x4_4.txt; NIST Circuit Complexity: https://csrc.nist.gov/Projects/circuit-complexity/list-of-circuits"
   paper_title: "Jean, Peyrin, Sim, Tourteaux, ePrint 2017/101"
+  note: "The same matrix as LW16.B16 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as LW16.B16 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as LW16.B16 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as LW16.B16 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as LW16.B16 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as LW16.B16 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as LW16.B16 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as LW16.B16 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as LW16.B16 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as LW16.B16 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as LW16.B16 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as LW16.B16 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as LW16.B16 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. Neither specification says so; it is established here."
   involution: false
   symmetric: false
   rank: 16
@@ -524,6 +462,7 @@ JPST17.S16:
   order: 4095
   hamming_weight: 77
   orbit: 16
+  similarity: ["LW16.B16"]
   hamming_weight_per_row: [4, 5, 4, 4, 6, 5, 4, 5, 6, 5, 4, 5, 6, 5, 4, 5]
   matrix:
     - '1000100010000001'
@@ -658,6 +597,7 @@ LS16.S16:
   cipher: false
   origin: "https://tosc.iacr.org/index.php/ToSC"
   source: "URL: XZLBZ: https://github.com/xiangzejun/Optimizing_Implementations_of_Linear_Layers/blob/master/Implementations/FSE_LimSim16_4x4_4.txt; NIST Circuit Complexity: https://csrc.nist.gov/Projects/circuit-complexity/list-of-circuits"
+  note: "The same matrix as LW16.A16 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as LW16.A16 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as LW16.A16 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as LW16.A16 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as LW16.A16 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as LW16.A16 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as LW16.A16 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as LW16.A16 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as LW16.A16 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as LW16.A16 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as LW16.A16 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as LW16.A16 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as LW16.A16 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. Neither specification says so; it is established here."
   involution: false
   symmetric: false
   rank: 16
@@ -665,6 +605,7 @@ LS16.S16:
   order: 60
   hamming_weight: 76
   orbit: 4
+  similarity: ["LW16.A16"]
   hamming_weight_per_row: [5, 5, 5, 4, 5, 5, 5, 4, 5, 5, 5, 4, 5, 5, 5, 4]
   matrix:
     - '1000100011000010'
@@ -693,6 +634,7 @@ LW16.A16:
   cipher: false
   origin: "https://tosc.iacr.org/index.php/ToSC"
   source: "URL: XZLBZ: https://github.com/xiangzejun/Optimizing_Implementations_of_Linear_Layers/blob/master/Implementations/FSE_LiWang16_4x4_4.txt; NIST Circuit Complexity: https://csrc.nist.gov/Projects/circuit-complexity/list-of-circuits"
+  note: "The same matrix as LS16.S16 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as LS16.S16 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as LS16.S16 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as LS16.S16 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as LS16.S16 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as LS16.S16 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as LS16.S16 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as LS16.S16 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as LS16.S16 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as LS16.S16 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as LS16.S16 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as LS16.S16 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as LS16.S16 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. Neither specification says so; it is established here."
   involution: false
   symmetric: false
   rank: 16
@@ -700,6 +642,7 @@ LW16.A16:
   order: 60
   hamming_weight: 76
   orbit: 4
+  similarity: ["LS16.S16"]
   hamming_weight_per_row: [5, 5, 4, 5, 5, 5, 4, 5, 5, 5, 4, 5, 5, 5, 4, 5]
   matrix:
     - '1000100001000110'
@@ -728,6 +671,7 @@ LW16.B16:
   cipher: false
   origin: "https://tosc.iacr.org/index.php/ToSC"
   source: "BDKCI: https://bitbucket.org/vdasu_edu/boyar-peralta-xor3/src/master/matrices/FSE_LiWang16_4x4_4_2.txt"
+  note: "The same matrix as JPST17.S16 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as JPST17.S16 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as JPST17.S16 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as JPST17.S16 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as JPST17.S16 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as JPST17.S16 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as JPST17.S16 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as JPST17.S16 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as JPST17.S16 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as JPST17.S16 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as JPST17.S16 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as JPST17.S16 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as JPST17.S16 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. Neither specification says so; it is established here."
   involution: false
   symmetric: false
   rank: 16
@@ -735,6 +679,7 @@ LW16.B16:
   order: 255
   hamming_weight: 77
   orbit: 16
+  similarity: ["JPST17.S16"]
   hamming_weight_per_row: [5, 4, 4, 4, 5, 5, 6, 4, 5, 5, 6, 4, 5, 5, 6, 4]
   matrix:
     - '0110100010001000'
@@ -763,6 +708,7 @@ LW16.I16:
   cipher: false
   origin: "https://tosc.iacr.org/index.php/ToSC"
   source: "URL: XZLBZ: https://github.com/xiangzejun/Optimizing_Implementations_of_Linear_Layers/blob/master/Implementations/FSE_LiWang16_i_4x4_4.txt; NIST Circuit Complexity: https://csrc.nist.gov/Projects/circuit-complexity/list-of-circuits"
+  note: "The same matrix as JOLTIK up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. Neither specification says so; it is established here."
   involution: true
   symmetric: false
   rank: 16
@@ -770,6 +716,7 @@ LW16.I16:
   order: 2
   hamming_weight: 88
   orbit: 8
+  similarity: ["JOLTIK"]
   hamming_weight_per_row: [7, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5]
   matrix:
     - '1000010011011001'
@@ -796,14 +743,14 @@ MIDORI:
 
 PRIDE.L0:
   canonical_name: ["PRIDE", "L₀"]
-  reuse: ["MANTIS.MIXCOLUMNS", "MIDORI.MIXCOLUMN"]
+  reuse: ["MANTIS.MIXCOLUMNS", "MIDORI.MIXCOLUMN", "ULBC.MIXCOLUMN"]
   rows: 16
   cols: 16
   year: [2014]
   cipher: true
   origin: "https://eprint.iacr.org/2014/453"
   source: "URL: Section G: https://eprint.iacr.org/2014/453.pdf; NIST Circuit Complexity: https://csrc.nist.gov/Projects/circuit-complexity/list-of-circuits"
-  note: "L0 of PRIDE, a circulant almost-MDS binary matrix of branch number 4, and the entry that holds the body for this matrix. The MixColumn of Midori is the same matrix, byte for byte, though the Midori specification attaches no citation to it and remarks only that circulant-type almost-MDS matrices are adopted in PRINCE, PRIDE, FIDES and CLOC; MANTIS in turn says of its MixColumns that each column is multiplied by the binary matrix used in Midori. Both are therefore recorded as a reuse rather than as a renaming. Fides (2013) is earlier still and uses the same 4 x 4 almost-MDS pattern, but over 5-bit and 6-bit cells, which makes its binary matrix 20 x 20 and 24 x 24 rather than this one; it is not a reuse of this entry."
+  note: "L0 of PRIDE, a circulant almost-MDS binary matrix of branch number 4, and the entry that holds the body for this matrix. The MixColumn of Midori is the same matrix, byte for byte, though the Midori specification attaches no citation to it and remarks only that circulant-type almost-MDS matrices are adopted in PRINCE, PRIDE, FIDES and CLOC; MANTIS in turn says of its MixColumns that each column is multiplied by the binary matrix used in Midori. Both are therefore recorded as a reuse rather than as a renaming. Fides (2013) is earlier still and uses the same 4 x 4 almost-MDS pattern, but over 5-bit and 6-bit cells, which makes its binary matrix 20 x 20 and 24 x 24 rather than this one; it is not a reuse of this entry. The same matrix as PRIDE.L3, PRINCE.M0, PRINCE.M1 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. Neither specification says so; it is established here."
   involution: true
   symmetric: true
   rank: 16
@@ -811,6 +758,7 @@ PRIDE.L0:
   order: 2
   hamming_weight: 48
   orbit: 1
+  similarity: ["PRIDE.L3", "PRINCE.M0", "PRINCE.M1"]
   hamming_weight_per_row: [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3]
   matrix:
     - '0000100010001000'
@@ -832,13 +780,13 @@ PRIDE.L0:
 
 PRIDE.L1:
   canonical_name: ["PRIDE", "L₁"]
-  aliases: ["L1"]
   rows: 16
   cols: 16
   year: [2014]
   cipher: true
   origin: "https://eprint.iacr.org/2014/453"
   source: "Section G: https://eprint.iacr.org/2014/453.pdf"
+  note: "The same matrix as CHAM.RF1, PRIDE.L2 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as CHAM.RF1, PRIDE.L2 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as CHAM.RF1, PRIDE.L2 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as CHAM.RF1, PRIDE.L2 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as CHAM.RF1, PRIDE.L2 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as CHAM.RF1, PRIDE.L2 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as CHAM.RF1, PRIDE.L2 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as CHAM.RF1, PRIDE.L2 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as CHAM.RF1, PRIDE.L2 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as CHAM.RF1, PRIDE.L2 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as CHAM.RF1, PRIDE.L2 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as CHAM.RF1, PRIDE.L2 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as CHAM.RF1, PRIDE.L2 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. Neither specification says so; it is established here."
   involution: false
   symmetric: false
   rank: 16
@@ -846,6 +794,7 @@ PRIDE.L1:
   order: 16
   hamming_weight: 48
   orbit: 16
+  similarity: ["CHAM.RF1", "PRIDE.L2"]
   hamming_weight_per_row: [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3]
   matrix:
     - '1100000000010000'
@@ -867,13 +816,13 @@ PRIDE.L1:
 
 PRIDE.L2:
   canonical_name: ["PRIDE", "L₂"]
-  aliases: ["L2"]
   rows: 16
   cols: 16
   year: [2014]
   cipher: true
   origin: "https://eprint.iacr.org/2014/453"
   source: "Section G: https://eprint.iacr.org/2014/453.pdf"
+  note: "The same matrix as CHAM.RF1, PRIDE.L1 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as CHAM.RF1, PRIDE.L1 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as CHAM.RF1, PRIDE.L1 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as CHAM.RF1, PRIDE.L1 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as CHAM.RF1, PRIDE.L1 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as CHAM.RF1, PRIDE.L1 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as CHAM.RF1, PRIDE.L1 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as CHAM.RF1, PRIDE.L1 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as CHAM.RF1, PRIDE.L1 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as CHAM.RF1, PRIDE.L1 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as CHAM.RF1, PRIDE.L1 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as CHAM.RF1, PRIDE.L1 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as CHAM.RF1, PRIDE.L1 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. Neither specification says so; it is established here."
   involution: false
   symmetric: false
   rank: 16
@@ -881,6 +830,7 @@ PRIDE.L2:
   order: 16
   hamming_weight: 48
   orbit: 16
+  similarity: ["CHAM.RF1", "PRIDE.L1"]
   hamming_weight_per_row: [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3]
   matrix:
     - '0000110000000001'
@@ -902,13 +852,13 @@ PRIDE.L2:
 
 PRIDE.L3:
   canonical_name: ["PRIDE", "L₃"]
-  aliases: ["L3"]
   rows: 16
   cols: 16
   year: [2014]
   cipher: true
   origin: "https://eprint.iacr.org/2014/453"
   source: "Section G: https://eprint.iacr.org/2014/453.pdf"
+  note: "The same matrix as PRIDE.L0, PRINCE.M0, PRINCE.M1 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PRIDE.L0, PRINCE.M0, PRINCE.M1 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PRIDE.L0, PRINCE.M0, PRINCE.M1 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PRIDE.L0, PRINCE.M0, PRINCE.M1 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PRIDE.L0, PRINCE.M0, PRINCE.M1 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PRIDE.L0, PRINCE.M0, PRINCE.M1 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PRIDE.L0, PRINCE.M0, PRINCE.M1 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PRIDE.L0, PRINCE.M0, PRINCE.M1 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PRIDE.L0, PRINCE.M0, PRINCE.M1 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PRIDE.L0, PRINCE.M0, PRINCE.M1 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PRIDE.L0, PRINCE.M0, PRINCE.M1 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PRIDE.L0, PRINCE.M0, PRINCE.M1 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PRIDE.L0, PRINCE.M0, PRINCE.M1 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. Neither specification says so; it is established here."
   involution: true
   symmetric: true
   rank: 16
@@ -916,6 +866,7 @@ PRIDE.L3:
   order: 2
   hamming_weight: 48
   orbit: 1
+  similarity: ["PRIDE.L0", "PRINCE.M0", "PRINCE.M1"]
   hamming_weight_per_row: [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3]
   matrix:
     - '1000100000001000'
@@ -944,6 +895,7 @@ PRINCE.M0:
   cipher: true
   origin: "https://eprint.iacr.org/2012/529"
   source: "URL: Section 3.3: https://eprint.iacr.org/2012/529.pdf; NIST Circuit Complexity: https://csrc.nist.gov/Projects/circuit-complexity/list-of-circuits"
+  note: "The same matrix as PRIDE.L0, PRIDE.L3, PRINCE.M1 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PRIDE.L0, PRIDE.L3, PRINCE.M1 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PRIDE.L0, PRIDE.L3, PRINCE.M1 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PRIDE.L0, PRIDE.L3, PRINCE.M1 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PRIDE.L0, PRIDE.L3, PRINCE.M1 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PRIDE.L0, PRIDE.L3, PRINCE.M1 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PRIDE.L0, PRIDE.L3, PRINCE.M1 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PRIDE.L0, PRIDE.L3, PRINCE.M1 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PRIDE.L0, PRIDE.L3, PRINCE.M1 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PRIDE.L0, PRIDE.L3, PRINCE.M1 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PRIDE.L0, PRIDE.L3, PRINCE.M1 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PRIDE.L0, PRIDE.L3, PRINCE.M1 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PRIDE.L0, PRIDE.L3, PRINCE.M1 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. Neither specification says so; it is established here."
   involution: true
   symmetric: true
   rank: 16
@@ -951,6 +903,7 @@ PRINCE.M0:
   order: 2
   hamming_weight: 48
   orbit: 8
+  similarity: ["PRIDE.L0", "PRIDE.L3", "PRINCE.M1"]
   hamming_weight_per_row: [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3]
   matrix:
     - '0000100010001000'
@@ -979,6 +932,7 @@ PRINCE.M1:
   cipher: true
   origin: "https://eprint.iacr.org/2012/529"
   source: "Section 3.3: https://eprint.iacr.org/2012/529.pdf"
+  note: "The same matrix as PRIDE.L0, PRIDE.L3, PRINCE.M0 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PRIDE.L0, PRIDE.L3, PRINCE.M0 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PRIDE.L0, PRIDE.L3, PRINCE.M0 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PRIDE.L0, PRIDE.L3, PRINCE.M0 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PRIDE.L0, PRIDE.L3, PRINCE.M0 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PRIDE.L0, PRIDE.L3, PRINCE.M0 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PRIDE.L0, PRIDE.L3, PRINCE.M0 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PRIDE.L0, PRIDE.L3, PRINCE.M0 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PRIDE.L0, PRIDE.L3, PRINCE.M0 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PRIDE.L0, PRIDE.L3, PRINCE.M0 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PRIDE.L0, PRIDE.L3, PRINCE.M0 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PRIDE.L0, PRIDE.L3, PRINCE.M0 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PRIDE.L0, PRIDE.L3, PRINCE.M0 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. Neither specification says so; it is established here."
   involution: true
   symmetric: true
   rank: 16
@@ -986,6 +940,7 @@ PRINCE.M1:
   order: 2
   hamming_weight: 48
   orbit: 8
+  similarity: ["PRIDE.L0", "PRIDE.L3", "PRINCE.M0"]
   hamming_weight_per_row: [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3]
   matrix:
     - '1000100010000000'
@@ -1038,6 +993,42 @@ QARMA.S64:
     - '1000000110000000'
     - '0100100001000000'
     - '0010010000100000'
+
+SEFA.MDS16:
+  canonical_name: ["SEFA", "MDSLayer, 4 × 4 over GF(2⁴)"]
+  rows: 16
+  cols: 16
+  year: [2026]
+  cipher: false
+  origin: "https://eprint.iacr.org/2026/897"
+  paper_title: "Duzyol, Fidan, Otal. SEFA: a secure, efficient and flexible algorithm design strategy for block ciphers and sponge permutations (IACR ePrint 2026/897)."
+  note: "The 4 x 4 MDS layer of SEFA, over GF(2^4) modulo x^4 + x + 1, applied to each column of four elements. The paper takes it as a square submatrix of the 8 x 8 matrix of Whirlwind, and it is exactly the top-left quarter of WHIRLWIND.M0, which was checked here rather than assumed. That quarter is not itself catalogued elsewhere, so this entry carries a body rather than a reuse."
+  formula: "Hadamard array 5, 4, a, 6 over GF(2^4) modulo x^4 + x + 1, expanded with the least significant bit of a cell first."
+  involution: false
+  symmetric: false
+  rank: 16
+  is_invertible: true
+  order: 30
+  hamming_weight: 148
+  orbit: 8
+  hamming_weight_per_row: [7, 11, 11, 8, 7, 11, 11, 8, 7, 11, 11, 8, 7, 11, 11, 8]
+  matrix:
+    - '1010001001010011'
+    - '0111001111111010'
+    - '1011100101111101'
+    - '0101010010110110'
+    - '0010101000110101'
+    - '0011011110101111'
+    - '1001101111010111'
+    - '0100010101101011'
+    - '0101001110100010'
+    - '1111101001110011'
+    - '0111110110111001'
+    - '1011011001010100'
+    - '0011010100101010'
+    - '1010111100110111'
+    - '1101011110011011'
+    - '0110101101000101'
 
 SKINNY:
   canonical_name: ["SKINNY"]
@@ -1252,9 +1243,3 @@ TWINKLE.MIXSLICE:
     - '0010000001000100'
     - '0001000000100010'
     - '0000100000010001'
-
-ZUC.L1:
-  canonical_name: ["ZUC", "L₁"]
-  cipher: true
-  source: "Section 2.1.3: https://eprint.iacr.org/2012/299.pdf"
-  alias: "SM4"

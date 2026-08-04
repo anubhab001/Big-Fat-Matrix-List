@@ -5,10 +5,10 @@ GF283.MUL:
   canonical_name: ["GF(2²⁸³)", "multiplication by x"]
   rows: 283
   cols: 565
-  year: "unknown"
+  year: [2000, 2013]
   cipher: false
-  origin: "unknown"
-  note: "Multiplication by x over the field named next, as the reduction of a product of two field elements. Second reduction polynomial catalogued for this degree, beside the NIST-recommended one of the _0 variant. Its first use is not recorded, so the origin and the year are given as unknown."
+  origin: "https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.186-4.pdf"
+  note: "Multiplication by x over the field named next, as the reduction of a product of two field elements. Reduction polynomial of the NIST-recommended binary curve of this degree, FIPS 186-4, Appendix D."
   formula: "Companion matrix of multiplication-by-x in GF(2^283) = GF(2)[x] / (p(x)) where p(x) is the irreducible degree-283 polynomial specified for variant 0. The matrix M is rectangular (283 x 565): the j-th column (j=0..2n-2) is the bit-vector of x^j mod p(x). Equivalently, multiplication of two GF(2^n) elements a, b can be written as a column from M selected by the bits of b XOR-ed together."
   rank: 283
   hamming_weight: 1442
