@@ -100,7 +100,7 @@ a field compulsory only for one kind of entry with †.
 | `involution` | bool | True iff $M^2 = I$ over $\mathrm{GF}(2)$, that is, the entry is its own inverse |
 | `symmetric` | bool | True iff $M = M^	op$ |
 | `rank` | int | Rank of $M$ over $\mathrm{GF}(2)$ |
-| `is_invertible` | bool | True iff $M$ has full rank |
+| `invertible` | bool | True iff $M$ has full rank |
 | `order` | int | Least $k$ with $M^k = I$, the identity matrix, which for a bit-permutation $P$ is the least $k$ with $P$ applied $k$ times leaving every bit where it started (absent for sizes $> 320$) |
 | `branch_number` | int | Branch number in the word size the designers use, recorded when the specification states it |
 | `mds` | bool | True iff the matrix is MDS in that word size |
@@ -133,7 +133,7 @@ a field compulsory only for one kind of entry with †.
 
 7. `AES.SHIFTROW` is catalogued only as a $128 \times 128$ matrix entry (not as a separate permutation), because the matrix form fully captures the bit-permutation; the permutation field can be recovered by reading the unique `1` in each row.
 
-8. Fields that only make sense for square matrices (`involution`, `symmetric`, `is_invertible`, `order`, `fixed_points`, `cycle_lengths`, `disjoint_cycles`, `orbit`) are omitted from rectangular matrix entries (e.g., the `GF<n>.MUL` companion matrices, of shape $n \times (2n - 1)$). Any field whose value would be `null` is also omitted.
+8. Fields that only make sense for square matrices (`involution`, `symmetric`, `invertible`, `order`, `fixed_points`, `cycle_lengths`, `disjoint_cycles`, `orbit`) are omitted from rectangular matrix entries (e.g., the `GF<n>.MUL` companion matrices, of shape $n \times (2n - 1)$). Any field whose value would be `null` is also omitted.
 
 9. Every `matrix` row is a quoted string. An unquoted bit-string such as `0001100010111011` is a valid YAML 1.1 octal integer, which a YAML parser returns as a number with the leading zeros gone.
 

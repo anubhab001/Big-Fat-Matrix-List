@@ -16,7 +16,7 @@ AES.MIXCOLUMNS:
   involution: false
   symmetric: false
   rank: 32
-  is_invertible: true
+  invertible: true
   order: 4
   hamming_weight: 184
   orbit: 8
@@ -62,12 +62,12 @@ ANUBIS:
   year: [2000]
   cipher: true
   origin: "https://www.cosic.esat.kuleuven.be/nessie/tweaks.html"
-  note: "Barreto-Rijmen, Anubis (involutory). The MixColumns of CLEFIA.M0 is the same coefficient array over a different reduction polynomial, so the two carry the same Hamming weight and are easily taken for one matrix; neither is the other, and no permutation of rows and columns carries one to the other. The MixColumns of CLEFIA.M0 is the same coefficient array over a different reduction polynomial. The two therefore carry the same 216 ones and are easily taken for one matrix, and a corpus or two files it under a single name. Neither is the other: no permutation of rows and columns carries one to the other, since the multiset of row weights already differs, 12 rows of weight 5, 12 of 7 and 8 of 9 here against 16, 4 and 12 there. The MixColumns of CLEFIA.M0 is the same coefficient array over a different reduction polynomial. The two therefore carry the same 216 ones and are easily taken for one matrix, and a corpus or two files it under a single name. Neither is the other: no permutation of rows and columns carries one to the other, since the multiset of row weights already differs, 12 rows of weight 5, 12 of 7 and 8 of 9 here against 16, 4 and 12 there. The MixColumns of CLEFIA.M0 is the same coefficient array over a different reduction polynomial. The two therefore carry the same 216 ones and are easily taken for one matrix, and a corpus or two files it under a single name. Neither is the other: no permutation of rows and columns carries one to the other, since the multiset of row weights already differs, 12 rows of weight 5, 12 of 7 and 8 of 9 here against 16, 4 and 12 there. The NIST Circuit Complexity project files this matrix together with CLEFIA M0 under one name, but the two differ; the body here is the one the XZLBZ corpus also carries for Anubis."
+  note: "Barreto-Rijmen, Anubis (involutory). The MixColumns of CLEFIA.M0 is the same coefficient array over a different reduction polynomial, so the two carry the same Hamming weight and are easily taken for one matrix; neither is the other, and no permutation of rows and columns carries one to the other. The MixColumns of CLEFIA.M0 is the same coefficient array over a different reduction polynomial. The two therefore carry the same 216 ones and are easily taken for one matrix, and a corpus or two files it under a single name. Neither is the other: no permutation of rows and columns carries one to the other, since the multiset of row weights already differs, 12 rows of weight 5, 12 of 7 and 8 of 9 here against 16, 4 and 12 there. The MixColumns of CLEFIA.M0 is the same coefficient array over a different reduction polynomial. The two therefore carry the same 216 ones and are easily taken for one matrix, and a corpus or two files it under a single name. Neither is the other: no permutation of rows and columns carries one to the other, since the multiset of row weights already differs, 12 rows of weight 5, 12 of 7 and 8 of 9 here against 16, 4 and 12 there. The MixColumns of CLEFIA.M0 is the same coefficient array over a different reduction polynomial. The two therefore carry the same 216 ones and are easily taken for one matrix, and a corpus or two files it under a single name. Neither is the other: no permutation of rows and columns carries one to the other, since the multiset of row weights already differs, 12 rows of weight 5, 12 of 7 and 8 of 9 here against 16, 4 and 12 there. The MixColumns of CLEFIA.M0 is the same coefficient array over a different reduction polynomial. The two therefore carry the same 216 ones and are easily taken for one matrix, and a corpus or two files it under a single name. Neither is the other: no permutation of rows and columns carries one to the other, since the multiset of row weights already differs, 12 rows of weight 5, 12 of 7 and 8 of 9 here against 16, 4 and 12 there. The MixColumns of CLEFIA.M0 is the same coefficient array over a different reduction polynomial. The two therefore carry the same 216 ones and are easily taken for one matrix, and a corpus or two files it under a single name. Neither is the other: no permutation of rows and columns carries one to the other, since the multiset of row weights already differs, 12 rows of weight 5, 12 of 7 and 8 of 9 here against 16, 4 and 12 there. The NIST Circuit Complexity project files this matrix together with CLEFIA M0 under one name, but the two differ; the body here is the one the XZLBZ corpus also carries for Anubis."
   formula: "Hadamard 4 x 4 matrix with coefficients (1, 2, 4, 6) over GF(2^8) / (x^8 + x^4 + x^3 + x + 1); on bits, each coefficient is its 8 x 8 multiplication matrix, the bits of a byte numbered from the least significant."
   involution: true
   symmetric: false
   rank: 32
-  is_invertible: true
+  invertible: true
   order: 2
   hamming_weight: 216
   orbit: 16
@@ -114,12 +114,12 @@ ARADI.L0:
   cipher: false
   origin: "https://eprint.iacr.org/2024/1240"
   paper_title: "National Security Agency. A low-latency block cipher for memory encryption: ARADI, and the mode LLAMA."
-  note: "Linear map of ARADI for a round index congruent to 0 modulo four, applied to each of the four 32-bit words of the state. It is an involution of row density three, as the specification states, so one circuit serves encryption and decryption alike. The same matrix as ARADI.L2 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ARADI.L2 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ARADI.L2 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ARADI.L2 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ARADI.L2 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ARADI.L2 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ARADI.L2 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ARADI.L2 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ARADI.L2 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ARADI.L2 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ARADI.L2 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ARADI.L2 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ARADI.L2 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. Neither specification says so; it is established here."
+  note: "Linear map of ARADI for a round index congruent to 0 modulo four, applied to each of the four 32-bit words of the state. It is an involution of row density three, as the specification states, so one circuit serves encryption and decryption alike. The same matrix as ARADI.L2 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ARADI.L2 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ARADI.L2 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ARADI.L2 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ARADI.L2 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ARADI.L2 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ARADI.L2 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ARADI.L2 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ARADI.L2 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ARADI.L2 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ARADI.L2 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ARADI.L2 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ARADI.L2 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ARADI.L2 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ARADI.L2 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. Neither specification says so; it is established here."
   formula: "On the halves (u, l) of a 32-bit word, (u, l) -> (u + S^11(u) + S^14(l), l + S^11(l) + S^8(u)), where S is a left circular shift on 16 bits."
   involution: true
   symmetric: false
   rank: 32
-  is_invertible: true
+  invertible: true
   order: 2
   hamming_weight: 96
   orbit: 32
@@ -167,12 +167,12 @@ ARADI.L1:
   cipher: false
   origin: "https://eprint.iacr.org/2024/1240"
   paper_title: "National Security Agency. A low-latency block cipher for memory encryption: ARADI, and the mode LLAMA."
-  note: "Linear map of ARADI for a round index congruent to 1 modulo four, applied to each of the four 32-bit words of the state. It is an involution of row density three, as the specification states, so one circuit serves encryption and decryption alike. The same matrix as QARMA.S128 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as QARMA.S128 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as QARMA.S128 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as QARMA.S128 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as QARMA.S128 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as QARMA.S128 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as QARMA.S128 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as QARMA.S128 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as QARMA.S128 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as QARMA.S128 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as QARMA.S128 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as QARMA.S128 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as QARMA.S128 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. Neither specification says so; it is established here."
+  note: "Linear map of ARADI for a round index congruent to 1 modulo four, applied to each of the four 32-bit words of the state. It is an involution of row density three, as the specification states, so one circuit serves encryption and decryption alike. The same matrix as QARMA.S128 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as QARMA.S128 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as QARMA.S128 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as QARMA.S128 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as QARMA.S128 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as QARMA.S128 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as QARMA.S128 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as QARMA.S128 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as QARMA.S128 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as QARMA.S128 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as QARMA.S128 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as QARMA.S128 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as QARMA.S128 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as QARMA.S128 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as QARMA.S128 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. Neither specification says so; it is established here."
   formula: "On the halves (u, l) of a 32-bit word, (u, l) -> (u + S^10(u) + S^11(l), l + S^10(l) + S^9(u)), where S is a left circular shift on 16 bits."
   involution: true
   symmetric: false
   rank: 32
-  is_invertible: true
+  invertible: true
   order: 2
   hamming_weight: 96
   orbit: 32
@@ -220,12 +220,12 @@ ARADI.L2:
   cipher: false
   origin: "https://eprint.iacr.org/2024/1240"
   paper_title: "National Security Agency. A low-latency block cipher for memory encryption: ARADI, and the mode LLAMA."
-  note: "Linear map of ARADI for a round index congruent to 2 modulo four, applied to each of the four 32-bit words of the state. It is an involution of row density three, as the specification states, so one circuit serves encryption and decryption alike. The same matrix as ARADI.L0 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ARADI.L0 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ARADI.L0 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ARADI.L0 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ARADI.L0 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ARADI.L0 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ARADI.L0 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ARADI.L0 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ARADI.L0 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ARADI.L0 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ARADI.L0 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ARADI.L0 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ARADI.L0 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. Neither specification says so; it is established here."
+  note: "Linear map of ARADI for a round index congruent to 2 modulo four, applied to each of the four 32-bit words of the state. It is an involution of row density three, as the specification states, so one circuit serves encryption and decryption alike. The same matrix as ARADI.L0 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ARADI.L0 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ARADI.L0 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ARADI.L0 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ARADI.L0 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ARADI.L0 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ARADI.L0 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ARADI.L0 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ARADI.L0 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ARADI.L0 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ARADI.L0 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ARADI.L0 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ARADI.L0 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ARADI.L0 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ARADI.L0 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. Neither specification says so; it is established here."
   formula: "On the halves (u, l) of a 32-bit word, (u, l) -> (u + S^9(u) + S^14(l), l + S^9(l) + S^4(u)), where S is a left circular shift on 16 bits."
   involution: true
   symmetric: false
   rank: 32
-  is_invertible: true
+  invertible: true
   order: 2
   hamming_weight: 96
   orbit: 32
@@ -278,7 +278,7 @@ ARADI.L3:
   involution: true
   symmetric: true
   rank: 32
-  is_invertible: true
+  invertible: true
   order: 2
   hamming_weight: 96
   orbit: 32
@@ -329,7 +329,7 @@ BKL16.S32:
   involution: false
   symmetric: false
   rank: 32
-  is_invertible: true
+  invertible: true
   order: 340
   hamming_weight: 168
   orbit: 8
@@ -379,7 +379,7 @@ CHAM.KS1:
   involution: false
   symmetric: false
   rank: 32
-  is_invertible: true
+  invertible: true
   order: 32
   hamming_weight: 96
   orbit: 1
@@ -429,7 +429,7 @@ CHAM.KS2:
   involution: false
   symmetric: false
   rank: 32
-  is_invertible: true
+  invertible: true
   order: 16
   hamming_weight: 96
   orbit: 1
@@ -482,7 +482,7 @@ CHILOW.L32:
   involution: false
   symmetric: false
   rank: 32
-  is_invertible: true
+  invertible: true
   order: 16
   hamming_weight: 96
   orbit: 16
@@ -530,12 +530,12 @@ CLEFIA.M0:
   cipher: true
   origin: "https://www.sony.net/Products/cryptography/clefia/"
   source: "URL: Section 3.4: https://www.iacr.org/archive/fse2007/45930182/45930182.pdf; NIST Circuit Complexity: https://csrc.nist.gov/Projects/circuit-complexity/list-of-circuits"
-  note: "The MixColumns of ANUBIS is the same coefficient array over a different reduction polynomial, so the two carry the same Hamming weight and are easily taken for one matrix; neither is the other, and no permutation of rows and columns carries one to the other. The MixColumns of ANUBIS is the same coefficient array over a different reduction polynomial. The two therefore carry the same 216 ones and are easily taken for one matrix, and a corpus or two files it under a single name. Neither is the other: no permutation of rows and columns carries one to the other, since the multiset of row weights already differs, 12 rows of weight 5, 12 of 7 and 8 of 9 here against 16, 4 and 12 there. The MixColumns of ANUBIS is the same coefficient array over a different reduction polynomial. The two therefore carry the same 216 ones and are easily taken for one matrix, and a corpus or two files it under a single name. Neither is the other: no permutation of rows and columns carries one to the other, since the multiset of row weights already differs, 12 rows of weight 5, 12 of 7 and 8 of 9 here against 16, 4 and 12 there. The MixColumns of ANUBIS is the same coefficient array over a different reduction polynomial. The two therefore carry the same 216 ones and are easily taken for one matrix, and a corpus or two files it under a single name. Neither is the other: no permutation of rows and columns carries one to the other, since the multiset of row weights already differs, 12 rows of weight 5, 12 of 7 and 8 of 9 here against 16, 4 and 12 there."
+  note: "The MixColumns of ANUBIS is the same coefficient array over a different reduction polynomial, so the two carry the same Hamming weight and are easily taken for one matrix; neither is the other, and no permutation of rows and columns carries one to the other. The MixColumns of ANUBIS is the same coefficient array over a different reduction polynomial. The two therefore carry the same 216 ones and are easily taken for one matrix, and a corpus or two files it under a single name. Neither is the other: no permutation of rows and columns carries one to the other, since the multiset of row weights already differs, 12 rows of weight 5, 12 of 7 and 8 of 9 here against 16, 4 and 12 there. The MixColumns of ANUBIS is the same coefficient array over a different reduction polynomial. The two therefore carry the same 216 ones and are easily taken for one matrix, and a corpus or two files it under a single name. Neither is the other: no permutation of rows and columns carries one to the other, since the multiset of row weights already differs, 12 rows of weight 5, 12 of 7 and 8 of 9 here against 16, 4 and 12 there. The MixColumns of ANUBIS is the same coefficient array over a different reduction polynomial. The two therefore carry the same 216 ones and are easily taken for one matrix, and a corpus or two files it under a single name. Neither is the other: no permutation of rows and columns carries one to the other, since the multiset of row weights already differs, 12 rows of weight 5, 12 of 7 and 8 of 9 here against 16, 4 and 12 there. The MixColumns of ANUBIS is the same coefficient array over a different reduction polynomial. The two therefore carry the same 216 ones and are easily taken for one matrix, and a corpus or two files it under a single name. Neither is the other: no permutation of rows and columns carries one to the other, since the multiset of row weights already differs, 12 rows of weight 5, 12 of 7 and 8 of 9 here against 16, 4 and 12 there. The MixColumns of ANUBIS is the same coefficient array over a different reduction polynomial. The two therefore carry the same 216 ones and are easily taken for one matrix, and a corpus or two files it under a single name. Neither is the other: no permutation of rows and columns carries one to the other, since the multiset of row weights already differs, 12 rows of weight 5, 12 of 7 and 8 of 9 here against 16, 4 and 12 there."
   formula: "Hadamard 4 x 4 matrix with coefficients (1, 2, 4, 6) over GF(2^8) / (x^8 + x^4 + x^3 + x^2 + 1); on bits, each coefficient is its 8 x 8 multiplication matrix, the bits of a byte numbered from the least significant."
   involution: true
   symmetric: false
   rank: 32
-  is_invertible: true
+  invertible: true
   order: 2
   hamming_weight: 216
   orbit: 16
@@ -585,7 +585,7 @@ CLEFIA.M1:
   involution: true
   symmetric: false
   rank: 32
-  is_invertible: true
+  invertible: true
   order: 2
   hamming_weight: 240
   orbit: 16
@@ -637,7 +637,7 @@ DIALGA:
   involution: true
   symmetric: true
   rank: 32
-  is_invertible: true
+  invertible: true
   order: 2
   branch_number: 4
   mds: false
@@ -692,7 +692,7 @@ DL18A:
   involution: false
   symmetric: false
   rank: 32
-  is_invertible: true
+  invertible: true
   order: 120
   branch_number: 5
   mds: true
@@ -746,7 +746,7 @@ DL18B:
   involution: false
   symmetric: false
   rank: 32
-  is_invertible: true
+  invertible: true
   branch_number: 5
   mds: true
   hamming_weight: 177
@@ -797,7 +797,7 @@ FOX.MU4:
   involution: false
   symmetric: false
   rank: 32
-  is_invertible: true
+  invertible: true
   order: 65535
   hamming_weight: 251
   orbit: 32
@@ -848,7 +848,7 @@ GF32.SQR:
   involution: false
   symmetric: false
   rank: 32
-  is_invertible: true
+  invertible: true
   order: 32
   hamming_weight: 89
   orbit: 32
@@ -900,7 +900,7 @@ ICEPOLE.SLICE:
   involution: false
   symmetric: false
   rank: 20
-  is_invertible: true
+  invertible: true
   order: 1023
   hamming_weight: 87
   orbit: 20
@@ -938,7 +938,7 @@ JPST17.IS32:
   involution: true
   symmetric: false
   rank: 32
-  is_invertible: true
+  invertible: true
   order: 2
   hamming_weight: 168
   orbit: 32
@@ -988,7 +988,7 @@ JPST17.S32:
   involution: false
   symmetric: false
   rank: 32
-  is_invertible: true
+  invertible: true
   order: 4095
   hamming_weight: 154
   orbit: 32
@@ -1040,7 +1040,7 @@ KECCAK.25:
   involution: false
   symmetric: true
   rank: 25
-  is_invertible: true
+  invertible: true
   order: 3
   hamming_weight: 275
   orbit: 1
@@ -1085,7 +1085,7 @@ KLSW17.IS32:
   involution: true
   symmetric: false
   rank: 32
-  is_invertible: true
+  invertible: true
   order: 2
   branch_number: 5
   mds: true
@@ -1139,7 +1139,7 @@ KLSW17.IS8GF4:
   involution: true
   symmetric: false
   rank: 32
-  is_invertible: true
+  invertible: true
   order: 2
   branch_number: 9
   mds: true
@@ -1193,7 +1193,7 @@ KLSW17.S32:
   involution: false
   symmetric: false
   rank: 32
-  is_invertible: true
+  invertible: true
   order: 12
   branch_number: 5
   mds: true
@@ -1247,7 +1247,7 @@ KLSW17.S8GF4:
   involution: false
   symmetric: false
   rank: 32
-  is_invertible: true
+  invertible: true
   order: 131070
   branch_number: 9
   mds: true
@@ -1299,7 +1299,7 @@ LS16.S32:
   involution: false
   symmetric: false
   rank: 32
-  is_invertible: true
+  invertible: true
   order: 20
   hamming_weight: 160
   orbit: 8
@@ -1349,7 +1349,7 @@ LW16.A32:
   involution: false
   symmetric: false
   rank: 32
-  is_invertible: true
+  invertible: true
   order: 20
   hamming_weight: 140
   orbit: 8
@@ -1399,7 +1399,7 @@ LW16.B32:
   involution: false
   symmetric: false
   rank: 32
-  is_invertible: true
+  invertible: true
   order: 510
   hamming_weight: 138
   orbit: 32
@@ -1449,7 +1449,7 @@ LW16.IA32:
   involution: true
   symmetric: false
   rank: 32
-  is_invertible: true
+  invertible: true
   order: 2
   hamming_weight: 168
   orbit: 16
@@ -1499,7 +1499,7 @@ LW16.IB32:
   involution: true
   symmetric: false
   rank: 32
-  is_invertible: true
+  invertible: true
   order: 2
   hamming_weight: 164
   orbit: 8
@@ -1549,7 +1549,7 @@ PYJAMASK.M0:
   involution: false
   symmetric: false
   rank: 32
-  is_invertible: true
+  invertible: true
   order: 32
   hamming_weight: 352
   orbit: 1
@@ -1596,11 +1596,11 @@ PYJAMASK.M1:
   cipher: true
   origin: "https://csrc.nist.gov/projects/lightweight-cryptography"
   source: "Section 2.1.2: https://tosc.iacr.org/index.php/ToSC/article/view/8617/8183"
-  note: "The same matrix as PYJAMASK.M2 up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.M2 up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.M2 up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.M2 up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.M2 up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.M2 up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.M2 up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.M2 up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.M2 up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.M2 up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.M2 up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.M2 up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.M2 up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. Neither specification says so; it is established here."
+  note: "The same matrix as PYJAMASK.M2 up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.M2 up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.M2 up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.M2 up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.M2 up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.M2 up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.M2 up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.M2 up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.M2 up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.M2 up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.M2 up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.M2 up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.M2 up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.M2 up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.M2 up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. Neither specification says so; it is established here."
   involution: false
   symmetric: false
   rank: 32
-  is_invertible: true
+  invertible: true
   order: 32
   hamming_weight: 352
   orbit: 1
@@ -1648,11 +1648,11 @@ PYJAMASK.M2:
   cipher: true
   origin: "https://csrc.nist.gov/projects/lightweight-cryptography"
   source: "Section 2.1.2: https://tosc.iacr.org/index.php/ToSC/article/view/8617/8183"
-  note: "The same matrix as PYJAMASK.M1 up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.M1 up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.M1 up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.M1 up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.M1 up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.M1 up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.M1 up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.M1 up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.M1 up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.M1 up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.M1 up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.M1 up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.M1 up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. Neither specification says so; it is established here."
+  note: "The same matrix as PYJAMASK.M1 up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.M1 up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.M1 up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.M1 up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.M1 up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.M1 up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.M1 up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.M1 up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.M1 up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.M1 up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.M1 up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.M1 up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.M1 up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.M1 up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.M1 up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. Neither specification says so; it is established here."
   involution: false
   symmetric: false
   rank: 32
-  is_invertible: true
+  invertible: true
   order: 32
   hamming_weight: 416
   orbit: 1
@@ -1700,11 +1700,11 @@ PYJAMASK.M3:
   cipher: true
   origin: "https://csrc.nist.gov/projects/lightweight-cryptography"
   source: "Section 2.1.2: https://tosc.iacr.org/index.php/ToSC/article/view/8617/8183"
-  note: "The same matrix as PYJAMASK.MK up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.MK up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.MK up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.MK up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.MK up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.MK up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.MK up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.MK up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.MK up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.MK up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.MK up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.MK up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.MK up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. Neither specification says so; it is established here."
+  note: "The same matrix as PYJAMASK.MK up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.MK up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.MK up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.MK up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.MK up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.MK up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.MK up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.MK up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.MK up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.MK up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.MK up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.MK up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.MK up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.MK up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.MK up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. Neither specification says so; it is established here."
   involution: false
   symmetric: false
   rank: 32
-  is_invertible: true
+  invertible: true
   order: 16
   hamming_weight: 352
   orbit: 1
@@ -1752,11 +1752,11 @@ PYJAMASK.MK:
   cipher: true
   origin: "https://csrc.nist.gov/projects/lightweight-cryptography"
   source: "Section 2.1.4: https://tosc.iacr.org/index.php/ToSC/article/view/8617/8183"
-  note: "The same matrix as PYJAMASK.M3 up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.M3 up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.M3 up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.M3 up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.M3 up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.M3 up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.M3 up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.M3 up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.M3 up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.M3 up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.M3 up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.M3 up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.M3 up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. Neither specification says so; it is established here."
+  note: "The same matrix as PYJAMASK.M3 up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.M3 up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.M3 up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.M3 up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.M3 up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.M3 up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.M3 up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.M3 up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.M3 up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.M3 up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.M3 up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.M3 up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.M3 up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.M3 up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as PYJAMASK.M3 up to a permutation of rows and columns of the inverse, so a circuit for one is a circuit for the other once the wires are renamed. Neither specification says so; it is established here."
   involution: false
   symmetric: false
   rank: 32
-  is_invertible: true
+  invertible: true
   order: 32
   hamming_weight: 480
   orbit: 1
@@ -1804,11 +1804,11 @@ QARMA.S128:
   cipher: true
   origin: "https://eprint.iacr.org/2016/444"
   source: "URL: Section 2.3: https://eprint.iacr.org/2016/444.pdf; NIST Circuit Complexity: https://csrc.nist.gov/Projects/circuit-complexity/list-of-circuits"
-  note: "The same matrix as ARADI.L1 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ARADI.L1 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ARADI.L1 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ARADI.L1 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ARADI.L1 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ARADI.L1 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ARADI.L1 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ARADI.L1 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ARADI.L1 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ARADI.L1 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ARADI.L1 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ARADI.L1 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ARADI.L1 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. Neither specification says so; it is established here."
+  note: "The same matrix as ARADI.L1 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ARADI.L1 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ARADI.L1 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ARADI.L1 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ARADI.L1 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ARADI.L1 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ARADI.L1 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ARADI.L1 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ARADI.L1 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ARADI.L1 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ARADI.L1 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ARADI.L1 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ARADI.L1 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ARADI.L1 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ARADI.L1 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. Neither specification says so; it is established here."
   involution: true
   symmetric: false
   rank: 32
-  is_invertible: true
+  invertible: true
   order: 2
   hamming_weight: 96
   orbit: 8
@@ -1862,7 +1862,7 @@ SHA256.BIGSIGMA0:
   involution: false
   symmetric: false
   rank: 32
-  is_invertible: true
+  invertible: true
   order: 32
   hamming_weight: 96
   orbit: 1
@@ -1916,7 +1916,7 @@ SHA256.BIGSIGMA1:
   involution: false
   symmetric: false
   rank: 32
-  is_invertible: true
+  invertible: true
   order: 16
   hamming_weight: 96
   orbit: 1
@@ -1969,7 +1969,7 @@ SHA256.SMALLSIGMA0:
   involution: false
   symmetric: false
   rank: 32
-  is_invertible: true
+  invertible: true
   order: 49146
   hamming_weight: 93
   orbit: 32
@@ -2022,7 +2022,7 @@ SHA256.SMALLSIGMA1:
   involution: false
   symmetric: false
   rank: 32
-  is_invertible: true
+  invertible: true
   order: 65534
   hamming_weight: 86
   orbit: 32
@@ -2072,7 +2072,7 @@ SKOP15.IS4GF8:
   involution: true
   symmetric: false
   rank: 32
-  is_invertible: true
+  invertible: true
   order: 2
   hamming_weight: 176
   orbit: 16
@@ -2123,7 +2123,7 @@ SKOP15.IS8GF4:
   involution: true
   symmetric: false
   rank: 32
-  is_invertible: true
+  invertible: true
   order: 2
   hamming_weight: 544
   orbit: 16
@@ -2173,7 +2173,7 @@ SKOP15.S4GF8:
   involution: false
   symmetric: false
   rank: 32
-  is_invertible: true
+  invertible: true
   order: 30
   hamming_weight: 168
   orbit: 16
@@ -2224,7 +2224,7 @@ SKOP15.S8GF4:
   involution: false
   symmetric: false
   rank: 32
-  is_invertible: true
+  invertible: true
   order: 10
   hamming_weight: 464
   orbit: 16
@@ -2272,11 +2272,11 @@ SM4:
   cipher: true
   origin: "https://datatracker.ietf.org/doc/html/rfc8998"
   source: "URL: https://doi.org/10.1007/s11128-023-04002-4"
-  note: "Chinese national standard SM4 (GB/T 32907-2016, RFC 8998); 32-bit linear permutation L(B) = B XOR (B<<<2) XOR (B<<<10) XOR (B<<<18) XOR (B<<<24); circulant 32 by 32 binary matrix transcribed from Lin, Xiang, Xu, Zeng, Zhang (Quantum Information Processing, 2023). L1 of ZUC is the same map and reads through to this entry. The same matrix as ZUC.L2 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ZUC.L2 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ZUC.L2 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ZUC.L2 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ZUC.L2 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ZUC.L2 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ZUC.L2 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ZUC.L2 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ZUC.L2 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ZUC.L2 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ZUC.L2 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ZUC.L2 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ZUC.L2 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. Neither specification says so; it is established here."
+  note: "Chinese national standard SM4 (GB/T 32907-2016, RFC 8998); 32-bit linear permutation L(B) = B XOR (B<<<2) XOR (B<<<10) XOR (B<<<18) XOR (B<<<24); circulant 32 by 32 binary matrix transcribed from Lin, Xiang, Xu, Zeng, Zhang (Quantum Information Processing, 2023). L1 of ZUC is the same map and reads through to this entry. The same matrix as ZUC.L2 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ZUC.L2 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ZUC.L2 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ZUC.L2 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ZUC.L2 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ZUC.L2 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ZUC.L2 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ZUC.L2 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ZUC.L2 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ZUC.L2 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ZUC.L2 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ZUC.L2 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ZUC.L2 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ZUC.L2 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. The same matrix as ZUC.L2 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. Neither specification says so; it is established here."
   involution: false
   symmetric: false
   rank: 32
-  is_invertible: true
+  invertible: true
   order: 16
   hamming_weight: 160
   orbit: 1
@@ -2329,7 +2329,7 @@ SPEEDY.MC:
   involution: false
   symmetric: false
   rank: 32
-  is_invertible: true
+  invertible: true
   order: 32
   hamming_weight: 224
   orbit: 1
@@ -2380,7 +2380,7 @@ SS16.IS32:
   involution: true
   symmetric: false
   rank: 32
-  is_invertible: true
+  invertible: true
   order: 2
   hamming_weight: 192
   orbit: 32
@@ -2431,7 +2431,7 @@ SS16.S32:
   involution: false
   symmetric: false
   rank: 32
-  is_invertible: true
+  invertible: true
   order: 340
   hamming_weight: 155
   orbit: 32
@@ -2481,7 +2481,7 @@ SS17.S32:
   involution: false
   symmetric: false
   rank: 32
-  is_invertible: true
+  invertible: true
   order: 2730
   hamming_weight: 426
   orbit: 32
@@ -2531,7 +2531,7 @@ TWOFISH:
   involution: false
   symmetric: false
   rank: 32
-  is_invertible: true
+  invertible: true
   order: 1431655765
   hamming_weight: 359
   orbit: 32
@@ -2583,7 +2583,7 @@ WHIRLWIND.M0:
   involution: false
   symmetric: false
   rank: 32
-  is_invertible: true
+  invertible: true
   order: 30
   hamming_weight: 520
   orbit: 16
@@ -2633,7 +2633,7 @@ WHIRLWIND.M1:
   involution: false
   symmetric: false
   rank: 32
-  is_invertible: true
+  invertible: true
   order: 30
   hamming_weight: 568
   orbit: 16
@@ -2690,7 +2690,7 @@ ZUC.L2:
   involution: false
   symmetric: false
   rank: 32
-  is_invertible: true
+  invertible: true
   order: 16
   hamming_weight: 160
   orbit: 1

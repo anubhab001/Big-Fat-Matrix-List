@@ -383,7 +383,10 @@ def _in_sage() -> bool:
 
 def _sage_matrix(rows: list[list[int]]):
     """Return a Sage Matrix over GF(2) for the given 0/1 rows."""
-    from sage.all import Matrix, GF   # type: ignore
+    try:
+        from sage.all import Matrix, GF   # type: ignore
+    except ImportError:                    # pragma: no cover
+        raise ImportError("SageMath is not available") from None
     nrows = len(rows)
     ncols = len(rows[0]) if rows else 0
     return Matrix(GF(2), nrows, ncols, rows)
@@ -391,7 +394,10 @@ def _sage_matrix(rows: list[list[int]]):
 
 def _sage_permutation(perm: list[int]):
     """Return a Sage Permutation (1-based) for the given 0-based mapping."""
-    from sage.all import Permutation   # type: ignore
+    try:
+        from sage.all import Permutation   # type: ignore
+    except ImportError:                     # pragma: no cover
+        raise ImportError("SageMath is not available") from None
     return Permutation([int(p) + 1 for p in perm])
 
 

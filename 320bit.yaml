@@ -14,7 +14,7 @@ ASCON:
   involution: false
   symmetric: false
   rank: 320
-  is_invertible: true
+  invertible: true
   order: 64
   hamming_weight: 960
   orbit: 320

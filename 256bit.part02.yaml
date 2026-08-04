@@ -14,7 +14,7 @@ GLEEOK.THETA256B3:
   involution: false
   symmetric: false
   rank: 256
-  is_invertible: true
+  invertible: true
   order: 64
   hamming_weight: 768
   orbit: 1
@@ -290,7 +290,7 @@ KECCAK.200:
   involution: false
   symmetric: false
   rank: 200
-  is_invertible: true
+  invertible: true
   order: 24
   hamming_weight: 2200
   orbit: 8
@@ -510,7 +510,7 @@ SEFA.MDS192:
   involution: true
   symmetric: false
   rank: 192
-  is_invertible: true
+  invertible: true
   order: 2
   hamming_weight: 18240
   orbit: 96
