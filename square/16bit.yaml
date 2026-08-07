@@ -192,7 +192,7 @@ DL18C:
   cipher: false
   origin: "https://eprint.iacr.org/2018/260"
   source: "Figure 7: https://eprint.iacr.org/2018/260.pdf"
-  note: "Duval-Leurent, ToSC 2018(2). 16x16 binary = 4x4 MDS over GF(2^4). TIGHT WITNESS for sw-XOR 8n+3 = 35 at n=4. NOT Saturnin's full-state expansion (Saturnin MixSlice is 16x16 over GF(2^4), binary expansion 256x256)."
+  note: "Duval-Leurent, ToSC 2018(2). 16x16 binary = 4x4 MDS over GF(2^4). TIGHT WITNESS for sw-XOR 8n+3 = 35 at n=4. NOT Saturnin's full-state expansion (Saturnin MixSlice is 16x16 over GF(2^4), binary expansion 256x256). This body was generated here by running the construction of the paper rather than copied from a table the paper prints. It is under review: SATURNIN states that its MDS layer is a matrix of this family, and the matrix its reference implementation computes, of weight 118 over 16 x 16, matches none of the three DL18 bodies by weight, which no permutation of rows and columns could change. Either a different member of the family is meant or the generation is wrong, and the implementation is the firmer of the two sources."
   formula: "4x4 MDS matrix over GF(2^4) in the ring F2[alpha], alpha a companion matrix; binary expansion 16x16."
   involution: false
   symmetric: false

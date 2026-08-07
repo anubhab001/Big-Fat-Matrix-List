@@ -641,7 +641,7 @@ DL18A:
   cipher: false
   origin: "https://eprint.iacr.org/2018/260"
   source: "Section C: https://eprint.iacr.org/2018/260.pdf"
-  note: "Duval-Leurent, MDS Matrices with Lightweight Circuits, ToSC 2018(2). Figure 7, alpha = A8 = companion of X^8+X^2+1. This is the TIGHT WITNESS for the sw-XOR lower bound 8n+3 = 67 at n=8 (Venkateswarlu-Kesarwani-Sarkar, ToSC 2022(4))."
+  note: "Duval-Leurent, MDS Matrices with Lightweight Circuits, ToSC 2018(2). Figure 7, alpha = A8 = companion of X^8+X^2+1. This is the TIGHT WITNESS for the sw-XOR lower bound 8n+3 = 67 at n=8 (Venkateswarlu-Kesarwani-Sarkar, ToSC 2022(4)). This body was generated here by running the construction of the paper rather than copied from a table the paper prints. It is under review: SATURNIN states that its MDS layer is a matrix of this family, and the matrix its reference implementation computes, of weight 118 over 16 x 16, matches none of the three DL18 bodies by weight, which no permutation of rows and columns could change. Either a different member of the family is meant or the generation is wrong, and the implementation is the firmer of the two sources."
   formula: "4x4 MDS matrix over GF(2^8) in the ring F2[alpha], alpha a companion matrix; binary expansion 32x32."
   involution: false
   symmetric: false
@@ -695,7 +695,7 @@ DL18B:
   cipher: false
   origin: "https://eprint.iacr.org/2018/260"
   source: "Figure 15: https://eprint.iacr.org/2018/260.pdf"
-  note: "Duval-Leurent, ToSC 2018(2). NOTE: a 76-XOR implementation (classical depth 6) is recorded in linear-layer-quantum-depth/matrix_tsvs/DL18B.tsv - one gate below the paper's count at a different depth trade-off."
+  note: "Duval-Leurent, ToSC 2018(2). NOTE: a 76-XOR implementation (classical depth 6) is recorded in linear-layer-quantum-depth/matrix_tsvs/DL18B.tsv - one gate below the paper's count at a different depth trade-off. This body was generated here by running the construction of the paper rather than copied from a table the paper prints. It is under review: SATURNIN states that its MDS layer is a matrix of this family, and the matrix its reference implementation computes, of weight 118 over 16 x 16, matches none of the three DL18 bodies by weight, which no permutation of rows and columns could change. Either a different member of the family is meant or the generation is wrong, and the implementation is the firmer of the two sources."
   formula: "4x4 MDS matrix over GF(2^8) in the ring F2[alpha], alpha a companion matrix; binary expansion 32x32."
   involution: false
   symmetric: false
