@@ -85,8 +85,8 @@ a field compulsory only for one kind of entry with †.
 |-------|------|-------------|
 | `canonical_name`<sup>*</sup> | tuple | Name as written in the original paper, as (family, layer), preserving case, non-Latin character, subscript, hyphen and space; a family with a single unnamed layer gives a one-element tuple |
 | `aliases` | tuple[str] | Alternative names for the same entry used in the literature, including the identifier a public circuit corpus files it under |
-| `reuse` | tuple[str] | Layers elsewhere that are this same matrix, written `CIPHER.LAYER`; see Notes 15 |
-| `similarity` | tuple[str] | Entries that are this matrix under a relabelling of rows and columns rather than the same matrix; see Notes 16 |
+| `reuse` | tuple[str] | Layers elsewhere that are this same matrix, written `CIPHER.LAYER`; see [Note 15](#notes) |
+| `similarity` | tuple[str] | Entries that are this matrix under a relabelling of rows and columns rather than the same matrix; see [Note 16](#notes) |
 | `rows`, `cols`<sup>*</sup> | int | Number of rows (output bit width) and columns (input bit width); absent for a bit-permutation, which is square of side `size` |
 | `size`<sup>*</sup> | int | Side of a bit-permutation |
 | `year` | tuple | Significant publication years (e.g., proposal, journal, standardisation); absent when no dated publication defines the entry |
@@ -96,7 +96,7 @@ a field compulsory only for one kind of entry with †.
 | `paper_title` | str | Free-form citation pointer to the originating paper |
 | `note` | str | Free-form remark; designer credit, equivalent form, link to a related entry |
 | `formula` | str | Algorithmic description of how the entry is constructed, in pseudo-code, formulas, or rotation and shift recipes; emitted as a YAML literal block scalar (`\|-`) when multi-line |
-| `augmentation` | str | Symbolic expression building this matrix from other catalogued entries (e.g., `block_diag(...)`, `kron(...)`); see Notes 6 |
+| `augmentation` | str | Symbolic expression building this matrix from other catalogued entries (e.g., `block_diag(...)`, `kron(...)`); see [Note 6](#notes) |
 | `involution` | bool | True iff $M^2 = I$ over $\mathrm{GF}(2)$, that is, the entry is its own inverse |
 | `symmetric` | bool | True iff $M = M^	op$ |
 | `rank` | int | Rank of $M$ over $\mathrm{GF}(2)$ |
@@ -105,8 +105,8 @@ a field compulsory only for one kind of entry with †.
 | `branch_number` | int | Branch number in the word size the designers use, recorded when the specification states it |
 | `mds` | bool | True iff the matrix is MDS in that word size |
 | `hamming_weight` | int | Total number of $1$ entries in the matrix |
-| `inversion`<sup>†</sup> | int | Number of pairs of positions the permutation puts out of order, for an entry that acts as one; see Notes 18 |
-| `orbit` | int | Number of orbits on the $N$ rows of the smallest shift $\sigma\colon i \mapsto i + k \pmod N$ that commutes with $M$; see Notes 11 |
+| `inversion`<sup>†</sup> | int | Number of pairs of positions the permutation puts out of order, for an entry that acts as one; see [Note 18](#notes) |
+| `orbit` | int | Number of orbits on the $N$ rows of the smallest shift $\sigma\colon i \mapsto i + k \pmod N$ that commutes with $M$; see [Note 11](#notes) |
 | `hamming_weight_per_row` | tuple[int] | Number of $1$ entries per row |
 | `fixed_points` | tuple[int] | Indices $i$ with $M e_i = e_i$, that is, the bits a permutation leaves in place (only for square entries) |
 | `cycle_lengths` | tuple[int] | Sorted cycle-length multiset, when the entry acts as a bit-permutation |
@@ -288,7 +288,7 @@ Quick lookup for one or more keys directly from the shell:
 python bigfatmatrix.py AES.MIXCOLUMN GIFT.128 BAKSHEESH.T
 ```
 
-### Notes
+### Loader Notes
 
 1. Python identifiers cannot contain a dot, so dotted entry keys are accessed via bracket notation (`bigfatmatrix['AES.MIXCOLUMN']`) or via group attributes (`bigfatmatrix.aes.mixcolumn`).
 

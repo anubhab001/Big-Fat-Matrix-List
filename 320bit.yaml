@@ -8,7 +8,7 @@ ASCON:
   year: [2014]
   cipher: true
   origin: "https://ascon.iaik.tugraz.at/"
-  note: "Full 320x320 linear layer. Block-diagonal of the five 64x64 ASCON.SIGMAi lane matrices; the order of the whole is the lcm of the five. Block-diagonal of the five 64x64 ASCON.SIGMAi lane matrices; the order of the whole is the lcm of the five. Block-diagonal of the five 64x64 ASCON.SIGMAi lane matrices; the order of the whole is the lcm of the five. Block-diagonal of the five 64x64 ASCON.SIGMAi lane matrices; the order of the whole is the lcm of the five."
+  note: "Full 320x320 linear layer. Block-diagonal of the five 64x64 ASCON.SIGMAi lane matrices; the order of the whole is the lcm of the five."
   formula: "Linear-diffusion layer of Ascon-p (Ascon permutation): the 320-bit state is split into five 64-bit lanes x_0..x_4 and each lane gets its own Sigma_i. In matrix form L = block_diag(Sigma_0, Sigma_1, Sigma_2, Sigma_3, Sigma_4) acting on (x_0 || x_1 || x_2 || x_3 || x_4)."
   augmentation: "block_diag(ASCON.SIGMA0, ASCON.SIGMA1, ASCON.SIGMA2, ASCON.SIGMA3, ASCON.SIGMA4)"
   involution: false
