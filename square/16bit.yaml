@@ -746,7 +746,7 @@ MIDORI:
 
 PRIDE.L0:
   canonical_name: ["PRIDE", "L₀"]
-  reuse: ["MANTIS.MIXCOLUMNS", "MIDORI.MIXCOLUMN", "ULBC.MIXCOLUMN"]
+  reuse: ["BLINK.MIXCOLUMN", "MANTIS.MIXCOLUMNS", "MIDORI.MIXCOLUMN", "ULBC.MIXCOLUMN"]
   rows: 16
   cols: 16
   year: [2014]

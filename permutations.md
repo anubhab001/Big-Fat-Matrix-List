@@ -2,7 +2,7 @@
 
 Source data: [`permutations.yaml`](permutations.yaml).
 
-Entry count: 36.
+Entry count: 40.
 
 | Key | Preview | Shape | Year | Properties | Origin |
 |:----|:-------:|:-----:|:----:|:-----------|:-------|
@@ -10,6 +10,8 @@ Entry count: 36.
 | **AETHER.PN**<br/>AETHER, Pₙ | <img src="__renders__/AETHER.PN.png" width="192" alt="AETHER.PN" /> | 128 | 2025 | order = 5 | [link](https://tches.iacr.org/index.php/TCHES/article/view/12228) |
 | **BAKSHEESH.P**<br/>BAKSHEESH, PLayer | <img src="__renders__/BAKSHEESH.P.png" width="192" alt="BAKSHEESH.P" /> | 128 | 2026 | order = 310 | [link](https://cic.iacr.org/p/2/4/31) |
 | **BEANIE.SR**<br/>BEANIE, ShiftRows | <img src="__renders__/BEANIE.SR.png" width="192" alt="BEANIE.SR" /> | 32 | 2025 | involution, order = 2 | [link](https://tosc.iacr.org/index.php/ToSC) |
+| **BLINK.P128**<br/>Blink, P | <img src="__renders__/BLINK.P128.png" width="192" alt="BLINK.P128" /> | 128 | 2025 | order = 66 | [link](https://tosc.iacr.org/index.php/ToSC/article/view/12613) |
+| **BLINK.P64**<br/>Blink, P | <img src="__renders__/BLINK.P64.png" width="192" alt="BLINK.P64" /> | 64 | 2025 | order = 4 | [link](https://tosc.iacr.org/index.php/ToSC/article/view/12613) |
 | **DEOXYS.H**<br/>Deoxys-TBC, h | <img src="__renders__/DEOXYS.H.png" width="192" alt="DEOXYS.H" /> | 128 | 2021 | order = 8 | [link](https://doi.org/10.1007/s00145-021-09397-w) |
 | **DIALGA.P0**<br/>Dialga, π₀ | <img src="__renders__/DIALGA.P0.png" width="192" alt="DIALGA.P0" /> | 128 | 2025 | order = 8 | [link](https://tosc.iacr.org/index.php/ToSC) |
 | **DIALGA.P1**<br/>Dialga, π₁ | <img src="__renders__/DIALGA.P1.png" width="192" alt="DIALGA.P1" /> | 128 | 2025 | order = 8 | [link](https://tosc.iacr.org/index.php/ToSC) |
@@ -42,4 +44,6 @@ Entry count: 36.
 | **TWINKLE.LANEROTATION0**<br/>Twinkle, LaneRotation₀ | <img src="__renders__/TWINKLE.LANEROTATION0.png" width="192" alt="TWINKLE.LANEROTATION0" /> | 1280 | 2024 | order = 80 | [link](https://cic.iacr.org/) |
 | **TWINKLE.LANEROTATION1**<br/>Twinkle, LaneRotation₁ | <img src="__renders__/TWINKLE.LANEROTATION1.png" width="192" alt="TWINKLE.LANEROTATION1" /> | 1280 | 2024 | order = 80 | [link](https://cic.iacr.org/) |
 | **ULBC.POSPERM**<br/>uLBC, PosPerm | <img src="__renders__/ULBC.POSPERM.png" width="192" alt="ULBC.POSPERM" /> | 128 | 2024 | order = 4 | [link](https://cic.iacr.org/p/1/4/25) |
+| **VISTRUTAH.ZETA256**<br/>Vistrutah-256, ζ | <img src="__renders__/VISTRUTAH.ZETA256.png" width="192" alt="VISTRUTAH.ZETA256" /> | 256 | 2025 | order = 5 | [link](https://tosc.iacr.org/index.php/ToSC/article/view/12467) |
+| **VISTRUTAH.ZETA512**<br/>Vistrutah-512, ζ | <img src="__renders__/VISTRUTAH.ZETA512.png" width="192" alt="VISTRUTAH.ZETA512" /> | 512 | 2025 | order = 6 | [link](https://tosc.iacr.org/index.php/ToSC/article/view/12467) |
 

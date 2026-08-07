@@ -74,7 +74,7 @@ Each YAML file holds entries binned by `max(rows, cols)`. For sizes up to $256$ 
 
 | File | # Entry | Index |
 |:------|:-------:|:------|
-| [`permutations.yaml`](permutations.yaml) | 36 | [`permutations.md`](permutations.md) |
+| [`permutations.yaml`](permutations.yaml) | 40 | [`permutations.md`](permutations.md) |
 
 ### Visual Renders
 

@@ -3,7 +3,7 @@
 
 AES.MIXCOLUMN:
   canonical_name: ["AES", "MixColumn"]
-  reuse: ["DEOXYS.MIXBYTES", "ZIPAES.MIXCOLUMNS"]
+  reuse: ["DEOXYS.MIXBYTES", "VISTRUTAH.MIXCOLUMNS", "ZIPAES.MIXCOLUMNS"]
   rows: 32
   cols: 32
   year: [1998, 2001]
