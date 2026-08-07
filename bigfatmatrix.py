@@ -18,7 +18,7 @@ Three access modes:
   m.to_dict()                           # raw YAML dict
 
   from bigfatmatrix import aes          # MatrixGroup (entries keyed AES.*)
-  aes.mixcolumn                         # AES.MIXCOLUMNS entry
+  aes.mixcolumn                         # AES.MIXCOLUMN entry, one column
   for x in bigfatmatrix.gift: ...       # iterate over GIFT.* entries
 
   Permutation entries expose a `.perm` property (tuple[int]) and `.size`, and
@@ -43,12 +43,13 @@ Three access modes:
   bigfatmatrix.find('gf*.mul')          # returns dict of matching entries
   bigfatmatrix['aes.*']                 # bracket-form wildcard search
 
-For `import bigfatmatrix` to work, this script and all `*.yaml` data files
-must live in the same directory, which must be either the current working
-directory or on `sys.path`. Loading is lazy: no YAML file is read until the
-first access. A large size band is published as several `<band>.partNN.yaml`
-files; the loader merges it back into one entry, so the access API is the
-same either way.
+For `import bigfatmatrix` to work, this script must sit beside the `square/`
+and `rectangular/` folders of data files, in either the current working
+directory or on `sys.path`; the loader reads both folders and the top level,
+so the shape of an entry never enters an access. Loading is lazy: no YAML file
+is read until the first access. A large size band is published as several
+`<band>.partNN.yaml` files; the loader merges it back into one entry, so the
+access API is the same either way.
 """
 
 from __future__ import annotations
@@ -108,7 +109,11 @@ def _do_load() -> None:
 
     parts: dict[str, dict[int, list]] = {}
 
-    for fpath in sorted(_PUBLIC.glob('*.yaml')):
+    # A square band lives in `square/`, a rectangular one in `rectangular/`
+    # and `permutations.yaml` at the top, so the search goes one level down as
+    # well as across. Two bands of the same side, one of each shape, share a
+    # file name and are told apart by the folder alone.
+    for fpath in sorted(_PUBLIC.rglob('*.yaml')):
         with open(fpath, encoding='utf-8') as f:
             data = _safe_load(f)
         if not isinstance(data, dict):

@@ -6,7 +6,7 @@ Entry count: 36.
 
 | Key | Preview | Shape | Year | Properties | Origin |
 |:----|:-------:|:-----:|:----:|:-----------|:-------|
-| **AES.SHIFTROWS**<br/>AES, ShiftRows<br/><sub>aka `AES.SHIFTROW`</sub> | <img src="__renders__/AES.SHIFTROWS.png" width="192" alt="AES.SHIFTROWS" /> | 128 | 1998, 2001 | order = 4 | [link](https://csrc.nist.gov/pubs/fips/197/final) |
+| **AES.SHIFTROWS**<br/>AES, ShiftRows<br/><sub>also known as `AES.SHIFTROW`</sub> | <img src="__renders__/AES.SHIFTROWS.png" width="192" alt="AES.SHIFTROWS" /> | 128 | 1998, 2001 | order = 4 | [link](https://csrc.nist.gov/pubs/fips/197/final) |
 | **AETHER.PN**<br/>AETHER, Pₙ | <img src="__renders__/AETHER.PN.png" width="192" alt="AETHER.PN" /> | 128 | 2025 | order = 5 | [link](https://tches.iacr.org/index.php/TCHES/article/view/12228) |
 | **BAKSHEESH.P**<br/>BAKSHEESH, PLayer | <img src="__renders__/BAKSHEESH.P.png" width="192" alt="BAKSHEESH.P" /> | 128 | 2026 | order = 310 | [link](https://cic.iacr.org/p/2/4/31) |
 | **BEANIE.SR**<br/>BEANIE, ShiftRows | <img src="__renders__/BEANIE.SR.png" width="192" alt="BEANIE.SR" /> | 32 | 2025 | involution, order = 2 | [link](https://tosc.iacr.org/index.php/ToSC) |

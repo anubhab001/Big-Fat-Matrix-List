@@ -8,7 +8,7 @@ Last update: 7 August 2026 <!-- TODO: To be updated in UTC with each (major) com
 
 - YAML files containing details about multiple binary linear layers, dimensions, historical notes etc.
 
-- Files are written by size band and by shape. A square matrix goes to `<N>bit.yaml`, a rectangular one to `rectangular<N>bit.yaml`, where $N$ is the next power of two up to $256$ and the exact column count above that. Bit-permutations live in `permutations.yaml`.
+- Files are written by shape and by size band. Shape names the folder and size names the file, so a square matrix goes to [`square/<N>bit.yaml`](square) and a rectangular one to [`rectangular/<N>bit.yaml`](rectangular), where $N$ is the next power of two up to $256$ and the exact column count above that. The two folders therefore hold files of the same name, `square/128bit.yaml` being the band of $128 \times 128$ matrices and `rectangular/128bit.yaml` the band of $64 \times 127$ ones. Bit-permutations are square and few, so they stay together in [`permutations.yaml`](permutations.yaml) at the top. Nothing in an access depends on this: `bigfatmatrix.py` reads both folders, and an entry is found by name whatever its shape.
 
 - No published file is larger than $400$ KB, so all of it renders in the GitHub web interface. A band above that size is published as several parts, `<band>.part01.yaml`, `<band>.part02.yaml` and so on, so that every file is relatively small; [`bigfatmatrix.py`](bigfatmatrix.py) merges them back into one entry per key. The split falls on an entry boundary where it can; where a single matrix is itself too large, its body is continued across parts and each piece carries `matrix_parts` and `matrix_part`, so an entry spread over seven files is still read as one `matrix`. The tables below list every part.
 
@@ -40,35 +40,35 @@ Each YAML file holds entries binned by `max(rows, cols)`. For sizes up to $256$ 
 
 | File | # Entry | Size | Index |
 |:------|:-------:|:-------------|:------|
-| [`16bit.yaml`](16bit.yaml) | 35 | $4 \times 4$, $8 \times 8$, $16 \times 16$ | [`16bit.md`](16bit.md) |
-| [`32bit.yaml`](32bit.yaml) | 52 | $20 \times 20$, $25 \times 25$, $32 \times 32$ | [`32bit.md`](32bit.md) |
-| [`64bit.yaml`](64bit.yaml) | 42 | $50 \times 50$, $60 \times 60$, $64 \times 64$ | [`64bit.md`](64bit.md) |
-| [`128bit.yaml`](128bit.yaml) | 18 | $100 \times 100$, $127 \times 127$, $128 \times 128$ | [`128bit.md`](128bit.md) |
-| [`256bit.part01.yaml`](256bit.part01.yaml), [`256bit.part02.yaml`](256bit.part02.yaml) | 10 | $163 \times 163$, $192 \times 192$, $200 \times 200$, $233 \times 233$, $256 \times 256$ | [`256bit.md`](256bit.md) |
-| [`283bit.yaml`](283bit.yaml) | 2 | $283 \times 283$ | [`283bit.md`](283bit.md) |
-| [`320bit.yaml`](320bit.yaml) | 1 | $320 \times 320$ | [`320bit.md`](320bit.md) |
-| [`400bit.yaml`](400bit.yaml) | 1 | $400 \times 400$ | [`400bit.md`](400bit.md) |
-| [`571bit.part01.yaml`](571bit.part01.yaml), [`571bit.part02.yaml`](571bit.part02.yaml) | 2 | $571 \times 571$ | [`571bit.md`](571bit.md) |
-| [`800bit.part01.yaml`](800bit.part01.yaml), [`800bit.part02.yaml`](800bit.part02.yaml) | 1 | $800 \times 800$ | [`800bit.md`](800bit.md) |
-| [`1024bit.part01.yaml`](1024bit.part01.yaml), [`1024bit.part02.yaml`](1024bit.part02.yaml), [`1024bit.part03.yaml`](1024bit.part03.yaml) | 1 | $1024 \times 1024$ | [`1024bit.md`](1024bit.md) |
-| [`1280bit.part01.yaml`](1280bit.part01.yaml), [`1280bit.part02.yaml`](1280bit.part02.yaml), [`1280bit.part03.yaml`](1280bit.part03.yaml), [`1280bit.part04.yaml`](1280bit.part04.yaml), [`1280bit.part05.yaml`](1280bit.part05.yaml) | 1 | $1280 \times 1280$ | [`1280bit.md`](1280bit.md) |
-| [`1600bit.part01.yaml`](1600bit.part01.yaml), [`1600bit.part02.yaml`](1600bit.part02.yaml), [`1600bit.part03.yaml`](1600bit.part03.yaml), [`1600bit.part04.yaml`](1600bit.part04.yaml), [`1600bit.part05.yaml`](1600bit.part05.yaml), [`1600bit.part06.yaml`](1600bit.part06.yaml), [`1600bit.part07.yaml`](1600bit.part07.yaml) | 1 | $1600 \times 1600$ | [`1600bit.md`](1600bit.md) |
+| [`square/16bit.yaml`](square/16bit.yaml) | 35 | $4 \times 4$, $8 \times 8$, $16 \times 16$ | [`square/16bit.md`](square/16bit.md) |
+| [`square/32bit.yaml`](square/32bit.yaml) | 52 | $20 \times 20$, $25 \times 25$, $32 \times 32$ | [`square/32bit.md`](square/32bit.md) |
+| [`square/64bit.yaml`](square/64bit.yaml) | 42 | $50 \times 50$, $60 \times 60$, $64 \times 64$ | [`square/64bit.md`](square/64bit.md) |
+| [`square/128bit.yaml`](square/128bit.yaml) | 18 | $100 \times 100$, $127 \times 127$, $128 \times 128$ | [`square/128bit.md`](square/128bit.md) |
+| [`square/256bit.part01.yaml`](square/256bit.part01.yaml), [`square/256bit.part02.yaml`](square/256bit.part02.yaml) | 10 | $163 \times 163$, $192 \times 192$, $200 \times 200$, $233 \times 233$, $256 \times 256$ | [`square/256bit.md`](square/256bit.md) |
+| [`square/283bit.yaml`](square/283bit.yaml) | 2 | $283 \times 283$ | [`square/283bit.md`](square/283bit.md) |
+| [`square/320bit.yaml`](square/320bit.yaml) | 1 | $320 \times 320$ | [`square/320bit.md`](square/320bit.md) |
+| [`square/400bit.yaml`](square/400bit.yaml) | 1 | $400 \times 400$ | [`square/400bit.md`](square/400bit.md) |
+| [`square/571bit.part01.yaml`](square/571bit.part01.yaml), [`square/571bit.part02.yaml`](square/571bit.part02.yaml) | 2 | $571 \times 571$ | [`square/571bit.md`](square/571bit.md) |
+| [`square/800bit.part01.yaml`](square/800bit.part01.yaml), [`square/800bit.part02.yaml`](square/800bit.part02.yaml) | 1 | $800 \times 800$ | [`square/800bit.md`](square/800bit.md) |
+| [`square/1024bit.part01.yaml`](square/1024bit.part01.yaml), [`square/1024bit.part02.yaml`](square/1024bit.part02.yaml), [`square/1024bit.part03.yaml`](square/1024bit.part03.yaml) | 1 | $1024 \times 1024$ | [`square/1024bit.md`](square/1024bit.md) |
+| [`square/1280bit.part01.yaml`](square/1280bit.part01.yaml), [`square/1280bit.part02.yaml`](square/1280bit.part02.yaml), [`square/1280bit.part03.yaml`](square/1280bit.part03.yaml), [`square/1280bit.part04.yaml`](square/1280bit.part04.yaml), [`square/1280bit.part05.yaml`](square/1280bit.part05.yaml) | 1 | $1280 \times 1280$ | [`square/1280bit.md`](square/1280bit.md) |
+| [`square/1600bit.part01.yaml`](square/1600bit.part01.yaml), [`square/1600bit.part02.yaml`](square/1600bit.part02.yaml), [`square/1600bit.part03.yaml`](square/1600bit.part03.yaml), [`square/1600bit.part04.yaml`](square/1600bit.part04.yaml), [`square/1600bit.part05.yaml`](square/1600bit.part05.yaml), [`square/1600bit.part06.yaml`](square/1600bit.part06.yaml), [`square/1600bit.part07.yaml`](square/1600bit.part07.yaml) | 1 | $1600 \times 1600$ | [`square/1600bit.md`](square/1600bit.md) |
 
 ### Rectangular Matrices
 
 | File | # Entry | Size | Index |
 |:------|:-------:|:-------------|:------|
-| [`rectangular16bit.yaml`](rectangular16bit.yaml) | 2 | $4 \times 7$, $8 \times 15$ | [`rectangular16bit.md`](rectangular16bit.md) |
-| [`rectangular32bit.yaml`](rectangular32bit.yaml) | 1 | $16 \times 31$ | [`rectangular32bit.md`](rectangular32bit.md) |
-| [`rectangular64bit.yaml`](rectangular64bit.yaml) | 1 | $32 \times 63$ | [`rectangular64bit.md`](rectangular64bit.md) |
-| [`rectangular128bit.yaml`](rectangular128bit.yaml) | 1 | $64 \times 127$ | [`rectangular128bit.md`](rectangular128bit.md) |
-| [`rectangular256bit.yaml`](rectangular256bit.yaml) | 2 | $127 \times 253$, $128 \times 255$ | [`rectangular256bit.md`](rectangular256bit.md) |
-| [`rectangular325bit.yaml`](rectangular325bit.yaml) | 1 | $163 \times 325$ | [`rectangular325bit.md`](rectangular325bit.md) |
-| [`rectangular465bit.yaml`](rectangular465bit.yaml) | 1 | $233 \times 465$ | [`rectangular465bit.md`](rectangular465bit.md) |
-| [`rectangular511bit.yaml`](rectangular511bit.yaml) | 1 | $256 \times 511$ | [`rectangular511bit.md`](rectangular511bit.md) |
-| [`rectangular565bit.yaml`](rectangular565bit.yaml) | 1 | $283 \times 565$ | [`rectangular565bit.md`](rectangular565bit.md) |
-| [`rectangular1141bit.part01.yaml`](rectangular1141bit.part01.yaml), [`rectangular1141bit.part02.yaml`](rectangular1141bit.part02.yaml) | 1 | $571 \times 1141$ | [`rectangular1141bit.md`](rectangular1141bit.md) |
-| [`rectangular2047bit.part01.yaml`](rectangular2047bit.part01.yaml), [`rectangular2047bit.part02.yaml`](rectangular2047bit.part02.yaml), [`rectangular2047bit.part03.yaml`](rectangular2047bit.part03.yaml), [`rectangular2047bit.part04.yaml`](rectangular2047bit.part04.yaml), [`rectangular2047bit.part05.yaml`](rectangular2047bit.part05.yaml), [`rectangular2047bit.part06.yaml`](rectangular2047bit.part06.yaml) | 1 | $1024 \times 2047$ | [`rectangular2047bit.md`](rectangular2047bit.md) |
+| [`rectangular/16bit.yaml`](rectangular/16bit.yaml) | 2 | $4 \times 7$, $8 \times 15$ | [`rectangular/16bit.md`](rectangular/16bit.md) |
+| [`rectangular/32bit.yaml`](rectangular/32bit.yaml) | 1 | $16 \times 31$ | [`rectangular/32bit.md`](rectangular/32bit.md) |
+| [`rectangular/64bit.yaml`](rectangular/64bit.yaml) | 1 | $32 \times 63$ | [`rectangular/64bit.md`](rectangular/64bit.md) |
+| [`rectangular/128bit.yaml`](rectangular/128bit.yaml) | 1 | $64 \times 127$ | [`rectangular/128bit.md`](rectangular/128bit.md) |
+| [`rectangular/256bit.yaml`](rectangular/256bit.yaml) | 2 | $127 \times 253$, $128 \times 255$ | [`rectangular/256bit.md`](rectangular/256bit.md) |
+| [`rectangular/325bit.yaml`](rectangular/325bit.yaml) | 1 | $163 \times 325$ | [`rectangular/325bit.md`](rectangular/325bit.md) |
+| [`rectangular/465bit.yaml`](rectangular/465bit.yaml) | 1 | $233 \times 465$ | [`rectangular/465bit.md`](rectangular/465bit.md) |
+| [`rectangular/511bit.yaml`](rectangular/511bit.yaml) | 1 | $256 \times 511$ | [`rectangular/511bit.md`](rectangular/511bit.md) |
+| [`rectangular/565bit.yaml`](rectangular/565bit.yaml) | 1 | $283 \times 565$ | [`rectangular/565bit.md`](rectangular/565bit.md) |
+| [`rectangular/1141bit.part01.yaml`](rectangular/1141bit.part01.yaml), [`rectangular/1141bit.part02.yaml`](rectangular/1141bit.part02.yaml) | 1 | $571 \times 1141$ | [`rectangular/1141bit.md`](rectangular/1141bit.md) |
+| [`rectangular/2047bit.part01.yaml`](rectangular/2047bit.part01.yaml), [`rectangular/2047bit.part02.yaml`](rectangular/2047bit.part02.yaml), [`rectangular/2047bit.part03.yaml`](rectangular/2047bit.part03.yaml), [`rectangular/2047bit.part04.yaml`](rectangular/2047bit.part04.yaml), [`rectangular/2047bit.part05.yaml`](rectangular/2047bit.part05.yaml), [`rectangular/2047bit.part06.yaml`](rectangular/2047bit.part06.yaml) | 1 | $1024 \times 2047$ | [`rectangular/2047bit.md`](rectangular/2047bit.md) |
 
 ### Bit-Permutations
 

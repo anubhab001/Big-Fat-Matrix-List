@@ -2,7 +2,7 @@
 
 One render per entry, in the colour scheme of the [`linear-layers`](https://github.com/Daemen-Crypto/linear-layers) repository: a cell of value $0$ is yellow, a cell of value $1$ is blue. A bit-permutation $P$ of size $N$ is drawn as the $N \times N$ matrix $M$ with $M[P[i]][i] = 1$. Every entry is described in the YAML file its heading links to.
 
-## [Matrices, 16bit](16bit.md)
+## [Matrices, 16bit](square/16bit.md)
 
 | &nbsp; | &nbsp; | &nbsp; | &nbsp; |
 |:---:|:---:|:---:|:---:|
@@ -16,7 +16,7 @@ One render per entry, in the colour scheme of the [`linear-layers`](https://gith
 | <img src="__renders__/QARMA.S64.png" width="96" alt="" /><br/>**QARMA.S64**<br/><sub>16 &times; 16</sub> | <img src="__renders__/SEFA.MDS16.png" width="96" alt="" /><br/>**SEFA.MDS16**<br/><sub>16 &times; 16</sub> | <img src="__renders__/SKINNY.MIXCOLUMN.png" width="96" alt="" /><br/>**SKINNY.MIXCOLUMN**<br/><sub>16 &times; 16</sub> | <img src="__renders__/SKOP15.S16.png" width="96" alt="" /><br/>**SKOP15.S16**<br/><sub>16 &times; 16</sub> |
 | <img src="__renders__/SMALLSCALEAES.png" width="96" alt="" /><br/>**SMALLSCALEAES**<br/><sub>16 &times; 16</sub> | <img src="__renders__/SS16.IS16.png" width="96" alt="" /><br/>**SS16.IS16**<br/><sub>16 &times; 16</sub> | <img src="__renders__/SS16.S16.png" width="96" alt="" /><br/>**SS16.S16**<br/><sub>16 &times; 16</sub> | <img src="__renders__/TWINKLE.MIXSLICE.png" width="96" alt="" /><br/>**TWINKLE.MIXSLICE**<br/><sub>16 &times; 16</sub> |
 
-## [Matrices, 32bit](32bit.md)
+## [Matrices, 32bit](square/32bit.md)
 
 | &nbsp; | &nbsp; | &nbsp; | &nbsp; |
 |:---:|:---:|:---:|:---:|
@@ -35,7 +35,7 @@ One render per entry, in the colour scheme of the [`linear-layers`](https://gith
 | <img src="__renders__/SS17.S32.png" width="128" alt="" /><br/>**SS17.S32**<br/><sub>32 &times; 32</sub> | <img src="__renders__/TWOFISH.MDS.png" width="128" alt="" /><br/>**TWOFISH.MDS**<br/><sub>32 &times; 32</sub> | <img src="__renders__/WHIRLWIND.M0.png" width="128" alt="" /><br/>**WHIRLWIND.M0**<br/><sub>32 &times; 32</sub> | <img src="__renders__/WHIRLWIND.M1.png" width="128" alt="" /><br/>**WHIRLWIND.M1**<br/><sub>32 &times; 32</sub> |
 | <img src="__renders__/ZUC.L1.png" width="128" alt="" /><br/>**ZUC.L1**<br/><sub>32 &times; 32</sub> | <img src="__renders__/ZUC.L2.png" width="128" alt="" /><br/>**ZUC.L2**<br/><sub>32 &times; 32</sub> | &nbsp; | &nbsp; |
 
-## [Matrices, 64bit](64bit.md)
+## [Matrices, 64bit](square/64bit.md)
 
 | &nbsp; | &nbsp; | &nbsp; | &nbsp; |
 |:---:|:---:|:---:|:---:|
@@ -51,7 +51,7 @@ One render per entry, in the colour scheme of the [`linear-layers`](https://gith
 | <img src="__renders__/UKNIT.L5.png" width="160" alt="" /><br/>**UKNIT.L5**<br/><sub>64 &times; 64</sub> | <img src="__renders__/UKNIT.L6.png" width="160" alt="" /><br/>**UKNIT.L6**<br/><sub>64 &times; 64</sub> | <img src="__renders__/UKNIT.L7.png" width="160" alt="" /><br/>**UKNIT.L7**<br/><sub>64 &times; 64</sub> | <img src="__renders__/UKNIT.L8.png" width="160" alt="" /><br/>**UKNIT.L8**<br/><sub>64 &times; 64</sub> |
 | <img src="__renders__/UKNIT.L9.png" width="160" alt="" /><br/>**UKNIT.L9**<br/><sub>64 &times; 64</sub> | <img src="__renders__/WHIRLPOOL.MIXROW.png" width="160" alt="" /><br/>**WHIRLPOOL.MIXROW**<br/><sub>64 &times; 64</sub> | &nbsp; | &nbsp; |
 
-## [Matrices, 128bit](128bit.md)
+## [Matrices, 128bit](square/128bit.md)
 
 | &nbsp; | &nbsp; | &nbsp; | &nbsp; |
 |:---:|:---:|:---:|:---:|
@@ -61,7 +61,7 @@ One render per entry, in the colour scheme of the [`linear-layers`](https://gith
 | <img src="__renders__/GLEEOK.THETA128B3.png" width="192" alt="" /><br/>**GLEEOK.THETA128B3**<br/><sub>128 &times; 128</sub> | <img src="__renders__/KECCAK.100.png" width="180" alt="" /><br/>**KECCAK.100**<br/><sub>100 &times; 100</sub> | <img src="__renders__/MERIDIAN.MIX.png" width="192" alt="" /><br/>**MERIDIAN.MIX**<br/><sub>128 &times; 128</sub> | <img src="__renders__/SPARX.L4.png" width="192" alt="" /><br/>**SPARX.L4**<br/><sub>128 &times; 128</sub> |
 | <img src="__renders__/SPOOK.CLYDE.png" width="192" alt="" /><br/>**SPOOK.CLYDE**<br/><sub>128 &times; 128</sub> | <img src="__renders__/SPOOK.DBOX.png" width="192" alt="" /><br/>**SPOOK.DBOX**<br/><sub>128 &times; 128</sub> | &nbsp; | &nbsp; |
 
-## [Matrices, 256bit](256bit.md)
+## [Matrices, 256bit](square/256bit.md)
 
 | &nbsp; | &nbsp; | &nbsp; | &nbsp; |
 |:---:|:---:|:---:|:---:|
@@ -69,115 +69,115 @@ One render per entry, in the colour scheme of the [`linear-layers`](https://gith
 | <img src="__renders__/GF256.SQR.png" width="224" alt="" /><br/>**GF256.SQR**<br/><sub>256 &times; 256</sub> | <img src="__renders__/GLEEOK.THETA256B1.png" width="224" alt="" /><br/>**GLEEOK.THETA256B1**<br/><sub>256 &times; 256</sub> | <img src="__renders__/GLEEOK.THETA256B2.png" width="224" alt="" /><br/>**GLEEOK.THETA256B2**<br/><sub>256 &times; 256</sub> | <img src="__renders__/GLEEOK.THETA256B3.png" width="224" alt="" /><br/>**GLEEOK.THETA256B3**<br/><sub>256 &times; 256</sub> |
 | <img src="__renders__/KECCAK.200.png" width="212" alt="" /><br/>**KECCAK.200**<br/><sub>200 &times; 200</sub> | <img src="__renders__/SEFA.MDS192.png" width="210" alt="" /><br/>**SEFA.MDS192**<br/><sub>192 &times; 192</sub> | &nbsp; | &nbsp; |
 
-## [Matrices, 283bit](283bit.md)
+## [Matrices, 283bit](square/283bit.md)
 
 | &nbsp; | &nbsp; |
 |:---:|:---:|
 | <img src="__renders__/GF283.ECCSQR.png" width="256" alt="" /><br/>**GF283.ECCSQR**<br/><sub>283 &times; 283</sub> | <img src="__renders__/GF283.SQR.png" width="256" alt="" /><br/>**GF283.SQR**<br/><sub>283 &times; 283</sub> |
 
-## [Matrices, 320bit](320bit.md)
+## [Matrices, 320bit](square/320bit.md)
 
 | &nbsp; |
 |:---:|
 | <img src="__renders__/ASCON.png" width="256" alt="" /><br/>**ASCON**<br/><sub>320 &times; 320</sub> |
 
-## [Matrices, 400bit](400bit.md)
+## [Matrices, 400bit](square/400bit.md)
 
 | &nbsp; |
 |:---:|
 | <img src="__renders__/KECCAK.400.png" width="256" alt="" /><br/>**KECCAK.400**<br/><sub>400 &times; 400</sub> |
 
-## [Matrices, 571bit](571bit.md)
+## [Matrices, 571bit](square/571bit.md)
 
 | &nbsp; | &nbsp; |
 |:---:|:---:|
 | <img src="__renders__/GF571.ECCSQR.png" width="256" alt="" /><br/>**GF571.ECCSQR**<br/><sub>571 &times; 571</sub> | <img src="__renders__/GF571.SQR.png" width="256" alt="" /><br/>**GF571.SQR**<br/><sub>571 &times; 571</sub> |
 
-## [Matrices, 800bit](800bit.md)
+## [Matrices, 800bit](square/800bit.md)
 
 | &nbsp; |
 |:---:|
 | <img src="__renders__/KECCAK.800.png" width="256" alt="" /><br/>**KECCAK.800**<br/><sub>800 &times; 800</sub> |
 
-## [Matrices, 1024bit](1024bit.md)
+## [Matrices, 1024bit](square/1024bit.md)
 
 | &nbsp; |
 |:---:|
 | <img src="__renders__/GF1024.SQR.png" width="256" alt="" /><br/>**GF1024.SQR**<br/><sub>1024 &times; 1024</sub> |
 
-## [Matrices, 1280bit](1280bit.md)
+## [Matrices, 1280bit](square/1280bit.md)
 
 | &nbsp; |
 |:---:|
 | <img src="__renders__/ICEPOLE.png" width="256" alt="" /><br/>**ICEPOLE**<br/><sub>1280 &times; 1280</sub> |
 
-## [Matrices, 1600bit](1600bit.md)
+## [Matrices, 1600bit](square/1600bit.md)
 
 | &nbsp; | &nbsp; |
 |:---:|:---:|
 | <img src="__renders__/KECCAK.1600.png" width="256" alt="" /><br/>**KECCAK.1600**<br/><sub>1600 &times; 1600</sub> | <img src="__renders__/SHA3.png" width="256" alt="" /><br/>**SHA3**<br/><sub>1600 &times; 1600</sub> |
 
-## [Rectangular matrices, 16bit](rectangular16bit.md)
+## [Rectangular matrices, 16bit](rectangular/16bit.md)
 
 | &nbsp; | &nbsp; |
 |:---:|:---:|
 | <img src="__renders__/GF4.MUL.png" width="96" alt="" /><br/>**GF4.MUL**<br/><sub>4 &times; 7</sub> | <img src="__renders__/GF8.MUL.png" width="96" alt="" /><br/>**GF8.MUL**<br/><sub>8 &times; 15</sub> |
 
-## [Rectangular matrices, 32bit](rectangular32bit.md)
+## [Rectangular matrices, 32bit](rectangular/32bit.md)
 
 | &nbsp; |
 |:---:|
 | <img src="__renders__/GF16.MUL.png" width="126" alt="" /><br/>**GF16.MUL**<br/><sub>16 &times; 31</sub> |
 
-## [Rectangular matrices, 64bit](rectangular64bit.md)
+## [Rectangular matrices, 64bit](rectangular/64bit.md)
 
 | &nbsp; |
 |:---:|
 | <img src="__renders__/GF32.MUL.png" width="159" alt="" /><br/>**GF32.MUL**<br/><sub>32 &times; 63</sub> |
 
-## [Rectangular matrices, 128bit](rectangular128bit.md)
+## [Rectangular matrices, 128bit](rectangular/128bit.md)
 
 | &nbsp; |
 |:---:|
 | <img src="__renders__/GF64.MUL.png" width="191" alt="" /><br/>**GF64.MUL**<br/><sub>64 &times; 127</sub> |
 
-## [Rectangular matrices, 256bit](rectangular256bit.md)
+## [Rectangular matrices, 256bit](rectangular/256bit.md)
 
 | &nbsp; | &nbsp; |
 |:---:|:---:|
 | <img src="__renders__/GF127.MUL.png" width="223" alt="" /><br/>**GF127.MUL**<br/><sub>127 &times; 253</sub> | <img src="__renders__/GF128.MUL.png" width="223" alt="" /><br/>**GF128.MUL**<br/><sub>128 &times; 255</sub> |
 
-## [Rectangular matrices, 325bit](rectangular325bit.md)
+## [Rectangular matrices, 325bit](rectangular/325bit.md)
 
 | &nbsp; |
 |:---:|
 | <img src="__renders__/GF163.MUL.png" width="256" alt="" /><br/>**GF163.MUL**<br/><sub>163 &times; 325</sub> |
 
-## [Rectangular matrices, 465bit](rectangular465bit.md)
+## [Rectangular matrices, 465bit](rectangular/465bit.md)
 
 | &nbsp; |
 |:---:|
 | <img src="__renders__/GF233.MUL.png" width="256" alt="" /><br/>**GF233.MUL**<br/><sub>233 &times; 465</sub> |
 
-## [Rectangular matrices, 511bit](rectangular511bit.md)
+## [Rectangular matrices, 511bit](rectangular/511bit.md)
 
 | &nbsp; |
 |:---:|
 | <img src="__renders__/GF256.MUL.png" width="256" alt="" /><br/>**GF256.MUL**<br/><sub>256 &times; 511</sub> |
 
-## [Rectangular matrices, 565bit](rectangular565bit.md)
+## [Rectangular matrices, 565bit](rectangular/565bit.md)
 
 | &nbsp; |
 |:---:|
 | <img src="__renders__/GF283.MUL.png" width="256" alt="" /><br/>**GF283.MUL**<br/><sub>283 &times; 565</sub> |
 
-## [Rectangular matrices, 1141bit](rectangular1141bit.md)
+## [Rectangular matrices, 1141bit](rectangular/1141bit.md)
 
 | &nbsp; |
 |:---:|
 | <img src="__renders__/GF571.MUL.png" width="256" alt="" /><br/>**GF571.MUL**<br/><sub>571 &times; 1141</sub> |
 
-## [Rectangular matrices, 2047bit](rectangular2047bit.md)
+## [Rectangular matrices, 2047bit](rectangular/2047bit.md)
 
 | &nbsp; |
 |:---:|
