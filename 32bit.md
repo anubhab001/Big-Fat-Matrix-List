@@ -6,8 +6,8 @@ Entry count: 54.
 
 | Key | Preview | Shape | Year | Properties | Origin |
 |:----|:-------:|:-----:|:----:|:-----------|:-------|
-| **AES.MIXCOLUMNS**<br/>AES, MixColumns<br/><sub>aka `AES.MIXCOLUMN`</sub> | <img src="__renders__/AES.MIXCOLUMNS.png" width="128" alt="AES.MIXCOLUMNS" /> | 32 x 32 | 1998, 2001 | order = 4 | [link](https://csrc.nist.gov/projects/cryptographic-standards-and-guidelines/archived-crypto-projects/aes-development) |
-| **ANUBIS**<br/>Anubis | <img src="__renders__/ANUBIS.png" width="128" alt="ANUBIS" /> | 32 x 32 | 2000 | involution, order = 2 | [link](https://www.cosic.esat.kuleuven.be/nessie/tweaks.html) |
+| **AES.MIXCOLUMN**<br/>AES, MIXCOLUMN | <img src="__renders__/AES.MIXCOLUMN.png" width="128" alt="AES.MIXCOLUMN" /> | 32 x 32 | 1998, 2001 | order = 4 | [link](https://csrc.nist.gov/projects/cryptographic-standards-and-guidelines/archived-crypto-projects/aes-development) |
+| **ANUBIS.H**<br/>Anubis, H<br/><sub>aka `ANUBIS`</sub> | <img src="__renders__/ANUBIS.H.png" width="128" alt="ANUBIS.H" /> | 32 x 32 | 2000 | involution, order = 2 | [link](https://www.cosic.esat.kuleuven.be/nessie/) |
 | **ARADI.L0**<br/>ARADI, L₀ | <img src="__renders__/ARADI.L0.png" width="128" alt="ARADI.L0" /> | 32 x 32 | 2024 | involution, order = 2 | [link](https://eprint.iacr.org/2024/1240) |
 | **ARADI.L1**<br/>ARADI, L₁ | <img src="__renders__/ARADI.L1.png" width="128" alt="ARADI.L1" /> | 32 x 32 | 2024 | involution, order = 2 | [link](https://eprint.iacr.org/2024/1240) |
 | **ARADI.L2**<br/>ARADI, L₂ | <img src="__renders__/ARADI.L2.png" width="128" alt="ARADI.L2" /> | 32 x 32 | 2024 | involution, order = 2 | [link](https://eprint.iacr.org/2024/1240) |
@@ -16,7 +16,7 @@ Entry count: 54.
 | **CHAM.KS1**<br/>CHAM, key schedule, variant 1 | <img src="__renders__/CHAM.KS1.png" width="128" alt="CHAM.KS1" /> | 32 x 32 | 2017 | order = 32 | [link](https://link.springer.com/chapter/10.1007/978-3-319-78556-1_1) |
 | **CHAM.KS2**<br/>CHAM, key schedule, variant 2 | <img src="__renders__/CHAM.KS2.png" width="128" alt="CHAM.KS2" /> | 32 x 32 | 2017 | order = 16 | [link](https://link.springer.com/chapter/10.1007/978-3-319-78556-1_1) |
 | **CHILOW.L32**<br/>ChiLow, L₃₂ | <img src="__renders__/CHILOW.L32.png" width="128" alt="CHILOW.L32" /> | 32 x 32 | 2025 | order = 16 | [link](https://doi.org/10.1007/978-3-031-91104-9) |
-| **CLEFIA.M0**<br/>CLEFIA, M₀ | <img src="__renders__/CLEFIA.M0.png" width="128" alt="CLEFIA.M0" /> | 32 x 32 | 2007 | involution, order = 2 | [link](https://www.sony.net/Products/cryptography/clefia/) |
+| **CLEFIA.M0**<br/>Anubis, H<br/><sub>aka `ANUBIS`</sub> | <img src="__renders__/CLEFIA.M0.png" width="128" alt="CLEFIA.M0" /> | 32 x 32 | 2000 | involution, order = 2 | [link](https://www.cosic.esat.kuleuven.be/nessie/) |
 | **CLEFIA.M1**<br/>CLEFIA, M₁ | <img src="__renders__/CLEFIA.M1.png" width="128" alt="CLEFIA.M1" /> | 32 x 32 | 2007 | involution, order = 2 | [link](https://www.sony.net/Products/cryptography/clefia/) |
 | **DIALGA**<br/>Dialga, MatrixMul | <img src="__renders__/DIALGA.png" width="128" alt="DIALGA" /> | 32 x 32 | 2025 | involution, symmetric, order = 2 | [link](https://tosc.iacr.org/index.php/ToSC) |
 | **DL18A**<br/>Duval-Leurent, M⁸,³₄,₆ | <img src="__renders__/DL18A.png" width="128" alt="DL18A" /> | 32 x 32 | 2018 | order = 120 | [link](https://eprint.iacr.org/2018/260) |
@@ -50,14 +50,14 @@ Entry count: 54.
 | **SKOP15.IS8GF4**<br/>Sim-Khoo-Oggier-Peyrin, involutory 8 × 8 over GF(2⁴)<br/><sub>aka `FSE_SKOP15_i_8x8_4`</sub> | <img src="__renders__/SKOP15.IS8GF4.png" width="128" alt="SKOP15.IS8GF4" /> | 32 x 32 | 2015 | involution, order = 2 | [link](https://tosc.iacr.org/) |
 | **SKOP15.S4GF8**<br/>Sim-Khoo-Oggier-Peyrin, 4 × 4 over GF(2⁸) | <img src="__renders__/SKOP15.S4GF8.png" width="128" alt="SKOP15.S4GF8" /> | 32 x 32 | 2015 | order = 30 | [link](https://tosc.iacr.org/) |
 | **SKOP15.S8GF4**<br/>Sim-Khoo-Oggier-Peyrin, 8 × 8 over GF(2⁴)<br/><sub>aka `FSE_SKOP15_8x8_4`</sub> | <img src="__renders__/SKOP15.S8GF4.png" width="128" alt="SKOP15.S8GF4" /> | 32 x 32 | 2015 | order = 10 | [link](https://tosc.iacr.org/) |
-| **SM4**<br/>SM4 | <img src="__renders__/SM4.png" width="128" alt="SM4" /> | 32 x 32 | 2003, 2007 | order = 16 | [link](https://datatracker.ietf.org/doc/html/rfc8998) |
+| **SM4.L**<br/>SM4, L<br/><sub>aka `SM4`</sub> | <img src="__renders__/SM4.L.png" width="128" alt="SM4.L" /> | 32 x 32 | 2003, 2007 | order = 16 | [link](https://datatracker.ietf.org/doc/html/rfc8998) |
 | **SPEEDY.MC**<br/>SPEEDY, MixColumns | <img src="__renders__/SPEEDY.MC.png" width="128" alt="SPEEDY.MC" /> | 32 x 32 | 2021 | order = 32 | [link](https://tches.iacr.org/index.php/TCHES/article/view/9074) |
 | **SS16.IS32**<br/>Sarkar-Syed, involutory 4 × 4 over GF(2⁸)<br/><sub>aka `ToSC_SarSye16_4x4`</sub> | <img src="__renders__/SS16.IS32.png" width="128" alt="SS16.IS32" /> | 32 x 32 | 2016 | involution, order = 2 | [link](https://tosc.iacr.org/index.php/ToSC/article/view/537) |
 | **SS16.S32**<br/>Sarkar-Syed, 4 × 4 over GF(2⁸)<br/><sub>aka `ToSC_SarSye16_4x4`</sub> | <img src="__renders__/SS16.S32.png" width="128" alt="SS16.S32" /> | 32 x 32 | 2016 | order = 340 | [link](https://tosc.iacr.org/index.php/ToSC/article/view/537) |
 | **SS17.S32**<br/>Sarkar-Syed, 8 × 8 over GF(2⁴) | <img src="__renders__/SS17.S32.png" width="128" alt="SS17.S32" /> | 32 x 32 | 2017 | order = 2730 | [link](https://eprint.iacr.org/2017/368) |
-| **TWOFISH**<br/>Twofish | <img src="__renders__/TWOFISH.png" width="128" alt="TWOFISH" /> | 32 x 32 | 1998 | order = 1431655765 | [link](https://www.schneier.com/academic/twofish/) |
+| **TWOFISH.MDS**<br/>Twofish, MDS<br/><sub>aka `TWOFISH`</sub> | <img src="__renders__/TWOFISH.MDS.png" width="128" alt="TWOFISH.MDS" /> | 32 x 32 | 1998 | order = 1431655765 | [link](https://www.schneier.com/academic/twofish/) |
 | **WHIRLWIND.M0**<br/>Whirlwind, M₀ | <img src="__renders__/WHIRLWIND.M0.png" width="128" alt="WHIRLWIND.M0" /> | 32 x 32 | 2010 | order = 30 | [link](https://link.springer.com/chapter/10.1007/978-3-642-13858-4_5) |
 | **WHIRLWIND.M1**<br/>Whirlwind, M₁ | <img src="__renders__/WHIRLWIND.M1.png" width="128" alt="WHIRLWIND.M1" /> | 32 x 32 | 2010 | order = 30 | [link](https://link.springer.com/chapter/10.1007/978-3-642-13858-4_5) |
-| **ZUC.L1**<br/>SM4 | <img src="__renders__/ZUC.L1.png" width="128" alt="ZUC.L1" /> | 32 x 32 | 2003, 2007 | order = 16 | [link](https://datatracker.ietf.org/doc/html/rfc8998) |
+| **ZUC.L1**<br/>SM4, L<br/><sub>aka `SM4`</sub> | <img src="__renders__/ZUC.L1.png" width="128" alt="ZUC.L1" /> | 32 x 32 | 2003, 2007 | order = 16 | [link](https://datatracker.ietf.org/doc/html/rfc8998) |
 | **ZUC.L2**<br/>ZUC, L₂ | <img src="__renders__/ZUC.L2.png" width="128" alt="ZUC.L2" /> | 32 x 32 | 2011 | order = 16 | [link](https://www.gsma.com/aboutus/wp-content/uploads/2014/12/eea3eia3zucv16.pdf) |
 

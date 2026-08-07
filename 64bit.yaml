@@ -922,15 +922,16 @@ GF64.SQR:
     - '0000000000000000000000000000000100000000000000000000000000000101'
     - '0000000000000000000000000000000000000000000000000000000000000011'
 
-GROESTL:
-  canonical_name: ["Grøstl"]
+GROESTL.MIXBYTES:
+  canonical_name: ["Grøstl", "MixBytes"]
+  aliases: ["GROESTL"]
   rows: 64
   cols: 64
   year: [2008]
   cipher: true
   origin: "http://www.groestl.info/"
   source: "NIST Circuit Complexity: https://csrc.nist.gov/Projects/circuit-complexity/list-of-circuits"
-  note: "SHA-3 finalist Grøstl mix-bytes layer."
+  note: "MixBytes of Groestl, the 8 x 8 circulant over GF(2^8) it applies to each column of the state. SHA-3 finalist Grøstl mix-bytes layer."
   involution: false
   symmetric: false
   rank: 64
@@ -1161,15 +1162,16 @@ KECCAK.50:
     - '01000010000100001000010000100001000010000100001010'
     - '10000001001000000100100000010010000001001000000101'
 
-KHAZAD:
-  canonical_name: ["KHAZAD"]
+KHAZAD.H:
+  canonical_name: ["KHAZAD", "H"]
+  aliases: ["KHAZAD"]
   rows: 64
   cols: 64
   year: [2000]
   cipher: true
-  origin: "https://www.cosic.esat.kuleuven.be/nessie/tweaks.html"
-  source: "NIST Circuit Complexity: https://csrc.nist.gov/Projects/circuit-complexity/list-of-circuits"
-  note: "Barreto-Rijmen, Khazad (involutory)."
+  origin: "https://www.cosic.esat.kuleuven.be/nessie/"
+  paper_title: "Barreto, Rijmen. The Khazad legacy-level block cipher, submission to NESSIE (2000)."
+  note: "The matrix H of theta, the diffusion layer of Khazad, which is the Hadamard matrix of 01, 03, 04, 05, 06, 08, 0b and 07 over GF(2^8) modulo x^8 + x^4 + x^3 + x^2 + 1, the first primitive polynomial of its degree. Over the field it is symmetric and it is an involution; the `symmetric` field of this entry reports the expansion over GF(2), which is not. As the specification observes, and comes of the [16, 8, 9] MDS code with generator [I H]."
   involution: true
   symmetric: false
   rank: 64
@@ -1253,7 +1255,7 @@ KLEIN.MIXNIBBLES:
   origin: "https://doi.org/10.1007/978-3-642-25286-0_1"
   paper_title: "Gong, Nikova, Law. KLEIN: a new family of lightweight block ciphers (RFIDSec 2011)."
   note: "MixNibbles of KLEIN, which splits the 16 nibbles into two tuples of four bytes and puts each through the MixColumns of Rijndael, the same circulant of 2, 3, 1, 1 over GF(2^8) and the same reduction polynomial. It is therefore the AES matrix twice over rather than a matrix of its own, which is what the augmentation records; the specification says as much, describing the step as proceeding the same as the MixColumns step in Rijndael."
-  augmentation: "block_diag(AES.MIXCOLUMNS, AES.MIXCOLUMNS)"
+  augmentation: "block_diag(AES.MIXCOLUMN, AES.MIXCOLUMN)"
   involution: false
   symmetric: false
   rank: 64
@@ -3440,15 +3442,16 @@ UKNIT.L9:
     - '0000000000000000000000000000000001000000100001000000000000000000'
     - '0000000000000000000000000000000000010000000100010000000000000000'
 
-WHIRLPOOL:
-  canonical_name: ["Whirlpool"]
+WHIRLPOOL.MIXROW:
+  canonical_name: ["Whirlpool", "MIXROW"]
+  aliases: ["WHIRLPOOL"]
   rows: 64
   cols: 64
   year: [2000]
   cipher: true
   origin: "https://web.archive.org/web/20171129084214/http://www.larc.usp.br/~pbarreto/WhirlpoolPage.html"
   source: "NIST Circuit Complexity: https://csrc.nist.gov/Projects/circuit-complexity/list-of-circuits"
-  note: "The NIST Circuit Complexity project files this matrix together with Maelstrom; the name each of it gives the layer is not recorded there."
+  note: "One row of MixRows of Whirlpool, the circulant it applies to each row of the state. MixRows of Whirlpool, the circulant it applies to each row of the state. The NIST Circuit Complexity project files this matrix together with Maelstrom; the name each of it gives the layer is not recorded there."
   involution: false
   symmetric: false
   rank: 64

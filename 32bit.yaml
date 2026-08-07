@@ -1,9 +1,8 @@
 # Big-Fat-Matrix-List: matrices in size band 32bit.
 # Binned by column count (input width).
 
-AES.MIXCOLUMNS:
-  canonical_name: ["AES", "MixColumns"]
-  aliases: ["AES.MIXCOLUMN"]
+AES.MIXCOLUMN:
+  canonical_name: ["AES", "MIXCOLUMN"]
   reuse: ["DEOXYS.MIXBYTES", "ZIPAES.MIXCOLUMNS"]
   rows: 32
   cols: 32
@@ -55,15 +54,16 @@ AES.MIXCOLUMNS:
     - '00000110000000100000001000000100'
     - '00000011000000010000000100000010'
 
-ANUBIS:
-  canonical_name: ["Anubis"]
+ANUBIS.H:
+  canonical_name: ["Anubis", "H"]
+  aliases: ["ANUBIS"]
   rows: 32
   cols: 32
   year: [2000]
   cipher: true
-  origin: "https://www.cosic.esat.kuleuven.be/nessie/tweaks.html"
-  note: "Barreto-Rijmen, Anubis (involutory). The MixColumns of CLEFIA.M0 is the same coefficient array over a different reduction polynomial, so the two carry the same Hamming weight and are easily taken for one matrix; neither is the other, and no permutation of rows and columns carries one to the other. The MixColumns of CLEFIA.M0 is the same coefficient array over a different reduction polynomial. The two therefore carry the same 216 ones and are easily taken for one matrix, and a corpus or two files it under a single name. Neither is the other: no permutation of rows and columns carries one to the other, since the multiset of row weights already differs, 12 rows of weight 5, 12 of 7 and 8 of 9 here against 16, 4 and 12 there. The NIST Circuit Complexity project files this matrix together with CLEFIA M0 under one name, but the two differ; the body here is the one the XZLBZ corpus also carries for Anubis."
-  formula: "Hadamard 4 x 4 matrix with coefficients (1, 2, 4, 6) over GF(2^8) / (x^8 + x^4 + x^3 + x + 1); on bits, each coefficient is its 8 x 8 multiplication matrix, the bits of a byte numbered from the least significant."
+  origin: "https://www.cosic.esat.kuleuven.be/nessie/"
+  paper_title: "Barreto, Rijmen. The Anubis block cipher, submission to NESSIE (2000)."
+  note: "The matrix H of theta, the diffusion layer of Anubis, which is the Hadamard matrix of 01, 02, 04 and 06 over GF(2^8) modulo x^8 + x^4 + x^3 + x^2 + 1. Over the field it is symmetric and it is an involution; the `symmetric` field of this entry reports the expansion over GF(2), which is not. As the specification observes. CLEFIA takes the same matrix as its M0, over the same field, which is why that key reads through to this entry: Anubis is the earlier publication by seven years."
   involution: true
   symmetric: false
   rank: 32
@@ -71,36 +71,36 @@ ANUBIS:
   order: 2
   hamming_weight: 216
   orbit: 16
-  hamming_weight_per_row: [5, 7, 7, 9, 9, 7, 5, 5, 5, 7, 7, 9, 9, 7, 5, 5, 5, 7, 7, 9, 9, 7, 5, 5, 5, 7, 7, 9, 9, 7, 5, 5]
+  hamming_weight_per_row: [5, 5, 9, 9, 9, 7, 5, 5, 5, 5, 9, 9, 9, 7, 5, 5, 5, 5, 9, 9, 9, 7, 5, 5, 5, 5, 9, 9, 9, 7, 5, 5]
   matrix:
     - '10000000000000010000001000000011'
-    - '01000000100000010000001110000010'
-    - '00100000010000001000000111000001'
-    - '00010000001000010100001001100011'
+    - '01000000100000000000000110000001'
+    - '00100000010000011000001011000011'
+    - '00010000001000010100001101100010'
     - '00001000000100010010001100110010'
     - '00000100000010000001000100011001'
     - '00000010000001000000100000001100'
     - '00000001000000100000010000000110'
     - '00000001100000000000001100000010'
-    - '10000001010000001000001000000011'
-    - '01000000001000001100000110000001'
-    - '00100001000100000110001101000010'
+    - '10000000010000001000000100000001'
+    - '01000001001000001100001110000010'
+    - '00100001000100000110001001000011'
     - '00010001000010000011001000100011'
     - '00001000000001000001100100010001'
     - '00000100000000100000110000001000'
     - '00000010000000010000011000000100'
     - '00000010000000111000000000000001'
-    - '00000011100000100100000010000001'
-    - '10000001110000010010000001000000'
-    - '01000010011000110001000000100001'
+    - '00000001100000010100000010000000'
+    - '10000010110000110010000001000001'
+    - '01000011011000100001000000100001'
     - '00100011001100100000100000010001'
     - '00010001000110010000010000001000'
     - '00001000000011000000001000000100'
     - '00000100000001100000000100000010'
     - '00000011000000100000000110000000'
-    - '10000010000000111000000101000000'
-    - '11000001100000010100000000100000'
-    - '01100011010000100010000100010000'
+    - '10000001000000011000000001000000'
+    - '11000011100000100100000100100000'
+    - '01100010010000110010000100010000'
     - '00110010001000110001000100001000'
     - '00011001000100010000100000000100'
     - '00001100000010000000010000000010'
@@ -524,55 +524,9 @@ CHILOW.L32:
 
 CLEFIA.M0:
   canonical_name: ["CLEFIA", "M₀"]
-  rows: 32
-  cols: 32
-  year: [2007]
   cipher: true
-  origin: "https://www.sony.net/Products/cryptography/clefia/"
-  source: "URL: Section 3.4: https://www.iacr.org/archive/fse2007/45930182/45930182.pdf; NIST Circuit Complexity: https://csrc.nist.gov/Projects/circuit-complexity/list-of-circuits"
-  note: "The MixColumns of ANUBIS is the same coefficient array over a different reduction polynomial, so the two carry the same Hamming weight and are easily taken for one matrix; neither is the other, and no permutation of rows and columns carries one to the other. The MixColumns of ANUBIS is the same coefficient array over a different reduction polynomial. The two therefore carry the same 216 ones and are easily taken for one matrix, and a corpus or two files it under a single name. Neither is the other: no permutation of rows and columns carries one to the other, since the multiset of row weights already differs, 12 rows of weight 5, 12 of 7 and 8 of 9 here against 16, 4 and 12 there."
   formula: "Hadamard 4 x 4 matrix with coefficients (1, 2, 4, 6) over GF(2^8) / (x^8 + x^4 + x^3 + x^2 + 1); on bits, each coefficient is its 8 x 8 multiplication matrix, the bits of a byte numbered from the least significant."
-  involution: true
-  symmetric: false
-  rank: 32
-  invertible: true
-  order: 2
-  hamming_weight: 216
-  orbit: 16
-  hamming_weight_per_row: [5, 5, 9, 9, 9, 7, 5, 5, 5, 5, 9, 9, 9, 7, 5, 5, 5, 5, 9, 9, 9, 7, 5, 5, 5, 5, 9, 9, 9, 7, 5, 5]
-  matrix:
-    - '10000000000000010000001000000011'
-    - '01000000100000000000000110000001'
-    - '00100000010000011000001011000011'
-    - '00010000001000010100001101100010'
-    - '00001000000100010010001100110010'
-    - '00000100000010000001000100011001'
-    - '00000010000001000000100000001100'
-    - '00000001000000100000010000000110'
-    - '00000001100000000000001100000010'
-    - '10000000010000001000000100000001'
-    - '01000001001000001100001110000010'
-    - '00100001000100000110001001000011'
-    - '00010001000010000011001000100011'
-    - '00001000000001000001100100010001'
-    - '00000100000000100000110000001000'
-    - '00000010000000010000011000000100'
-    - '00000010000000111000000000000001'
-    - '00000001100000010100000010000000'
-    - '10000010110000110010000001000001'
-    - '01000011011000100001000000100001'
-    - '00100011001100100000100000010001'
-    - '00010001000110010000010000001000'
-    - '00001000000011000000001000000100'
-    - '00000100000001100000000100000010'
-    - '00000011000000100000000110000000'
-    - '10000001000000011000000001000000'
-    - '11000011100000100100000100100000'
-    - '01100010010000110010000100010000'
-    - '00110010001000110001000100001000'
-    - '00011001000100010000100000000100'
-    - '00001100000010000000010000000010'
-    - '00000110000001000000001000000001'
+  alias: "ANUBIS.H"
 
 CLEFIA.M1:
   canonical_name: ["CLEFIA", "M₁"]
@@ -2263,8 +2217,9 @@ SKOP15.S8GF4:
     - '01111000101000010011110101000010'
     - '10111100110110001001011000100001'
 
-SM4:
-  canonical_name: ["SM4"]
+SM4.L:
+  canonical_name: ["SM4", "L"]
+  aliases: ["SM4"]
   reuse: ["ZUC.L1"]
   rows: 32
   cols: 32
@@ -2272,7 +2227,7 @@ SM4:
   cipher: true
   origin: "https://datatracker.ietf.org/doc/html/rfc8998"
   source: "URL: https://doi.org/10.1007/s11128-023-04002-4"
-  note: "Chinese national standard SM4 (GB/T 32907-2016, RFC 8998); 32-bit linear permutation L(B) = B XOR (B<<<2) XOR (B<<<10) XOR (B<<<18) XOR (B<<<24); circulant 32 by 32 binary matrix transcribed from Lin, Xiang, Xu, Zeng, Zhang (Quantum Information Processing, 2023). L1 of ZUC is the same map and reads through to this entry. The same matrix as ZUC.L2 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. Neither specification says so; it is established here."
+  note: "The linear transform L of SM4, which the standard writes L(B) = B XOR (B <<< 2) XOR (B <<< 10) XOR (B <<< 18) XOR (B <<< 24) on a 32-bit word. The linear transform L of SM4.L, which the standard writes L(B) = B XOR (B <<< 2) XOR (B <<< 10) XOR (B <<< 18) XOR (B <<< 24) on a 32-bit word. Chinese national standard SM4.L (GB/T 32907-2016, RFC 8998); 32-bit linear permutation L(B) = B XOR (B<<<2) XOR (B<<<10) XOR (B<<<18) XOR (B<<<24); circulant 32 by 32 binary matrix transcribed from Lin, Xiang, Xu, Zeng, Zhang (Quantum Information Processing, 2023). L1 of ZUC is the same map and reads through to this entry. The same matrix as ZUC.L2 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. Neither specification says so; it is established here."
   involution: false
   symmetric: false
   rank: 32
@@ -2520,14 +2475,16 @@ SS17.S32:
     - '00111010101100010001101000110100'
     - '10011101010110001000110110010010'
 
-TWOFISH:
-  canonical_name: ["Twofish"]
+TWOFISH.MDS:
+  canonical_name: ["Twofish", "MDS"]
+  aliases: ["TWOFISH"]
   rows: 32
   cols: 32
   year: [1998]
   cipher: true
   origin: "https://www.schneier.com/academic/twofish/"
   source: "NIST Circuit Complexity: https://csrc.nist.gov/Projects/circuit-complexity/list-of-circuits"
+  note: "The MDS matrix of Twofish, which its specification names simply that."
   involution: false
   symmetric: false
   rank: 32
@@ -2675,7 +2632,7 @@ WHIRLWIND.M1:
 ZUC.L1:
   canonical_name: ["ZUC", "L₁"]
   cipher: true
-  alias: "SM4"
+  alias: "SM4.L"
 
 ZUC.L2:
   canonical_name: ["ZUC", "L₂"]
@@ -2685,7 +2642,7 @@ ZUC.L2:
   cipher: true
   origin: "https://www.gsma.com/aboutus/wp-content/uploads/2014/12/eea3eia3zucv16.pdf"
   source: "Section 2.1.3: https://eprint.iacr.org/2012/299.pdf"
-  note: "L2 of ZUC, the XOR of a 32-bit word rotated left by 0, 8, 14, 22 and 30. It is the transpose of L1 of the same cipher, whose offsets are 0, 2, 10, 18 and 24, the negatives of these modulo 32; L1 in turn is the L of SM4, which is where the catalogue holds its body. A rotation matrix and its transpose are the two readings of one set of offsets, so the pair is a property of how ZUC is written rather than of two different maps. The same matrix as SM4 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. Neither specification says so; it is established here."
+  note: "L2 of ZUC, the XOR of a 32-bit word rotated left by 0, 8, 14, 22 and 30. It is the transpose of L1 of the same cipher, whose offsets are 0, 2, 10, 18 and 24, the negatives of these modulo 32; L1 in turn is the L of SM4.L, which is where the catalogue holds its body. A rotation matrix and its transpose are the two readings of one set of offsets, so the pair is a property of how ZUC is written rather than of two different maps. The same matrix as SM4.L up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. Neither specification says so; it is established here."
   formula: "L_2(x) = x XOR (x <<< 8) XOR (x <<< 14) XOR (x <<< 22) XOR (x <<< 30) on a 32-bit word."
   involution: false
   symmetric: false
@@ -2694,7 +2651,7 @@ ZUC.L2:
   order: 16
   hamming_weight: 160
   orbit: 1
-  similarity: ["SM4"]
+  similarity: ["SM4.L"]
   hamming_weight_per_row: [5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5]
   matrix:
     - '10000000100000100000001000000010'

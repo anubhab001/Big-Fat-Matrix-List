@@ -17,10 +17,10 @@ Entry count: 42.
 | **CHILOW.L64**<br/>ChiLow, L₆₄ | <img src="__renders__/CHILOW.L64.png" width="160" alt="CHILOW.L64" /> | 64 x 64 | 2025 | order = 32 | [link](https://doi.org/10.1007/978-3-031-91104-9) |
 | **FOX.MU8**<br/>FOX, μ₈ | <img src="__renders__/FOX.MU8.png" width="160" alt="FOX.MU8" /> | 64 x 64 | 2003 | order = 56514897667635 | [link](https://link.springer.com/chapter/10.1007/978-3-540-30564-4_8) |
 | **GF64.SQR**<br/>GF(2⁶⁴), squaring | <img src="__renders__/GF64.SQR.png" width="160" alt="GF64.SQR" /> | 64 x 64 | 1998 | order = 64 | [link](https://www.hpl.hp.com/techreports/98/HPL-98-135.pdf) |
-| **GROESTL**<br/>Grøstl | <img src="__renders__/GROESTL.png" width="160" alt="GROESTL" /> | 64 x 64 | 2008 | order = 2040 | [link](http://www.groestl.info/) |
+| **GROESTL.MIXBYTES**<br/>Grøstl, MixBytes<br/><sub>aka `GROESTL`</sub> | <img src="__renders__/GROESTL.MIXBYTES.png" width="160" alt="GROESTL.MIXBYTES" /> | 64 x 64 | 2008 | order = 2040 | [link](http://www.groestl.info/) |
 | **JPST17.IS64**<br/>Jean-Peyrin-Sim-Tourteaux, involutory 8 × 8 over GF(2⁸) | <img src="__renders__/JPST17.IS64.png" width="160" alt="JPST17.IS64" /> | 64 x 64 | 2017 | order = 170 | [link](https://eprint.iacr.org/2017/101) |
 | **KECCAK.50**<br/>Keccak-f[50], θ | <img src="__renders__/KECCAK.50.png" width="160" alt="KECCAK.50" /> | 50 x 50 | 2015 | order = 6 | [link](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.202.pdf) |
-| **KHAZAD**<br/>KHAZAD | <img src="__renders__/KHAZAD.png" width="160" alt="KHAZAD" /> | 64 x 64 | 2000 | involution, order = 2 | [link](https://www.cosic.esat.kuleuven.be/nessie/tweaks.html) |
+| **KHAZAD.H**<br/>KHAZAD, H<br/><sub>aka `KHAZAD`</sub> | <img src="__renders__/KHAZAD.H.png" width="160" alt="KHAZAD.H" /> | 64 x 64 | 2000 | involution, order = 2 | [link](https://www.cosic.esat.kuleuven.be/nessie/) |
 | **KLEIN.MIXNIBBLES**<br/>KLEIN, MixNibbles | <img src="__renders__/KLEIN.MIXNIBBLES.png" width="160" alt="KLEIN.MIXNIBBLES" /> | 64 x 64 | 2011 | order = 4 | [link](https://doi.org/10.1007/978-3-642-25286-0_1) |
 | **KLSW17.IS64**<br/>Kranz-Leander-Stoffelen-Wiemer, M⁻¹, 8 × 8 over GF(2⁸) | <img src="__renders__/KLSW17.IS64.png" width="160" alt="KLSW17.IS64" /> | 64 x 64 | 2017 | involution, order = 2 | [link](https://tosc.iacr.org/index.php/ToSC/article/view/805) |
 | **KLSW17.S64**<br/>Kranz-Leander-Stoffelen-Wiemer, M, 8 × 8 over GF(2⁸) | <img src="__renders__/KLSW17.S64.png" width="160" alt="KLSW17.S64" /> | 64 x 64 | 2017 | - | [link](https://tosc.iacr.org/index.php/ToSC/article/view/805) |
@@ -47,5 +47,5 @@ Entry count: 42.
 | **UKNIT.L7**<br/>uKNIT-BC, L₇ | <img src="__renders__/UKNIT.L7.png" width="160" alt="UKNIT.L7" /> | 64 x 64 | 2025 | - | [link](https://tosc.iacr.org/index.php/ToSC/article/view/13006) |
 | **UKNIT.L8**<br/>uKNIT-BC, L₈ | <img src="__renders__/UKNIT.L8.png" width="160" alt="UKNIT.L8" /> | 64 x 64 | 2025 | - | [link](https://tosc.iacr.org/index.php/ToSC/article/view/13006) |
 | **UKNIT.L9**<br/>uKNIT-BC, L₉ | <img src="__renders__/UKNIT.L9.png" width="160" alt="UKNIT.L9" /> | 64 x 64 | 2025 | - | [link](https://tosc.iacr.org/index.php/ToSC/article/view/13006) |
-| **WHIRLPOOL**<br/>Whirlpool | <img src="__renders__/WHIRLPOOL.png" width="160" alt="WHIRLPOOL" /> | 64 x 64 | 2000 | order = 408 | [link](https://web.archive.org/web/20171129084214/http://www.larc.usp.br/~pbarreto/WhirlpoolPage.html) |
+| **WHIRLPOOL.MIXROW**<br/>Whirlpool, MIXROW<br/><sub>aka `WHIRLPOOL`</sub> | <img src="__renders__/WHIRLPOOL.MIXROW.png" width="160" alt="WHIRLPOOL.MIXROW" /> | 64 x 64 | 2000 | order = 408 | [link](https://web.archive.org/web/20171129084214/http://www.larc.usp.br/~pbarreto/WhirlpoolPage.html) |
 

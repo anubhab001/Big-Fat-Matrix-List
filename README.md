@@ -26,6 +26,12 @@ Last update: 4 August 2026 <!-- TODO: To be updated in UTC with each (major) com
 
 - Lowercase `v` indicates a version number and is not part of the cipher name.
 
+- A key carries the layer name whenever the specification gives the layer one, and stands as the bare cipher name only when it does not. `AES.MIXCOLUMNS` is a layer of AES; `SM4.L`, `ANUBIS.H`, `KHAZAD.H`, `GROESTL.MIXBYTES`, `WHIRLPOOL.MIXROWS`, `SKINNY.MIXCOLUMNS` and `TWOFISH.MDS` are named the same way, each after what its own designers call it. Where a cipher has one linear layer and never names it, the key is the cipher alone, as with `PRESENT` and `TRIFLE`. Where the layer belongs to a paper rather than to a cipher, the first element is the authors, as with `DL18A` for Duval and Leurent or `SKOP15.S4GF8` for Sim, Khoo, Oggier and Peyrin.
+
+- The number of the layer name says what the matrix covers, and two keys that differ by it alone are two different matrices. The singular is one column, one row or one word; the plural is the whole state. `AES.MIXCOLUMN` is 32 x 32 and `AES.MIXCOLUMNS` is 128 x 128, four copies of it down the diagonal, which is the distinction Jang et al. draw in Quantum Analysis of AES (IACR Communications in Cryptology 2 (1) 25) when they count four MixColumn to a MixColumns. `SKINNY.MIXCOLUMN`, `LED.MIXCOLUMN` and `WHIRLPOOL.MIXROW` are singular for the same reason, each being the matrix of one column or one row, while `AES.SHIFTROWS` and `KLEIN.MIXNIBBLES` move the whole state and are plural. `GROESTL.MIXBYTES` keeps its plural at 64 x 64 because the bytes it names are the eight within a column rather than the columns themselves, and MixByte would name nothing.
+
+- Renaming a key does not break a reference to the old one. The old spelling is kept in `aliases` and the loader resolves it, so `bigfatmatrix['SM4']` still returns the SM4 layer.
+
 ## Data Files
 
 Each YAML file holds entries binned by `max(rows, cols)`. For sizes up to $256$ the bin is the next power of two ($1$ to $16$, $17$ to $32$, $33$ to $64$, $65$ to $128$, $129$ to $256$); above $256$, each distinct size gets its own file. Every band ships with a sibling `<band>.md` index carrying a preview table.
@@ -35,9 +41,9 @@ Each YAML file holds entries binned by `max(rows, cols)`. For sizes up to $256$ 
 | File | # Entry | Size | Index |
 |:------|:-------:|:-------------|:------|
 | [`16bit.yaml`](16bit.yaml) | 35 | $4 \times 4$, $8 \times 8$, $16 \times 16$ | [`16bit.md`](16bit.md) |
-| [`32bit.yaml`](32bit.yaml) | 53 | $20 \times 20$, $25 \times 25$, $32 \times 32$ | [`32bit.md`](32bit.md) |
+| [`32bit.yaml`](32bit.yaml) | 52 | $20 \times 20$, $25 \times 25$, $32 \times 32$ | [`32bit.md`](32bit.md) |
 | [`64bit.yaml`](64bit.yaml) | 42 | $50 \times 50$, $60 \times 60$, $64 \times 64$ | [`64bit.md`](64bit.md) |
-| [`128bit.yaml`](128bit.yaml) | 17 | $100 \times 100$, $127 \times 127$, $128 \times 128$ | [`128bit.md`](128bit.md) |
+| [`128bit.yaml`](128bit.yaml) | 18 | $100 \times 100$, $127 \times 127$, $128 \times 128$ | [`128bit.md`](128bit.md) |
 | [`256bit.part01.yaml`](256bit.part01.yaml), [`256bit.part02.yaml`](256bit.part02.yaml) | 10 | $163 \times 163$, $192 \times 192$, $200 \times 200$, $233 \times 233$, $256 \times 256$ | [`256bit.md`](256bit.md) |
 | [`283bit.yaml`](283bit.yaml) | 2 | $283 \times 283$ | [`283bit.md`](283bit.md) |
 | [`320bit.yaml`](320bit.yaml) | 1 | $320 \times 320$ | [`320bit.md`](320bit.md) |
@@ -155,7 +161,9 @@ a field compulsory only for one kind of entry with †.
 
 18. `inversion` counts the pairs of positions the permutation puts out of order, that is the pairs $i < j$ with $P[i] > P[j]$. It is the number of adjacent swaps needed to sort it back to the identity, so it says how far the permutation moves its inputs, and it runs from $0$ for the identity to $N(N-1)/2$ for the reversal. It is recorded for a `perm` entry and for a matrix whose body is a permutation matrix. The parity of the permutation is this count modulo two, so it is not recorded separately, and it is invisible in the matrix itself: over $\mathrm{GF}(2)$ every permutation matrix has determinant $1$. That parity is what decides the fifteen puzzle, whose position is reachable exactly when the permutation of the tiles, composed with the moves of the blank, is even. Of the bit-permutations catalogued here, `GLEEOK.PI128B3`, `GLEEOK.PI256B3`, `SPEEDY.SC` and `TWINKLE.LANEROTATION0` have an odd count and the rest an even one.
 
-19. Two matrices can share a size, a Hamming weight and a coarse invariant while being different, and a total weight alone is not evidence of anything. `ANUBIS` and `CLEFIA.M0` are the same Hadamard array $(1, 2, 4, 6)$ over $\mathrm{GF}(2^8)$, differing only in the reduction polynomial, $x^8 + x^4 + x^3 + x + 1$ for the first and $x^8 + x^4 + x^3 + x^2 + 1$ for the second. Both carry $216$ ones, which is why a corpus files it under one name, but the two are not related by any permutation of rows and columns: the multiset of row weights already differs, $12$ rows of weight $5$, $12$ of $7$ and $8$ of $9$ against $16$, $4$ and $12$. The `hamming_weight_per_row` of each entry settles this at a glance, and `similarity` records only relations a search has established.
+19. A matrix is worth rebuilding from the specification rather than taking it from a corpus. `ANUBIS.H` and `CLEFIA.M0` are one matrix, the Hadamard array $(1, 2, 4, 6)$ over $\mathrm{GF}(2^8)$ modulo $x^8 + x^4 + x^3 + x^2 + 1$, which is the field both specifications name. It is held once, on Anubis as the earlier publication by seven years, and `CLEFIA.M0` reads through to it. The catalogue previously carried an Anubis body built over the Rijndael polynomial instead, a matrix neither cipher uses, and on the strength of it recorded that the two were unrelated.
+
+    Where two matrices really do differ, the row weights are how to see it. A permutation of rows and columns preserves the multiset of row weights, so a difference there settles the question without a search, and `hamming_weight_per_row` shows it at a glance. A shared total weight shows nothing on its own: these two bodies both carried $216$ ones while one of them was wrong.
 
 20. A trailing `T` in a key is not a transpose. `BEANIE.MIXCOLUMNST` is the `MixColumnsT` of the BEANIE tweakey schedule, that cipher naming its whole tweakey path `SubCellsT`, `ShiftRowsT` and `MixColumnsT`, and `BAKSHEESH.T` is the matrix the BAKSHEESH specification calls $T$. Neither is the transpose of anything. Where a transpose really is meant the `note` says so in words: `ZUC.L1` and `ZUC.L2` are transposes of one another, and no key in the catalogue is spelled to indicate it.
 

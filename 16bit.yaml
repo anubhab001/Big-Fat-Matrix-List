@@ -520,8 +520,9 @@ KLSW17.S16:
     - '1011010111000100'
     - '0001001001001000'
 
-LED.MIXCOLUMNS:
-  canonical_name: ["LED", "MixColumns"]
+LED.MIXCOLUMN:
+  canonical_name: ["LED", "MIXCOLUMN"]
+  aliases: ["LED.MIXCOLUMNS"]
   rows: 16
   cols: 16
   year: [2011]
@@ -554,8 +555,9 @@ LED.MIXCOLUMNS:
     - '1001100100011101'
     - '1000100011111011'
 
-LED.MIXCOLUMNSSERIAL:
-  canonical_name: ["LED", "MixColumnsSerial"]
+LED.MIXCOLUMNSERIAL:
+  canonical_name: ["LED", "MIXCOLUMNSERIAL"]
+  aliases: ["LED.MIXCOLUMNSSERIAL"]
   rows: 16
   cols: 16
   year: [2011]
@@ -1030,15 +1032,16 @@ SEFA.MDS16:
     - '1101011110011011'
     - '0110101101000101'
 
-SKINNY:
-  canonical_name: ["SKINNY"]
+SKINNY.MIXCOLUMN:
+  canonical_name: ["SKINNY", "MIXCOLUMN"]
+  aliases: ["SKINNY"]
   rows: 16
   cols: 16
   year: [2016]
   cipher: true
   origin: "https://eprint.iacr.org/2016/660"
   source: "NIST Circuit Complexity: https://csrc.nist.gov/Projects/circuit-complexity/list-of-circuits"
-  note: "16x16 binary almost-MDS."
+  note: "One column of MixColumns of SKINNY, a binary almost-MDS matrix rather than an MDS one, which is what makes it cheap. MixColumns of SKINNY, a binary almost-MDS matrix rather than an MDS one, which is what makes it cheap. 16x16 binary almost-MDS."
   involution: false
   symmetric: false
   rank: 16
