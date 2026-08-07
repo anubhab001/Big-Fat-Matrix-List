@@ -373,6 +373,7 @@ GF8.SQR:
 
 JOLTIK:
   canonical_name: ["Joltik"]
+  aliases: ["SKOP15.IS16"]
   rows: 16
   cols: 16
   year: [2014]
@@ -521,14 +522,14 @@ KLSW17.S16:
     - '0001001001001000'
 
 LED.MIXCOLUMN:
-  canonical_name: ["LED", "MIXCOLUMN"]
+  canonical_name: ["LED", "MixColumnsSerial"]
   aliases: ["LED.MIXCOLUMNS"]
   rows: 16
   cols: 16
   year: [2011]
   cipher: true
   origin: "https://eprint.iacr.org/2012/600"
-  note: "LED block cipher 16x16 MixColumns."
+  note: "The MDS matrix of LED, applied to each column of four nibbles. The specification builds it as the fourth power of the serial matrix A, which is LED.MIXCOLUMNSERIAL, and that was checked here rather than taken on trust."
   involution: false
   symmetric: false
   rank: 16
@@ -556,14 +557,14 @@ LED.MIXCOLUMN:
     - '1000100011111011'
 
 LED.MIXCOLUMNSERIAL:
-  canonical_name: ["LED", "MIXCOLUMNSERIAL"]
+  canonical_name: ["LED", "A"]
   aliases: ["LED.MIXCOLUMNSSERIAL"]
   rows: 16
   cols: 16
   year: [2011]
   cipher: true
   origin: "https://eprint.iacr.org/2012/600"
-  note: "Serial / recursive variant."
+  note: "The serial matrix A of LED, whose fourth power is the MDS matrix LED.MIXCOLUMN. A round of MixColumnsSerial applies A four times, which is what makes the layer cheap in hardware: one row of the state is replaced per step and the rest shifts up."
   involution: false
   symmetric: false
   rank: 16
@@ -1033,7 +1034,7 @@ SEFA.MDS16:
     - '0110101101000101'
 
 SKINNY.MIXCOLUMN:
-  canonical_name: ["SKINNY", "MIXCOLUMN"]
+  canonical_name: ["SKINNY", "MixColumns"]
   aliases: ["SKINNY"]
   rows: 16
   cols: 16

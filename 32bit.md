@@ -6,7 +6,7 @@ Entry count: 54.
 
 | Key | Preview | Shape | Year | Properties | Origin |
 |:----|:-------:|:-----:|:----:|:-----------|:-------|
-| **AES.MIXCOLUMN**<br/>AES, MIXCOLUMN | <img src="__renders__/AES.MIXCOLUMN.png" width="128" alt="AES.MIXCOLUMN" /> | 32 x 32 | 1998, 2001 | order = 4 | [link](https://csrc.nist.gov/projects/cryptographic-standards-and-guidelines/archived-crypto-projects/aes-development) |
+| **AES.MIXCOLUMN**<br/>AES, MixColumn | <img src="__renders__/AES.MIXCOLUMN.png" width="128" alt="AES.MIXCOLUMN" /> | 32 x 32 | 1998, 2001 | order = 4 | [link](https://csrc.nist.gov/projects/cryptographic-standards-and-guidelines/archived-crypto-projects/aes-development) |
 | **ANUBIS.H**<br/>Anubis, H<br/><sub>aka `ANUBIS`</sub> | <img src="__renders__/ANUBIS.H.png" width="128" alt="ANUBIS.H" /> | 32 x 32 | 2000 | involution, order = 2 | [link](https://www.cosic.esat.kuleuven.be/nessie/) |
 | **ARADI.L0**<br/>ARADI, L₀ | <img src="__renders__/ARADI.L0.png" width="128" alt="ARADI.L0" /> | 32 x 32 | 2024 | involution, order = 2 | [link](https://eprint.iacr.org/2024/1240) |
 | **ARADI.L1**<br/>ARADI, L₁ | <img src="__renders__/ARADI.L1.png" width="128" alt="ARADI.L1" /> | 32 x 32 | 2024 | involution, order = 2 | [link](https://eprint.iacr.org/2024/1240) |

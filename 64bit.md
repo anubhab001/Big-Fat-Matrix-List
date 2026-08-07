@@ -25,7 +25,7 @@ Entry count: 42.
 | **KLSW17.IS64**<br/>Kranz-Leander-Stoffelen-Wiemer, M⁻¹, 8 × 8 over GF(2⁸) | <img src="__renders__/KLSW17.IS64.png" width="160" alt="KLSW17.IS64" /> | 64 x 64 | 2017 | involution, order = 2 | [link](https://tosc.iacr.org/index.php/ToSC/article/view/805) |
 | **KLSW17.S64**<br/>Kranz-Leander-Stoffelen-Wiemer, M, 8 × 8 over GF(2⁸) | <img src="__renders__/KLSW17.S64.png" width="160" alt="KLSW17.S64" /> | 64 x 64 | 2017 | - | [link](https://tosc.iacr.org/index.php/ToSC/article/view/805) |
 | **LS16.S64**<br/>Liu-Sim, 8 × 8 over GF(2⁸) | <img src="__renders__/LS16.S64.png" width="160" alt="LS16.S64" /> | 64 x 64 | 2016 | order = 2040 | [link](https://tosc.iacr.org/index.php/ToSC) |
-| **PRINCE.MPRIME**<br/>PRINCE, MPRIME | <img src="__renders__/PRINCE.MPRIME.png" width="160" alt="PRINCE.MPRIME" /> | 64 x 64 | 2012 | involution, symmetric, order = 2 | [link](https://eprint.iacr.org/2012/529) |
+| **PRINCE.MPRIME**<br/>PRINCE, M′ | <img src="__renders__/PRINCE.MPRIME.png" width="160" alt="PRINCE.MPRIME" /> | 64 x 64 | 2012 | involution, symmetric, order = 2 | [link](https://eprint.iacr.org/2012/529) |
 | **SCARF.SIGMA**<br/>SCARF, Σ | <img src="__renders__/SCARF.SIGMA.png" width="160" alt="SCARF.SIGMA" /> | 60 x 60 | 2023 | order = 60 | [link](https://www.usenix.org/conference/usenixsecurity23/presentation/canale) |
 | **SHA512.BIGSIGMA0**<br/>SHA-512, Σ₀ | <img src="__renders__/SHA512.BIGSIGMA0.png" width="160" alt="SHA512.BIGSIGMA0" /> | 64 x 64 | 2015 | order = 64 | [link](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.180-4.pdf) |
 | **SHA512.BIGSIGMA1**<br/>SHA-512, Σ₁ | <img src="__renders__/SHA512.BIGSIGMA1.png" width="160" alt="SHA512.BIGSIGMA1" /> | 64 x 64 | 2015 | order = 64 | [link](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.180-4.pdf) |
@@ -47,5 +47,5 @@ Entry count: 42.
 | **UKNIT.L7**<br/>uKNIT-BC, L₇ | <img src="__renders__/UKNIT.L7.png" width="160" alt="UKNIT.L7" /> | 64 x 64 | 2025 | - | [link](https://tosc.iacr.org/index.php/ToSC/article/view/13006) |
 | **UKNIT.L8**<br/>uKNIT-BC, L₈ | <img src="__renders__/UKNIT.L8.png" width="160" alt="UKNIT.L8" /> | 64 x 64 | 2025 | - | [link](https://tosc.iacr.org/index.php/ToSC/article/view/13006) |
 | **UKNIT.L9**<br/>uKNIT-BC, L₉ | <img src="__renders__/UKNIT.L9.png" width="160" alt="UKNIT.L9" /> | 64 x 64 | 2025 | - | [link](https://tosc.iacr.org/index.php/ToSC/article/view/13006) |
-| **WHIRLPOOL.MIXROW**<br/>Whirlpool, MIXROW<br/><sub>aka `WHIRLPOOL`</sub> | <img src="__renders__/WHIRLPOOL.MIXROW.png" width="160" alt="WHIRLPOOL.MIXROW" /> | 64 x 64 | 2000 | order = 408 | [link](https://web.archive.org/web/20171129084214/http://www.larc.usp.br/~pbarreto/WhirlpoolPage.html) |
+| **WHIRLPOOL.MIXROW**<br/>Whirlpool, MixRows<br/><sub>aka `WHIRLPOOL`</sub> | <img src="__renders__/WHIRLPOOL.MIXROW.png" width="160" alt="WHIRLPOOL.MIXROW" /> | 64 x 64 | 2000 | order = 408 | [link](https://web.archive.org/web/20171129084214/http://www.larc.usp.br/~pbarreto/WhirlpoolPage.html) |
 

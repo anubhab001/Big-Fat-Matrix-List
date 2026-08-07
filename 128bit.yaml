@@ -3,14 +3,13 @@
 
 AES.MIXCOLUMNS:
   canonical_name: ["AES", "MixColumns"]
-  reuse: ["AES.MIXCOLUMN", "DEOXYS.MIXBYTES", "ZIPAES.MIXCOLUMNS"]
   rows: 128
   cols: 128
   year: [1998, 2001]
   cipher: true
   origin: "https://csrc.nist.gov/projects/cryptographic-standards-and-guidelines/archived-crypto-projects/aes-development"
   source: "NIST Circuit Complexity: https://csrc.nist.gov/Projects/circuit-complexity/list-of-circuits"
-  note: "MixColumns of AES on the whole state, four copies of AES.MIXCOLUMN down the diagonal. The two keys differ by the number alone and mean different matrices: one column is MixColumn at 32 x 32, and four of it make MixColumns at 128 x 128. The ZIP construction runs a cipher forward and its inverse backward and adds the two, so it carries this layer over unchanged rather than defining one of its own. Deoxys-TBC states of its MixBytes that the MDS matrix it uses is the one from AES. The NIST Circuit Complexity project files this matrix together with Square and MUGI; the name each of it gives the layer is not recorded there."
+  note: "MixColumns of AES on the whole state, four copies of AES.MIXCOLUMN down the diagonal. The two keys differ by the number alone and mean different matrices: one column is MixColumn at 32 x 32, and four of it make MixColumns at 128 x 128. The NIST Circuit Complexity project files this matrix together with Square and MUGI; the name each of it gives the layer is not recorded there."
   formula: "M = block_diag(AES.MIXCOLUMN, AES.MIXCOLUMN, AES.MIXCOLUMN, AES.MIXCOLUMN), the state being filled column by column so that four consecutive bytes are one column."
   involution: false
   symmetric: false

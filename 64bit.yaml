@@ -1584,7 +1584,7 @@ LS16.S64:
     - '0000000100000011100000000000110110000001000000011110000000000001'
 
 PRINCE.MPRIME:
-  canonical_name: ["PRINCE", "MPRIME"]
+  canonical_name: ["PRINCE", "M′"]
   reuse: ["BEANIE.MIXCOLUMNST"]
   rows: 64
   cols: 64
@@ -3443,7 +3443,7 @@ UKNIT.L9:
     - '0000000000000000000000000000000000010000000100010000000000000000'
 
 WHIRLPOOL.MIXROW:
-  canonical_name: ["Whirlpool", "MIXROW"]
+  canonical_name: ["Whirlpool", "MixRows"]
   aliases: ["WHIRLPOOL"]
   rows: 64
   cols: 64

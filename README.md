@@ -2,7 +2,7 @@
 
 Public collection of binary linear layers (matrices over $\mathrm{GF}(2)$ and bit-permutations) used in cryptography
 
-Last update: 4 August 2026 <!-- TODO: To be updated in UTC with each (major) commit/push -->
+Last update: 7 August 2026 <!-- TODO: To be updated in UTC with each (major) commit/push -->
 
 ## Organisation
 
@@ -20,15 +20,15 @@ Last update: 4 August 2026 <!-- TODO: To be updated in UTC with each (major) com
 
 ## Naming Convention
 
-- Entry keys use an all-uppercase Latin with/without dot convention (e.g., `PRESENT` as without dot; `AES.MIXCOLUMN`, `GIFT.64` as with dot), with no hyphen/underscore and no space. Note that the cipher name preceeds the dot and the linear-layer name (or its size when there are several layers in the same family) is after dot. If a cipher has only one linear layer with no specific name, only the cipher's name is used.
+- Entry keys use an all-uppercase Latin with/without dot convention (e.g., `PRESENT` as without dot; `AES.MIXCOLUMN`, `GIFT.64` as with dot), with no hyphen/underscore and no space. Note that the cipher name precedes the dot and the linear-layer name (or its size when there are several layers in the same family) is after dot. If a cipher has only one linear layer with no specific name, only the cipher's name is used.
 
 - `canonical_name` records the exact name as it appears in the original paper, as a tuple of the family name and the layer name, so that casing, non-Latin characters, subscript, hyphen and space all survive. For example, `SHA2.SMALLSIGMA0` carries `["SHA-2", "σ₀"]`.
 
 - Lowercase `v` indicates a version number and is not part of the cipher name.
 
-- A key carries the layer name whenever the specification gives the layer one, and stands as the bare cipher name only when it does not. `AES.MIXCOLUMNS` is a layer of AES; `SM4.L`, `ANUBIS.H`, `KHAZAD.H`, `GROESTL.MIXBYTES`, `WHIRLPOOL.MIXROWS`, `SKINNY.MIXCOLUMNS` and `TWOFISH.MDS` are named the same way, each after what its own designers call it. Where a cipher has one linear layer and never names it, the key is the cipher alone, as with `PRESENT` and `TRIFLE`. Where the layer belongs to a paper rather than to a cipher, the first element is the authors, as with `DL18A` for Duval and Leurent or `SKOP15.S4GF8` for Sim, Khoo, Oggier and Peyrin.
+- A key carries the layer name whenever the specification gives the layer one, and stands as the bare cipher name only when it does not. `AES.MIXCOLUMNS` is a layer of AES; `SM4.L`, `ANUBIS.H`, `KHAZAD.H`, `GROESTL.MIXBYTES`, `WHIRLPOOL.MIXROW`, `SKINNY.MIXCOLUMN` and `TWOFISH.MDS` are named the same way, each after what its own designers call it. Where a cipher has one linear layer and never names it, the key is the cipher alone, as with `PRESENT` and `TRIFLE`. Where the layer belongs to a paper rather than to a cipher, the first element is the authors, as with `DL18A` for Duval and Leurent or `SKOP15.S4GF8` for Sim, Khoo, Oggier and Peyrin.
 
-- The number of the layer name says what the matrix covers, and two keys that differ by it alone are two different matrices. The singular is one column, one row or one word; the plural is the whole state. `AES.MIXCOLUMN` is 32 x 32 and `AES.MIXCOLUMNS` is 128 x 128, four copies of it down the diagonal, which is the distinction Jang et al. draw in Quantum Analysis of AES (IACR Communications in Cryptology 2 (1) 25) when they count four MixColumn to a MixColumns. `SKINNY.MIXCOLUMN`, `LED.MIXCOLUMN` and `WHIRLPOOL.MIXROW` are singular for the same reason, each being the matrix of one column or one row, while `AES.SHIFTROWS` and `KLEIN.MIXNIBBLES` move the whole state and are plural. `GROESTL.MIXBYTES` keeps its plural at 64 x 64 because the bytes it names are the eight within a column rather than the columns themselves, and MixByte would name nothing.
+- The number of the layer name says what the matrix covers, and two keys that differ by it alone are two different matrices. The singular is one column, one row or one word; the plural is the whole state. `AES.MIXCOLUMN` is 32 x 32 and `AES.MIXCOLUMNS` is 128 x 128, four copies of it down the diagonal, which is the distinction Jang et al. draw in Quantum Analysis of AES (IACR Communications in Cryptology 2 (1) 25) when they count four MixColumn to a MixColumns. `SKINNY.MIXCOLUMN`, `LED.MIXCOLUMN` and `WHIRLPOOL.MIXROW` are singular for the same reason, each being the matrix of one column or one row, while `AES.SHIFTROWS` and `KLEIN.MIXNIBBLES` move the whole state and are plural. `GROESTL.MIXBYTES` keeps its plural at 64 x 64 because the bytes it names are the eight within a column rather than the columns themselves, and MixByte would name nothing. The number belongs to the key rather than to the name the designers chose, so a singular key can carry a plural `canonical_name`: `SKINNY.MIXCOLUMN` records `["SKINNY", "MixColumns"]`, which is what its specification calls the layer.
 
 - Renaming a key does not break a reference to the old one. The old spelling is kept in `aliases` and the loader resolves it, so `bigfatmatrix['SM4']` still returns the SM4 layer.
 
@@ -96,25 +96,25 @@ a field compulsory only for one kind of entry with †.
 | `rows`, `cols`<sup>*</sup> | int | Number of rows (output bit width) and columns (input bit width); absent for a bit-permutation, which is square of side `size` |
 | `size`<sup>*</sup> | int | Side of a bit-permutation |
 | `year` | tuple | Significant publication years (e.g., proposal, journal, standardisation); absent when no dated publication defines the entry |
-| `cipher`<sup>*</sup> | bool | True iff the entry is the linear layer of a primitive, rather than a construction proposed in a paper on matrices, or plain finite-field arithmetic |
-| `origin`<sup>*</sup> | str | URL of the original publication or specification |
-| `source` | str | URL of code or related resource whence some information is mined |
+| `cipher`<sup>*</sup> | bool | True when the entry is the linear layer of a primitive, rather than a construction proposed in a paper on matrices or plain finite-field arithmetic |
+| `origin`<sup>*</sup> | str | Provenance of the matrix itself: the original publication or specification it is defined in, typically given as a URL |
+| `source` | str | Further provenance, where code or a related resource supplied part of what is recorded, again typically a URL |
 | `paper_title` | str | Free-form citation pointer to the originating paper |
 | `note` | str | Free-form remark; designer credit, equivalent form, link to a related entry |
 | `formula` | str | Algorithmic description of how the entry is constructed, in pseudo-code, formulas, or rotation and shift recipes; emitted as a YAML literal block scalar (`\|-`) when multi-line |
 | `augmentation` | str | Symbolic expression building this matrix from other catalogued entries (e.g., `block_diag(...)`, `kron(...)`); see [Note 6](#notes) |
-| `involution` | bool | True iff $M^2 = I$ over $\mathrm{GF}(2)$, that is, the entry is its own inverse |
-| `symmetric` | bool | True iff $M = M^	op$ |
-| `rank` | int | Rank of $M$ over $\mathrm{GF}(2)$ |
-| `invertible` | bool | True iff $M$ has full rank |
-| `order` | int | Least $k$ with $M^k = I$, the identity matrix, which for a bit-permutation $P$ is the least $k$ with $P$ applied $k$ times leaving every bit where it started (absent for sizes $> 320$) |
+| `involution` | bool | True when applying the matrix twice leaves every input unchanged, so that the matrix is its own inverse |
+| `symmetric` | bool | True when the matrix reads the same across its main diagonal, that is, the bit in row $i$ and column $j$ equals the bit in row $j$ and column $i$ |
+| `rank` | int | Rank of the matrix over $\mathrm{GF}(2)$, the number of rows that are independent of the rest |
+| `invertible` | bool | True when the matrix has full rank, so that the layer can be undone |
+| `order` | int | How many times the matrix has to be applied before every input comes back unchanged; absent above size $320$, where the computation is not worth its cost |
 | `branch_number` | int | Branch number in the word size the designers use, recorded when the specification states it |
-| `mds` | bool | True iff the matrix is MDS in that word size |
+| `mds` | bool | True when the matrix is MDS in that word size |
 | `hamming_weight` | int | Total number of $1$ entries in the matrix |
 | `inversion`<sup>†</sup> | int | Number of pairs of positions the permutation puts out of order, for an entry that acts as one; see [Note 18](#notes) |
-| `orbit` | int | Number of orbits on the $N$ rows of the smallest shift $\sigma\colon i \mapsto i + k \pmod N$ that commutes with $M$; see [Note 11](#notes) |
+| `orbit` | int | How many blocks the rows fall into when the matrix is left unchanged by shifting every row and column by the same amount, which is one way its higher-field structure shows; see [Note 11](#notes) |
 | `hamming_weight_per_row` | tuple[int] | Number of $1$ entries per row |
-| `fixed_points` | tuple[int] | Indices $i$ with $M e_i = e_i$, that is, the bits a permutation leaves in place (only for square entries) |
+| `fixed_points` | tuple[int] | Positions the entry leaves where it found it, listed for a square entry that acts as a permutation |
 | `cycle_lengths` | tuple[int] | Sorted cycle-length multiset, when the entry acts as a bit-permutation |
 | `disjoint_cycles` | tuple | Explicit disjoint-cycle decomposition, for a bit-permutation |
 | `matrix`<sup>*</sup> | tuple[str] | One bit-string per row; character `c[j]` is the bit in column $j$. Present for every matrix entry, including one that also carries an `augmentation`; absent only for a bit-permutation |
@@ -125,7 +125,7 @@ a field compulsory only for one kind of entry with †.
 
 ### Notes
 
-1. A word of $n$ bits is numbered from the most significant, so bit $0$ of a $32$-bit word carries weight $2^{31}$. This is how the specifications write it, and it is what fixes the matrix of an entry defined by rotations: read the other way round, a left rotation becomes a right one and the matrix comes out transposed. `ZUC.L1` and `ZUC.L2` are transposes of one another, the rotation offsets of the two, $0, 2, 10, 18, 24$ and $0, 8, 14, 22, 30$, being negatives modulo $32$; `ZUC.L1` is the `SM4` layer, so `SM4` and `ZUC.L2` are transposes too.
+1. A word of $n$ bits is numbered from the most significant, so bit $0$ of a $32$-bit word carries weight $2^{31}$. This is how the specifications write it, and it is what fixes the matrix of an entry defined by rotations: read the other way round, a left rotation becomes a right one and the matrix comes out transposed. `ZUC.L1` and `ZUC.L2` are transposes of one another, the rotation offsets of the two, $0, 2, 10, 18, 24$ and $0, 8, 14, 22, 30$, being negatives modulo $32$; `ZUC.L1` is the `SM4.L` layer, so `SM4.L` and `ZUC.L2` are transposes too.
 
 2. Convention is uppercase Latin characters with only dot allowed, this enforces uniformity and ASCII searchability, but it destroys the original typographic formatting used by the designers, such as mixed case (e.g., `Midori`), non-Latin characters, subscript notation (e.g., $L_0$, $\sigma_0$), hyphen (like `SHA-3`) and space (like `SNOW 3G`).
 
@@ -137,7 +137,7 @@ a field compulsory only for one kind of entry with †.
 
 6. The `augmentation` field, when present, records that the matrix is built by composing other catalogued entries via `block_diag(...)` (block-diagonal sum), `kron(A, B)` (Kronecker product), `I_n` (identity of size $n$), or matrix product (`*`). For example, `ASCON` carries `augmentation: block_diag(ASCON.SIGMA0, ..., ASCON.SIGMA4)` because the 320-bit linear layer is the direct sum of five 64-bit lane mixers; `ICEPOLE` carries `augmentation: kron(ICEPOLE.SLICE, I_64)` because the 1280-bit linear layer is the slice-wise tensor of a $20 \times 20$ slice mixer with $I_{64}$. The expression is an explanation of how the matrix is put together, not a substitute for it: every such entry also carries its `matrix` body in full, so a reader lifting a binary matrix out of the catalogue never has to evaluate one.
 
-7. `AES.SHIFTROW` is catalogued only as a $128 \times 128$ matrix entry (not as a separate permutation), because the matrix form fully captures the bit-permutation; the permutation field can be recovered by reading the unique `1` in each row.
+7. `AES.SHIFTROWS` is catalogued as a bit-permutation of the $128$ bits rather than as a $128 \times 128$ matrix, since it moves whole bytes and the two forms carry the same information; `as_matrix('AES.SHIFTROWS')` builds the matrix on demand. It was held as a matrix once, and the matrix and the composite `AES.SHIFTROWSMIXCOLUMNS` were built on state layouts that disagreed, one numbering the state down the columns and one across the rows. Both are now built from FIPS 197, which fills the state column by column, so that four consecutive bytes are one column.
 
 8. Fields that only make sense for square matrices (`involution`, `symmetric`, `invertible`, `order`, `fixed_points`, `cycle_lengths`, `disjoint_cycles`, `orbit`) are omitted from rectangular matrix entries (e.g., the `GF<n>.MUL` companion matrices, of shape $n \times (2n - 1)$). Any field whose value would be `null` is also omitted.
 
@@ -151,13 +151,13 @@ a field compulsory only for one kind of entry with †.
 
 13. Matrices whose entries are $0/1$ but that a specification applies to $c$-bit cells are catalogued the way the source paper writes it. `MIDORI`, `DL18C` and `SPOOK.DBOX` are stored as the binary expansion $\mathrm{kron}(M, I_c)$, while `AETHER.MB` is stored as the $16 \times 16$ matrix over nibbles printed in its specification, with the expansion given in `formula`.
 
-14. Not every relation the catalogue records is stated by the specifications. Where it is not, it was established here by comparing the bodies, which applies to every `reuse`, every `similarity`, and the keys of Notes 17. The reasoning sits in the `note` of the entries concerned, so a reader can weigh it.
+14. Not every relation the catalogue records is stated by the specifications. Where it is not, it was established here by comparing the bodies, which applies to every `reuse`, every `similarity`, and the keys of [Note 17](#notes). The reasoning sits in the `note` of the entries concerned, so a reader can weigh it.
 
-15. `reuse` lists the layers elsewhere whose body is this one, byte for byte, written `CIPHER.LAYER`. It is recorded on the earlier publication, and it does not wait for the later design to say where the matrix came from: `PRIDE.L0` lists `MIDORI.MIXCOLUMN` although the Midori specification attaches no citation to the matrix, and `SM4` lists `ZUC.L1` although the two are simply the same definition. Where a design does acknowledge the source, as MANTIS does for Midori, the `note` says so.
+15. `reuse` lists the layers elsewhere whose body is this one, byte for byte, written `CIPHER.LAYER`. A name in the list is the layer of another design, not necessarily a key of this catalogue: a cipher whose linear layer is already held under someone else's name earns no second copy, so `AES.MIXCOLUMN` lists `DEOXYS.MIXBYTES` and no `DEOXYS.MIXBYTES` entry exists. The relation is recorded on the earlier publication, and it does not wait for the later design to say where the matrix came from: `PRIDE.L0` lists `MIDORI.MIXCOLUMN` although the Midori specification attaches no citation to the matrix, and `SM4.L` lists `ZUC.L1` although the two are simply the same definition. Where a design does acknowledge the source, as MANTIS does for Midori, the `note` says so.
 
 16. `similarity` is the weaker relation: the entries carried to this one by a permutation of the rows, of the columns, or of both. It is searched against four forms of the other entry, its matrix as it stands, its transpose, its inverse and the transpose of its inverse, and the `note` says which form it was. The matrix is not the same, but a circuit for one becomes a circuit for the other by renaming wires, and for the inverse cases by reversing the direction as well. Each such entry is kept in its own right, since a permutation of a matrix is not that matrix. Two bit-permutations of a size are always related this way, so that case is not recorded. The relation is decided rather than searched for within a budget: a permutation of rows and columns is exactly an isomorphism of the bipartite row/column graph, so each question is graph isomorphism and is answered.
 
-17. Some keys no longer carry a body. `SKOP15.IS16` is retired into `JOLTIK`, and `MIDORI` and `ZUC.L1` resolve to `PRIDE.L0` and `SM4`, each pair having been found byte-identical. `BAKSHEESH` is now `BAKSHEESH.P` for the bit permutation and `BAKSHEESH.T` for the matrix, the cipher being specified with either. `GF163_0`, `GF283_0` and `GF571_0` lost the suffix, and `GF163_1`, `GF283_1` and `GF571_1` are gone, a second reduction polynomial with no recorded first use not earning a second entry. The four `SHA2.*` sigma keys are now `SHA256.*`, the word width having to be named once `SHA512.*` joined it, and the six keys that carried an underscore are now `SKOP15.S4GF8`, `SKOP15.IS4GF8`, `SKOP15.S8GF4`, `SKOP15.IS8GF4`, `KLSW17.S8GF4` and `KLSW17.IS8GF4`. Each old spelling is kept in the `aliases` of the entry. [`visualisation.md`](visualisation.md) lists the keys that resolve elsewhere.
+17. Some keys no longer carry a body. `SKOP15.IS16` is retired into `JOLTIK`, and `MIDORI` and `ZUC.L1` resolve to `PRIDE.L0` and `SM4`, each pair having been found byte-identical. `BAKSHEESH` is now `BAKSHEESH.P` for the bit permutation and `BAKSHEESH.T` for the matrix, the cipher being specified with either; the bare spelling is the one old key not kept, since it would have to point at both. `GF163_0`, `GF283_0` and `GF571_0` lost the suffix, and `GF163_1`, `GF283_1` and `GF571_1` are gone, a second reduction polynomial with no recorded first use not earning a second entry. The four `SHA2.*` sigma keys are now `SHA256.*`, the word width having to be named once `SHA512.*` joined it, and the six keys that carried an underscore are now `SKOP15.S4GF8`, `SKOP15.IS4GF8`, `SKOP15.S8GF4`, `SKOP15.IS8GF4`, `KLSW17.S8GF4` and `KLSW17.IS8GF4`. Each old spelling is kept in the `aliases` of the entry. [`visualisation.md`](visualisation.md) lists the keys that resolve elsewhere.
 
 18. `inversion` counts the pairs of positions the permutation puts out of order, that is the pairs $i < j$ with $P[i] > P[j]$. It is the number of adjacent swaps needed to sort it back to the identity, so it says how far the permutation moves its inputs, and it runs from $0$ for the identity to $N(N-1)/2$ for the reversal. It is recorded for a `perm` entry and for a matrix whose body is a permutation matrix. The parity of the permutation is this count modulo two, so it is not recorded separately, and it is invisible in the matrix itself: over $\mathrm{GF}(2)$ every permutation matrix has determinant $1$. That parity is what decides the fifteen puzzle, whose position is reachable exactly when the permutation of the tiles, composed with the moves of the blank, is even. Of the bit-permutations catalogued here, `GLEEOK.PI128B3`, `GLEEOK.PI256B3`, `SPEEDY.SC` and `TWINKLE.LANEROTATION0` have an odd count and the rest an even one.
 
@@ -189,7 +189,7 @@ The following data types (case-insensitive) are accessible:
 ```python
 m = bigfatmatrix.aes_mixcolumn          # MatrixEntry('AES.MIXCOLUMN', shape=32x32)
 m = bigfatmatrix['AES.MIXCOLUMN']       # Bracket access (case-insensitive)
-print(m.canonical_name)                 # Prints ('AES', 'MixColumns')
+print(m.canonical_name)                 # Prints ('AES', 'MixColumn')
 print(m.rows, m.cols)                   # Prints 32 32
 print(m.matrix[0])                      # Prints '00000001100000011000000010000000'
 
@@ -217,7 +217,7 @@ for m in gf128:
     print(m.name, m.rows, 'x', m.cols)
 
 pyjamask = bigfatmatrix.pyjamask        # MatrixGroup for PYJAMASK.M0..M3, MK
-print(len(pyjamask))                    # Prints 167
+print(len(pyjamask))                    # Prints 5
 ```
 
 ### Permutations
@@ -226,7 +226,7 @@ A bit-permutation reads either as the tuple or as the binary permutation matrix:
 
 ```python
 p = bigfatmatrix['GIFT.128']            # MatrixEntry('GIFT.128', perm size=128)
-print(p.size)                           # Prints 167
+print(p.size)                           # Prints 128
 print(p.perm[:8])                       # Prints (0, 33, 66, 99, 96, 1, 34, 67)
 
 P = p.as_permutation_matrix()           # Tuple of tuples with M[P[i]][i] = 1
@@ -273,7 +273,7 @@ m = bigfatmatrix['AES.MIXCOLUMN']
 
 ```python
 all_keys = bigfatmatrix.yaml.all_names()    # Sorted list of every UPPERCASE key
-print(len(all_keys))                        # Prints 167
+print(len(all_keys))                        # Prints 220
 data = bigfatmatrix.yaml.all_entries()      # Full dict: key -> raw YAML dict
 ```
 
@@ -283,7 +283,7 @@ Raw dictionary access is available via the `yaml` proxy:
 
 ```python
 data = bigfatmatrix.yaml.aes_mixcolumn      # Plain Python dict with all YAML fields
-print(data['rows'])                         # Prints 167
+print(data['rows'])                         # Prints 32
 print(data['year'])                         # Prints [1998, 2001] (raw list)
 data = bigfatmatrix.yaml['BAKSHEESH.T']     # Same, case-insensitive bracket access
 ```

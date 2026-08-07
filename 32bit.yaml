@@ -2,7 +2,7 @@
 # Binned by column count (input width).
 
 AES.MIXCOLUMN:
-  canonical_name: ["AES", "MIXCOLUMN"]
+  canonical_name: ["AES", "MixColumn"]
   reuse: ["DEOXYS.MIXBYTES", "ZIPAES.MIXCOLUMNS"]
   rows: 32
   cols: 32
@@ -2536,7 +2536,7 @@ WHIRLWIND.M0:
   cipher: true
   origin: "https://link.springer.com/chapter/10.1007/978-3-642-13858-4_5"
   source: "URL: Section 2.2.2: https://ris.utwente.nl/ws/portalfiles/portal/6728185/whirlwind_final_DCC.pdf; NIST Circuit Complexity: https://csrc.nist.gov/Projects/circuit-complexity/list-of-circuits"
-  note: "The MDSLayer of SEFA (2026) is this matrix, which its paper says and which is confirmed by expanding the array it prints over GF(2^4) modulo x^4 + x + 1. The 8 x 8 MDSLayer of SEFA (2026), catalogued as SEFA.MDS32, is this matrix, which its paper says and which is confirmed by expanding the array it prints over GF(2^4) modulo x^4 + x + 1. Its 4 x 4 layer, SEFA.MDS16, is the top-left quarter of this one."
+  note: "The 8 x 8 MDSLayer of SEFA (2026), catalogued as SEFA.MDS32, is this matrix, which its paper says and which is confirmed by expanding the array it prints over GF(2^4) modulo x^4 + x + 1. Its 4 x 4 layer, SEFA.MDS16, is the top-left quarter of this one."
   involution: false
   symmetric: false
   rank: 32
