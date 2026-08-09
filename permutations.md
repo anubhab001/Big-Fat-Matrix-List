@@ -2,7 +2,7 @@
 
 Source data: [`permutations.yaml`](permutations.yaml).
 
-Entry count: 40.
+Entry count: 43.
 
 | Key | Preview | Shape | Year | Properties | Origin |
 |:----|:-------:|:-----:|:----:|:-----------|:-------|
@@ -18,6 +18,7 @@ Entry count: 40.
 | **DIALGA.P2**<br/>Dialga, π₂ | <img src="__renders__/DIALGA.P2.png" width="192" alt="DIALGA.P2" /> | 128 | 2025 | order = 8 | [link](https://tosc.iacr.org/index.php/ToSC) |
 | **DIALGA.P3**<br/>Dialga, π₃ | <img src="__renders__/DIALGA.P3.png" width="192" alt="DIALGA.P3" /> | 128 | 2025 | order = 4 | [link](https://tosc.iacr.org/index.php/ToSC) |
 | **DIALGA.PM**<br/>Dialga, πₘ | <img src="__renders__/DIALGA.PM.png" width="192" alt="DIALGA.PM" /> | 128 | 2025 | order = 4 | [link](https://tosc.iacr.org/index.php/ToSC) |
+| **GFSPX.P**<br/>GFSPX, P | <img src="__renders__/GFSPX.P.png" width="192" alt="GFSPX.P" /> | 32 | 2026 | order = 5 | [link](https://eprint.iacr.org/2026/949) |
 | **GIFT.128**<br/>GIFT, GIFT-128 bit permutation | <img src="__renders__/GIFT.128.png" width="192" alt="GIFT.128" /> | 128 | 2017 | order = 310 | [link](https://eprint.iacr.org/2017/622) |
 | **GIFT.64**<br/>GIFT, GIFT-64 bit permutation | <img src="__renders__/GIFT.64.png" width="192" alt="GIFT.64" /> | 64 | 2017 | order = 4 | [link](https://eprint.iacr.org/2017/622) |
 | **GIMLI.BIGSWAP**<br/>Gimli, Big-Swap | <img src="__renders__/GIMLI.BIGSWAP.png" width="192" alt="GIMLI.BIGSWAP" /> | 384 | 2017 | involution, order = 2 | [link](https://gimli.cr.yp.to/gimli-20170627.pdf) |
@@ -46,4 +47,6 @@ Entry count: 40.
 | **ULBC.POSPERM**<br/>uLBC, PosPerm | <img src="__renders__/ULBC.POSPERM.png" width="192" alt="ULBC.POSPERM" /> | 128 | 2024 | order = 4 | [link](https://cic.iacr.org/p/1/4/25) |
 | **VISTRUTAH.ZETA256**<br/>Vistrutah-256, ζ | <img src="__renders__/VISTRUTAH.ZETA256.png" width="192" alt="VISTRUTAH.ZETA256" /> | 256 | 2025 | order = 5 | [link](https://tosc.iacr.org/index.php/ToSC/article/view/12467) |
 | **VISTRUTAH.ZETA512**<br/>Vistrutah-512, ζ | <img src="__renders__/VISTRUTAH.ZETA512.png" width="192" alt="VISTRUTAH.ZETA512" /> | 512 | 2025 | order = 6 | [link](https://tosc.iacr.org/index.php/ToSC/article/view/12467) |
+| **XOODOO.RHOEAST**<br/>Xoodoo, ρeast | <img src="__renders__/XOODOO.RHOEAST.png" width="192" alt="XOODOO.RHOEAST" /> | 384 | 2018 | order = 32 | [link](https://doi.org/10.46586/tosc.v2018.i4.1-38) |
+| **XOODOO.RHOWEST**<br/>Xoodoo, ρwest | <img src="__renders__/XOODOO.RHOWEST.png" width="192" alt="XOODOO.RHOWEST" /> | 384 | 2018 | order = 32 | [link](https://doi.org/10.46586/tosc.v2018.i4.1-38) |
 

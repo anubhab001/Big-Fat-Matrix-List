@@ -184,16 +184,16 @@ CHAM.RF2:
     - '0001000000000110'
     - '0000100000000011'
 
-DL18C:
-  canonical_name: ["Duval-Leurent", "4 × 4 over GF(2⁴)"]
+DL18.F8:
+  canonical_name: ["Duval-Leurent", "M⁸,³₄,₆"]
   rows: 16
   cols: 16
   year: [2018]
   cipher: false
-  origin: "https://eprint.iacr.org/2018/260"
-  source: "Figure 7: https://eprint.iacr.org/2018/260.pdf"
-  note: "Duval-Leurent, ToSC 2018(2). 16x16 binary = 4x4 MDS over GF(2^4). TIGHT WITNESS for sw-XOR 8n+3 = 35 at n=4. NOT Saturnin's full-state expansion (Saturnin MixSlice is 16x16 over GF(2^4), binary expansion 256x256). This body was generated here by running the construction of the paper rather than copied from a table the paper prints. It is under review: SATURNIN states that its MDS layer is a matrix of this family, and the matrix its reference implementation computes, of weight 118 over 16 x 16, matches none of the three DL18 bodies by weight, which no permutation of rows and columns could change. Either a different member of the family is meant or the generation is wrong, and the implementation is the firmer of the two sources."
-  formula: "4x4 MDS matrix over GF(2^4) in the ring F2[alpha], alpha a companion matrix; binary expansion 16x16."
+  origin: "https://tosc.iacr.org/index.php/ToSC/article/view/888"
+  paper_title: "Duval, Leurent. MDS Matrices with Lightweight Circuits; IACR ToSC 2018 (2), Figure 8."
+  note: "Figure 8 of Duval and Leurent, one of the MDS matrices they search for by cost of circuit rather than by field structure. The paper gives a construction over F2[A] for a cheap linear map A and verifies that each instance is MDS, so a figure of it names a family and not one matrix; this entry fixes the instance, GF(2^4) modulo x^4 + x^3 + 1. Figure 9 of the same paper is this matrix with two rows exchanged and weighs the same, so weight alone does not tell the pair apart. Figure 13 is a different matrix of the same paper and is the one Saturnin took, held here as SATURNIN.MIXCOLUMN."
+  formula: "The 4 x 4 matrix [[3, 1, 4, 4], [1, 3, 6, 4], [2, 2, 3, 1], [3, 2, 1, 3]] over GF(2^4) modulo x^4 + x^3 + 1, each element written out as its 4 x 4 multiplication matrix. In powers of alpha the same matrix reads [[a+1, 1, a^2, a^2], [1, a+1, a^2+a, a^2], [a, a, a+1, 1], [a+1, a, 1, a+1]]."
   involution: false
   symmetric: false
   rank: 16
@@ -201,26 +201,24 @@ DL18C:
   order: 60
   branch_number: 5
   mds: true
-  hamming_weight: 93
-  orbit: 16
-  hamming_weight_per_row: [8, 7, 5, 5, 6, 6, 6, 6, 6, 5, 5, 5, 5, 6, 6, 6]
+  hamming_weight_per_row: [7, 5, 5, 8, 6, 6, 6, 6, 5, 5, 5, 6, 6, 6, 6, 5]
   matrix:
-    - '0001100010111011'
-    - '1100010010011001'
+    - '1001100000110011'
+    - '1100010000010001'
     - '0110001010001000'
-    - '0011000101000100'
-    - '1000000100101011'
-    - '0100110000011001'
+    - '0010000101110111'
+    - '1000100100100011'
+    - '0100110010010001'
     - '0010011011001000'
-    - '0001001101100100'
-    - '1001100100011000'
+    - '0001001001000111'
+    - '0001000110011000'
     - '1000100011000100'
     - '0100010001100010'
-    - '0010001000110001'
-    - '0001100110000001'
+    - '0011001100100001'
+    - '1001000110001001'
     - '1100100001001100'
     - '0110010000100110'
-    - '0011001000010011'
+    - '0010001100010010'
 
 GF16.ECCSQR:
   canonical_name: ["GF(2¹⁶)", "squaring, elliptic-curve representation"]
@@ -996,6 +994,43 @@ QARMA.S64:
     - '1000000110000000'
     - '0100100001000000'
     - '0010010000100000'
+
+SATURNIN.MIXCOLUMN:
+  canonical_name: ["Saturnin", "MixColumns"]
+  rows: 16
+  cols: 16
+  year: [2018, 2019]
+  cipher: true
+  origin: "https://csrc.nist.gov/CSRC/media/Projects/lightweight-cryptography/documents/round-1/spec-doc/SATURNIN-spec.pdf"
+  source: "https://tosc.iacr.org/index.php/ToSC/article/view/888"
+  paper_title: "Canteaut, Duval, Leurent, Naya-Plasencia, Perrin, Pornin, Schrottenloher. Saturnin, a suite of lightweight symmetric algorithms; a candidate of the NIST lightweight process. The matrix is Figure 13 of Duval and Leurent, MDS Matrices with Lightweight Circuits, IACR ToSC 2018 (2)."
+  note: "MixColumns of Saturnin, applied to a column of four nibbles. It is Figure 13 of Duval and Leurent, MDS Matrices with Lightweight Circuits, which under the naming this catalogue gives that paper would be DL18.F13, where the matrix appears first, and Saturnin, two of whose seven authors are Duval and Leurent, took it for its diffusion layer. The entry carries the cipher name rather than theirs for two reasons: the paper gives the matrix no name of its own beyond a figure number, and it puts it in no cipher, so Saturnin is where it is both named and used. It was checked against the reference implementation of Saturnin: running its MDS macro on the 256 unit vectors gives sixteen parallel copies of this matrix, of the same weight 118 and the same row weights. It is MDS, computed here as branch number 5. Figure 8 of the same paper is a different matrix and is held as DL18.F8."
+  formula: "The 4 x 4 matrix [[5, 7, 1, 3], [4, 6, 1, 1], [1, 3, 5, 7], [1, 1, 4, 6]] over GF(2^4) modulo x^4 + x + 1, each element written out as its 4 x 4 multiplication matrix. Saturnin describes the same field the other way round, as a length-4 Fibonacci register on X^4 + X^3 + 1, which is the reciprocal polynomial and so the same field seen from a Galois register."
+  involution: false
+  symmetric: false
+  rank: 16
+  invertible: true
+  order: 10
+  branch_number: 5
+  mds: true
+  hamming_weight_per_row: [8, 10, 10, 8, 5, 6, 7, 5, 8, 10, 10, 8, 5, 6, 7, 5]
+  matrix:
+    - '1010101110001001'
+    - '0111111001001101'
+    - '1011111100100110'
+    - '0101011100010011'
+    - '0010001110001000'
+    - '0011101001000100'
+    - '1001110100100010'
+    - '0100011000010001'
+    - '1000100110101011'
+    - '0100110101111110'
+    - '0010011010111111'
+    - '0001001101010111'
+    - '1000100000100011'
+    - '0100010000111010'
+    - '0010001010011101'
+    - '0001000101000110'
 
 SEFA.MDS16:
   canonical_name: ["SEFA", "MDSLayer, 4 × 4 over GF(2⁴)"]

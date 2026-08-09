@@ -2,7 +2,7 @@
 
 Source data: [`16bit.yaml`](16bit.yaml).
 
-Entry count: 36.
+Entry count: 37.
 
 | Key | Preview | Shape | Year | Properties | Origin |
 |:----|:-------:|:-----:|:----:|:-----------|:-------|
@@ -11,7 +11,7 @@ Entry count: 36.
 | **BKL16.S16**<br/>Beierle-Kranz-Leander, 4 × 4 over GF(2⁴)<br/><sub>also known as `C_BeiKraLea16_4x4`</sub> | <img src="../__renders__/BKL16.S16.png" width="96" alt="BKL16.S16" /> | 16 x 16 | 2016 | order = 20 | [link](https://eprint.iacr.org/2016/119) |
 | **CHAM.RF1**<br/>CHAM, round function, variant 1 | <img src="../__renders__/CHAM.RF1.png" width="96" alt="CHAM.RF1" /> | 16 x 16 | 2017 | order = 16 | [link](https://link.springer.com/chapter/10.1007/978-3-319-78556-1_1) |
 | **CHAM.RF2**<br/>CHAM, round function, variant 2 | <img src="../__renders__/CHAM.RF2.png" width="96" alt="CHAM.RF2" /> | 16 x 16 | 2017 | order = 8 | [link](https://link.springer.com/chapter/10.1007/978-3-319-78556-1_1) |
-| **DL18C**<br/>Duval-Leurent, 4 × 4 over GF(2⁴) | <img src="../__renders__/DL18C.png" width="96" alt="DL18C" /> | 16 x 16 | 2018 | order = 60 | [link](https://eprint.iacr.org/2018/260) |
+| **DL18.F8**<br/>Duval-Leurent, M⁸,³₄,₆ | <img src="../__renders__/DL18.F8.png" width="96" alt="DL18.F8" /> | 16 x 16 | 2018 | order = 60 | [link](https://tosc.iacr.org/index.php/ToSC/article/view/888) |
 | **GF16.ECCSQR**<br/>GF(2¹⁶), squaring, elliptic-curve representation<br/><sub>also known as `GF16ECCSQR`</sub> | <img src="../__renders__/GF16.ECCSQR.png" width="96" alt="GF16.ECCSQR" /> | 16 x 16 | 2023 | order = 8 | [link](https://github.com/starj1023/Binary_ECC) |
 | **GF16.SQR**<br/>GF(2¹⁶), squaring | <img src="../__renders__/GF16.SQR.png" width="96" alt="GF16.SQR" /> | 16 x 16 | 1998 | order = 16 | [link](https://www.hpl.hp.com/techreports/98/HPL-98-135.pdf) |
 | **GF4.SQR**<br/>GF(2⁴), squaring | <img src="../__renders__/GF4.SQR.png" width="96" alt="GF4.SQR" /> | 4 x 4 | 1998 | order = 4 | [link](https://www.hpl.hp.com/techreports/98/HPL-98-135.pdf) |
@@ -35,6 +35,7 @@ Entry count: 36.
 | **PRINCE.M0**<br/>PRINCE, M₀<br/><sub>also known as `M0`</sub> | <img src="../__renders__/PRINCE.M0.png" width="96" alt="PRINCE.M0" /> | 16 x 16 | 2012 | involution, symmetric, order = 2 | [link](https://eprint.iacr.org/2012/529) |
 | **PRINCE.M1**<br/>PRINCE, M₁<br/><sub>also known as `M1`</sub> | <img src="../__renders__/PRINCE.M1.png" width="96" alt="PRINCE.M1" /> | 16 x 16 | 2012 | involution, symmetric, order = 2 | [link](https://eprint.iacr.org/2012/529) |
 | **QARMA.S64**<br/>QARMA, QARMA-64 M | <img src="../__renders__/QARMA.S64.png" width="96" alt="QARMA.S64" /> | 16 x 16 | 2017 | involution, order = 2 | [link](https://eprint.iacr.org/2016/444) |
+| **SATURNIN.MIXCOLUMN**<br/>Saturnin, MixColumns | <img src="../__renders__/SATURNIN.MIXCOLUMN.png" width="96" alt="SATURNIN.MIXCOLUMN" /> | 16 x 16 | 2018, 2019 | order = 10 | [link](https://csrc.nist.gov/CSRC/media/Projects/lightweight-cryptography/documents/round-1/spec-doc/SATURNIN-spec.pdf) |
 | **SEFA.MDS16**<br/>SEFA, MDSLayer, 4 × 4 over GF(2⁴) | <img src="../__renders__/SEFA.MDS16.png" width="96" alt="SEFA.MDS16" /> | 16 x 16 | 2026 | order = 30 | [link](https://eprint.iacr.org/2026/897) |
 | **SKINNY.MIXCOLUMN**<br/>SKINNY, MixColumns<br/><sub>also known as `SKINNY`</sub> | <img src="../__renders__/SKINNY.MIXCOLUMN.png" width="96" alt="SKINNY.MIXCOLUMN" /> | 16 x 16 | 2016 | order = 4 | [link](https://eprint.iacr.org/2016/660) |
 | **SKOP15.S16**<br/>Sim-Khoo-Oggier-Peyrin, 4 × 4 over GF(2⁴)<br/><sub>also known as `FSE_SKOP15_4x4_4`, `FSE_SKOP15_4x4_8`</sub> | <img src="../__renders__/SKOP15.S16.png" width="96" alt="SKOP15.S16" /> | 16 x 16 | 2015 | order = 30 | [link](https://tosc.iacr.org/) |

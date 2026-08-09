@@ -2,7 +2,7 @@
 
 Source data: [`64bit.yaml`](64bit.yaml).
 
-Entry count: 42.
+Entry count: 43.
 
 | Key | Preview | Shape | Year | Properties | Origin |
 |:----|:-------:|:-----:|:----:|:-----------|:-------|
@@ -25,6 +25,7 @@ Entry count: 42.
 | **KLSW17.IS64**<br/>Kranz-Leander-Stoffelen-Wiemer, M⁻¹, 8 × 8 over GF(2⁸) | <img src="../__renders__/KLSW17.IS64.png" width="160" alt="KLSW17.IS64" /> | 64 x 64 | 2017 | involution, order = 2 | [link](https://tosc.iacr.org/index.php/ToSC/article/view/805) |
 | **KLSW17.S64**<br/>Kranz-Leander-Stoffelen-Wiemer, M, 8 × 8 over GF(2⁸) | <img src="../__renders__/KLSW17.S64.png" width="160" alt="KLSW17.S64" /> | 64 x 64 | 2017 | - | [link](https://tosc.iacr.org/index.php/ToSC/article/view/805) |
 | **LS16.S64**<br/>Liu-Sim, 8 × 8 over GF(2⁸) | <img src="../__renders__/LS16.S64.png" width="160" alt="LS16.S64" /> | 64 x 64 | 2016 | order = 2040 | [link](https://tosc.iacr.org/index.php/ToSC) |
+| **PHOTON.P288**<br/>PHOTON, P₂₈₈ | <img src="../__renders__/PHOTON.P288.png" width="160" alt="PHOTON.P288" /> | 48 x 48 | 2011 | - | [link](https://doi.org/10.1007/978-3-642-22792-9_13) |
 | **PRINCE.MPRIME**<br/>PRINCE, M′ | <img src="../__renders__/PRINCE.MPRIME.png" width="160" alt="PRINCE.MPRIME" /> | 64 x 64 | 2012 | involution, symmetric, order = 2 | [link](https://eprint.iacr.org/2012/529) |
 | **SCARF.SIGMA**<br/>SCARF, Σ | <img src="../__renders__/SCARF.SIGMA.png" width="160" alt="SCARF.SIGMA" /> | 60 x 60 | 2023 | order = 60 | [link](https://www.usenix.org/conference/usenixsecurity23/presentation/canale) |
 | **SHA512.BIGSIGMA0**<br/>SHA-512, Σ₀ | <img src="../__renders__/SHA512.BIGSIGMA0.png" width="160" alt="SHA512.BIGSIGMA0" /> | 64 x 64 | 2015 | order = 64 | [link](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.180-4.pdf) |

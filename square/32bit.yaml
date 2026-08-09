@@ -633,113 +633,6 @@ DIALGA:
     - '00000010000000100000001000000000'
     - '00000001000000010000000100000000'
 
-DL18A:
-  canonical_name: ["Duval-Leurent", "M⁸,³₄,₆"]
-  rows: 32
-  cols: 32
-  year: [2018]
-  cipher: false
-  origin: "https://eprint.iacr.org/2018/260"
-  source: "Section C: https://eprint.iacr.org/2018/260.pdf"
-  note: "Duval-Leurent, MDS Matrices with Lightweight Circuits, ToSC 2018(2). Figure 7, alpha = A8 = companion of X^8+X^2+1. This is the TIGHT WITNESS for the sw-XOR lower bound 8n+3 = 67 at n=8 (Venkateswarlu-Kesarwani-Sarkar, ToSC 2022(4)). This body was generated here by running the construction of the paper rather than copied from a table the paper prints. It is under review: SATURNIN states that its MDS layer is a matrix of this family, and the matrix its reference implementation computes, of weight 118 over 16 x 16, matches none of the three DL18 bodies by weight, which no permutation of rows and columns could change. Either a different member of the family is meant or the generation is wrong, and the implementation is the firmer of the two sources."
-  formula: "4x4 MDS matrix over GF(2^8) in the ring F2[alpha], alpha a companion matrix; binary expansion 32x32."
-  involution: false
-  symmetric: false
-  rank: 32
-  invertible: true
-  order: 120
-  branch_number: 5
-  mds: true
-  hamming_weight: 193
-  orbit: 32
-  hamming_weight_per_row: [5, 5, 5, 5, 5, 5, 7, 8, 6, 6, 6, 6, 6, 6, 8, 10, 5, 5, 5, 5, 5, 5, 5, 8, 6, 6, 6, 6, 6, 6, 6, 9]
-  matrix:
-    - '11000000100000000010000000100000'
-    - '01100000010000000001000000010000'
-    - '00110000001000000000100000001000'
-    - '00011000000100000000010000000100'
-    - '00001100000010000000001000000010'
-    - '00000110000001000000000100000001'
-    - '00000011000000101010000010100000'
-    - '10100001000000010101000001010000'
-    - '10000000110000000110000000100000'
-    - '01000000011000000011000000010000'
-    - '00100000001100000001100000001000'
-    - '00010000000110000000110000000100'
-    - '00001000000011000000011000000010'
-    - '00000100000001100000001100000001'
-    - '00000010000000111010000110100000'
-    - '00000001101000011111000001010000'
-    - '01000000010000001100000010000000'
-    - '00100000001000000110000001000000'
-    - '00010000000100000011000000100000'
-    - '00001000000010000001100000010000'
-    - '00000100000001000000110000001000'
-    - '00000010000000100000011000000100'
-    - '00000001000000010000001100000010'
-    - '10100000101000001010000100000001'
-    - '11000000010000001000000011000000'
-    - '01100000001000000100000001100000'
-    - '00110000000100000010000000110000'
-    - '00011000000010000001000000011000'
-    - '00001100000001000000100000001100'
-    - '00000110000000100000010000000110'
-    - '00000011000000010000001000000011'
-    - '10100001101000000000000110100001'
-
-DL18B:
-  canonical_name: ["Duval-Leurent", "4 × 4 over GF(2⁸), depth 3"]
-  rows: 32
-  cols: 32
-  year: [2018]
-  cipher: false
-  origin: "https://eprint.iacr.org/2018/260"
-  source: "Figure 15: https://eprint.iacr.org/2018/260.pdf"
-  note: "Duval-Leurent, ToSC 2018(2). NOTE: a 76-XOR implementation (classical depth 6) is recorded in linear-layer-quantum-depth/matrix_tsvs/DL18B.tsv - one gate below the paper's count at a different depth trade-off. This body was generated here by running the construction of the paper rather than copied from a table the paper prints. It is under review: SATURNIN states that its MDS layer is a matrix of this family, and the matrix its reference implementation computes, of weight 118 over 16 x 16, matches none of the three DL18 bodies by weight, which no permutation of rows and columns could change. Either a different member of the family is meant or the generation is wrong, and the implementation is the firmer of the two sources."
-  formula: "4x4 MDS matrix over GF(2^8) in the ring F2[alpha], alpha a companion matrix; binary expansion 32x32."
-  involution: false
-  symmetric: false
-  rank: 32
-  invertible: true
-  branch_number: 5
-  mds: true
-  hamming_weight: 177
-  orbit: 32
-  hamming_weight_per_row: [4, 5, 5, 5, 5, 5, 5, 7, 6, 5, 5, 5, 5, 5, 5, 7, 8, 6, 6, 6, 6, 6, 6, 6, 8, 5, 5, 5, 5, 5, 5, 5]
-  matrix:
-    - '00000001010000001000000010000000'
-    - '10100000001000000100000001000000'
-    - '01010000000100000010000000100000'
-    - '00101000000010000001000000010000'
-    - '00010100000001000000100000001000'
-    - '00001010000000100000010000000100'
-    - '00000101000000010000001000000010'
-    - '10100010101000000000000100000001'
-    - '10000000110000000100000001000001'
-    - '01000000011000000010000010000000'
-    - '00100000001100000001000001000000'
-    - '00010000000110000000100000100000'
-    - '00001000000011000000010000010000'
-    - '00000100000001100000001000001000'
-    - '00000010000000110000000100000100'
-    - '00000001101000011010000000000010'
-    - '11000001100000001000000011000001'
-    - '11000000010000000100000011000000'
-    - '01100000001000000010000001100000'
-    - '00110000000100000001000000110000'
-    - '00011000000010000000100000011000'
-    - '00001100000001000000010000001100'
-    - '00000110000000100000001000000110'
-    - '00000011000000010000000100000011'
-    - '01000001010000011100000110000000'
-    - '10000000100000001100000001000000'
-    - '01000000010000000110000000100000'
-    - '00100000001000000011000000010000'
-    - '00010000000100000001100000001000'
-    - '00001000000010000000110000000100'
-    - '00000100000001000000011000000010'
-    - '00000010000000100000001100000001'
-
 FOX.MU4:
   canonical_name: ["FOX", "μ₄"]
   rows: 32
@@ -1491,6 +1384,190 @@ LW16.IB32:
     - '00001000100100000010000100000100'
     - '00000001000001000001000000000010'
     - '00000010000010000100000000000001'
+
+PHOTON.P100:
+  canonical_name: ["PHOTON", "P₁₀₀"]
+  rows: 20
+  cols: 20
+  year: [2011]
+  cipher: true
+  origin: "https://doi.org/10.1007/978-3-642-22792-9_13"
+  paper_title: "Guo, Peyrin, Poschmann. The PHOTON Family of Lightweight Hash Functions; CRYPTO 2011."
+  note: "MixColumnsSerial of the PHOTON permutation P100, applied to each column of 5 cells of 4 bits. The serial form is what makes the layer cheap: one cell is updated per step and the column shifts, so the hardware holds one row rather than the matrix. The paper states that every one of these layers is MDS, and the branch number was computed here to confirm it rather than taken on trust. PHOTON-Beetle of the NIST lightweight process uses P256. The layer is built out of field operations the catalogue holds in their own right: multiplication by x over this field is GF16.MUL and squaring is GF16.SQR, and every coefficient of A is a power of the first. A corpus that files those multiplications under PHOTON_1, PHOTON_2 and so on is naming the field rather than the layer, which is why no such key is here."
+  formula: "M = A^5 over GF(2^4) modulo x^4 + x + 1, where A is Serial(1, 2, 9, 9, 2), the matrix that replaces the last cell of a column by that combination of all 5 of it and rotates the column up. Each field element of A^5 is written out as its 4 x 4 multiplication matrix."
+  involution: false
+  symmetric: false
+  rank: 20
+  invertible: true
+  order: 3
+  branch_number: 6
+  mds: true
+  hamming_weight_per_row: [7, 7, 5, 5, 9, 11, 9, 9, 11, 11, 9, 11, 11, 9, 9, 11, 11, 11, 13, 15]
+  matrix:
+    - '10000001110011000001'
+    - '01001001001000101001'
+    - '00100100000100010100'
+    - '00010010100010000010'
+    - '00011010100101001110'
+    - '10010111110101100001'
+    - '01001011011000111000'
+    - '00100101001110011100'
+    - '11101101010101101000'
+    - '00011011111101010100'
+    - '10000101011110100010'
+    - '11001010101111010001'
+    - '10001111000110010111'
+    - '01001000100111011100'
+    - '00101100010001101110'
+    - '00011110001000111111'
+    - '01110111010010100110'
+    - '11001100011001110101'
+    - '11101110001110111010'
+    - '11111111100101011101'
+
+PHOTON.P144:
+  canonical_name: ["PHOTON", "P₁₄₄"]
+  rows: 24
+  cols: 24
+  year: [2011]
+  cipher: true
+  origin: "https://doi.org/10.1007/978-3-642-22792-9_13"
+  paper_title: "Guo, Peyrin, Poschmann. The PHOTON Family of Lightweight Hash Functions; CRYPTO 2011."
+  note: "MixColumnsSerial of the PHOTON permutation P144, applied to each column of 6 cells of 4 bits. The serial form is what makes the layer cheap: one cell is updated per step and the column shifts, so the hardware holds one row rather than the matrix. The paper states that every one of these layers is MDS, and the branch number was computed here to confirm it rather than taken on trust. PHOTON-Beetle of the NIST lightweight process uses P256. The layer is built out of field operations the catalogue holds in their own right: multiplication by x over this field is GF16.MUL and squaring is GF16.SQR, and every coefficient of A is a power of the first. A corpus that files those multiplications under PHOTON_1, PHOTON_2 and so on is naming the field rather than the layer, which is why no such key is here."
+  formula: "M = A^6 over GF(2^4) modulo x^4 + x + 1, where A is Serial(1, 2, 8, 5, 8, 2), the matrix that replaces the last cell of a column by that combination of all 6 of it and rotates the column up. Each field element of A^6 is written out as its 4 x 4 multiplication matrix."
+  involution: false
+  symmetric: false
+  rank: 24
+  invertible: true
+  order: 17
+  branch_number: 7
+  mds: true
+  hamming_weight_per_row: [7, 12, 10, 9, 9, 12, 11, 10, 13, 9, 10, 13, 13, 15, 12, 12, 15, 10, 11, 14, 8, 14, 10, 10]
+  matrix:
+    - '100000010100101001000001'
+    - '010010010110011101101001'
+    - '001001000011101100110100'
+    - '000100101001010110010010'
+    - '000110101000000100110110'
+    - '100101110100100110100101'
+    - '010010110010010011011010'
+    - '001001010001001001101101'
+    - '011011001111010001001110'
+    - '010100101000011001100001'
+    - '101000011100001100111000'
+    - '110110001110100110011100'
+    - '111010101101100101011000'
+    - '000101111011110111110100'
+    - '100010110101011001110010'
+    - '110001011010001110110001'
+    - '100011111110011111010100'
+    - '010010000001110010110110'
+    - '001011001000111001010011'
+    - '000111101100111110101001'
+    - '010000011001100100010100'
+    - '011010011101110110010110'
+    - '001101000110011001000011'
+    - '100100100011001100101001'
+
+PHOTON.P196:
+  canonical_name: ["PHOTON", "P₁₉₆"]
+  rows: 28
+  cols: 28
+  year: [2011]
+  cipher: true
+  origin: "https://doi.org/10.1007/978-3-642-22792-9_13"
+  paper_title: "Guo, Peyrin, Poschmann. The PHOTON Family of Lightweight Hash Functions; CRYPTO 2011."
+  note: "MixColumnsSerial of the PHOTON permutation P196, applied to each column of 7 cells of 4 bits. The serial form is what makes the layer cheap: one cell is updated per step and the column shifts, so the hardware holds one row rather than the matrix. The paper states that every one of these layers is MDS, and the branch number was computed here to confirm it rather than taken on trust. PHOTON-Beetle of the NIST lightweight process uses P256. The layer is built out of field operations the catalogue holds in their own right: multiplication by x over this field is GF16.MUL and squaring is GF16.SQR, and every coefficient of A is a power of the first. A corpus that files those multiplications under PHOTON_1, PHOTON_2 and so on is naming the field rather than the layer, which is why no such key is here."
+  formula: "M = A^7 over GF(2^4) modulo x^4 + x + 1, where A is Serial(1, 4, 6, 1, 1, 6, 4), the matrix that replaces the last cell of a column by that combination of all 7 of it and rotates the column up. Each field element of A^7 is written out as its 4 x 4 multiplication matrix."
+  involution: false
+  symmetric: false
+  rank: 28
+  invertible: true
+  order: 15
+  branch_number: 8
+  mds: true
+  hamming_weight_per_row: [9, 11, 13, 9, 13, 17, 15, 13, 17, 17, 17, 17, 17, 13, 13, 13, 17, 13, 13, 13, 17, 17, 17, 17, 13, 17, 15, 13]
+  matrix:
+    - '1000001000111000100000110010'
+    - '0100001110100100010010100011'
+    - '0010100111010010001011011001'
+    - '0001010001100001000101100100'
+    - '0010000111110001101001011010'
+    - '0011100110001001011111110111'
+    - '1001010011000100101101111011'
+    - '0100001011100010010110110101'
+    - '1010100111110101101101001110'
+    - '0111110110001111111001100001'
+    - '1011011011000111111100111000'
+    - '0101001111101011011110011100'
+    - '1110001011010001101111111100'
+    - '0001001110111001111010000010'
+    - '1000100101010100111111000001'
+    - '1100010010100010011111101000'
+    - '1100111110110001110100101110'
+    - '0010100011101001101100110001'
+    - '0001110011110100010110011000'
+    - '1000111001110010101001001100'
+    - '1110010010110101111110011010'
+    - '0001011011101111100011010111'
+    - '1000001111110111110001101011'
+    - '1100100101111011111000110101'
+    - '1010010110100001111100010010'
+    - '0111111101111001100010010011'
+    - '1011011110110100110001001001'
+    - '0101101101010010111000100100'
+
+PHOTON.P256:
+  canonical_name: ["PHOTON", "P₂₅₆"]
+  rows: 32
+  cols: 32
+  year: [2011]
+  cipher: true
+  origin: "https://doi.org/10.1007/978-3-642-22792-9_13"
+  paper_title: "Guo, Peyrin, Poschmann. The PHOTON Family of Lightweight Hash Functions; CRYPTO 2011."
+  note: "MixColumnsSerial of the PHOTON permutation P256, applied to each column of 8 cells of 4 bits. The serial form is what makes the layer cheap: one cell is updated per step and the column shifts, so the hardware holds one row rather than the matrix. The paper states that every one of these layers is MDS, and the branch number was computed here to confirm it rather than taken on trust. PHOTON-Beetle of the NIST lightweight process uses P256. The layer is built out of field operations the catalogue holds in their own right: multiplication by x over this field is GF16.MUL and squaring is GF16.SQR, and every coefficient of A is a power of the first. A corpus that files those multiplications under PHOTON_1, PHOTON_2 and so on is naming the field rather than the layer, which is why no such key is here."
+  formula: "M = A^8 over GF(2^4) modulo x^4 + x + 1, where A is Serial(2, 4, 2, 11, 2, 8, 5, 6), the matrix that replaces the last cell of a column by that combination of all 8 of it and rotates the column up. Each field element of A^8 is written out as its 4 x 4 multiplication matrix."
+  involution: false
+  symmetric: false
+  rank: 32
+  invertible: true
+  order: 255
+  branch_number: 9
+  mds: true
+  hamming_weight_per_row: [12, 18, 15, 12, 17, 17, 18, 17, 16, 11, 11, 11, 18, 13, 16, 18, 22, 13, 16, 21, 18, 14, 17, 17, 13, 17, 14, 16, 17, 19, 16, 17]
+  matrix:
+    - '00010010000111010001010010100011'
+    - '10010011100110111001011001111010'
+    - '01001001010001010100001110111101'
+    - '00100100001010100010100101010110'
+    - '01101100010011101011101110100001'
+    - '01010010011000011110111001111001'
+    - '10100001001110001111111110110100'
+    - '11011000100111000111011101010010'
+    - '00100010111011101100001011101100'
+    - '00110011000100010010001100010010'
+    - '10011001100010000001100110000001'
+    - '01000100110011001000010011001000'
+    - '10000011101010000110111011110111'
+    - '01001010011101000101000110001100'
+    - '00101101101100101010100011001110'
+    - '00010110010100011101110011101111'
+    - '11110110110011100111101001111110'
+    - '10000101001000011100011111000001'
+    - '11001010000110001110101111101000'
+    - '11101101100011001111010111111100'
+    - '11000111101011110010011011000011'
+    - '00101100011110000011010100101010'
+    - '00011110101111001001101000011101'
+    - '10001111010111100100110110000110'
+    - '01100001000101011001100010000111'
+    - '01011001100111111101010001001100'
+    - '10100100010001110110001000101110'
+    - '11010010001010110011000100011111'
+    - '11111000111001011010010100011001'
+    - '10000100000111110111111110011101'
+    - '11000010100001111011011101000110'
+    - '11100001110010110101101100100011'
 
 PYJAMASK.M0:
   canonical_name: ["Pyjamask", "M₀"]
