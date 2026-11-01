@@ -3,6 +3,7 @@
 
 GF16.MUL:
   canonical_name: ["GF(2¹⁶)", "multiplication by x"]
+  reuse: ["PHOTON.P100", "PHOTON.P144", "PHOTON.P196", "PHOTON.P256"]
   rows: 16
   cols: 31
   year: [1998]

@@ -2,7 +2,7 @@
 
 Source data: [`permutations.yaml`](permutations.yaml).
 
-Entry count: 43.
+Entry count: 45.
 
 | Key | Preview | Shape | Year | Properties | Origin |
 |:----|:-------:|:-----:|:----:|:-----------|:-------|
@@ -41,6 +41,8 @@ Entry count: 43.
 | **SCARF.PI**<br/>SCARF, π | <img src="__renders__/SCARF.PI.png" width="192" alt="SCARF.PI" /> | 60 | 2023 | order = 29 | [link](https://www.usenix.org/conference/usenixsecurity23/presentation/canale) |
 | **SEFA.P16**<br/>SEFA, bitPermLayer | <img src="__renders__/SEFA.P16.png" width="192" alt="SEFA.P16" /> | 16 | 2026 | involution, order = 2 | [link](https://eprint.iacr.org/2026/897) |
 | **SPEEDY.SC**<br/>SPEEDY, ShiftColumns | <img src="__renders__/SPEEDY.SC.png" width="192" alt="SPEEDY.SC" /> | 192 | 2021 | order = 32 | [link](https://tches.iacr.org/index.php/TCHES/article/view/9074) |
+| **SPONGENT.P160**<br/>Spongent, pLayer₁₆₀ | <img src="__renders__/SPONGENT.P160.png" width="192" alt="SPONGENT.P160" /> | 160 | 2011, 2019 | order = 26 | [link](https://csrc.nist.gov/CSRC/media/Projects/lightweight-cryptography/documents/finalist-round/updated-spec-doc/elephant-spec-final.pdf) |
+| **SUBTERRANEAN.PI**<br/>Subterranean, π | <img src="__renders__/SUBTERRANEAN.PI.png" width="192" alt="SUBTERRANEAN.PI" /> | 257 | 2020 | order = 256 | [link](https://tosc.iacr.org/index.php/ToSC/article/view/8622) |
 | **TRIFLE**<br/>TRIFLE-BC | <img src="__renders__/TRIFLE.png" width="192" alt="TRIFLE" /> | 128 | 2019 | order = 7 | [link](https://csrc.nist.gov/CSRC/media/Projects/lightweight-cryptography/documents/round-1/spec-doc/trifle-spec.pdf) |
 | **TWINKLE.LANEROTATION0**<br/>Twinkle, LaneRotation₀ | <img src="__renders__/TWINKLE.LANEROTATION0.png" width="192" alt="TWINKLE.LANEROTATION0" /> | 1280 | 2024 | order = 80 | [link](https://cic.iacr.org/) |
 | **TWINKLE.LANEROTATION1**<br/>Twinkle, LaneRotation₁ | <img src="__renders__/TWINKLE.LANEROTATION1.png" width="192" alt="TWINKLE.LANEROTATION1" /> | 1280 | 2024 | order = 80 | [link](https://cic.iacr.org/) |

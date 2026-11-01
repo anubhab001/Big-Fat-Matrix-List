@@ -2,7 +2,7 @@
 
 Source data: [`32bit.yaml`](32bit.yaml).
 
-Entry count: 56.
+Entry count: 58.
 
 | Key | Preview | Shape | Year | Properties | Origin |
 |:----|:-------:|:-----:|:----:|:-----------|:-------|
@@ -19,6 +19,8 @@ Entry count: 56.
 | **CLEFIA.M0**<br/>Anubis, H<br/><sub>also known as `ANUBIS`</sub> | <img src="../__renders__/CLEFIA.M0.png" width="128" alt="CLEFIA.M0" /> | 32 x 32 | 2000 | involution, order = 2 | [link](https://www.cosic.esat.kuleuven.be/nessie/) |
 | **CLEFIA.M1**<br/>CLEFIA, M₁ | <img src="../__renders__/CLEFIA.M1.png" width="128" alt="CLEFIA.M1" /> | 32 x 32 | 2007 | involution, order = 2 | [link](https://www.sony.net/Products/cryptography/clefia/) |
 | **DIALGA**<br/>Dialga, MatrixMul | <img src="../__renders__/DIALGA.png" width="128" alt="DIALGA" /> | 32 x 32 | 2025 | involution, symmetric, order = 2 | [link](https://tosc.iacr.org/index.php/ToSC) |
+| **DL18.F16A8**<br/>Duval-Leurent, M⁹,⁵₄,₃ | <img src="../__renders__/DL18.F16A8.png" width="128" alt="DL18.F16A8" /> | 32 x 32 | 2018 | order = 2730 | [link](https://tosc.iacr.org/index.php/ToSC/article/view/888) |
+| **DL18.F8A8**<br/>Duval-Leurent, M⁸,³₄,₆ | <img src="../__renders__/DL18.F8A8.png" width="128" alt="DL18.F8A8" /> | 32 x 32 | 2018 | order = 120 | [link](https://tosc.iacr.org/index.php/ToSC/article/view/888) |
 | **FOX.MU4**<br/>FOX, μ₄ | <img src="../__renders__/FOX.MU4.png" width="128" alt="FOX.MU4" /> | 32 x 32 | 2003 | order = 65535 | [link](https://link.springer.com/chapter/10.1007/978-3-540-30564-4_8) |
 | **GF32.SQR**<br/>GF(2³²), squaring | <img src="../__renders__/GF32.SQR.png" width="128" alt="GF32.SQR" /> | 32 x 32 | 1998 | order = 32 | [link](https://www.hpl.hp.com/techreports/98/HPL-98-135.pdf) |
 | **ICEPOLE.SLICE**<br/>ICEPOLE, slice mixer | <img src="../__renders__/ICEPOLE.SLICE.png" width="128" alt="ICEPOLE.SLICE" /> | 20 x 20 | 2014, 2020 | order = 1023 | [link](https://eprint.iacr.org/2020/1296) |

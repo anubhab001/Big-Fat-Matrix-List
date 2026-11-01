@@ -2,7 +2,7 @@
 
 Source data: [`16bit.yaml`](16bit.yaml).
 
-Entry count: 37.
+Entry count: 45.
 
 | Key | Preview | Shape | Year | Properties | Origin |
 |:----|:-------:|:-----:|:----:|:-----------|:-------|
@@ -12,6 +12,10 @@ Entry count: 37.
 | **CHAM.RF1**<br/>CHAM, round function, variant 1 | <img src="../__renders__/CHAM.RF1.png" width="96" alt="CHAM.RF1" /> | 16 x 16 | 2017 | order = 16 | [link](https://link.springer.com/chapter/10.1007/978-3-319-78556-1_1) |
 | **CHAM.RF2**<br/>CHAM, round function, variant 2 | <img src="../__renders__/CHAM.RF2.png" width="96" alt="CHAM.RF2" /> | 16 x 16 | 2017 | order = 8 | [link](https://link.springer.com/chapter/10.1007/978-3-319-78556-1_1) |
 | **DL18.F8**<br/>Duval-Leurent, M⁸,³₄,₆ | <img src="../__renders__/DL18.F8.png" width="96" alt="DL18.F8" /> | 16 x 16 | 2018 | order = 60 | [link](https://tosc.iacr.org/index.php/ToSC/article/view/888) |
+| **DUX.L0**<br/>DuX, L₀ | <img src="../__renders__/DUX.L0.png" width="96" alt="DUX.L0" /> | 16 x 16 | 2026 | order = 16 | [link](https://doi.org/10.1007/s10623-026-01855-5) |
+| **DUX.L0INV**<br/>DuX, L₀⁻¹ | <img src="../__renders__/DUX.L0INV.png" width="96" alt="DUX.L0INV" /> | 16 x 16 | 2026 | order = 16 | [link](https://doi.org/10.1007/s10623-026-01855-5) |
+| **DUX.L1**<br/>DuX, L₁ | <img src="../__renders__/DUX.L1.png" width="96" alt="DUX.L1" /> | 16 x 16 | 2026 | order = 16 | [link](https://doi.org/10.1007/s10623-026-01855-5) |
+| **DUX.L1INV**<br/>DuX, L₁⁻¹ | <img src="../__renders__/DUX.L1INV.png" width="96" alt="DUX.L1INV" /> | 16 x 16 | 2026 | order = 16 | [link](https://doi.org/10.1007/s10623-026-01855-5) |
 | **GF16.ECCSQR**<br/>GF(2¹⁶), squaring, elliptic-curve representation<br/><sub>also known as `GF16ECCSQR`</sub> | <img src="../__renders__/GF16.ECCSQR.png" width="96" alt="GF16.ECCSQR" /> | 16 x 16 | 2023 | order = 8 | [link](https://github.com/starj1023/Binary_ECC) |
 | **GF16.SQR**<br/>GF(2¹⁶), squaring | <img src="../__renders__/GF16.SQR.png" width="96" alt="GF16.SQR" /> | 16 x 16 | 1998 | order = 16 | [link](https://www.hpl.hp.com/techreports/98/HPL-98-135.pdf) |
 | **GF4.SQR**<br/>GF(2⁴), squaring | <img src="../__renders__/GF4.SQR.png" width="96" alt="GF4.SQR" /> | 4 x 4 | 1998 | order = 4 | [link](https://www.hpl.hp.com/techreports/98/HPL-98-135.pdf) |
@@ -23,6 +27,7 @@ Entry count: 37.
 | **KLSW17.S16**<br/>Kranz-Leander-Stoffelen-Wiemer, M, 4 × 4 over GF(2⁴) | <img src="../__renders__/KLSW17.S16.png" width="96" alt="KLSW17.S16" /> | 16 x 16 | 2017 | order = 12 | [link](https://tosc.iacr.org/index.php/ToSC/article/view/805) |
 | **LED.MIXCOLUMN**<br/>LED, MixColumnsSerial<br/><sub>also known as `LED.MIXCOLUMNS`</sub> | <img src="../__renders__/LED.MIXCOLUMN.png" width="96" alt="LED.MIXCOLUMN" /> | 16 x 16 | 2011 | order = 255 | [link](https://eprint.iacr.org/2012/600) |
 | **LED.MIXCOLUMNSERIAL**<br/>LED, A<br/><sub>also known as `LED.MIXCOLUMNSSERIAL`</sub> | <img src="../__renders__/LED.MIXCOLUMNSERIAL.png" width="96" alt="LED.MIXCOLUMNSERIAL" /> | 16 x 16 | 2011 | order = 255 | [link](https://eprint.iacr.org/2012/600) |
+| **LOONG.MIXCOLUMN**<br/>Loong, MixColumns | <img src="../__renders__/LOONG.MIXCOLUMN.png" width="96" alt="LOONG.MIXCOLUMN" /> | 16 x 16 | 2019 | involution, order = 2 | [link](https://doi.org/10.1109/ACCESS.2019.2940330) |
 | **LS16.S16**<br/>Liu-Sim, 4 × 4 over GF(2⁴)<br/><sub>also known as `FSE_LimSim16`, `FSE_LiuSim16`, `FSE_LimSim16_4x4_4`, `FSE_LiuSim16_8x8_8`</sub> | <img src="../__renders__/LS16.S16.png" width="96" alt="LS16.S16" /> | 16 x 16 | 2016 | order = 60 | [link](https://tosc.iacr.org/index.php/ToSC) |
 | **LW16.A16**<br/>Li-Wang, 4 × 4 over GF(2⁴), variant A<br/><sub>also known as `FSE_LiWang16_4x4_4`</sub> | <img src="../__renders__/LW16.A16.png" width="96" alt="LW16.A16" /> | 16 x 16 | 2016 | order = 60 | [link](https://tosc.iacr.org/index.php/ToSC) |
 | **LW16.B16**<br/>Li-Wang, 4 × 4 over GF(2⁴), variant B<br/><sub>also known as `FSE_LiWang16_4x4_4`</sub> | <img src="../__renders__/LW16.B16.png" width="96" alt="LW16.B16" /> | 16 x 16 | 2016 | order = 255 | [link](https://tosc.iacr.org/index.php/ToSC) |
@@ -36,6 +41,7 @@ Entry count: 37.
 | **PRINCE.M1**<br/>PRINCE, M₁<br/><sub>also known as `M1`</sub> | <img src="../__renders__/PRINCE.M1.png" width="96" alt="PRINCE.M1" /> | 16 x 16 | 2012 | involution, symmetric, order = 2 | [link](https://eprint.iacr.org/2012/529) |
 | **QARMA.S64**<br/>QARMA, QARMA-64 M | <img src="../__renders__/QARMA.S64.png" width="96" alt="QARMA.S64" /> | 16 x 16 | 2017 | involution, order = 2 | [link](https://eprint.iacr.org/2016/444) |
 | **SATURNIN.MIXCOLUMN**<br/>Saturnin, MixColumns | <img src="../__renders__/SATURNIN.MIXCOLUMN.png" width="96" alt="SATURNIN.MIXCOLUMN" /> | 16 x 16 | 2018, 2019 | order = 10 | [link](https://csrc.nist.gov/CSRC/media/Projects/lightweight-cryptography/documents/round-1/spec-doc/SATURNIN-spec.pdf) |
+| **SCREAM.L**<br/>Scream, L | <img src="../__renders__/SCREAM.L.png" width="96" alt="SCREAM.L" /> | 16 x 16 | 2014, 2015 | order = 120 | [link](https://competitions.cr.yp.to/round2/screamv3.pdf) |
 | **SEFA.MDS16**<br/>SEFA, MDSLayer, 4 × 4 over GF(2⁴) | <img src="../__renders__/SEFA.MDS16.png" width="96" alt="SEFA.MDS16" /> | 16 x 16 | 2026 | order = 30 | [link](https://eprint.iacr.org/2026/897) |
 | **SKINNY.MIXCOLUMN**<br/>SKINNY, MixColumns<br/><sub>also known as `SKINNY`</sub> | <img src="../__renders__/SKINNY.MIXCOLUMN.png" width="96" alt="SKINNY.MIXCOLUMN" /> | 16 x 16 | 2016 | order = 4 | [link](https://eprint.iacr.org/2016/660) |
 | **SKOP15.S16**<br/>Sim-Khoo-Oggier-Peyrin, 4 × 4 over GF(2⁴)<br/><sub>also known as `FSE_SKOP15_4x4_4`, `FSE_SKOP15_4x4_8`</sub> | <img src="../__renders__/SKOP15.S16.png" width="96" alt="SKOP15.S16" /> | 16 x 16 | 2015 | order = 30 | [link](https://tosc.iacr.org/) |
@@ -43,4 +49,6 @@ Entry count: 37.
 | **SS16.IS16**<br/>Sarkar-Syed, involutory 4 × 4 over GF(2⁴)<br/><sub>also known as `ToSC_SarSye16_4x4`, `ToSC_SarSye16_i_4x4`, `ToSC_SarSye16_448`</sub> | <img src="../__renders__/SS16.IS16.png" width="96" alt="SS16.IS16" /> | 16 x 16 | 2016 | involution, order = 2 | [link](https://tosc.iacr.org/index.php/ToSC/article/view/537) |
 | **SS16.S16**<br/>Sarkar-Syed, 4 × 4 over GF(2⁴)<br/><sub>also known as `ToSC_SarSye16_4x4`, `ToSC_SarSye16_448`</sub> | <img src="../__renders__/SS16.S16.png" width="96" alt="SS16.S16" /> | 16 x 16 | 2016 | order = 60 | [link](https://tosc.iacr.org/index.php/ToSC/article/view/537) |
 | **TWINKLE.MIXSLICE**<br/>Twinkle, MixSlice | <img src="../__renders__/TWINKLE.MIXSLICE.png" width="96" alt="TWINKLE.MIXSLICE" /> | 16 x 16 | 2024 | order = 16 | [link](https://cic.iacr.org/) |
+| **YUX.LP**<br/>YuX, LP | <img src="../__renders__/YUX.LP.png" width="96" alt="YUX.LP" /> | 16 x 16 | 2024 | order = 8 | [link](https://doi.org/10.1109/TIT.2024.3349414) |
+| **YUX.LPINV**<br/>YuX, LP⁻¹ | <img src="../__renders__/YUX.LPINV.png" width="96" alt="YUX.LPINV" /> | 16 x 16 | 2024 | order = 8 | [link](https://doi.org/10.1109/TIT.2024.3349414) |
 

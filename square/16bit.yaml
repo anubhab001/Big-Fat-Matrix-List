@@ -220,6 +220,154 @@ DL18.F8:
     - '0110010000100110'
     - '0010001100010010'
 
+DUX.L0:
+  canonical_name: ["DuX", "L₀"]
+  rows: 16
+  cols: 16
+  year: [2026]
+  cipher: true
+  origin: "https://doi.org/10.1007/s10623-026-01855-5"
+  paper_title: "Wu, Dong, Li, Liu, Zhang, Cheng, Tan, Zhang. DuX: a block cipher for efficient FHE evaluation; Designs, Codes and Cryptography 94 (2026), article 140, Sect. 3.2."
+  note: "L0 of DuX over F_{2^n}, the circulant M0 = Circ(1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 1, 0, 1, 0, 1, 1). DuX applies L0 or L1 in a round as the XOR of the two lowest bits of the round key is 0 or 1. Over F_p the paper uses a dense circulant instead, which is out of scope here. The designers state branch number 5 over (F_{2^n}^4)^4, that is for the sixteen words taken as four blocks of four, which is not a word-wise MDS claim, so no branch_number is recorded. The four DuX layers and the YuX pair are also restated, with the same rotation sets, by Ren et al., Practical Key Recovery Attacks on Full DuX and Reduced-Round YuX, ePrint 2026/2045 (https://eprint.iacr.org/2026/2045). It is the same matrix as DUX.L1 up to a permutation of rows and columns, and the same up to a permutation of rows and columns as the inverse of DUX.L0INV, DUX.L1INV, so a circuit for one serves the other once the wires are renamed, and in the inverse case the direction reversed."
+  formula: "Circulant on sixteen words of F_{2^n} with first row the rotation set [0, 1, 3, 4, 7, 8, 9, 10, 12, 14, 15], entry (i, j) being 1 when (j - i) mod 16 is in the set; on bits, kron(M, I_n), with n = 8 or 16 for the instances the paper fixes."
+  involution: false
+  symmetric: false
+  rank: 16
+  invertible: true
+  order: 16
+  hamming_weight: 176
+  orbit: 1
+  similarity: ["DUX.L0INV", "DUX.L1", "DUX.L1INV"]
+  hamming_weight_per_row: [11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11]
+  matrix:
+    - '1101100111101011'
+    - '1110110011110101'
+    - '1111011001111010'
+    - '0111101100111101'
+    - '1011110110011110'
+    - '0101111011001111'
+    - '1010111101100111'
+    - '1101011110110011'
+    - '1110101111011001'
+    - '1111010111101100'
+    - '0111101011110110'
+    - '0011110101111011'
+    - '1001111010111101'
+    - '1100111101011110'
+    - '0110011110101111'
+    - '1011001111010111'
+
+DUX.L0INV:
+  canonical_name: ["DuX", "L₀⁻¹"]
+  rows: 16
+  cols: 16
+  year: [2026]
+  cipher: true
+  origin: "https://doi.org/10.1007/s10623-026-01855-5"
+  paper_title: "Wu, Dong, Li, Liu, Zhang, Cheng, Tan, Zhang. DuX: a block cipher for efficient FHE evaluation; Designs, Codes and Cryptography 94 (2026), article 140, Sect. 3.2."
+  note: "The inverse of DUX.L0, which the paper prints as the five rotations 1, 4, 8, 9, 13 and which serves over F_{2^n} and F_p alike; it is the layer a homomorphic decryption evaluates. DUX.L0 times this matrix is the identity, checked here. The designers state branch number 5 over (F_{2^n}^4)^4, that is for the sixteen words taken as four blocks of four, which is not a word-wise MDS claim, so no branch_number is recorded. The four DuX layers and the YuX pair are also restated, with the same rotation sets, by Ren et al., Practical Key Recovery Attacks on Full DuX and Reduced-Round YuX, ePrint 2026/2045 (https://eprint.iacr.org/2026/2045). It is the same matrix as DUX.L1INV up to a permutation of rows and columns, and the same up to a permutation of rows and columns as the inverse of DUX.L0, DUX.L1, so a circuit for one serves the other once the wires are renamed, and in the inverse case the direction reversed."
+  formula: "Circulant on sixteen words of F_{2^n} with first row the rotation set [1, 4, 8, 9, 13], entry (i, j) being 1 when (j - i) mod 16 is in the set; on bits, kron(M, I_n), with n = 8 or 16 for the instances the paper fixes."
+  involution: false
+  symmetric: false
+  rank: 16
+  invertible: true
+  order: 16
+  hamming_weight: 80
+  orbit: 1
+  similarity: ["DUX.L0", "DUX.L1", "DUX.L1INV"]
+  hamming_weight_per_row: [5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5]
+  matrix:
+    - '0100100011000100'
+    - '0010010001100010'
+    - '0001001000110001'
+    - '1000100100011000'
+    - '0100010010001100'
+    - '0010001001000110'
+    - '0001000100100011'
+    - '1000100010010001'
+    - '1100010001001000'
+    - '0110001000100100'
+    - '0011000100010010'
+    - '0001100010001001'
+    - '1000110001000100'
+    - '0100011000100010'
+    - '0010001100010001'
+    - '1001000110001000'
+
+DUX.L1:
+  canonical_name: ["DuX", "L₁"]
+  rows: 16
+  cols: 16
+  year: [2026]
+  cipher: true
+  origin: "https://doi.org/10.1007/s10623-026-01855-5"
+  paper_title: "Wu, Dong, Li, Liu, Zhang, Cheng, Tan, Zhang. DuX: a block cipher for efficient FHE evaluation; Designs, Codes and Cryptography 94 (2026), article 140, Sect. 3.2."
+  note: "L1 of DuX over F_{2^n}, the circulant M1 = Circ(1, 0, 0, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 0, 1), the layer used in a round whose key has its two lowest bits differing. It is DUX.L0 followed by a rotation of the words by 12, checked here. The designers state branch number 5 over (F_{2^n}^4)^4, that is for the sixteen words taken as four blocks of four, which is not a word-wise MDS claim, so no branch_number is recorded. The four DuX layers and the YuX pair are also restated, with the same rotation sets, by Ren et al., Practical Key Recovery Attacks on Full DuX and Reduced-Round YuX, ePrint 2026/2045 (https://eprint.iacr.org/2026/2045). It is the same matrix as DUX.L0 up to a permutation of rows and columns, and the same up to a permutation of rows and columns as the inverse of DUX.L0INV, DUX.L1INV, so a circuit for one serves the other once the wires are renamed, and in the inverse case the direction reversed."
+  formula: "Circulant on sixteen words of F_{2^n} with first row the rotation set [0, 3, 4, 5, 6, 8, 10, 11, 12, 13, 15], entry (i, j) being 1 when (j - i) mod 16 is in the set; on bits, kron(M, I_n), with n = 8 or 16 for the instances the paper fixes."
+  involution: false
+  symmetric: false
+  rank: 16
+  invertible: true
+  order: 16
+  hamming_weight: 176
+  orbit: 1
+  similarity: ["DUX.L0", "DUX.L0INV", "DUX.L1INV"]
+  hamming_weight_per_row: [11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11]
+  matrix:
+    - '1001111010111101'
+    - '1100111101011110'
+    - '0110011110101111'
+    - '1011001111010111'
+    - '1101100111101011'
+    - '1110110011110101'
+    - '1111011001111010'
+    - '0111101100111101'
+    - '1011110110011110'
+    - '0101111011001111'
+    - '1010111101100111'
+    - '1101011110110011'
+    - '1110101111011001'
+    - '1111010111101100'
+    - '0111101011110110'
+    - '0011110101111011'
+
+DUX.L1INV:
+  canonical_name: ["DuX", "L₁⁻¹"]
+  rows: 16
+  cols: 16
+  year: [2026]
+  cipher: true
+  origin: "https://doi.org/10.1007/s10623-026-01855-5"
+  paper_title: "Wu, Dong, Li, Liu, Zhang, Cheng, Tan, Zhang. DuX: a block cipher for efficient FHE evaluation; Designs, Codes and Cryptography 94 (2026), article 140, Sect. 3.2."
+  note: "The inverse of DUX.L1, printed as the rotations 1, 5, 8, 12, 13. It is DUX.L0INV followed by a rotation of the words by 4, as Proposition 1 of ePrint 2026/2045 states and as was checked here. The designers state branch number 5 over (F_{2^n}^4)^4, that is for the sixteen words taken as four blocks of four, which is not a word-wise MDS claim, so no branch_number is recorded. The four DuX layers and the YuX pair are also restated, with the same rotation sets, by Ren et al., Practical Key Recovery Attacks on Full DuX and Reduced-Round YuX, ePrint 2026/2045 (https://eprint.iacr.org/2026/2045). It is the same matrix as DUX.L0INV up to a permutation of rows and columns, and the same up to a permutation of rows and columns as the inverse of DUX.L0, DUX.L1, so a circuit for one serves the other once the wires are renamed, and in the inverse case the direction reversed."
+  formula: "Circulant on sixteen words of F_{2^n} with first row the rotation set [1, 5, 8, 12, 13], entry (i, j) being 1 when (j - i) mod 16 is in the set; on bits, kron(M, I_n), with n = 8 or 16 for the instances the paper fixes."
+  involution: false
+  symmetric: false
+  rank: 16
+  invertible: true
+  order: 16
+  hamming_weight: 80
+  orbit: 1
+  similarity: ["DUX.L0", "DUX.L0INV", "DUX.L1"]
+  hamming_weight_per_row: [5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5]
+  matrix:
+    - '0100010010001100'
+    - '0010001001000110'
+    - '0001000100100011'
+    - '1000100010010001'
+    - '1100010001001000'
+    - '0110001000100100'
+    - '0011000100010010'
+    - '0001100010001001'
+    - '1000110001000100'
+    - '0100011000100010'
+    - '0010001100010001'
+    - '1001000110001000'
+    - '0100100011000100'
+    - '0010010001100010'
+    - '0001001000110001'
+    - '1000100100011000'
+
 GF16.ECCSQR:
   canonical_name: ["GF(2¹⁶)", "squaring, elliptic-curve representation"]
   aliases: ["GF16ECCSQR"]
@@ -372,13 +520,14 @@ GF8.SQR:
 JOLTIK:
   canonical_name: ["Joltik"]
   aliases: ["SKOP15.IS16"]
+  reuse: ["LOONG.MIXROW"]
   rows: 16
   cols: 16
   year: [2014]
   cipher: true
   origin: "https://competitions.cr.yp.to/round1/joltikv11.pdf"
   source: "NIST Circuit Complexity: https://csrc.nist.gov/Projects/circuit-complexity/list-of-circuits"
-  note: "MixColumns of Joltik. The same matrix is the involutory 4 x 4 over GF(2^4) of Sim, Khoo, Oggier and Peyrin (FSE 2015), which the catalogue held separately as SKOP15.IS16 until that key was retired in favour of the earlier publication. The same matrix as LW16.I16 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. Neither specification says so; it is established here."
+  note: "MixColumns of Joltik. The same matrix is the involutory 4 x 4 over GF(2^4) of Sim, Khoo, Oggier and Peyrin (FSE 2015), which the catalogue held separately as SKOP15.IS16 until that key was retired in favour of the earlier publication. The same matrix as LW16.I16 up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. Neither specification says so; it is established here. LOONG.MIXCOLUMN is this matrix with its rows in reverse order, as the Loong paper builds it, and Loong's MixRows uses this matrix itself."
   involution: true
   symmetric: false
   rank: 16
@@ -386,7 +535,7 @@ JOLTIK:
   order: 2
   hamming_weight: 88
   orbit: 8
-  similarity: ["LW16.I16"]
+  similarity: ["LOONG.MIXCOLUMN", "LW16.I16"]
   hamming_weight_per_row: [7, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5]
   matrix:
     - '1000001011001110'
@@ -589,6 +738,45 @@ LED.MIXCOLUMNSERIAL:
     - '1100001010011001'
     - '0100000110001000'
 
+LOONG.MIXCOLUMN:
+  canonical_name: ["Loong", "MixColumns"]
+  rows: 16
+  cols: 16
+  year: [2019]
+  cipher: true
+  origin: "https://doi.org/10.1109/ACCESS.2019.2940330"
+  paper_title: "Liu, Li, Wu, Xie, Li. Loong: A Family of Involutional Lightweight Block Cipher Based on SPN Structure; IEEE Access 7 (2019), 136023-136035, Equation (5)."
+  note: "The matrix M' of Loong, applied to each column of four nibbles in MixColumns. It is the involutory MDS matrix M of MixRows with its rows taken in reverse order, and M M' is the anti-identity, as Equation (5) of the paper states and as was checked here. M itself is JOLTIK byte for byte and is recorded there as a reuse, so it has no entry of its own. A reversal of rows is a permutation of rows, so this matrix is JOLTIK, and LW16.I16 with it, up to a permutation of rows and columns, and a circuit for either is a circuit for this one once the wires are renamed."
+  formula: "The 4 x 4 matrix M' = [[13, 9, 4, 1], [9, 13, 1, 4], [4, 1, 13, 9], [1, 4, 9, 13]] over GF(2^4) modulo x^4 + x + 1, each element written out as its 4 x 4 multiplication matrix, the least significant bit of a cell first."
+  involution: true
+  symmetric: false
+  rank: 16
+  invertible: true
+  order: 2
+  branch_number: 5
+  mds: true
+  hamming_weight: 88
+  orbit: 8
+  similarity: ["JOLTIK", "LW16.I16"]
+  hamming_weight_per_row: [7, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5]
+  matrix:
+    - '1110110000101000'
+    - '0001001000110100'
+    - '1000000110010010'
+    - '1100100001000001'
+    - '1100111010000010'
+    - '0010000101000011'
+    - '0001100000101001'
+    - '1000110000010100'
+    - '0010100011101100'
+    - '0011010000010010'
+    - '1001001010000001'
+    - '0100000111001000'
+    - '1000001011001110'
+    - '0100001100100001'
+    - '0010100100011000'
+    - '0001010010001100'
+
 LS16.S16:
   canonical_name: ["Liu-Sim", "4 × 4 over GF(2⁴)"]
   aliases: ["FSE_LimSim16", "FSE_LiuSim16", "FSE_LimSim16_4x4_4", "FSE_LiuSim16_8x8_8"]
@@ -709,7 +897,7 @@ LW16.I16:
   cipher: false
   origin: "https://tosc.iacr.org/index.php/ToSC"
   source: "URL: XZLBZ: https://github.com/xiangzejun/Optimizing_Implementations_of_Linear_Layers/blob/master/Implementations/FSE_LiWang16_i_4x4_4.txt; NIST Circuit Complexity: https://csrc.nist.gov/Projects/circuit-complexity/list-of-circuits"
-  note: "The same matrix as JOLTIK up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. Neither specification says so; it is established here."
+  note: "The same matrix as JOLTIK up to a permutation of rows and columns, so a circuit for one is a circuit for the other once the wires are renamed. Neither specification says so; it is established here. LOONG.MIXCOLUMN, being JOLTIK with its rows in reverse order, is related to this matrix the same way."
   involution: true
   symmetric: false
   rank: 16
@@ -717,7 +905,7 @@ LW16.I16:
   order: 2
   hamming_weight: 88
   orbit: 8
-  similarity: ["JOLTIK"]
+  similarity: ["JOLTIK", "LOONG.MIXCOLUMN"]
   hamming_weight_per_row: [7, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5]
   matrix:
     - '1000010011011001'
@@ -1032,6 +1220,41 @@ SATURNIN.MIXCOLUMN:
     - '0010001010011101'
     - '0001000101000110'
 
+SCREAM.L:
+  canonical_name: ["Scream", "L"]
+  rows: 16
+  cols: 16
+  year: [2014, 2015]
+  cipher: true
+  origin: "https://competitions.cr.yp.to/round2/screamv3.pdf"
+  paper_title: "Grosso, Leurent, Standaert, Varici, Durvaux, Gaspar, Kerckhof. Scream, version 3, a candidate of the CAESAR competition. The family is that of Grosso, Leurent, Standaert, Varici, LS-Designs, FSE 2014."
+  note: "The L-box of Scream, the linear half of an LS-design. Such a cipher puts an 8-bit SBox down each column of the state and this 16-bit L-box along each row, so the L-box is the whole of the diffusion. Its branch number is 8, which the submission states and which was computed here over all 65535 non-zero inputs; 8 is the most a 16-bit L-box can reach, a box of l bits and branch number b being a binary code of parameters [2l, l, b]. Robin, of the same family, uses an involutive L-box instead, and that one is not this matrix."
+  formula: "The 16 x 16 matrix the submission prints as Figure 1, applied to each row of a state of 16 columns by 8 rows."
+  involution: false
+  symmetric: false
+  rank: 16
+  invertible: true
+  order: 120
+  branch_number: 8
+  hamming_weight_per_row: [7, 7, 11, 7, 11, 7, 7, 11, 7, 11, 7, 11, 7, 11, 7, 7]
+  matrix:
+    - '0011101000011100'
+    - '1001010101001010'
+    - '1100110111011110'
+    - '1000001101101001'
+    - '1011011011101011'
+    - '0000011101011100'
+    - '0010010010100111'
+    - '1010010101111111'
+    - '1101001001100010'
+    - '1111010110001111'
+    - '1100110010000101'
+    - '0010111011111110'
+    - '0100100011100110'
+    - '1111011001011110'
+    - '1101100000001110'
+    - '1000110101010001'
+
 SEFA.MDS16:
   canonical_name: ["SEFA", "MDSLayer, 4 × 4 over GF(2⁴)"]
   rows: 16
@@ -1282,3 +1505,77 @@ TWINKLE.MIXSLICE:
     - '0010000001000100'
     - '0001000000100010'
     - '0000100000010001'
+
+YUX.LP:
+  canonical_name: ["YuX", "LP"]
+  rows: 16
+  cols: 16
+  year: [2024]
+  cipher: true
+  origin: "https://doi.org/10.1109/TIT.2024.3349414"
+  paper_title: "Liu, Li, Chen, Jiao, Luo, Wang. YuX: Finite Field Multiplication Based Block Ciphers for Efficient FHE Evaluation; IEEE Transactions on Information Theory 70 (5) (2024), 3729-3749, Sect. IV-A.3 and IV-B.1."
+  note: "The encryption linear layer LP of Yu2X-n, the instances of YuX over F_{2^n}, the sum of the rotations 1, 2, 3, 5, 6, 7, 8, 12, 13, 14, 15. YuX has one linear layer and no key dependent choice. Over F_p (YupX) LP is a dense circulant instead, which is out of scope here. The designers state branch number 5 over (F_{2^n}^4)^4, that is for the sixteen words taken as four blocks of four, which is not a word-wise MDS claim, so no branch_number is recorded. The four DuX layers and the YuX pair are also restated, with the same rotation sets, by Ren et al., Practical Key Recovery Attacks on Full DuX and Reduced-Round YuX, ePrint 2026/2045 (https://eprint.iacr.org/2026/2045). It is the same up to a permutation of rows and columns as the inverse of YUX.LPINV, so a circuit for one serves the other once the wires are renamed, and in the inverse case the direction reversed."
+  formula: "Circulant on sixteen words of F_{2^n} with first row the rotation set [1, 2, 3, 5, 6, 7, 8, 12, 13, 14, 15], entry (i, j) being 1 when (j - i) mod 16 is in the set; on bits, kron(M, I_n), with n = 8 or 16 for the instances the paper fixes."
+  involution: false
+  symmetric: false
+  rank: 16
+  invertible: true
+  order: 8
+  hamming_weight: 176
+  orbit: 1
+  similarity: ["YUX.LPINV"]
+  hamming_weight_per_row: [11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11]
+  matrix:
+    - '0111011110001111'
+    - '1011101111000111'
+    - '1101110111100011'
+    - '1110111011110001'
+    - '1111011101111000'
+    - '0111101110111100'
+    - '0011110111011110'
+    - '0001111011101111'
+    - '1000111101110111'
+    - '1100011110111011'
+    - '1110001111011101'
+    - '1111000111101110'
+    - '0111100011110111'
+    - '1011110001111011'
+    - '1101111000111101'
+    - '1110111100011110'
+
+YUX.LPINV:
+  canonical_name: ["YuX", "LP⁻¹"]
+  rows: 16
+  cols: 16
+  year: [2024]
+  cipher: true
+  origin: "https://doi.org/10.1109/TIT.2024.3349414"
+  paper_title: "Liu, Li, Chen, Jiao, Luo, Wang. YuX: Finite Field Multiplication Based Block Ciphers for Efficient FHE Evaluation; IEEE Transactions on Information Theory 70 (5) (2024), 3729-3749, Sect. IV-A.3 and IV-B.1."
+  note: "The inverse LP^-1 = M of YUX.LP, the sum of the rotations 0, 3, 4, 8, 9, 12, 14, over both fields; it is the direction a homomorphic decryption evaluates. The designers' code computes this sum in its decryption, and YUX.LP times this matrix is the identity, checked here. The designers state branch number 5 over (F_{2^n}^4)^4, that is for the sixteen words taken as four blocks of four, which is not a word-wise MDS claim, so no branch_number is recorded. The four DuX layers and the YuX pair are also restated, with the same rotation sets, by Ren et al., Practical Key Recovery Attacks on Full DuX and Reduced-Round YuX, ePrint 2026/2045 (https://eprint.iacr.org/2026/2045). It is the same up to a permutation of rows and columns as the inverse of YUX.LP, so a circuit for one serves the other once the wires are renamed, and in the inverse case the direction reversed."
+  formula: "Circulant on sixteen words of F_{2^n} with first row the rotation set [0, 3, 4, 8, 9, 12, 14], entry (i, j) being 1 when (j - i) mod 16 is in the set; on bits, kron(M, I_n), with n = 8 or 16 for the instances the paper fixes."
+  involution: false
+  symmetric: false
+  rank: 16
+  invertible: true
+  order: 8
+  hamming_weight: 112
+  orbit: 1
+  similarity: ["YUX.LP"]
+  hamming_weight_per_row: [7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7]
+  matrix:
+    - '1001100011001010'
+    - '0100110001100101'
+    - '1010011000110010'
+    - '0101001100011001'
+    - '1010100110001100'
+    - '0101010011000110'
+    - '0010101001100011'
+    - '1001010100110001'
+    - '1100101010011000'
+    - '0110010101001100'
+    - '0011001010100110'
+    - '0001100101010011'
+    - '1000110010101001'
+    - '1100011001010100'
+    - '0110001100101010'
+    - '0011000110010101'
