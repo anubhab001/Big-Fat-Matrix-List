@@ -2,7 +2,7 @@
 
 Public collection of GF(2) matrices used in cryptography
 
-Last update: 1 November 2026 <!-- TODO: To be updated in UTC with each (major) commit/push -->
+Last update: 7 November 2026 <!-- TODO: To be updated in UTC with each (major) commit/push -->
 
 ## Organisation
 
@@ -43,7 +43,7 @@ Each YAML file holds entries binned by `max(rows, cols)`. For sizes up to $256$ 
 | File | # Entry | Size | Index |
 |:------|:-------:|:-------------|:------|
 | [`square/16bit.yaml`](square/16bit.yaml) | 44 | $4 \times 4$, $8 \times 8$, $16 \times 16$ | [`square/16bit.md`](square/16bit.md) |
-| [`square/32bit.yaml`](square/32bit.yaml) | 56 | $20 \times 20$, $24 \times 24$, $25 \times 25$, $28 \times 28$, $32 \times 32$ | [`square/32bit.md`](square/32bit.md) |
+| [`square/32bit.yaml`](square/32bit.yaml) | 80 | $20 \times 20$, $24 \times 24$, $25 \times 25$, $28 \times 28$, $32 \times 32$ | [`square/32bit.md`](square/32bit.md) |
 | [`square/64bit.part01.yaml`](square/64bit.part01.yaml), [`square/64bit.part02.yaml`](square/64bit.part02.yaml), [`square/64bit.part03.yaml`](square/64bit.part03.yaml) | 163 | $40 \times 40$, $48 \times 48$, $50 \times 50$, $56 \times 56$, $60 \times 60$, $64 \times 64$ | [`square/64bit.md`](square/64bit.md) |
 | [`square/128bit.part01.yaml`](square/128bit.part01.yaml), [`square/128bit.part02.yaml`](square/128bit.part02.yaml) | 27 | $100 \times 100$, $127 \times 127$, $128 \times 128$ | [`square/128bit.md`](square/128bit.md) |
 | [`square/256bit.part01.yaml`](square/256bit.part01.yaml), [`square/256bit.part02.yaml`](square/256bit.part02.yaml), [`square/256bit.part03.yaml`](square/256bit.part03.yaml), [`square/256bit.part04.yaml`](square/256bit.part04.yaml) | 24 | $163 \times 163$, $192 \times 192$, $200 \times 200$, $233 \times 233$, $256 \times 256$ | [`square/256bit.md`](square/256bit.md) |
@@ -79,7 +79,7 @@ Each YAML file holds entries binned by `max(rows, cols)`. For sizes up to $256$ 
 
 | File | # Entry | Index |
 |:------|:-------:|:------|
-| [`permutations.yaml`](permutations.yaml) | 45 | [`permutations.md`](permutations.md) |
+| [`permutations.yaml`](permutations.yaml) | 46 | [`permutations.md`](permutations.md) |
 
 ### Visual Renders
 
@@ -175,6 +175,8 @@ a field compulsory only for one kind of entry with †.
 21. The catalogue holds matrices over `GF(2)` and, through the `GF<n>.*` entries, over `GF(2^n)`. Diffusion layers defined over a prime field $\mathrm{F}_p$ are out of scope, since their entries are not bits and no `GF(2)` matrix represents them. The MDS matrices of Poseidon and Poseidon2 are of this kind, being defined over the scalar field of a prime-order group for arithmetisation-friendly hashing, so neither is catalogued here.
 
 22. A linear layer that is drawn at random rather than fixed by the specification has no single matrix to hold, so it too is out of scope. LowMC generates a fresh random `GF(2)` layer for every instance from a seed, and the code-based schemes, such as BIKE, Classic McEliece and HQC, carry instance-specific parity-check structure rather than a named diffusion matrix; none is catalogued here.
+
+23. `DUX.*` and `YUX.*` act on sixteen words of $\mathrm{GF}(2^n)$ with coefficients $0$ and $1$, so they are held at word level as $16 \times 16$, as `AETHER.MB` is; on bits each is `kron(M, I_n)`. Their inverses are held as well (`DUX.L0INV`, `DUX.L1INV`, `YUX.LPINV`), since the designers print them and a homomorphic decryption evaluates them.
 
 ## Python Loader
 

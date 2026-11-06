@@ -2,7 +2,7 @@
 
 Source data: [`permutations.yaml`](permutations.yaml).
 
-Entry count: 45.
+Entry count: 46.
 
 | Key | Preview | Shape | Year | Properties | Origin |
 |:----|:-------:|:-----:|:----:|:-----------|:-------|
@@ -31,6 +31,7 @@ Entry count: 45.
 | **GLEEOK.PI256B3**<br/>Gleeok-256, π₃ | <img src="__renders__/GLEEOK.PI256B3.png" width="192" alt="GLEEOK.PI256B3" /> | 256 | 2024 | order = 32 | [link](https://tches.iacr.org/index.php/TCHES) |
 | **JOLTIK.H**<br/>Joltik, h | <img src="__renders__/JOLTIK.H.png" width="192" alt="JOLTIK.H" /> | 64 | 2014 | order = 8 | [link](https://competitions.cr.yp.to/round2/joltikv13.pdf) |
 | **KLEIN.ROTATENIBBLES**<br/>KLEIN, RotateNibbles | <img src="__renders__/KLEIN.ROTATENIBBLES.png" width="192" alt="KLEIN.ROTATENIBBLES" /> | 64 | 2011 | order = 4 | [link](https://doi.org/10.1007/978-3-642-25286-0_1) |
+| **LBLOCK.P**<br/>LBlock, P | <img src="__renders__/LBLOCK.P.png" width="192" alt="LBLOCK.P" /> | 32 | 2011 | order = 4 | [link](https://eprint.iacr.org/2011/345) |
 | **MERIDIAN.MER**<br/>MERIDIAN, Mer | <img src="__renders__/MERIDIAN.MER.png" width="192" alt="MERIDIAN.MER" /> | 128 | 2026 | order = 4 | [link](https://eprint.iacr.org/2026/856) |
 | **MERIDIAN.PAR**<br/>MERIDIAN, Par | <img src="__renders__/MERIDIAN.PAR.png" width="192" alt="MERIDIAN.PAR" /> | 128 | 2026 | order = 4 | [link](https://eprint.iacr.org/2026/856) |
 | **PIPO.R**<br/>PIPO, R-layer | <img src="__renders__/PIPO.R.png" width="192" alt="PIPO.R" /> | 64 | 2020 | order = 8 | [link](https://doi.org/10.1007/978-3-030-68890-5_6) |

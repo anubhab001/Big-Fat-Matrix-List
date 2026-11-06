@@ -895,6 +895,31 @@ KLEIN.ROTATENIBBLES:
     - [15, 63, 47, 31]
   perm: [48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47]
 
+LBLOCK.P:
+  canonical_name: ["LBlock", "P"]
+  size: 32
+  year: [2011]
+  cipher: true
+  origin: "https://eprint.iacr.org/2011/345"
+  paper_title: "Wu, Zhang. LBlock: A Lightweight Block Cipher; ACNS 2011, corrected version ePrint 2011/345, Sect. 2.2."
+  note: "The diffusion function P of the LBlock round function, a permutation of the eight nibbles of a 32-bit half, each nibble keeping its four bits in order."
+  formula: "U7 = Z6, U6 = Z4, U5 = Z7, U4 = Z5, U3 = Z2, U2 = Z0, U1 = Z3, U0 = Z1, so nibble j moves to position [2, 0, 3, 1, 6, 4, 7, 5][j]."
+  involution: false
+  order: 4
+  inversion: 96
+  fixed_points: []
+  cycle_lengths: [4, 4, 4, 4, 4, 4, 4, 4]
+  disjoint_cycles:
+    - [0, 8, 12, 4]
+    - [1, 9, 13, 5]
+    - [2, 10, 14, 6]
+    - [3, 11, 15, 7]
+    - [16, 24, 28, 20]
+    - [17, 25, 29, 21]
+    - [18, 26, 30, 22]
+    - [19, 27, 31, 23]
+  perm: [8, 9, 10, 11, 0, 1, 2, 3, 12, 13, 14, 15, 4, 5, 6, 7, 24, 25, 26, 27, 16, 17, 18, 19, 28, 29, 30, 31, 20, 21, 22, 23]
+
 MERIDIAN.MER:
   canonical_name: ["MERIDIAN", "Mer"]
   size: 128
