@@ -44,7 +44,7 @@ Each YAML file holds entries binned by `max(rows, cols)`. For sizes up to $256$ 
 |:------|:-------:|:-------------|:------|
 | [`square/16bit.yaml`](square/16bit.yaml) | 44 | $4 \times 4$, $8 \times 8$, $16 \times 16$ | [`square/16bit.md`](square/16bit.md) |
 | [`square/32bit.yaml`](square/32bit.yaml) | 80 | $20 \times 20$, $24 \times 24$, $25 \times 25$, $28 \times 28$, $32 \times 32$ | [`square/32bit.md`](square/32bit.md) |
-| [`square/64bit.part01.yaml`](square/64bit.part01.yaml), [`square/64bit.part02.yaml`](square/64bit.part02.yaml), [`square/64bit.part03.yaml`](square/64bit.part03.yaml) | 163 | $40 \times 40$, $48 \times 48$, $50 \times 50$, $56 \times 56$, $60 \times 60$, $64 \times 64$ | [`square/64bit.md`](square/64bit.md) |
+| [`square/64bit.part01.yaml`](square/64bit.part01.yaml), [`square/64bit.part02.yaml`](square/64bit.part02.yaml), [`square/64bit.part03.yaml`](square/64bit.part03.yaml) | 164 | $40 \times 40$, $48 \times 48$, $50 \times 50$, $56 \times 56$, $60 \times 60$, $64 \times 64$ | [`square/64bit.md`](square/64bit.md) |
 | [`square/128bit.part01.yaml`](square/128bit.part01.yaml), [`square/128bit.part02.yaml`](square/128bit.part02.yaml) | 27 | $100 \times 100$, $127 \times 127$, $128 \times 128$ | [`square/128bit.md`](square/128bit.md) |
 | [`square/256bit.part01.yaml`](square/256bit.part01.yaml), [`square/256bit.part02.yaml`](square/256bit.part02.yaml), [`square/256bit.part03.yaml`](square/256bit.part03.yaml), [`square/256bit.part04.yaml`](square/256bit.part04.yaml) | 24 | $163 \times 163$, $192 \times 192$, $200 \times 200$, $233 \times 233$, $256 \times 256$ | [`square/256bit.md`](square/256bit.md) |
 | [`square/257bit.yaml`](square/257bit.yaml) | 1 | $257 \times 257$ | [`square/257bit.md`](square/257bit.md) |

@@ -4,7 +4,7 @@ Source data: [`64bit.part01.yaml`](64bit.part01.yaml), [`64bit.part02.yaml`](64b
 
 The band is published as several parts so that every file renders on GitHub; `bigfatmatrix.py` merges them back into one entry per key.
 
-Entry count: 163.
+Entry count: 164.
 
 | Key | Preview | Shape | Year | Properties | Origin |
 |:----|:-------:|:-----:|:----:|:-----------|:-------|
@@ -146,6 +146,7 @@ Entry count: 163.
 | **KLEIN.MIXNIBBLES**<br/>KLEIN, MixNibbles | <img src="../__renders__/KLEIN.MIXNIBBLES.png" width="160" alt="KLEIN.MIXNIBBLES" /> | 64 x 64 | 2011 | order = 4 | [link](https://doi.org/10.1007/978-3-642-25286-0_1) |
 | **KLSW17.IS64**<br/>Kranz-Leander-Stoffelen-Wiemer, M⁻¹, 8 × 8 over GF(2⁸) | <img src="../__renders__/KLSW17.IS64.png" width="160" alt="KLSW17.IS64" /> | 64 x 64 | 2017 | involution, order = 2 | [link](https://tosc.iacr.org/index.php/ToSC/article/view/805) |
 | **KLSW17.S64**<br/>Kranz-Leander-Stoffelen-Wiemer, M, 8 × 8 over GF(2⁸) | <img src="../__renders__/KLSW17.S64.png" width="160" alt="KLSW17.S64" /> | 64 x 64 | 2017 | - | [link](https://tosc.iacr.org/index.php/ToSC/article/view/805) |
+| **LBLOCK.ROUND**<br/>LBlock, round, linear part | <img src="../__renders__/LBLOCK.ROUND.png" width="160" alt="LBLOCK.ROUND" /> | 64 x 64 | 2011 | order = 24 | [link](https://eprint.iacr.org/2011/345) |
 | **LS16.S64**<br/>Liu-Sim, 8 × 8 over GF(2⁸) | <img src="../__renders__/LS16.S64.png" width="160" alt="LS16.S64" /> | 64 x 64 | 2016 | order = 2040 | [link](https://tosc.iacr.org/index.php/ToSC) |
 | **PHOTON.P288**<br/>PHOTON, P₂₈₈ | <img src="../__renders__/PHOTON.P288.png" width="160" alt="PHOTON.P288" /> | 48 x 48 | 2011 | - | [link](https://doi.org/10.1007/978-3-642-22792-9_13) |
 | **PRINCE.MPRIME**<br/>PRINCE, M′ | <img src="../__renders__/PRINCE.MPRIME.png" width="160" alt="PRINCE.MPRIME" /> | 64 x 64 | 2012 | involution, symmetric, order = 2 | [link](https://eprint.iacr.org/2012/529) |
