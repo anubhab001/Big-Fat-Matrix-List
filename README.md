@@ -2,7 +2,7 @@
 
 Public collection of GF(2) matrices used in cryptography
 
-Last update: 7 November 2026 <!-- TODO: To be updated in UTC with each (major) commit/push -->
+Last update: 10 November 2026 <!-- TODO: To be updated in UTC with each (major) commit/push -->
 
 ## Organisation
 
@@ -43,7 +43,7 @@ Each YAML file holds entries binned by `max(rows, cols)`. For sizes up to $256$ 
 | File | # Entry | Size | Index |
 |:------|:-------:|:-------------|:------|
 | [`square/16bit.yaml`](square/16bit.yaml) | 44 | $4 \times 4$, $8 \times 8$, $16 \times 16$ | [`square/16bit.md`](square/16bit.md) |
-| [`square/32bit.yaml`](square/32bit.yaml) | 80 | $20 \times 20$, $24 \times 24$, $25 \times 25$, $28 \times 28$, $32 \times 32$ | [`square/32bit.md`](square/32bit.md) |
+| [`square/32bit.yaml`](square/32bit.yaml) | 81 | $20 \times 20$, $24 \times 24$, $25 \times 25$, $28 \times 28$, $32 \times 32$ | [`square/32bit.md`](square/32bit.md) |
 | [`square/64bit.part01.yaml`](square/64bit.part01.yaml), [`square/64bit.part02.yaml`](square/64bit.part02.yaml), [`square/64bit.part03.yaml`](square/64bit.part03.yaml) | 164 | $40 \times 40$, $48 \times 48$, $50 \times 50$, $56 \times 56$, $60 \times 60$, $64 \times 64$ | [`square/64bit.md`](square/64bit.md) |
 | [`square/128bit.part01.yaml`](square/128bit.part01.yaml), [`square/128bit.part02.yaml`](square/128bit.part02.yaml) | 27 | $100 \times 100$, $127 \times 127$, $128 \times 128$ | [`square/128bit.md`](square/128bit.md) |
 | [`square/256bit.part01.yaml`](square/256bit.part01.yaml), [`square/256bit.part02.yaml`](square/256bit.part02.yaml), [`square/256bit.part03.yaml`](square/256bit.part03.yaml), [`square/256bit.part04.yaml`](square/256bit.part04.yaml) | 24 | $163 \times 163$, $192 \times 192$, $200 \times 200$, $233 \times 233$, $256 \times 256$ | [`square/256bit.md`](square/256bit.md) |
@@ -166,7 +166,7 @@ a field compulsory only for one kind of entry with †.
 
 18. `inversion` counts the pairs of positions the permutation puts out of order, that is the pairs $i < j$ with $P[i] > P[j]$. It is the number of adjacent swaps needed to sort it back to the identity, so it says how far the permutation moves its inputs, and it runs from $0$ for the identity to $N(N-1)/2$ for the reversal. It is recorded for a `perm` entry and for a matrix whose body is a permutation matrix. The parity of the permutation is this count modulo two, so it is not recorded separately, and it is invisible in the matrix itself: over `GF(2)` every permutation matrix has determinant $1$. That parity is what decides the fifteen puzzle, whose position is reachable exactly when the permutation of the tiles, composed with the moves of the blank, is even. Of the bit-permutations catalogued here, `GLEEOK.PI128B3`, `GLEEOK.PI256B3`, `SPEEDY.SC` and `TWINKLE.LANEROTATION0` have an odd count and the rest an even one.
 
-19. A matrix is worth rebuilding from the specification rather than taking it from a corpus. `ANUBIS.H` and `CLEFIA.M0` are one matrix, the Hadamard array $(1, 2, 4, 6)$ over `GF(2^8)` modulo $x^8 + x^4 + x^3 + x^2 + 1$, which is the field both specifications name. It is held once, on Anubis as the earlier publication by seven years, and `CLEFIA.M0` reads through to it. The catalogue previously carried an Anubis body built over the Rijndael polynomial instead, a matrix neither cipher uses, and on the strength of it recorded that the two were unrelated.
+19. A matrix is worth rebuilding from the specification rather than taking it from a corpus. `ANUBIS.H` and `CLEFIA.M0` are one matrix, the Hadamard array $(1, 2, 4, 6)$ over `GF(2^8)` modulo $x^8 + x^4 + x^3 + x^2 + 1$, which is the field both specifications name. It is held once, on Anubis as the earlier publication by seven years, and `CLEFIA.M0` reads through to it. The catalogue previously carried an Anubis body built over the Rijndael polynomial instead, a matrix neither cipher uses, and on the strength of it recorded that the two were unrelated. That body is now held as `KLSW17.ANUBIS`, the matrix Kranz et al. file as Anubis.
 
     Where two matrices really do differ, the row weights are how to see it. A permutation of rows and columns preserves the multiset of row weights, so a difference there settles the question without a search, and `hamming_weight_per_row` shows it at a glance. A shared total weight shows nothing on its own: these two bodies both carried $216$ ones while one of them was wrong.
 

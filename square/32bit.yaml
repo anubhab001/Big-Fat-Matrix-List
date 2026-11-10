@@ -1030,6 +1030,61 @@ KECCAK.25:
     - '0010100101001010010100111'
     - '1001010010100101001010011'
 
+KLSW17.ANUBIS:
+  canonical_name: ["Kranz-Leander-Stoffelen-Wiemer", "Anubis"]
+  rows: 32
+  cols: 32
+  year: [2017]
+  cipher: false
+  origin: "https://doi.org/10.46586/tosc.v2017.i4.188-211"
+  source: "https://github.com/rub-hgi/shorter_linear_slps_for_mds_matrices (matrices_bp_format/Anubis.txt)"
+  paper_title: "Kranz, Leander, Stoffelen, Wiemer. Shorter Linear Straight-Line Programs for MDS Matrices; IACR ToSC 2017 (4)."
+  note: "The matrix the authors file as Anubis. It is not the Anubis matrix: Anubis takes the same array (1, 2, 4, 6) modulo x^8 + x^4 + x^3 + x^2 + 1 (0x11D), held as ANUBIS.H, while this body is over the AES polynomial 0x11B, which no cipher found so far uses with this array. Kept under the paper's key so that circuits reported for \"Anubis\" from this source can be traced to the matrix they really compute."
+  formula: "Hadamard array (1, 2, 4, 6) over GF(2^8) modulo x^8 + x^4 + x^3 + x + 1 (0x11B), each element written out as its 8 x 8 multiplication matrix, the least significant bit first."
+  involution: true
+  symmetric: false
+  rank: 32
+  invertible: true
+  order: 2
+  branch_number: 5
+  mds: true
+  hamming_weight: 216
+  orbit: 16
+  hamming_weight_per_row: [5, 7, 7, 9, 9, 7, 5, 5, 5, 7, 7, 9, 9, 7, 5, 5, 5, 7, 7, 9, 9, 7, 5, 5, 5, 7, 7, 9, 9, 7, 5, 5]
+  matrix:
+    - '10000000000000010000001000000011'
+    - '01000000100000010000001110000010'
+    - '00100000010000001000000111000001'
+    - '00010000001000010100001001100011'
+    - '00001000000100010010001100110010'
+    - '00000100000010000001000100011001'
+    - '00000010000001000000100000001100'
+    - '00000001000000100000010000000110'
+    - '00000001100000000000001100000010'
+    - '10000001010000001000001000000011'
+    - '01000000001000001100000110000001'
+    - '00100001000100000110001101000010'
+    - '00010001000010000011001000100011'
+    - '00001000000001000001100100010001'
+    - '00000100000000100000110000001000'
+    - '00000010000000010000011000000100'
+    - '00000010000000111000000000000001'
+    - '00000011100000100100000010000001'
+    - '10000001110000010010000001000000'
+    - '01000010011000110001000000100001'
+    - '00100011001100100000100000010001'
+    - '00010001000110010000010000001000'
+    - '00001000000011000000001000000100'
+    - '00000100000001100000000100000010'
+    - '00000011000000100000000110000000'
+    - '10000010000000111000000101000000'
+    - '11000001100000010100000000100000'
+    - '01100011010000100010000100010000'
+    - '00110010001000110001000100001000'
+    - '00011001000100010000100000000100'
+    - '00001100000010000000010000000010'
+    - '00000110000001000000001000000001'
+
 KLSW17.IS32:
   canonical_name: ["Kranz-Leander-Stoffelen-Wiemer", "M⁻¹, 4 × 4 over GF(2⁸)"]
   rows: 32
@@ -1302,7 +1357,7 @@ LSL19.W148:
   cols: 32
   year: [2019]
   cipher: false
-  origin: "https://doi.org/10.13154/tosc.v2019.i1.84-117"
+  origin: "https://doi.org/10.46586/tosc.v2019.i1.84-117"
   source: "https://github.com/siweisun/involutory_mds"
   paper_title: "Li, Sun, Li, Wei, Hu. Constructing Low-latency Involutory MDS Matrices with Lightweight Circuits; IACR ToSC 2019 (1)."
   note: "The first of the 18 involutory MDS matrices of Hamming weight 148 in Results/148/148.txt of the authors' repository, which holds 5550 over the weights 148 to 172; one per weight is catalogued. Involution and MDS over 8-bit cells were checked here."
@@ -1356,7 +1411,7 @@ LSL19.W149:
   cols: 32
   year: [2019]
   cipher: false
-  origin: "https://doi.org/10.13154/tosc.v2019.i1.84-117"
+  origin: "https://doi.org/10.46586/tosc.v2019.i1.84-117"
   source: "https://github.com/siweisun/involutory_mds"
   paper_title: "Li, Sun, Li, Wei, Hu. Constructing Low-latency Involutory MDS Matrices with Lightweight Circuits; IACR ToSC 2019 (1)."
   note: "The first of the 48 involutory MDS matrices of Hamming weight 149 in Results/149/149.txt of the authors' repository, which holds 5550 over the weights 148 to 172; one per weight is catalogued. Involution and MDS over 8-bit cells were checked here."
@@ -1410,7 +1465,7 @@ LSL19.W150:
   cols: 32
   year: [2019]
   cipher: false
-  origin: "https://doi.org/10.13154/tosc.v2019.i1.84-117"
+  origin: "https://doi.org/10.46586/tosc.v2019.i1.84-117"
   source: "https://github.com/siweisun/involutory_mds"
   paper_title: "Li, Sun, Li, Wei, Hu. Constructing Low-latency Involutory MDS Matrices with Lightweight Circuits; IACR ToSC 2019 (1)."
   note: "The first of the 72 involutory MDS matrices of Hamming weight 150 in Results/150/150.txt of the authors' repository, which holds 5550 over the weights 148 to 172; one per weight is catalogued. Involution and MDS over 8-bit cells were checked here."
@@ -1464,7 +1519,7 @@ LSL19.W151:
   cols: 32
   year: [2019]
   cipher: false
-  origin: "https://doi.org/10.13154/tosc.v2019.i1.84-117"
+  origin: "https://doi.org/10.46586/tosc.v2019.i1.84-117"
   source: "https://github.com/siweisun/involutory_mds"
   paper_title: "Li, Sun, Li, Wei, Hu. Constructing Low-latency Involutory MDS Matrices with Lightweight Circuits; IACR ToSC 2019 (1)."
   note: "The first of the 48 involutory MDS matrices of Hamming weight 151 in Results/151/151.txt of the authors' repository, which holds 5550 over the weights 148 to 172; one per weight is catalogued. Involution and MDS over 8-bit cells were checked here."
@@ -1518,7 +1573,7 @@ LSL19.W152:
   cols: 32
   year: [2019]
   cipher: false
-  origin: "https://doi.org/10.13154/tosc.v2019.i1.84-117"
+  origin: "https://doi.org/10.46586/tosc.v2019.i1.84-117"
   source: "https://github.com/siweisun/involutory_mds"
   paper_title: "Li, Sun, Li, Wei, Hu. Constructing Low-latency Involutory MDS Matrices with Lightweight Circuits; IACR ToSC 2019 (1)."
   note: "The first of the 60 involutory MDS matrices of Hamming weight 152 in Results/152/152.txt of the authors' repository, which holds 5550 over the weights 148 to 172; one per weight is catalogued. Involution and MDS over 8-bit cells were checked here."
@@ -1572,7 +1627,7 @@ LSL19.W153:
   cols: 32
   year: [2019]
   cipher: false
-  origin: "https://doi.org/10.13154/tosc.v2019.i1.84-117"
+  origin: "https://doi.org/10.46586/tosc.v2019.i1.84-117"
   source: "https://github.com/siweisun/involutory_mds"
   paper_title: "Li, Sun, Li, Wei, Hu. Constructing Low-latency Involutory MDS Matrices with Lightweight Circuits; IACR ToSC 2019 (1)."
   note: "The first of the 72 involutory MDS matrices of Hamming weight 153 in Results/153/153.txt of the authors' repository, which holds 5550 over the weights 148 to 172; one per weight is catalogued. Involution and MDS over 8-bit cells were checked here."
@@ -1626,7 +1681,7 @@ LSL19.W154:
   cols: 32
   year: [2019]
   cipher: false
-  origin: "https://doi.org/10.13154/tosc.v2019.i1.84-117"
+  origin: "https://doi.org/10.46586/tosc.v2019.i1.84-117"
   source: "https://github.com/siweisun/involutory_mds"
   paper_title: "Li, Sun, Li, Wei, Hu. Constructing Low-latency Involutory MDS Matrices with Lightweight Circuits; IACR ToSC 2019 (1)."
   note: "The first of the 84 involutory MDS matrices of Hamming weight 154 in Results/154/154.txt of the authors' repository, which holds 5550 over the weights 148 to 172; one per weight is catalogued. Involution and MDS over 8-bit cells were checked here."
@@ -1680,7 +1735,7 @@ LSL19.W155:
   cols: 32
   year: [2019]
   cipher: false
-  origin: "https://doi.org/10.13154/tosc.v2019.i1.84-117"
+  origin: "https://doi.org/10.46586/tosc.v2019.i1.84-117"
   source: "https://github.com/siweisun/involutory_mds"
   paper_title: "Li, Sun, Li, Wei, Hu. Constructing Low-latency Involutory MDS Matrices with Lightweight Circuits; IACR ToSC 2019 (1)."
   note: "The first of the 24 involutory MDS matrices of Hamming weight 155 in Results/155/155.txt of the authors' repository, which holds 5550 over the weights 148 to 172; one per weight is catalogued. Involution and MDS over 8-bit cells were checked here."
@@ -1734,7 +1789,7 @@ LSL19.W156:
   cols: 32
   year: [2019]
   cipher: false
-  origin: "https://doi.org/10.13154/tosc.v2019.i1.84-117"
+  origin: "https://doi.org/10.46586/tosc.v2019.i1.84-117"
   source: "https://github.com/siweisun/involutory_mds"
   paper_title: "Li, Sun, Li, Wei, Hu. Constructing Low-latency Involutory MDS Matrices with Lightweight Circuits; IACR ToSC 2019 (1)."
   note: "The first of the 72 involutory MDS matrices of Hamming weight 156 in Results/156/156.txt of the authors' repository, which holds 5550 over the weights 148 to 172; one per weight is catalogued. Involution and MDS over 8-bit cells were checked here."
@@ -1788,7 +1843,7 @@ LSL19.W157:
   cols: 32
   year: [2019]
   cipher: false
-  origin: "https://doi.org/10.13154/tosc.v2019.i1.84-117"
+  origin: "https://doi.org/10.46586/tosc.v2019.i1.84-117"
   source: "https://github.com/siweisun/involutory_mds"
   paper_title: "Li, Sun, Li, Wei, Hu. Constructing Low-latency Involutory MDS Matrices with Lightweight Circuits; IACR ToSC 2019 (1)."
   note: "The first of the 96 involutory MDS matrices of Hamming weight 157 in Results/157/157.txt of the authors' repository, which holds 5550 over the weights 148 to 172; one per weight is catalogued. Involution and MDS over 8-bit cells were checked here."
@@ -1842,7 +1897,7 @@ LSL19.W158:
   cols: 32
   year: [2019]
   cipher: false
-  origin: "https://doi.org/10.13154/tosc.v2019.i1.84-117"
+  origin: "https://doi.org/10.46586/tosc.v2019.i1.84-117"
   source: "https://github.com/siweisun/involutory_mds"
   paper_title: "Li, Sun, Li, Wei, Hu. Constructing Low-latency Involutory MDS Matrices with Lightweight Circuits; IACR ToSC 2019 (1)."
   note: "The first of the 156 involutory MDS matrices of Hamming weight 158 in Results/158/158.txt of the authors' repository, which holds 5550 over the weights 148 to 172; one per weight is catalogued. Involution and MDS over 8-bit cells were checked here."
@@ -1896,7 +1951,7 @@ LSL19.W160:
   cols: 32
   year: [2019]
   cipher: false
-  origin: "https://doi.org/10.13154/tosc.v2019.i1.84-117"
+  origin: "https://doi.org/10.46586/tosc.v2019.i1.84-117"
   source: "https://github.com/siweisun/involutory_mds"
   paper_title: "Li, Sun, Li, Wei, Hu. Constructing Low-latency Involutory MDS Matrices with Lightweight Circuits; IACR ToSC 2019 (1)."
   note: "The first of the 210 involutory MDS matrices of Hamming weight 160 in Results/160/160.txt of the authors' repository, which holds 5550 over the weights 148 to 172; one per weight is catalogued. Involution and MDS over 8-bit cells were checked here."
@@ -1950,7 +2005,7 @@ LSL19.W161:
   cols: 32
   year: [2019]
   cipher: false
-  origin: "https://doi.org/10.13154/tosc.v2019.i1.84-117"
+  origin: "https://doi.org/10.46586/tosc.v2019.i1.84-117"
   source: "https://github.com/siweisun/involutory_mds"
   paper_title: "Li, Sun, Li, Wei, Hu. Constructing Low-latency Involutory MDS Matrices with Lightweight Circuits; IACR ToSC 2019 (1)."
   note: "The first of the 144 involutory MDS matrices of Hamming weight 161 in Results/161/161.txt of the authors' repository, which holds 5550 over the weights 148 to 172; one per weight is catalogued. Involution and MDS over 8-bit cells were checked here."
@@ -2004,7 +2059,7 @@ LSL19.W162:
   cols: 32
   year: [2019]
   cipher: false
-  origin: "https://doi.org/10.13154/tosc.v2019.i1.84-117"
+  origin: "https://doi.org/10.46586/tosc.v2019.i1.84-117"
   source: "https://github.com/siweisun/involutory_mds"
   paper_title: "Li, Sun, Li, Wei, Hu. Constructing Low-latency Involutory MDS Matrices with Lightweight Circuits; IACR ToSC 2019 (1)."
   note: "The first of the 204 involutory MDS matrices of Hamming weight 162 in Results/162/162.txt of the authors' repository, which holds 5550 over the weights 148 to 172; one per weight is catalogued. Involution and MDS over 8-bit cells were checked here."
@@ -2058,7 +2113,7 @@ LSL19.W163:
   cols: 32
   year: [2019]
   cipher: false
-  origin: "https://doi.org/10.13154/tosc.v2019.i1.84-117"
+  origin: "https://doi.org/10.46586/tosc.v2019.i1.84-117"
   source: "https://github.com/siweisun/involutory_mds"
   paper_title: "Li, Sun, Li, Wei, Hu. Constructing Low-latency Involutory MDS Matrices with Lightweight Circuits; IACR ToSC 2019 (1)."
   note: "The first of the 192 involutory MDS matrices of Hamming weight 163 in Results/163/163.txt of the authors' repository, which holds 5550 over the weights 148 to 172; one per weight is catalogued. Involution and MDS over 8-bit cells were checked here."
@@ -2112,7 +2167,7 @@ LSL19.W164:
   cols: 32
   year: [2019]
   cipher: false
-  origin: "https://doi.org/10.13154/tosc.v2019.i1.84-117"
+  origin: "https://doi.org/10.46586/tosc.v2019.i1.84-117"
   source: "https://github.com/siweisun/involutory_mds"
   paper_title: "Li, Sun, Li, Wei, Hu. Constructing Low-latency Involutory MDS Matrices with Lightweight Circuits; IACR ToSC 2019 (1)."
   note: "The first of the 300 involutory MDS matrices of Hamming weight 164 in Results/164/164.txt of the authors' repository, which holds 5550 over the weights 148 to 172; one per weight is catalogued. Involution and MDS over 8-bit cells were checked here."
@@ -2166,7 +2221,7 @@ LSL19.W165:
   cols: 32
   year: [2019]
   cipher: false
-  origin: "https://doi.org/10.13154/tosc.v2019.i1.84-117"
+  origin: "https://doi.org/10.46586/tosc.v2019.i1.84-117"
   source: "https://github.com/siweisun/involutory_mds"
   paper_title: "Li, Sun, Li, Wei, Hu. Constructing Low-latency Involutory MDS Matrices with Lightweight Circuits; IACR ToSC 2019 (1)."
   note: "The first of the 312 involutory MDS matrices of Hamming weight 165 in Results/165/165.txt of the authors' repository, which holds 5550 over the weights 148 to 172; one per weight is catalogued. Involution and MDS over 8-bit cells were checked here."
@@ -2220,7 +2275,7 @@ LSL19.W166:
   cols: 32
   year: [2019]
   cipher: false
-  origin: "https://doi.org/10.13154/tosc.v2019.i1.84-117"
+  origin: "https://doi.org/10.46586/tosc.v2019.i1.84-117"
   source: "https://github.com/siweisun/involutory_mds"
   paper_title: "Li, Sun, Li, Wei, Hu. Constructing Low-latency Involutory MDS Matrices with Lightweight Circuits; IACR ToSC 2019 (1)."
   note: "The first of the 324 involutory MDS matrices of Hamming weight 166 in Results/166/166.txt of the authors' repository, which holds 5550 over the weights 148 to 172; one per weight is catalogued. Involution and MDS over 8-bit cells were checked here."
@@ -2274,7 +2329,7 @@ LSL19.W167:
   cols: 32
   year: [2019]
   cipher: false
-  origin: "https://doi.org/10.13154/tosc.v2019.i1.84-117"
+  origin: "https://doi.org/10.46586/tosc.v2019.i1.84-117"
   source: "https://github.com/siweisun/involutory_mds"
   paper_title: "Li, Sun, Li, Wei, Hu. Constructing Low-latency Involutory MDS Matrices with Lightweight Circuits; IACR ToSC 2019 (1)."
   note: "The first of the 336 involutory MDS matrices of Hamming weight 167 in Results/167/167.txt of the authors' repository, which holds 5550 over the weights 148 to 172; one per weight is catalogued. Involution and MDS over 8-bit cells were checked here."
@@ -2328,7 +2383,7 @@ LSL19.W168:
   cols: 32
   year: [2019]
   cipher: false
-  origin: "https://doi.org/10.13154/tosc.v2019.i1.84-117"
+  origin: "https://doi.org/10.46586/tosc.v2019.i1.84-117"
   source: "https://github.com/siweisun/involutory_mds"
   paper_title: "Li, Sun, Li, Wei, Hu. Constructing Low-latency Involutory MDS Matrices with Lightweight Circuits; IACR ToSC 2019 (1)."
   note: "The first of the 600 involutory MDS matrices of Hamming weight 168 in Results/168/168.txt of the authors' repository, which holds 5550 over the weights 148 to 172; one per weight is catalogued. Involution and MDS over 8-bit cells were checked here."
@@ -2382,7 +2437,7 @@ LSL19.W169:
   cols: 32
   year: [2019]
   cipher: false
-  origin: "https://doi.org/10.13154/tosc.v2019.i1.84-117"
+  origin: "https://doi.org/10.46586/tosc.v2019.i1.84-117"
   source: "https://github.com/siweisun/involutory_mds"
   paper_title: "Li, Sun, Li, Wei, Hu. Constructing Low-latency Involutory MDS Matrices with Lightweight Circuits; IACR ToSC 2019 (1)."
   note: "The first of the 384 involutory MDS matrices of Hamming weight 169 in Results/169/169.txt of the authors' repository, which holds 5550 over the weights 148 to 172; one per weight is catalogued. Involution and MDS over 8-bit cells were checked here."
@@ -2436,7 +2491,7 @@ LSL19.W170:
   cols: 32
   year: [2019]
   cipher: false
-  origin: "https://doi.org/10.13154/tosc.v2019.i1.84-117"
+  origin: "https://doi.org/10.46586/tosc.v2019.i1.84-117"
   source: "https://github.com/siweisun/involutory_mds"
   paper_title: "Li, Sun, Li, Wei, Hu. Constructing Low-latency Involutory MDS Matrices with Lightweight Circuits; IACR ToSC 2019 (1)."
   note: "The first of the 504 involutory MDS matrices of Hamming weight 170 in Results/170/170.txt of the authors' repository, which holds 5550 over the weights 148 to 172; one per weight is catalogued. Involution and MDS over 8-bit cells were checked here."
@@ -2490,7 +2545,7 @@ LSL19.W171:
   cols: 32
   year: [2019]
   cipher: false
-  origin: "https://doi.org/10.13154/tosc.v2019.i1.84-117"
+  origin: "https://doi.org/10.46586/tosc.v2019.i1.84-117"
   source: "https://github.com/siweisun/involutory_mds"
   paper_title: "Li, Sun, Li, Wei, Hu. Constructing Low-latency Involutory MDS Matrices with Lightweight Circuits; IACR ToSC 2019 (1)."
   note: "The first of the 528 involutory MDS matrices of Hamming weight 171 in Results/171/171.txt of the authors' repository, which holds 5550 over the weights 148 to 172; one per weight is catalogued. Involution and MDS over 8-bit cells were checked here."
@@ -2544,7 +2599,7 @@ LSL19.W172:
   cols: 32
   year: [2019]
   cipher: false
-  origin: "https://doi.org/10.13154/tosc.v2019.i1.84-117"
+  origin: "https://doi.org/10.46586/tosc.v2019.i1.84-117"
   source: "https://github.com/siweisun/involutory_mds"
   paper_title: "Li, Sun, Li, Wei, Hu. Constructing Low-latency Involutory MDS Matrices with Lightweight Circuits; IACR ToSC 2019 (1)."
   note: "The first of the 762 involutory MDS matrices of Hamming weight 172 in Results/172/172.txt of the authors' repository, which holds 5550 over the weights 148 to 172; one per weight is catalogued. Involution and MDS over 8-bit cells were checked here."
